@@ -1,0 +1,5 @@
+Removed Member From Class: ClassName=main Member=U?
+Change Component Designator: OldDesignator=U? NewDesignator=U1
+Change Component Designator: OldDesignator=U? NewDesignator=U2
+Added Member To Class: ClassName=main Member=Component U1 STM32F429AIH6
+Added Member To Class: ClassName=main Member=Component U2 IIS3DWBTR

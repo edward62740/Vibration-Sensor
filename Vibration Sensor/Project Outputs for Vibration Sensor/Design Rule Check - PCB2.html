@@ -1,0 +1,595 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<style type="text/css">
+		h1, h2, h3, h4, h5, h6 {
+			font-family : segoe ui;
+			color : black;
+			background-color : #EDE7D9;
+			padding: 0.3em;
+		}
+
+		h1 {
+			font-size: 1.2em;
+		}		
+
+		h2 {
+			font-size: 1.2em;
+		}
+
+		body {
+			font-family : segoe ui;
+		}
+
+		td, th {
+			padding: 0.5em;
+			text-align : left;
+			width: 10em;
+		}
+		th {
+			background-color : #EEEEEE;
+
+		}
+		th.column1, td.column1 {
+			text-align: left;
+			width : auto;
+		}
+		table {
+			width : 100%;
+			font-size: 0.9em;
+		}
+
+		.DRC_summary_header {
+			padding-bottom : 0.1em;
+			border : 0px solid black;
+			width: 100%;
+			align: left;
+		}
+
+		.DRC_summary_header_col1,
+		.DRC_summary_header_col2, 
+		.DRC_summary_header_col3 {
+			color : black;
+			font-size:100%;
+			padding : 0em;
+			padding-top : 0.2em;
+			padding-bottom 0.2em;
+			border : 0px solid black;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.DRC_summary_header_col1 {
+			font-weight: bold;
+			width: 9em;
+		}
+
+		.DRC_summary_header_col2 {
+			width: 0.1em;
+		
+		}
+
+		.DRC_summary_header_col3 {
+			width : auto;
+		}
+
+		.header_holder {
+		    Width = 100%;
+		    border = 0px solid green;
+		    padding = 0;
+		}
+
+
+		.front_matter, .front_matter_column1, .front_matter_column2, .front_matter_column3
+		{
+			left : 0;
+			top : 0;
+			padding: 0em;
+			padding-top : 0.1em;
+			border : 0px solid black;
+			width : 100%;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.front_matter_column1 {
+			width : 8em;
+			font-weight: bold;
+		}
+
+		.front_matter_column2 {
+			width: 0.1em;
+		}
+
+		.front_matter_column3 {
+			width : auto;
+		}
+
+		.total_column1, .total_column {
+			font-weight : bold;
+		}
+		.total_column1 {
+			text-align : left;
+		}
+		.warning, .error {
+			color : red;
+			font-weight : bold;
+		}
+		tr.onmouseout_odd {
+			background-color : #white;
+		}
+		tr.onmouseout_even { 
+			background-color : #FAFAFA;
+		}
+		tr.onmouseover_odd, tr.onmouseover_even { 
+			background-color : #EEEEEE;
+		} 
+		a:link, a:visited, .q a:link,.q a:active,.q {
+			color: #21489e; 
+		}
+		a:link.callback, a:visited.callback { 
+			color: #21489e;
+		}
+		a:link.customize, a:visited.customize {
+			color: #C0C0C0;
+			position: absolute; 
+			right: 10px;
+		}	
+		p.contents_level1 {
+			font-weight : bold;
+			font-size : 110%;
+			margin : 0.5em;
+		}
+		p.contents_level2 {
+			position : relative;
+			left : 20px;
+			margin : 0.5em;
+		}
+	</style><script type="text/javascript">
+		function coordToMils(coord) {
+			var number = coord / 10000;
+			
+			if (number != number.toFixed(3))
+				number = number.toFixed(3);
+
+			return number + 'mil'
+		}
+
+		function coordToMM(coord) {
+			var number = 0.0254 * coord / 10000;
+			
+			if (number != number.toFixed(4))
+				number = number.toFixed(4);
+			
+			return number + 'mm'
+		}
+	
+		function convertCoord(coordNode, units) {
+			for (var i = 0; i < coordNode.childNodes.length; i++) {
+				coordNode.removeChild(coordNode.childNodes[i]);
+			}
+
+			var coord = coordNode.getAttribute('value');
+			if (coord != null) {
+				if (units == 'mm') {
+					textNode = document.createTextNode(coordToMM(coord));
+					coordNode.appendChild(textNode);
+				} else if (units == 'mil') {
+					textNode = document.createTextNode(coordToMils(coord));		
+					coordNode.appendChild(textNode);	
+				}
+			}
+		}
+	
+		function convertUnits(unitNode, units) {
+			for (var i = 0; i < unitNode.childNodes.length; i++) {
+				unitNode.removeChild(unitNode.childNodes[i]);		
+			}
+		
+			textNode = document.createTextNode(units); 
+			unitNode.appendChild(textNode);
+		}
+	
+		function changeUnits(radio_input, units) {
+			if (radio_input.checked) {
+			
+				var elements = document.getElementsByName('coordinate');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertCoord(elements[i], units);
+					}
+				}
+	
+				var elements = document.getElementsByName('units');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertUnits(elements[i], units);
+					}
+				}
+			}
+		}
+	</script><title>Design Rule Verification Report</title>
+</head>
+<body onload=""><img ALT="Altium" src="
+			file://C:\Users\Public\Documents\Altium\AD20\Templates\AD_logo.png
+		"><h1>Design Rule Verification Report</h1>
+<table class="header_holder">
+<td class="column1">
+<table class="front_matter">
+<tr class="front_matter">
+<td class="front_matter_column1">Date:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">12/11/2023</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">2:48:50 PM</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Elapsed Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">00:00:01</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Filename:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3"><a href="file:///C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc" class="file"><acronym title="C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc">C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc</acronym></a></td>
+</tr>
+</table>
+</td>
+<td class="column2">
+<table class="DRC_summary_header">
+<tr>
+<td class="DRC_summary_header_col1">Warnings:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3">0</td></tr>
+<tr>
+<td class="DRC_summary_header_col1">Rule Violations:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3">0</td></tr>
+<tr>
+<td class="DRC_summary_header_col1">Waived Violations:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3" style="color : red">74</td></tr>
+</table>
+</td>
+</table><a name="IDB5XF22GVLJCQEPQP5FRUT4L3HJC4Q1KVI4LD0IDV3TVHVIUQIOYO"><h2>Summary</h2></a><table>
+<tr>
+<th class="column1">Warnings</th>
+<th class="column2">Count</th>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">0</td>
+</tr>
+</table><br><table>
+<tr>
+<th class="column1">Rule Violations</th>
+<th class="column2">Count</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDW3AJJHVZHV25JTN0MGTAF2EJAHRLUHHOCBTIQ2SM04S5NS5RJVI">Clearance Constraint (Gap=3.5mil) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDVQ2OK2TE3ZPJJEF0ZKAIETAZYJUVSQAQPK3JWXFRGN0HRXROSS2P">Short-Circuit Constraint (Allowed=No) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDHKCET4S2XLALIPDY1NQBB12IOHWCNKN4UBJOTTBGDXN4RM3DQRHJ">Un-Routed Net Constraint ( (All) )</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDM4YGGYXEIFWWIUZDJDQ1KAZRHHQ1M3FENFLECPCU5QYO2ZSQFK1C">Modified Polygon (Allow modified: No), (Allow shelved: No)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDDVN4U1EPG0PXL53WGSTY4QZB5F04NXOV22H4M4A4QEBAZEGCT3D">Width Constraint (Min=3.5mil) (Max=71497.938mil) (Preferred=3.5mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID5A02OEPBAP10IQFFYQME0NLE4EN0UXZ1NMEK3FCN3XQHLENMUIGK">Power Plane Connect Rule(Direct Connect )(Expansion=11.811mil) (Conductor Width=3.5mil) (Air Gap=3.5mil) (Entries=4) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDHFGUEWPD0LBEKF0XLG4URBGG4INAZ2Z5ERK5EEPRUUNBWMMMFQ3H">Power Plane Connect Rule(Direct Connect )(Expansion=20mil) (Conductor Width=10mil) (Air Gap=10mil) (Entries=4) (InPadClass('PowerPads'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDQD0ZDJ5Y2KFQQ3B0BV0NDUWXBGXR0NH3K34BODGBD3KQNLGA4UK">Minimum Annular Ring (Minimum=3mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID15RVV215WQUIJY5ONVID45GEVOQC33RNORXZRXMX0WOR4N5G34DJ">Hole Size Constraint (Min=7.874mil) (Max=248.031mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDNRP3ZOGKNFLROARF5FIA5HIV4MMUOZ3GIDCXOUBCTLB033V5XZEB">Hole To Hole Clearance (Gap=9.842mil) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDL5VR450WSAZWEBZHRZ034C3W0B2RRHI3NW01YYINLBPE5GPMH3UM">Minimum Solder Mask Sliver (Gap=0mil) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDAXDDXQCV4FBTIC2FKJZ3ANR50B2GXNZV2XWQGZFSCQPZAID4CVAN">Silk To Solder Mask (Clearance=3.5mil) (IsPad),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDI3NPQRPRPHGGLQJADTP3EDUCIO5QE4LXSVDVVCDYE2HGK4DNF0Z">Silk to Silk (Clearance=0mil) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID1TS4SOFLPG4TEIGJTZ2OSPBGSFH1ZSUAKXR044MUF4F3BW4MPJF">Net Antennae (Tolerance=0mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDHEDZ04GLQ1FLHKAQZJ3EPAUZFNDECYDQKM13C3G2TSD5R3PD0JOD">Board Clearance Constraint (Gap=0mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDCBBP2OLMEQRCGLUKPRTFNFV3CETHDAEEVMIWUSNZGZXR3HWCPMDB">Height Constraint (Min=0mil) (Max=71497.938mil) (Prefered=500mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">0</td>
+</tr>
+</table><br><table>
+<tr>
+<th class="column1">Waived Violations</th>
+<th class="column2">Count</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDEGIVH5U4II55M0WVOAEFCPWNMH35CBB24M2WWWF2HRUUJUTPTA1">Clearance Constraint (Gap=3.5mil) (All),(All)</a></td>
+<td class="column2">10</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDW1SZ2M24SFGZECUVWI45LT0I0ICCJHZ0USTLSOG4FC1JRIWKJ50L">Silk To Solder Mask (Clearance=3.5mil) (IsPad),(All)</a></td>
+<td class="column2">19</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDAVYW4GXXLVUEOHUZMJ3PLRYUTPKH10MZX5STDYEZKSVXPI3PXHBL">Board Clearance Constraint (Gap=0mil) (All)</a></td>
+<td class="column2">45</td>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">74</td>
+</tr>
+</table><br><a name="ID5RKF25A3YJ0PHWKHKVVUQUTL4ELIC02FH0T0YMFMWUJAGQTFMPD"><h2>Rule Violations</h2></a><a name="IDKH5YOUMMOW3EP4WSG0XDQ3VZDJ240MH10VLRZWFYYEC3RTULCEBD"><h2>Waived Violations</h2></a><a name="IDEGIVH5U4II55M0WVOAEFCPWNMH35CBB24M2WWWF2HRUUJUTPTA1"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="waived">Clearance Constraint (Gap=3.5mil) (All),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1756.838mil|Location2.X=1761.588mil|Location1.Y=968.097mil|Location2.Y=972.847mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1756.838mil|Location2.X=1761.588mil|Location1.Y=968.097mil|Location2.Y=972.847mil|Absolute=True">Clearance Constraint: (1.968mil &lt; 3.5mil) Between Pad -1(1807.441mil,982.284mil) on Top Layer And Region (0 hole(s)) Top Layer </acronym></a><br>Waived by Edward Tan at 12/11/2023 2:45:56 PM</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1756.838mil|Location2.X=1761.588mil|Location1.Y=1007.468mil|Location2.Y=1012.218mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1756.838mil|Location2.X=1761.588mil|Location1.Y=1007.468mil|Location2.Y=1012.218mil|Absolute=True">Clearance Constraint: (1.968mil &lt; 3.5mil) Between Pad -2(1807.441mil,1021.654mil) on Top Layer And Region (0 hole(s)) Top Layer </acronym></a><br>Waived by Edward Tan at 12/11/2023 2:45:56 PM</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1756.838mil|Location2.X=1761.588mil|Location1.Y=1046.838mil|Location2.Y=1051.588mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1756.838mil|Location2.X=1761.588mil|Location1.Y=1046.838mil|Location2.Y=1051.588mil|Absolute=True">Clearance Constraint: (1.968mil &lt; 3.5mil) Between Pad -3(1807.441mil,1061.024mil) on Top Layer And Region (0 hole(s)) Top Layer </acronym></a><br>Waived by Edward Tan at 12/11/2023 2:45:56 PM</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1408.412mil|Location2.X=1413.162mil|Location1.Y=1125.578mil|Location2.Y=1130.328mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1408.412mil|Location2.X=1413.162mil|Location1.Y=1125.578mil|Location2.Y=1130.328mil|Absolute=True">Clearance Constraint: (1.968mil &lt; 3.5mil) Between Pad -32(1362.559mil,1139.764mil) on Top Layer And Region (0 hole(s)) Top Layer </acronym></a><br>Waived by Edward Tan at 12/11/2023 2:45:56 PM</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1408.412mil|Location2.X=1413.162mil|Location1.Y=1109.83mil|Location2.Y=1114.58mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1408.412mil|Location2.X=1413.162mil|Location1.Y=1109.83mil|Location2.Y=1114.58mil|Absolute=True">Clearance Constraint: (1.968mil &lt; 3.5mil) Between Pad -33(1362.559mil,1100.394mil) on Top Layer And Region (0 hole(s)) Top Layer </acronym></a><br>Waived by Edward Tan at 12/11/2023 2:45:56 PM</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1408.412mil|Location2.X=1413.162mil|Location1.Y=1070.46mil|Location2.Y=1075.21mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1408.412mil|Location2.X=1413.162mil|Location1.Y=1070.46mil|Location2.Y=1075.21mil|Absolute=True">Clearance Constraint: (1.968mil &lt; 3.5mil) Between Pad -34(1362.559mil,1061.024mil) on Top Layer And Region (0 hole(s)) Top Layer </acronym></a><br>Waived by Edward Tan at 12/11/2023 2:45:56 PM</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1408.412mil|Location2.X=1413.162mil|Location1.Y=1031.09mil|Location2.Y=1035.84mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1408.412mil|Location2.X=1413.162mil|Location1.Y=1031.09mil|Location2.Y=1035.84mil|Absolute=True">Clearance Constraint: (1.968mil &lt; 3.5mil) Between Pad -35(1362.559mil,1021.654mil) on Top Layer And Region (0 hole(s)) Top Layer </acronym></a><br>Waived by Edward Tan at 12/11/2023 2:45:56 PM</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1408.412mil|Location2.X=1413.162mil|Location1.Y=991.72mil|Location2.Y=996.47mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1408.412mil|Location2.X=1413.162mil|Location1.Y=991.72mil|Location2.Y=996.47mil|Absolute=True">Clearance Constraint: (1.968mil &lt; 3.5mil) Between Pad -36(1362.559mil,982.284mil) on Top Layer And Region (0 hole(s)) Top Layer </acronym></a><br>Waived by Edward Tan at 12/11/2023 2:45:56 PM</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1756.838mil|Location2.X=1761.588mil|Location1.Y=1086.208mil|Location2.Y=1090.958mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1756.838mil|Location2.X=1761.588mil|Location1.Y=1086.208mil|Location2.Y=1090.958mil|Absolute=True">Clearance Constraint: (1.968mil &lt; 3.5mil) Between Pad -4(1807.441mil,1100.394mil) on Top Layer And Region (0 hole(s)) Top Layer </acronym></a><br>Waived by Edward Tan at 12/11/2023 2:45:56 PM</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1756.838mil|Location2.X=1761.588mil|Location1.Y=1125.578mil|Location2.Y=1130.328mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1756.838mil|Location2.X=1761.588mil|Location1.Y=1125.578mil|Location2.Y=1130.328mil|Absolute=True">Clearance Constraint: (1.968mil &lt; 3.5mil) Between Pad -5(1807.441mil,1139.764mil) on Top Layer And Region (0 hole(s)) Top Layer </acronym></a><br>Waived by Edward Tan at 12/11/2023 2:45:56 PM</td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDW1SZ2M24SFGZECUVWI45LT0I0ICCJHZ0USTLSOG4FC1JRIWKJ50L"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="waived">Silk To Solder Mask (Clearance=3.5mil) (IsPad),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3033.57mil|Location2.X=3036.903mil|Location1.Y=1518.333mil|Location2.Y=1521.667mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3033.57mil|Location2.X=3036.903mil|Location1.Y=1518.333mil|Location2.Y=1521.667mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 3.5mil) Between Pad -10(3050mil,1523.543mil) on Top Layer And Track (1020mil,1520mil)(3160mil,1520mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]</acronym></a><br>Waived by Edward Tan at 12/11/2023 2:45:56 PM</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1709.318mil|Location2.X=1712.651mil|Location1.Y=1518.333mil|Location2.Y=1521.667mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1709.318mil|Location2.X=1712.651mil|Location1.Y=1518.333mil|Location2.Y=1521.667mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 3.5mil) Between Pad -15(1722.795mil,1513.78mil) on Top Layer And Track (1020mil,1520mil)(3160mil,1520mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]</acronym></a><br>Waived by Edward Tan at 12/11/2023 2:45:56 PM</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1669.948mil|Location2.X=1673.281mil|Location1.Y=1518.333mil|Location2.Y=1521.667mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1669.948mil|Location2.X=1673.281mil|Location1.Y=1518.333mil|Location2.Y=1521.667mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 3.5mil) Between Pad -16(1683.425mil,1513.78mil) on Top Layer And Track (1020mil,1520mil)(3160mil,1520mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]</acronym></a><br>Waived by Edward Tan at 12/11/2023 2:45:56 PM</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1630.578mil|Location2.X=1633.911mil|Location1.Y=1518.333mil|Location2.Y=1521.667mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1630.578mil|Location2.X=1633.911mil|Location1.Y=1518.333mil|Location2.Y=1521.667mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 3.5mil) Between Pad -17(1644.055mil,1513.78mil) on Top Layer And Track (1020mil,1520mil)(3160mil,1520mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]</acronym></a><br>Waived by Edward Tan at 12/11/2023 2:45:56 PM</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1591.207mil|Location2.X=1594.541mil|Location1.Y=1518.333mil|Location2.Y=1521.667mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1591.207mil|Location2.X=1594.541mil|Location1.Y=1518.333mil|Location2.Y=1521.667mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 3.5mil) Between Pad -18(1604.685mil,1513.78mil) on Top Layer And Track (1020mil,1520mil)(3160mil,1520mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]</acronym></a><br>Waived by Edward Tan at 12/11/2023 2:45:56 PM</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1551.837mil|Location2.X=1555.171mil|Location1.Y=1518.333mil|Location2.Y=1521.667mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1551.837mil|Location2.X=1555.171mil|Location1.Y=1518.333mil|Location2.Y=1521.667mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 3.5mil) Between Pad -19(1565.315mil,1513.78mil) on Top Layer And Track (1020mil,1520mil)(3160mil,1520mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]</acronym></a><br>Waived by Edward Tan at 12/11/2023 2:45:56 PM</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1758.53mil|Location2.X=1761.863mil|Location1.Y=1018.333mil|Location2.Y=1021.667mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1758.53mil|Location2.X=1761.863mil|Location1.Y=1018.333mil|Location2.Y=1021.667mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 3.5mil) Between Pad -2(1807.441mil,1021.654mil) on Top Layer And Track (1020mil,1020mil)(3000.236mil,1020mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]</acronym></a><br>Waived by Edward Tan at 12/11/2023 2:45:56 PM</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2833.57mil|Location2.X=2836.903mil|Location1.Y=1518.333mil|Location2.Y=1521.667mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2833.57mil|Location2.X=2836.903mil|Location1.Y=1518.333mil|Location2.Y=1521.667mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 3.5mil) Between Pad -2(2850mil,1523.543mil) on Top Layer And Track (1020mil,1520mil)(3160mil,1520mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]</acronym></a><br>Waived by Edward Tan at 12/11/2023 2:45:56 PM</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1512.467mil|Location2.X=1515.801mil|Location1.Y=1518.333mil|Location2.Y=1521.667mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1512.467mil|Location2.X=1515.801mil|Location1.Y=1518.333mil|Location2.Y=1521.667mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 3.5mil) Between Pad -20(1525.945mil,1513.78mil) on Top Layer And Track (1020mil,1520mil)(3160mil,1520mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]</acronym></a><br>Waived by Edward Tan at 12/11/2023 2:45:56 PM</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1473.097mil|Location2.X=1476.43mil|Location1.Y=1518.333mil|Location2.Y=1521.667mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1473.097mil|Location2.X=1476.43mil|Location1.Y=1518.333mil|Location2.Y=1521.667mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 3.5mil) Between Pad -21(1486.575mil,1513.78mil) on Top Layer And Track (1020mil,1520mil)(3160mil,1520mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]</acronym></a><br>Waived by Edward Tan at 12/11/2023 2:45:56 PM</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1433.727mil|Location2.X=1437.06mil|Location1.Y=1518.333mil|Location2.Y=1521.667mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1433.727mil|Location2.X=1437.06mil|Location1.Y=1518.333mil|Location2.Y=1521.667mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 3.5mil) Between Pad -22(1447.205mil,1513.78mil) on Top Layer And Track (1020mil,1520mil)(3160mil,1520mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]</acronym></a><br>Waived by Edward Tan at 12/11/2023 2:45:56 PM</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1313.648mil|Location2.X=1316.982mil|Location1.Y=1018.333mil|Location2.Y=1021.667mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1313.648mil|Location2.X=1316.982mil|Location1.Y=1018.333mil|Location2.Y=1021.667mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 3.5mil) Between Pad -35(1362.559mil,1021.654mil) on Top Layer And Track (1020mil,1020mil)(3000.236mil,1020mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]</acronym></a><br>Waived by Edward Tan at 12/11/2023 2:45:56 PM</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2883.57mil|Location2.X=2886.903mil|Location1.Y=1518.333mil|Location2.Y=1521.667mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2883.57mil|Location2.X=2886.903mil|Location1.Y=1518.333mil|Location2.Y=1521.667mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 3.5mil) Between Pad -4(2900mil,1523.543mil) on Top Layer And Track (1020mil,1520mil)(3160mil,1520mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]</acronym></a><br>Waived by Edward Tan at 12/11/2023 2:45:56 PM</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2984.825mil|Location2.X=2989.575mil|Location1.Y=1117.625mil|Location2.Y=1122.375mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2984.825mil|Location2.X=2989.575mil|Location1.Y=1117.625mil|Location2.Y=1122.375mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.324mil &lt; 3.5mil) Between Pad -4(2970mil,1120mil) on Top Layer And Track (2990.315mil,1100.63mil)(2990.315mil,1179.37mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.324mil]</acronym></a><br>Waived by Edward Tan at 12/11/2023 2:45:56 PM</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2984.825mil|Location2.X=2989.575mil|Location1.Y=1143.216mil|Location2.Y=1147.966mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2984.825mil|Location2.X=2989.575mil|Location1.Y=1143.216mil|Location2.Y=1147.966mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.324mil &lt; 3.5mil) Between Pad -5(2970mil,1145.591mil) on Top Layer And Track (2990.315mil,1100.63mil)(2990.315mil,1179.37mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.324mil]</acronym></a><br>Waived by Edward Tan at 12/11/2023 2:45:56 PM</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2933.57mil|Location2.X=2936.903mil|Location1.Y=1518.333mil|Location2.Y=1521.667mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2933.57mil|Location2.X=2936.903mil|Location1.Y=1518.333mil|Location2.Y=1521.667mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 3.5mil) Between Pad -6(2950mil,1523.543mil) on Top Layer And Track (1020mil,1520mil)(3160mil,1520mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]</acronym></a><br>Waived by Edward Tan at 12/11/2023 2:45:56 PM</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2984.825mil|Location2.X=2989.575mil|Location1.Y=1168.806mil|Location2.Y=1173.556mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2984.825mil|Location2.X=2989.575mil|Location1.Y=1168.806mil|Location2.Y=1173.556mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.324mil &lt; 3.5mil) Between Pad -6(2970mil,1171.181mil) on Top Layer And Track (2990.315mil,1100.63mil)(2990.315mil,1179.37mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.324mil]</acronym></a><br>Waived by Edward Tan at 12/11/2023 2:45:56 PM</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2984.492mil|Location2.X=2991.269mil|Location1.Y=1171.79mil|Location2.Y=1178.558mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2984.492mil|Location2.X=2991.269mil|Location1.Y=1171.79mil|Location2.Y=1178.558mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (3.486mil &lt; 3.5mil) Between Pad -6(2970mil,1171.181mil) on Top Layer And Track (2990.315mil,1179.37mil)(2998.189mil,1179.37mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [3.486mil]</acronym></a><br>Waived by Edward Tan at 12/11/2023 2:45:56 PM</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2983.57mil|Location2.X=2986.903mil|Location1.Y=1518.333mil|Location2.Y=1521.667mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2983.57mil|Location2.X=2986.903mil|Location1.Y=1518.333mil|Location2.Y=1521.667mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 3.5mil) Between Pad -8(3000mil,1523.543mil) on Top Layer And Track (1020mil,1520mil)(3160mil,1520mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]</acronym></a><br>Waived by Edward Tan at 12/11/2023 2:45:56 PM</td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDAVYW4GXXLVUEOHUZMJ3PLRYUTPKH10MZX5STDYEZKSVXPI3PXHBL"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="waived">Board Clearance Constraint (Gap=0mil) (All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1061.438mil|Location2.X=1070.562mil|Location1.Y=1109.438mil|Location2.Y=1118.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1061.438mil|Location2.X=1070.562mil|Location1.Y=1109.438mil|Location2.Y=1118.562mil|Absolute=True">Board Outline Clearance(Outline Edge): (2mil &lt; 7.874mil) Between Board Edge And Text "" (1067mil,1114mil) on Top Overlay </acronym></a><br>Waived by Edward Tan at 12/11/2023 2:45:56 PM</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1061.438mil|Location2.X=1070.562mil|Location1.Y=1169.438mil|Location2.Y=1178.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1061.438mil|Location2.X=1070.562mil|Location1.Y=1169.438mil|Location2.Y=1178.562mil|Absolute=True">Board Outline Clearance(Outline Edge): (2mil &lt; 7.874mil) Between Board Edge And Text "" (1067mil,1174mil) on Top Overlay </acronym></a><br>Waived by Edward Tan at 12/11/2023 2:45:56 PM</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1062.438mil|Location2.X=1071.562mil|Location1.Y=1226.438mil|Location2.Y=1235.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1062.438mil|Location2.X=1071.562mil|Location1.Y=1226.438mil|Location2.Y=1235.562mil|Absolute=True">Board Outline Clearance(Outline Edge): (4mil &lt; 7.874mil) Between Board Edge And Text "" (1069mil,1231mil) on Top Overlay </acronym></a><br>Waived by Edward Tan at 12/11/2023 2:45:56 PM</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1190.875mil|Location2.X=1197.125mil|Location1.Y=1587.875mil|Location2.Y=1594.124mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1190.875mil|Location2.X=1197.125mil|Location1.Y=1587.875mil|Location2.Y=1594.124mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 7.874mil) Between Board Edge And Text "" (1194mil,1591mil) on Top Overlay </acronym></a><br>Waived by Edward Tan at 12/11/2023 2:45:56 PM</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1298.875mil|Location2.X=1305.125mil|Location1.Y=1590.875mil|Location2.Y=1597.124mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1298.875mil|Location2.X=1305.125mil|Location1.Y=1590.875mil|Location2.Y=1597.124mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 7.874mil) Between Board Edge And Text "" (1302mil,1594mil) on Top Overlay </acronym></a><br>Waived by Edward Tan at 12/11/2023 2:45:56 PM</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1855.438mil|Location2.X=1864.562mil|Location1.Y=1584.438mil|Location2.Y=1593.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1855.438mil|Location2.X=1864.562mil|Location1.Y=1584.438mil|Location2.Y=1593.562mil|Absolute=True">Board Outline Clearance(Outline Edge): (2mil &lt; 7.874mil) Between Board Edge And Text "" (1860mil,1588mil) on Top Overlay </acronym></a><br>Waived by Edward Tan at 12/11/2023 2:45:56 PM</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2782.875mil|Location2.X=2789.125mil|Location1.Y=1595.875mil|Location2.Y=1602.124mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2782.875mil|Location2.X=2789.125mil|Location1.Y=1595.875mil|Location2.Y=1602.124mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 7.874mil) Between Board Edge And Text "" (2786mil,1599mil) on Top Overlay </acronym></a><br>Waived by Edward Tan at 12/11/2023 2:45:56 PM</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=955.875mil|Location2.X=962.125mil|Location1.Y=1547.875mil|Location2.Y=1554.124mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=955.875mil|Location2.X=962.125mil|Location1.Y=1547.875mil|Location2.Y=1554.124mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 7.874mil) Between Board Edge And Text "" (959mil,1551mil) on Top Overlay </acronym></a><br>Waived by Edward Tan at 12/11/2023 2:45:56 PM</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1016.875mil|Location2.X=1023.125mil|Location1.Y=1266.875mil|Location2.Y=1273.125mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1016.875mil|Location2.X=1023.125mil|Location1.Y=1266.875mil|Location2.Y=1273.125mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 7.874mil) Between Board Edge And Track (1020mil,1020mil)(1020mil,1520mil) on Top Overlay </acronym></a><br>Waived by Edward Tan at 12/11/2023 2:45:56 PM</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1038.022mil|Location2.X=1044.271mil|Location1.Y=1016.875mil|Location2.Y=1023.125mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1038.022mil|Location2.X=1044.271mil|Location1.Y=1016.875mil|Location2.Y=1023.125mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 7.874mil) Between Board Edge And Track (1020mil,1020mil)(3000.236mil,1020mil) on Top Overlay </acronym></a><br>Waived by Edward Tan at 12/11/2023 2:45:56 PM</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2086.875mil|Location2.X=2093.125mil|Location1.Y=1516.875mil|Location2.Y=1523.125mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2086.875mil|Location2.X=2093.125mil|Location1.Y=1516.875mil|Location2.Y=1523.125mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 7.874mil) Between Board Edge And Track (1020mil,1520mil)(3160mil,1520mil) on Top Overlay </acronym></a><br>Waived by Edward Tan at 12/11/2023 2:45:56 PM</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1061.461mil|Location2.X=1070.585mil|Location1.Y=1045.438mil|Location2.Y=1054.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1061.461mil|Location2.X=1070.585mil|Location1.Y=1045.438mil|Location2.Y=1054.562mil|Absolute=True">Board Outline Clearance(Outline Edge): (2.048mil &lt; 7.874mil) Between Board Edge And Track (1070mil,1050mil)(1070mil,1065mil) on Top Overlay </acronym></a><br>Waived by Edward Tan at 12/11/2023 2:45:56 PM</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1061.461mil|Location2.X=1070.585mil|Location1.Y=1045.438mil|Location2.Y=1054.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1061.461mil|Location2.X=1070.585mil|Location1.Y=1045.438mil|Location2.Y=1054.562mil|Absolute=True">Board Outline Clearance(Outline Edge): (2.048mil &lt; 7.874mil) Between Board Edge And Track (1070mil,1050mil)(1075mil,1050mil) on Top Overlay </acronym></a><br>Waived by Edward Tan at 12/11/2023 2:45:56 PM</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1061.461mil|Location2.X=1070.585mil|Location1.Y=1060.438mil|Location2.Y=1069.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1061.461mil|Location2.X=1070.585mil|Location1.Y=1060.438mil|Location2.Y=1069.562mil|Absolute=True">Board Outline Clearance(Outline Edge): (2.048mil &lt; 7.874mil) Between Board Edge And Track (1070mil,1065mil)(1075mil,1065mil) on Top Overlay </acronym></a><br>Waived by Edward Tan at 12/11/2023 2:45:56 PM</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1061.461mil|Location2.X=1070.585mil|Location1.Y=1070.438mil|Location2.Y=1079.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1061.461mil|Location2.X=1070.585mil|Location1.Y=1070.438mil|Location2.Y=1079.562mil|Absolute=True">Board Outline Clearance(Outline Edge): (2.048mil &lt; 7.874mil) Between Board Edge And Track (1070mil,1075mil)(1070mil,1090mil) on Top Overlay </acronym></a><br>Waived by Edward Tan at 12/11/2023 2:45:56 PM</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1061.461mil|Location2.X=1070.585mil|Location1.Y=1070.438mil|Location2.Y=1079.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1061.461mil|Location2.X=1070.585mil|Location1.Y=1070.438mil|Location2.Y=1079.562mil|Absolute=True">Board Outline Clearance(Outline Edge): (2.048mil &lt; 7.874mil) Between Board Edge And Track (1070mil,1075mil)(1075mil,1075mil) on Top Overlay </acronym></a><br>Waived by Edward Tan at 12/11/2023 2:45:56 PM</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1061.461mil|Location2.X=1070.585mil|Location1.Y=1085.438mil|Location2.Y=1094.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1061.461mil|Location2.X=1070.585mil|Location1.Y=1085.438mil|Location2.Y=1094.562mil|Absolute=True">Board Outline Clearance(Outline Edge): (2.048mil &lt; 7.874mil) Between Board Edge And Track (1070mil,1090mil)(1075mil,1090mil) on Top Overlay </acronym></a><br>Waived by Edward Tan at 12/11/2023 2:45:56 PM</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1061.461mil|Location2.X=1070.585mil|Location1.Y=1105.438mil|Location2.Y=1114.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1061.461mil|Location2.X=1070.585mil|Location1.Y=1105.438mil|Location2.Y=1114.562mil|Absolute=True">Board Outline Clearance(Outline Edge): (2.048mil &lt; 7.874mil) Between Board Edge And Track (1070mil,1110mil)(1070mil,1125mil) on Top Overlay </acronym></a><br>Waived by Edward Tan at 12/11/2023 2:45:56 PM</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1061.461mil|Location2.X=1070.585mil|Location1.Y=1105.438mil|Location2.Y=1114.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1061.461mil|Location2.X=1070.585mil|Location1.Y=1105.438mil|Location2.Y=1114.562mil|Absolute=True">Board Outline Clearance(Outline Edge): (2.048mil &lt; 7.874mil) Between Board Edge And Track (1070mil,1110mil)(1075mil,1110mil) on Top Overlay </acronym></a><br>Waived by Edward Tan at 12/11/2023 2:45:56 PM</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1061.461mil|Location2.X=1070.585mil|Location1.Y=1120.438mil|Location2.Y=1129.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1061.461mil|Location2.X=1070.585mil|Location1.Y=1120.438mil|Location2.Y=1129.562mil|Absolute=True">Board Outline Clearance(Outline Edge): (2.048mil &lt; 7.874mil) Between Board Edge And Track (1070mil,1125mil)(1075mil,1125mil) on Top Overlay </acronym></a><br>Waived by Edward Tan at 12/11/2023 2:45:56 PM</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1061.461mil|Location2.X=1070.585mil|Location1.Y=1130.438mil|Location2.Y=1139.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1061.461mil|Location2.X=1070.585mil|Location1.Y=1130.438mil|Location2.Y=1139.562mil|Absolute=True">Board Outline Clearance(Outline Edge): (2.048mil &lt; 7.874mil) Between Board Edge And Track (1070mil,1135mil)(1070mil,1150mil) on Top Overlay </acronym></a><br>Waived by Edward Tan at 12/11/2023 2:45:56 PM</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1061.461mil|Location2.X=1070.585mil|Location1.Y=1130.438mil|Location2.Y=1139.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1061.461mil|Location2.X=1070.585mil|Location1.Y=1130.438mil|Location2.Y=1139.562mil|Absolute=True">Board Outline Clearance(Outline Edge): (2.048mil &lt; 7.874mil) Between Board Edge And Track (1070mil,1135mil)(1075mil,1135mil) on Top Overlay </acronym></a><br>Waived by Edward Tan at 12/11/2023 2:45:56 PM</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1061.461mil|Location2.X=1070.585mil|Location1.Y=1145.438mil|Location2.Y=1154.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1061.461mil|Location2.X=1070.585mil|Location1.Y=1145.438mil|Location2.Y=1154.562mil|Absolute=True">Board Outline Clearance(Outline Edge): (2.048mil &lt; 7.874mil) Between Board Edge And Track (1070mil,1150mil)(1075mil,1150mil) on Top Overlay </acronym></a><br>Waived by Edward Tan at 12/11/2023 2:45:56 PM</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1062.642mil|Location2.X=1071.766mil|Location1.Y=1162.8mil|Location2.Y=1171.924mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1062.642mil|Location2.X=1071.766mil|Location1.Y=1162.8mil|Location2.Y=1171.924mil|Absolute=True">Board Outline Clearance(Outline Edge): (4.41mil &lt; 7.874mil) Between Board Edge And Track (1072.362mil,1167.362mil)(1072.362mil,1182.362mil) on Top Overlay </acronym></a><br>Waived by Edward Tan at 12/11/2023 2:45:56 PM</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1062.642mil|Location2.X=1071.766mil|Location1.Y=1162.8mil|Location2.Y=1171.924mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1062.642mil|Location2.X=1071.766mil|Location1.Y=1162.8mil|Location2.Y=1171.924mil|Absolute=True">Board Outline Clearance(Outline Edge): (4.41mil &lt; 7.874mil) Between Board Edge And Track (1072.362mil,1167.362mil)(1077.362mil,1167.362mil) on Top Overlay </acronym></a><br>Waived by Edward Tan at 12/11/2023 2:45:56 PM</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1062.642mil|Location2.X=1071.766mil|Location1.Y=1177.8mil|Location2.Y=1186.924mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1062.642mil|Location2.X=1071.766mil|Location1.Y=1177.8mil|Location2.Y=1186.924mil|Absolute=True">Board Outline Clearance(Outline Edge): (4.41mil &lt; 7.874mil) Between Board Edge And Track (1072.362mil,1182.362mil)(1077.362mil,1182.362mil) on Top Overlay </acronym></a><br>Waived by Edward Tan at 12/11/2023 2:45:56 PM</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1062.642mil|Location2.X=1071.766mil|Location1.Y=1187.8mil|Location2.Y=1196.924mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1062.642mil|Location2.X=1071.766mil|Location1.Y=1187.8mil|Location2.Y=1196.924mil|Absolute=True">Board Outline Clearance(Outline Edge): (4.41mil &lt; 7.874mil) Between Board Edge And Track (1072.362mil,1192.362mil)(1072.362mil,1207.362mil) on Top Overlay </acronym></a><br>Waived by Edward Tan at 12/11/2023 2:45:56 PM</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1062.642mil|Location2.X=1071.766mil|Location1.Y=1187.8mil|Location2.Y=1196.924mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1062.642mil|Location2.X=1071.766mil|Location1.Y=1187.8mil|Location2.Y=1196.924mil|Absolute=True">Board Outline Clearance(Outline Edge): (4.41mil &lt; 7.874mil) Between Board Edge And Track (1072.362mil,1192.362mil)(1077.362mil,1192.362mil) on Top Overlay </acronym></a><br>Waived by Edward Tan at 12/11/2023 2:45:56 PM</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1062.642mil|Location2.X=1071.766mil|Location1.Y=1202.8mil|Location2.Y=1211.924mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1062.642mil|Location2.X=1071.766mil|Location1.Y=1202.8mil|Location2.Y=1211.924mil|Absolute=True">Board Outline Clearance(Outline Edge): (4.41mil &lt; 7.874mil) Between Board Edge And Track (1072.362mil,1207.362mil)(1077.362mil,1207.362mil) on Top Overlay </acronym></a><br>Waived by Edward Tan at 12/11/2023 2:45:56 PM</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1063.961mil|Location2.X=1073.085mil|Location1.Y=1045.438mil|Location2.Y=1054.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1063.961mil|Location2.X=1073.085mil|Location1.Y=1045.438mil|Location2.Y=1054.562mil|Absolute=True">Board Outline Clearance(Outline Edge): (7.048mil &lt; 7.874mil) Between Board Edge And Track (1075mil,1050mil)(1075mil,1065mil) on Top Overlay </acronym></a><br>Waived by Edward Tan at 12/11/2023 2:45:56 PM</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1063.961mil|Location2.X=1073.085mil|Location1.Y=1045.438mil|Location2.Y=1054.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1063.961mil|Location2.X=1073.085mil|Location1.Y=1045.438mil|Location2.Y=1054.562mil|Absolute=True">Board Outline Clearance(Outline Edge): (7.048mil &lt; 7.874mil) Between Board Edge And Track (1075mil,1050mil)(1165mil,1050mil) on Top Overlay </acronym></a><br>Waived by Edward Tan at 12/11/2023 2:45:56 PM</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1063.961mil|Location2.X=1073.085mil|Location1.Y=1070.438mil|Location2.Y=1079.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1063.961mil|Location2.X=1073.085mil|Location1.Y=1070.438mil|Location2.Y=1079.562mil|Absolute=True">Board Outline Clearance(Outline Edge): (7.048mil &lt; 7.874mil) Between Board Edge And Track (1075mil,1075mil)(1075mil,1090mil) on Top Overlay </acronym></a><br>Waived by Edward Tan at 12/11/2023 2:45:56 PM</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1063.961mil|Location2.X=1073.085mil|Location1.Y=1085.438mil|Location2.Y=1094.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1063.961mil|Location2.X=1073.085mil|Location1.Y=1085.438mil|Location2.Y=1094.562mil|Absolute=True">Board Outline Clearance(Outline Edge): (7.048mil &lt; 7.874mil) Between Board Edge And Track (1075mil,1090mil)(1165mil,1090mil) on Top Overlay </acronym></a><br>Waived by Edward Tan at 12/11/2023 2:45:56 PM</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1063.961mil|Location2.X=1073.085mil|Location1.Y=1105.438mil|Location2.Y=1114.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1063.961mil|Location2.X=1073.085mil|Location1.Y=1105.438mil|Location2.Y=1114.562mil|Absolute=True">Board Outline Clearance(Outline Edge): (7.048mil &lt; 7.874mil) Between Board Edge And Track (1075mil,1110mil)(1075mil,1125mil) on Top Overlay </acronym></a><br>Waived by Edward Tan at 12/11/2023 2:45:56 PM</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1063.961mil|Location2.X=1073.085mil|Location1.Y=1105.438mil|Location2.Y=1114.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1063.961mil|Location2.X=1073.085mil|Location1.Y=1105.438mil|Location2.Y=1114.562mil|Absolute=True">Board Outline Clearance(Outline Edge): (7.048mil &lt; 7.874mil) Between Board Edge And Track (1075mil,1110mil)(1165mil,1110mil) on Top Overlay </acronym></a><br>Waived by Edward Tan at 12/11/2023 2:45:56 PM</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1063.961mil|Location2.X=1073.085mil|Location1.Y=1130.438mil|Location2.Y=1139.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1063.961mil|Location2.X=1073.085mil|Location1.Y=1130.438mil|Location2.Y=1139.562mil|Absolute=True">Board Outline Clearance(Outline Edge): (7.048mil &lt; 7.874mil) Between Board Edge And Track (1075mil,1135mil)(1075mil,1150mil) on Top Overlay </acronym></a><br>Waived by Edward Tan at 12/11/2023 2:45:56 PM</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1063.961mil|Location2.X=1073.085mil|Location1.Y=1145.438mil|Location2.Y=1154.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1063.961mil|Location2.X=1073.085mil|Location1.Y=1145.438mil|Location2.Y=1154.562mil|Absolute=True">Board Outline Clearance(Outline Edge): (7.048mil &lt; 7.874mil) Between Board Edge And Track (1075mil,1150mil)(1165mil,1150mil) on Top Overlay </acronym></a><br>Waived by Edward Tan at 12/11/2023 2:45:56 PM</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1321.501mil|Location2.X=1330.625mil|Location1.Y=941.3mil|Location2.Y=950.424mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1321.501mil|Location2.X=1330.625mil|Location1.Y=941.3mil|Location2.Y=950.424mil|Absolute=True">Board Outline Clearance(Outline Edge): (1.725mil &lt; 7.874mil) Between Board Edge And Track (1326.063mil,949.724mil)(1326.063mil,957.372mil) on Top Overlay </acronym></a><br>Waived by Edward Tan at 12/11/2023 2:45:56 PM</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1321.501mil|Location2.X=1330.625mil|Location1.Y=941.3mil|Location2.Y=950.424mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1321.501mil|Location2.X=1330.625mil|Location1.Y=941.3mil|Location2.Y=950.424mil|Absolute=True">Board Outline Clearance(Outline Edge): (1.725mil &lt; 7.874mil) Between Board Edge And Track (1326.063mil,949.724mil)(1843.937mil,949.724mil) on Top Overlay </acronym></a><br>Waived by Edward Tan at 12/11/2023 2:45:56 PM</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1839.375mil|Location2.X=1848.499mil|Location1.Y=941.3mil|Location2.Y=950.424mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1839.375mil|Location2.X=1848.499mil|Location1.Y=941.3mil|Location2.Y=950.424mil|Absolute=True">Board Outline Clearance(Outline Edge): (1.725mil &lt; 7.874mil) Between Board Edge And Track (1843.937mil,949.724mil)(1843.937mil,957.372mil) on Top Overlay </acronym></a><br>Waived by Edward Tan at 12/11/2023 2:45:56 PM</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3133.229mil|Location2.X=3139.478mil|Location1.Y=1016.875mil|Location2.Y=1023.125mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3133.229mil|Location2.X=3139.478mil|Location1.Y=1016.875mil|Location2.Y=1023.125mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 7.874mil) Between Board Edge And Track (3108.504mil,1020mil)(3160mil,1020mil) on Top Overlay </acronym></a><br>Waived by Edward Tan at 12/11/2023 2:45:56 PM</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3156.875mil|Location2.X=3163.125mil|Location1.Y=1266.875mil|Location2.Y=1273.125mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3156.875mil|Location2.X=3163.125mil|Location1.Y=1266.875mil|Location2.Y=1273.125mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 7.874mil) Between Board Edge And Track (3160mil,1020mil)(3160mil,1520mil) on Top Overlay </acronym></a><br>Waived by Edward Tan at 12/11/2023 2:45:56 PM</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3195.458mil|Location2.X=3201.707mil|Location1.Y=1266.875mil|Location2.Y=1273.125mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3195.458mil|Location2.X=3201.707mil|Location1.Y=1266.875mil|Location2.Y=1273.125mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 7.874mil) Between Board Edge And Track (3178.898mil,1270mil)(3218.268mil,1270mil) on Top Overlay </acronym></a><br>Waived by Edward Tan at 12/11/2023 2:45:56 PM</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3195.458mil|Location2.X=3201.707mil|Location1.Y=1266.875mil|Location2.Y=1273.125mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3195.458mil|Location2.X=3201.707mil|Location1.Y=1266.875mil|Location2.Y=1273.125mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 7.874mil) Between Board Edge And Track (3198.583mil,1250.315mil)(3198.583mil,1289.685mil) on Top Overlay </acronym></a><br>Waived by Edward Tan at 12/11/2023 2:45:56 PM</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=978.293mil|Location2.X=984.542mil|Location1.Y=1266.875mil|Location2.Y=1273.125mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Workstation\Documents\GitHub\Vibration Sensor\Vibration Sensor\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=978.293mil|Location2.X=984.542mil|Location1.Y=1266.875mil|Location2.Y=1273.125mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 7.874mil) Between Board Edge And Track (961.732mil,1270mil)(1001.102mil,1270mil) on Top Overlay </acronym></a><br>Waived by Edward Tan at 12/11/2023 2:45:56 PM</td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br></body>
+</html>
