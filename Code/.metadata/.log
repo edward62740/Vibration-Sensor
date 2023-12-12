@@ -1,0 +1,1505 @@
+!SESSION 2023-12-12 15:37:14.622 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=17.0.3
+java.vendor=Amazon.com Inc.
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data C:\Users\Workstation\Documents\GitHub\Vibration-Sensor\Code
+
+!ENTRY com.silabs.ss.platform.jetty.server 1 0 2023-12-12 15:37:17.183
+!MESSAGE Jetty listening on: http://127.0.0.1:65481/
+
+!ENTRY com.silabs.ss.platform.jetty.server 1 0 2023-12-12 15:37:17.821
+!MESSAGE ContentServer started at: 127.0.0.1, 65481
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 15:37:17.876
+!MESSAGE com.silabs.ss.tool.launcher.product found! Writing main studio shared file
+
+!ENTRY com.silabs.ss.tool.installer.core 1 0 2023-12-12 15:37:27.034
+!MESSAGE isInternalNetwork: false
+
+!ENTRY com.silabs.ss.platform.content.core 4 0 2023-12-12 15:37:29.034
+!MESSAGE Local timestamp file does not exist: C:\SiliconLabs\SimplicityStudio\v5\offline\common\Simplicity_Studio_Terms_of_Use_and_Privacy_Statement.timestamp
+
+!ENTRY com.silabs.ss.platform.apack.core 1 0 2023-12-12 15:37:29.091
+!MESSAGE AdapterPack Device inspector for Exx32 and EFM8 hardware has setupcheck function type 
+
+!ENTRY com.silabs.ss.platform.apack.core 1 0 2023-12-12 15:37:29.445
+!MESSAGE AdapterPack USB adapter pack has setupcheck function type 
+
+!ENTRY com.silabs.ss.tool.installer.core 2 0 2023-12-12 15:37:52.707
+!MESSAGE Problem getting package resources: changelog
+
+!ENTRY com.silabs.ss.platform.content.core 4 0 2023-12-12 15:37:58.620
+!MESSAGE Local timestamp file does not exist: C:\SiliconLabs\SimplicityStudio\v5\offline\common\Simplicity_Studio_Terms_of_Use_and_Privacy_Statement.timestamp
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2023-12-12 15:38:39.278
+!MESSAGE No digest algorithm is available to verify download of org.eclipse.update.feature,com.silabs.wisun.target.family.product.feature.metadata.resource,5.6.4.202305311732-344.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2023-12-12 15:38:39.380
+!MESSAGE No digest algorithm is available to verify download of org.eclipse.update.feature,com.silabs.ffd.family.product.feature.metadata.resource,5.6.4.202305311732-344.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2023-12-12 15:38:39.423
+!MESSAGE No digest algorithm is available to verify download of org.eclipse.update.feature,com.silabs.8051.family.product.feature.metadata.resource,5.6.4.202305311732-344.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2023-12-12 15:38:39.450
+!MESSAGE No digest algorithm is available to verify download of org.eclipse.update.feature,com.silabs.zwave.target.family.product.feature.metadata.resource,5.6.4.202305311732-344.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2023-12-12 15:38:39.486
+!MESSAGE No digest algorithm is available to verify download of org.eclipse.update.feature,com.silabs.ble.target.family.product.feature.metadata.resource,5.6.4.202305311732-344.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2023-12-12 15:38:39.512
+!MESSAGE No digest algorithm is available to verify download of org.eclipse.update.feature,com.silabs.thread.target.family.product.feature.metadata.resource,5.6.4.202305311732-344.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2023-12-12 15:38:39.558
+!MESSAGE No digest algorithm is available to verify download of org.eclipse.update.feature,com.silabs.zigbee.target.family.product.feature.metadata.resource,5.6.4.202305311732-344.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2023-12-12 15:38:39.581
+!MESSAGE No digest algorithm is available to verify download of org.eclipse.update.feature,com.silabs.gsdk.family.product.feature.metadata.resource,5.6.4.202305311732-344.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2023-12-12 15:38:39.608
+!MESSAGE No digest algorithm is available to verify download of org.eclipse.update.feature,com.silabs.proprietary.target.family.product.feature.metadata.resource,5.6.4.202305311732-344.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2023-12-12 15:38:39.640
+!MESSAGE No digest algorithm is available to verify download of org.eclipse.update.feature,com.silabs.efm32.family.product.feature.metadata.resource,5.6.4.202305311732-344.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2023-12-12 15:38:39.666
+!MESSAGE No digest algorithm is available to verify download of org.eclipse.update.feature,com.silabs.openthread.target.family.product.feature.metadata.resource,5.6.4.202305311732-344.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2023-12-12 15:38:39.699
+!MESSAGE No digest algorithm is available to verify download of org.eclipse.update.feature,com.silabs.wireless.family.product.feature.metadata.resource,5.6.4.202305311732-344.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2023-12-12 15:38:42.588
+!MESSAGE No digest algorithm is available to verify download of org.eclipse.update.feature,com.silabs.ss.tool.ide.external.vscode.feature.metadata.resource,1.0.2.202310131315-9.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2023-12-12 15:38:42.708
+!MESSAGE No digest algorithm is available to verify download of org.eclipse.update.feature,com.silabs.sdk.exx32.v6.1.feature.metadata.resource,6.1.9.0.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2023-12-12 15:38:42.770
+!MESSAGE No digest algorithm is available to verify download of org.eclipse.update.feature,com.silabs.ss.tool.efp.feature.metadata.resource,4.0.10.202306061607-257.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2023-12-12 15:38:42.802
+!MESSAGE No digest algorithm is available to verify download of org.eclipse.update.feature,com.silabs.ss.tool.battery_estimator.feature.metadata.resource,4.2.4.202307222254-395.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2023-12-12 15:38:42.872
+!MESSAGE No digest algorithm is available to verify download of org.eclipse.update.feature,com.silabs.ss.segger.systemview.integration.feature.metadata.resource,4.2.4.202306031654-366.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2023-12-12 15:38:42.938
+!MESSAGE No digest algorithm is available to verify download of org.eclipse.update.feature,com.silabs.tool.app.canopen.feature.metadata.resource,2.0.16.0.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2023-12-12 15:38:43.207
+!MESSAGE No digest algorithm is available to verify download of org.eclipse.update.feature,com.silabs.ss.tool.zwave.zniffer.feature.metadata.resource,1.1.2.202305251646-139.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2023-12-12 15:38:43.240
+!MESSAGE No digest algorithm is available to verify download of org.eclipse.update.feature,com.silabs.ss.tool.zwave.pccontroller.feature.metadata.resource,1.1.1.202306061552-232.
+
+!ENTRY com.silabs.ss.tool.installer.core 1 0 2023-12-12 15:38:46.507
+!MESSAGE Latest GSDK version in logNewInstall: 4.3.2
+
+!ENTRY com.silabs.ss.tool.installer.core 2 0 2023-12-12 15:38:51.503
+!MESSAGE Problem getting package resources: changelog
+
+!ENTRY com.silabs.ss.tool.installer.ui 4 0 2023-12-12 15:38:52.722
+!MESSAGE git command canceled
+!STACK 1
+org.eclipse.core.runtime.CoreException: git command canceled
+	at com.silabs.ss.platform.api.rcp.core.StatusReporter.newCoreException(StatusReporter.java:244)
+	at com.silabs.ss.platform.internal.gitrepo.GitCommandLineUtility.runAdapterFunc(GitCommandLineUtility.java:166)
+	at com.silabs.ss.platform.internal.gitrepo.GitRepo.doClone(GitRepo.java:380)
+	at com.silabs.ss.platform.internal.gitrepo.GitRepo.doCloneOrFetch(GitRepo.java:343)
+	at com.silabs.ss.platform.internal.gitrepo.GitRepo.doSyncRepoRemote(GitRepo.java:318)
+	at com.silabs.ss.platform.internal.gitrepo.GitRepo.syncRepo(GitRepo.java:137)
+	at com.silabs.ss.tool.installer.ui.servlet.SDKRepoInstallationWorker.runNewInstallation(SDKRepoInstallationWorker.java:525)
+	at com.silabs.ss.tool.installer.ui.servlet.SDKRepoInstallationWorker.run(SDKRepoInstallationWorker.java:258)
+!SUBENTRY 1 com.silabs.ss.platform.repos.core 4 0 2023-12-12 15:38:52.723
+!MESSAGE git command canceled
+
+!ENTRY com.silabs.ss.platform.repos.core 4 0 2023-12-12 15:38:52.748
+!MESSAGE 1 exceptions: [java.io.IOException: Unable to delete file: C:\Users\Workstation\SimplicityStudio\SDKs\gecko_sdk_8\.git]
+!STACK 0
+org.apache.commons.io.IOExceptionList: 1 exceptions: [java.io.IOException: Unable to delete file: C:\Users\Workstation\SimplicityStudio\SDKs\gecko_sdk_8\.git]
+	at org.apache.commons.io.FileUtils.cleanDirectory(FileUtils.java:345)
+	at org.apache.commons.io.FileUtils.deleteDirectory(FileUtils.java:1206)
+	at com.silabs.ss.platform.internal.repos.manager.RepoManager.doOnDescriptorEvent(RepoManager.java:209)
+	at com.silabs.ss.platform.api.descriptor.core.manager.BaseDescriptorManager.onDescriptorEvent(BaseDescriptorManager.java:546)
+	at com.silabs.ss.platform.api.descriptor.core.manager.BaseDescriptorManager.lambda$0(BaseDescriptorManager.java:80)
+	at com.silabs.ss.platform.api.descriptor.core.registry.BaseDatabaseRegistry.lambda$3(BaseDatabaseRegistry.java:408)
+	at com.silabs.java.utils.ListenerList.fire(ListenerList.java:127)
+	at com.silabs.java.utils.ListenerList.fireOrQueue(ListenerList.java:166)
+	at com.silabs.ss.platform.api.descriptor.core.registry.BaseDatabaseRegistry.doRemoveDescriptor(BaseDatabaseRegistry.java:408)
+	at com.silabs.ss.platform.api.descriptor.core.registry.BaseDatabaseRegistry.removeDescriptor(BaseDatabaseRegistry.java:395)
+	at com.silabs.ss.platform.api.descriptor.core.registry.BaseRegistry.removeDescriptor(BaseRegistry.java:402)
+	at com.silabs.ss.platform.api.descriptor.core.manager.BaseDescriptorManager.removeDescriptor(BaseDescriptorManager.java:371)
+	at com.silabs.ss.platform.api.descriptor.core.manager.BaseManager.removeDescriptor(BaseManager.java:420)
+	at com.silabs.ss.platform.internal.repos.manager.RepoManager.removeDescriptor(RepoManager.java:159)
+	at com.silabs.ss.platform.internal.repos.manager.RepoManager.removeDescriptor(RepoManager.java:1)
+	at com.silabs.ss.tool.installer.ui.servlet.SDKRepoInstallationWorker.lambda$6(SDKRepoInstallationWorker.java:563)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.silabs.ss.tool.installer.ui.servlet.SDKRepoInstallationWorker.runNewInstallation(SDKRepoInstallationWorker.java:563)
+	at com.silabs.ss.tool.installer.ui.servlet.SDKRepoInstallationWorker.run(SDKRepoInstallationWorker.java:258)
+Caused by: java.io.IOException: Unable to delete file: C:\Users\Workstation\SimplicityStudio\SDKs\gecko_sdk_8\.git
+	at org.apache.commons.io.FileUtils.forceDelete(FileUtils.java:1425)
+	at org.apache.commons.io.FileUtils.cleanDirectory(FileUtils.java:338)
+	... 18 more
+Caused by: java.nio.file.FileSystemException: C:\Users\Workstation\SimplicityStudio\SDKs\gecko_sdk_8\.git\objects\pack\tmp_pack_rm2puF: The process cannot access the file because it is being used by another process
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:92)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:275)
+	at java.base/sun.nio.fs.AbstractFileSystemProvider.deleteIfExists(AbstractFileSystemProvider.java:110)
+	at java.base/java.nio.file.Files.deleteIfExists(Files.java:1191)
+	at org.apache.commons.io.file.DeletingPathVisitor.visitFile(DeletingPathVisitor.java:142)
+	at org.apache.commons.io.file.DeletingPathVisitor.visitFile(DeletingPathVisitor.java:36)
+	at java.base/java.nio.file.Files.walkFileTree(Files.java:2811)
+	at java.base/java.nio.file.Files.walkFileTree(Files.java:2882)
+	at org.apache.commons.io.file.PathUtils.visitFileTree(PathUtils.java:687)
+	at org.apache.commons.io.file.PathUtils.deleteDirectory(PathUtils.java:328)
+	at org.apache.commons.io.file.PathUtils.delete(PathUtils.java:303)
+	at org.apache.commons.io.file.PathUtils.delete(PathUtils.java:280)
+	at org.apache.commons.io.FileUtils.forceDelete(FileUtils.java:1423)
+	... 19 more
+
+!ENTRY com.silabs.ss.tool.installer.core 2 0 2023-12-12 15:38:58.374
+!MESSAGE Problem getting package resources: changelog
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2023-12-12 15:39:01.570
+!MESSAGE No digest algorithm is available to verify download of org.eclipse.update.feature,com.silabs.sdk.gecko_platform.v3.2.feature.metadata.resource,3.2.9.202310242107-252.
+
+!ENTRY com.silabs.ss.tool.installer.core 1 0 2023-12-12 15:39:23.494
+!MESSAGE Latest GSDK version in logNewInstall: 4.3.2
+
+!ENTRY com.silabs.ss.tool.installer.core 1 0 2023-12-12 15:46:20.124
+!MESSAGE realFeaturesSet is null or empty for com.silabs.ss.bluetooth.tool_ncp_commander.feature.metadata.resource
+
+!ENTRY com.silabs.ss.tool.installer.core 1 0 2023-12-12 15:46:20.125
+!MESSAGE realFeaturesSet is null or empty for com.silabs.thread.target.family.product.feature.metadata.resource
+
+!ENTRY com.silabs.ss.tool.installer.core 1 0 2023-12-12 15:46:20.125
+!MESSAGE realFeaturesSet is null or empty for com.silabs.external.json.feature.metadata.resource
+
+!ENTRY com.silabs.ss.tool.installer.core 2 0 2023-12-12 15:46:24.187
+!MESSAGE Problem getting package resources: changelog
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 15:46:48.115
+!MESSAGE no board info
+
+!ENTRY com.silabs.ss.platform.rcp.core 4 0 2023-12-12 15:47:16.687
+!MESSAGE Demo information file is empty at C:\SiliconLabs\SimplicityStudio\v5\configuration\org.eclipse.osgi\1977\0\.cp\demos\demos.xml
+
+!ENTRY com.silabs.ss.platform.demos.core 4 0 2023-12-12 15:47:17.323
+!MESSAGE Property 'imageFile' not found: C:/Users/Workstation/SimplicityStudio/SDKs/gecko_sdk_2/extension/matter_extension/demos/lock-app-thread/lock-app-thread-no-led/BRD4317A/chip-efr32-lock-example.s37
+
+!ENTRY com.silabs.ss.platform.demos.core 4 0 2023-12-12 15:47:17.325
+!MESSAGE Property 'imageFile' not found: C:/Users/Workstation/SimplicityStudio/SDKs/gecko_sdk_2/extension/matter_extension/demos/lock-app-thread/lock-app-thread-no-led/BRD4319A/chip-efr32-lock-example.s37
+
+!ENTRY com.silabs.ss.platform.demos.core 4 0 2023-12-12 15:47:17.333
+!MESSAGE Property 'imageFile' not found: C:/Users/Workstation/SimplicityStudio/SDKs/gecko_sdk_2/extension/matter_extension/demos/lock-app-thread/lock-app-thread-no-led/BRD4316A/chip-efr32-lock-example.s37
+
+!ENTRY com.silabs.ss.platform.demos.core 4 0 2023-12-12 15:47:18.645
+!MESSAGE Property 'imageFile' not found: C:/Users/Workstation/SimplicityStudio/SDKs/gecko_sdk_8/extension/matter_extension/demos/BRD2704A/OpenThread/lighting-app-2704.s37
+
+!ENTRY com.silabs.ss.platform.rcp.core 2 0 2023-12-12 15:47:19.246
+!MESSAGE Unknown architecture(s) [efm32~series[2]~device_configuration[4]] in sample app Internal Storage Bootloader (single image on 512kB device with 131072k flash base)
+
+!ENTRY com.silabs.ss.platform.rcp.core 2 0 2023-12-12 15:47:19.248
+!MESSAGE Unknown architecture(s) [efm32~series[2]~device_configuration[4]] in sample app Internal Storage Bootloader (single image on 1536kB device with 131072k flash base)
+
+!ENTRY com.silabs.ss.platform.rcp.core 2 0 2023-12-12 15:47:19.250
+!MESSAGE Unknown architecture(s) [efm32~series[2]~device_configuration[2]~flash[352K]] in sample app Internal Storage Bootloader (single image on 352kB device)
+
+!ENTRY com.silabs.ss.platform.rcp.core 2 0 2023-12-12 15:47:19.253
+!MESSAGE Unknown architecture(s) [efm32~series[2]~device_configuration[4]] in sample app Internal Storage Bootloader (single image on 352kB device with 131072k flash base)
+
+!ENTRY com.silabs.ss.framework.project.core 4 0 2023-12-12 15:47:33.406
+!MESSAGE Template project file not found: C:\Users\Workstation\SimplicityStudio\SDKs\gecko_sdk_7\extension\wiseconnect\examples\_internal\Wireless_Examples\ble\battery_service\battery_service.slcp
+Template project file not found: C:\Users\Workstation\SimplicityStudio\SDKs\gecko_sdk_7\extension\wiseconnect\examples\_internal\Wireless_Examples\ble\ble_chat\ble_chat.slcp
+Template project file not found: C:\Users\Workstation\SimplicityStudio\SDKs\gecko_sdk_7\extension\wiseconnect\examples\_internal\Wireless_Examples\ble\ble_peripheral\ble_peripheral.slcp
+Template project file not found: C:\Users\Workstation\SimplicityStudio\SDKs\gecko_sdk_7\extension\wiseconnect\examples\_internal\Wireless_Examples\ble\ble_simple_smp\ble_simple_smp.slcp
+Template project file not found: C:\Users\Workstation\SimplicityStudio\SDKs\gecko_sdk_7\extension\wiseconnect\examples\_internal\Wireless_Examples\ble\blood_pressure\blood_pressure.slcp
+Template project file not found: C:\Users\Workstation\SimplicityStudio\SDKs\gecko_sdk_7\extension\wiseconnect\examples\_internal\Wireless_Examples\ble\glucose\glucose.slcp
+Template project file not found: C:\Users\Workstation\SimplicityStudio\SDKs\gecko_sdk_7\extension\wiseconnect\examples\_internal\Wireless_Examples\ble\health_thermometer\health_thermometer.slcp
+Template project file not found: C:\Users\Workstation\SimplicityStudio\SDKs\gecko_sdk_7\extension\wiseconnect\examples\_internal\Wireless_Examples\wlan_ble\wifi_ble_power_save\wifi_ble_power_save.slcp
+Template project file not found: C:\Users\Workstation\SimplicityStudio\SDKs\gecko_sdk_7\extension\wiseconnect\examples\_internal\Wireless_Examples\wlan\http_client\http_client_app.slcp
+Template project file not found: C:\Users\Workstation\SimplicityStudio\SDKs\gecko_sdk_7\extension\wiseconnect\examples\_internal\Wireless_Examples\wlan\http_client_post_data\http_client_post_data_app.slcp
+Template project file not found: C:\Users\Workstation\SimplicityStudio\SDKs\gecko_sdk_7\extension\wiseconnect\examples\_internal\Wireless_Examples\wlan\instant_bgscan\instant_bgscan.slcp
+Template project file not found: C:\Users\Workstation\SimplicityStudio\SDKs\gecko_sdk_7\extension\wiseconnect\examples\_internal\Wireless_Examples\wlan\otaf\ota_firmware_update_app.slcp
+Template project file not found: C:\Users\Workstation\SimplicityStudio\SDKs\gecko_sdk_7\extension\wiseconnect\examples\_internal\Wireless_Examples\wlan\ssl_client\ssl_client.slcp
+Template project file not found: C:\Users\Workstation\SimplicityStudio\SDKs\gecko_sdk_7\extension\wiseconnect\examples\_internal\Wireless_Examples\wlan\tcp_client\tcp_client.slcp
+Template project file not found: C:\Users\Workstation\SimplicityStudio\SDKs\gecko_sdk_7\extension\wiseconnect\examples\_internal\Wireless_Examples\wlan\udp_client\udp_client.slcp
+
+!STACK 0
+java.lang.Exception
+	at com.silabs.java.utils.ExceptionUtils.newMinimalStackException(ExceptionUtils.java:29)
+	at com.silabs.ss.framework.project.internal.core.templates.SDKProjectTemplateDetector.scanForSDKDesc(SDKProjectTemplateDetector.java:92)
+	at com.silabs.ss.framework.project.internal.core.templates.SDKProjectTemplateDetector.quickScan(SDKProjectTemplateDetector.java:55)
+	at com.silabs.ss.platform.api.descriptor.core.registry.BaseDetector.doDetectDescriptors(BaseDetector.java:71)
+	at com.silabs.ss.platform.api.descriptor.core.registry.BaseDetector.detectDescriptors(BaseDetector.java:57)
+	at com.silabs.ss.framework.project.internal.core.templates.SDKProjectTemplateDetector.detectDescriptors(SDKProjectTemplateDetector.java:78)
+	at com.silabs.ss.framework.project.internal.core.templates.SDKProjectTemplateDetector.detectDescriptors(SDKProjectTemplateDetector.java:1)
+	at com.silabs.ss.platform.api.descriptor.core.registry.BaseRegistry.detectDescriptors(BaseRegistry.java:711)
+	at com.silabs.ss.platform.api.descriptor.core.registry.BaseRegistry.detectDescriptors(BaseRegistry.java:673)
+	at ... extra clipped....(Unknown Source)
+
+!ENTRY com.silabs.ss.framework.project.core 4 0 2023-12-12 15:47:33.625
+!MESSAGE Template project file not found: C:\Users\Workstation\SimplicityStudio\SDKs\gecko_sdk_8\extension\matter_extension\slc\workspaces\window-app\series-2\window-app-minimal-internal-thread-bootloader.slcw
+
+!STACK 0
+java.lang.Exception
+	at com.silabs.java.utils.ExceptionUtils.newMinimalStackException(ExceptionUtils.java:29)
+	at com.silabs.ss.framework.project.internal.core.templates.SDKProjectTemplateDetector.scanForSDKDesc(SDKProjectTemplateDetector.java:92)
+	at com.silabs.ss.framework.project.internal.core.templates.SDKProjectTemplateDetector.quickScan(SDKProjectTemplateDetector.java:55)
+	at com.silabs.ss.platform.api.descriptor.core.registry.BaseDetector.doDetectDescriptors(BaseDetector.java:71)
+	at com.silabs.ss.platform.api.descriptor.core.registry.BaseDetector.detectDescriptors(BaseDetector.java:57)
+	at com.silabs.ss.framework.project.internal.core.templates.SDKProjectTemplateDetector.detectDescriptors(SDKProjectTemplateDetector.java:78)
+	at com.silabs.ss.framework.project.internal.core.templates.SDKProjectTemplateDetector.detectDescriptors(SDKProjectTemplateDetector.java:1)
+	at com.silabs.ss.platform.api.descriptor.core.registry.BaseRegistry.detectDescriptors(BaseRegistry.java:711)
+	at com.silabs.ss.platform.api.descriptor.core.registry.BaseRegistry.detectDescriptors(BaseRegistry.java:673)
+	at ... extra clipped....(Unknown Source)
+
+!ENTRY com.silabs.ss.platform.rcp.core 2 0 2023-12-12 15:51:49.845
+!MESSAGE Warning: C:\Users\Workstation\SimplicityStudio\SDKs\gecko_sdk_8\extension\matter_extension\slc\component\matter-clusters\matter_access_control.slcc
+  - package: missing required field
+C:\Users\Workstation\SimplicityStudio\SDKs\gecko_sdk_8\extension\matter_extension\slc\component\matter-clusters\matter_account_login.slcc
+  - package: missing required field
+C:\Users\Workstation\SimplicityStudio\SDKs\gecko_sdk_8\extension\matter_extension\slc\component\matter-clusters\matter_administrator_commissioning.slcc
+  - package: missing required field
+C:\Users\Workstation\SimplicityStudio\SDKs\gecko_sdk_8\extension\matter_extension\slc\component\matter-clusters\matter_application_basic.slcc
+  - package: missing required field
+C:\Users\Workstation\SimplicityStudio\SDKs\gecko_sdk_8\extension\matter_extension\slc\component\matter-clusters\matter_application_launcher.slcc
+  - package: missing required field
+C:\Users\Workstation\SimplicityStudio\SDKs\gecko_sdk_8\extension\matter_extension\slc\component\matter-clusters\matter_audio_output.slcc
+  - package: missing required field
+C:\Users\Workstation\SimplicityStudio\SDKs\gecko_sdk_8\extension\matter_extension\slc\component\matter-clusters\matter_barrier_control.slcc
+  - package: missing required field
+C:\Users\Workstation\SimplicityStudio\SDKs\gecko_sdk_8\extension\matter_extension\slc\component\matter-clusters\matter_basic.slcc
+  - package: missing required field
+C:\Users\Workstation\SimplicityStudio\SDKs\gecko_sdk_8\extension\matter_extension\slc\component\matter-clusters\matter_bindings.slcc
+  - package: missing required field
+C:\Users\Workstation\SimplicityStudio\SDKs\gecko_sdk_8\extension\matter_extension\slc\component\matter-clusters\matter_bridged_device_basic_information.slcc
+  - package: missing required field
+C:\Users\Workstation\SimplicityStudio\SDKs\gecko_sdk_8\extension\matter_extension\slc\component\matter-clusters\matter_channel.slcc
+  - package: missing required field
+C:\Users\Workstation\SimplicityStudio\SDKs\gecko_sdk_8\extension\matter_extension\slc\component\matter-clusters\matter_color_control.slcc
+  - package: missing required field
+C:\Users\Workstation\SimplicityStudio\SDKs\gecko_sdk_8\extension\matter_extension\slc\component\matter-clusters\matter_content_launch.slcc
+  - package: missing required field
+C:\Users\Workstation\SimplicityStudio\SDKs\gecko_sdk_8\extension\matter_extension\slc\component\matter-clusters\matter_descriptor.slcc
+  - package: missing required field
+C:\Users\Workstation\SimplicityStudio\SDKs\gecko_sdk_8\extension\matter_extension\slc\component\matter-clusters\matter_diagnostic_logs.slcc
+  - package: missing required field
+C:\Users\Workstation\SimplicityStudio\SDKs\gecko_sdk_8\extension\matter_extension\slc\component\matter-clusters\matter_door_lock.slcc
+  - package: missing required field
+C:\Users\Workstation\SimplicityStudio\SDKs\gecko_sdk_8\extension\matter_extension\slc\component\matter-clusters\matter_ethernet_network_diagnostics.slcc
+  - package: missing required field
+C:\Users\Workstation\SimplicityStudio\SDKs\gecko_sdk_8\extension\matter_extension\slc\component\matter-clusters\matter_fan_control.slcc
+  - package: missing required field
+C:\Users\Workstation\SimplicityStudio\SDKs\gecko_sdk_8\extension\matter_extension\slc\component\matter-clusters\matter_fault_injection.slcc
+  - package: missing required field
+C:\Users\Workstation\SimplicityStudio\SDKs\gecko_sdk_8\extension\matter_extension\slc\component\matter-clusters\matter_fixed_label.slcc
+  - package: missing required field
+C:\Users\Workstation\SimplicityStudio\SDKs\gecko_sdk_8\extension\matter_extension\slc\component\matter-clusters\matter_general_commissioning.slcc
+  - package: missing required field
+C:\Users\Workstation\SimplicityStudio\SDKs\gecko_sdk_8\extension\matter_extension\slc\component\matter-clusters\matter_general_diagnostics.slcc
+  - package: missing required field
+C:\Users\Workstation\SimplicityStudio\SDKs\gecko_sdk_8\extension\matter_extension\slc\component\matter-clusters\matter_groups.slcc
+  - package: missing required field
+C:\Users\Workstation\SimplicityStudio\SDKs\gecko_sdk_8\extension\matter_extension\slc\component\matter-clusters\matter_groups_client.slcc
+  - package: missing required field
+C:\Users\Workstation\SimplicityStudio\SDKs\gecko_sdk_8\extension\matter_extension\slc\component\matter-clusters\matter_group_key_mgmt.slcc
+  - package: missing required field
+C:\Users\Workstation\SimplicityStudio\SDKs\gecko_sdk_8\extension\matter_extension\slc\component\matter-clusters\matter_ias_zone.slcc
+  - package: missing required field
+C:\Users\Workstation\SimplicityStudio\SDKs\gecko_sdk_8\extension\matter_extension\slc\component\matter-clusters\matter_ias_zone_client.slcc
+  - package: missing required field
+C:\Users\Workstation\SimplicityStudio\SDKs\gecko_sdk_8\extension\matter_extension\slc\component\matter-clusters\matter_identify.slcc
+  - package: missing required field
+C:\Users\Workstation\SimplicityStudio\SDKs\gecko_sdk_8\extension\matter_extension\slc\component\matter-clusters\matter_identify_client.slcc
+  - package: missing required field
+C:\Users\Workstation\SimplicityStudio\SDKs\gecko_sdk_8\extension\matter_extension\slc\component\matter-clusters\matter_keypad_input.slcc
+  - package: missing required field
+C:\Users\Workstation\SimplicityStudio\SDKs\gecko_sdk_8\extension\matter_extension\slc\component\matter-clusters\matter_level_control.slcc
+  - package: missing required field
+C:\Users\Workstation\SimplicityStudio\SDKs\gecko_sdk_8\extension\matter_extension\slc\component\matter-clusters\matter_localization_configuration.slcc
+  - package: missing required field
+C:\Users\Workstation\SimplicityStudio\SDKs\gecko_sdk_8\extension\matter_extension\slc\component\matter-clusters\matter_low_power.slcc
+  - package: missing required field
+C:\Users\Workstation\SimplicityStudio\SDKs\gecko_sdk_8\extension\matter_extension\slc\component\matter-clusters\matter_media_input.slcc
+  - package: missing required field
+C:\Users\Workstation\SimplicityStudio\SDKs\gecko_sdk_8\extension\matter_extension\slc\component\matter-clusters\matter_media_playback.slcc
+  - package: missing required field
+C:\Users\Workstation\SimplicityStudio\SDKs\gecko_sdk_8\extension\matter_extension\slc\component\matter-clusters\matter_mode_select.slcc
+  - package: missing required field
+C:\Users\Workstation\SimplicityStudio\SDKs\gecko_sdk_8\extension\matter_extension\slc\component\matter-clusters\matter_network_commissioning.slcc
+  - package: missing required field
+C:\Users\Workstation\SimplicityStudio\SDKs\gecko_sdk_8\extension\matter_extension\slc\component\matter-clusters\matter_occupancy_sensor.slcc
+  - package: missing required field
+C:\Users\Workstation\SimplicityStudio\SDKs\gecko_sdk_8\extension\matter_extension\slc\component\matter-clusters\matter_on_off.slcc
+  - package: missing required field
+C:\Users\Workstation\SimplicityStudio\SDKs\gecko_sdk_8\extension\matter_extension\slc\component\matter-clusters\matter_operational_credentials.slcc
+  - package: missing required field
+C:\Users\Workstation\SimplicityStudio\SDKs\gecko_sdk_8\extension\matter_extension\slc\component\matter-clusters\matter_ota_provider.slcc
+  - package: missing required field
+C:\Users\Workstation\SimplicityStudio\SDKs\gecko_sdk_8\extension\matter_extension\slc\component\matter-clusters\matter_ota_requestor.slcc
+  - package: missing required field
+C:\Users\Workstation\SimplicityStudio\SDKs\gecko_sdk_8\extension\matter_extension\slc\component\matter-clusters\matter_power_source.slcc
+  - package: missing required field
+C:\Users\Workstation\SimplicityStudio\SDKs\gecko_sdk_8\extension\matter_extension\slc\component\matter-clusters\matter_power_source_configuration.slcc
+  - package: missing required field
+C:\Users\Workstation\SimplicityStudio\SDKs\gecko_sdk_8\extension\matter_extension\slc\component\matter-clusters\matter_pump_configuration_and_control.slcc
+  - package: missing required field
+C:\Users\Workstation\SimplicityStudio\SDKs\gecko_sdk_8\extension\matter_extension\slc\component\matter-clusters\matter_pump_configuration_and_control_client.slcc
+  - package: missing required field
+C:\Users\Workstation\SimplicityStudio\SDKs\gecko_sdk_8\extension\matter_extension\slc\component\matter-clusters\matter_scenes.slcc
+  - package: missing required field
+C:\Users\Workstation\SimplicityStudio\SDKs\gecko_sdk_8\extension\matter_extension\slc\component\matter-clusters\matter_scenes_client.slcc
+  - package: missing required field
+C:\Users\Workstation\SimplicityStudio\SDKs\gecko_sdk_8\extension\matter_extension\slc\component\matter-clusters\matter_software_diagnostics.slcc
+  - package: missing required field
+C:\Users\Workstation\SimplicityStudio\SDKs\gecko_sdk_8\extension\matter_extension\slc\component\matter-clusters\matter_switch.slcc
+  - package: missing required field
+C:\Users\Workstation\SimplicityStudio\SDKs\gecko_sdk_8\extension\matter_extension\slc\component\matter-clusters\matter_target_navigator.slcc
+  - package: missing required field
+C:\Users\Workstation\SimplicityStudio\SDKs\gecko_sdk_8\extension\matter_extension\slc\component\matter-clusters\matter_test_cluster.slcc
+  - package: missing required field
+C:\Users\Workstation\SimplicityStudio\SDKs\gecko_sdk_8\extension\matter_extension\slc\component\matter-clusters\matter_thermostat.slcc
+  - package: missing required field
+C:\Users\Workstation\SimplicityStudio\SDKs\gecko_sdk_8\extension\matter_extension\slc\component\matter-clusters\matter_thermostat_client.slcc
+  - package: missing required field
+C:\Users\Workstation\SimplicityStudio\SDKs\gecko_sdk_8\extension\matter_extension\slc\component\matter-clusters\matter_thermostat_user_interface_configuration.slcc
+  - package: missing required field
+C:\Users\Workstation\SimplicityStudio\SDKs\gecko_sdk_8\extension\matter_extension\slc\component\matter-clusters\matter_thread_network_diagnostics.slcc
+  - package: missing required field
+C:\Users\Workstation\SimplicityStudio\SDKs\gecko_sdk_8\extension\matter_extension\slc\component\matter-clusters\matter_time_format_localization.slcc
+  - package: missing required field
+C:\Users\Workstation\SimplicityStudio\SDKs\gecko_sdk_8\extension\matter_extension\slc\component\matter-clusters\matter_user_label.slcc
+  - package: missing required field
+C:\Users\Workstation\SimplicityStudio\SDKs\gecko_sdk_8\extension\matter_extension\slc\component\matter-clusters\matter_wake_on_lan.slcc
+  - package: missing required field
+C:\Users\Workstation\SimplicityStudio\SDKs\gecko_sdk_8\extension\matter_extension\slc\component\matter-clusters\matter_wifi_network_diagnostics.slcc
+  - package: missing required field
+C:\Users\Workstation\SimplicityStudio\SDKs\gecko_sdk_8\extension\matter_extension\slc\component\matter-clusters\matter_window_covering.slcc
+  - package: missing required field
+C:\Users\Workstation\SimplicityStudio\SDKs\gecko_sdk_8\extension\matter_extension\slc\component\matter-platform\display\matter_lcd.slcc
+  - include -> [1] -> file_list -> [0] -> condition: expecting a list, but got 'matter_window'
+  - include -> [2] -> file_list -> [0] -> condition: expecting a list, but got 'matter_thermostat_app'
+  - include -> [2] -> file_list -> [1] -> condition: expecting a list, but got 'matter_thermostat_app'
+C:\Users\Workstation\SimplicityStudio\SDKs\gecko_sdk_8\extension\matter_extension\slc\component\matter-platform\display\matter_lcd_917SOC.slcc
+  - component: junk key
+  - include -> [1] -> file_list -> [0] -> condition: expecting a list, but got 'matter_window'
+  - include -> [2] -> file_list -> [0] -> condition: expecting a list, but got 'matter_thermostat_app'
+  - include -> [2] -> file_list -> [1] -> condition: expecting a list, but got 'matter_thermostat_app'
+C:\Users\Workstation\SimplicityStudio\SDKs\gecko_sdk_8\extension\matter_extension\slc\component\matter-platform\low-power\matter_subscription_persistence.slcc
+  - include -> [0] -> file_list: expecting a list, but got 'SimpleSubscriptionResumptionStorage.h'
+C:\Users\Workstation\SimplicityStudio\SDKs\gecko_sdk_8\extension\matter_extension\slc\component\matter-sensors\matter_contact_sensor_type.slcc
+  - package: missing required field
+C:\Users\Workstation\SimplicityStudio\SDKs\gecko_sdk_8\extension\matter_extension\slc\component\matter-sensors\matter_occupancy_sensor_type.slcc
+  - package: missing required field
+C:\Users\Workstation\SimplicityStudio\SDKs\gecko_sdk_8\extension\matter_extension\slc\component\matter-sensors\matter_temperature_sensor_type.slcc
+  - package: missing required field
+C:\Users\Workstation\SimplicityStudio\SDKs\gecko_sdk_8\extension\matter_extension\slc\component\matter-wifi\rs911x\rs911x_ncp_common.slcc
+  - quality: missing required field
+C:\Users\Workstation\SimplicityStudio\SDKs\gecko_sdk_8\extension\matter_extension\slc\component\matter-wifi\rs911x\rs911x_ncp_extension.slcc
+  - quality: missing required field
+C:\Users\Workstation\SimplicityStudio\SDKs\gecko_sdk_8\extension\matter_extension\slc\component\matter-wifi\rs911x\siwx917_ncp_extension.slcc
+  - quality: missing required field
+C:\Users\Workstation\SimplicityStudio\SDKs\gecko_sdk_8\extension\matter_extension\slc\component\matter-wifi\wf200\wf200_ncp_extension.slcc
+  - component: junk key
+  - quality: missing required field
+
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 15:52:06.896
+!MESSAGE selectedProfileId: null; defaultProfileId: GNU with spaces
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-12-12 15:52:40.777
+!MESSAGE Indexed 'vibration-sensor' (435 sources, 1,060 headers) in 31.6 sec: 83,950 declarations; 267,827 references; 0 unresolved inclusions; 16 syntax errors; 4,798 unresolved names (1.3%)
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:35.835
+!MESSAGE editor file home calculation for Studio resulted in C:\Users\Workstation\Documents\GitHub\Vibration-Sensor\Code\vibration-sensor\.uceditor for vibration-sensor with component UARTDRV USART (vcom)
+
+!ENTRY com.silabs.ss.tool.uc.editor 1 0 2023-12-12 16:05:35.877
+!MESSAGE Inside PrimaryWebsocketCommunicator constructor
+
+!ENTRY com.silabs.ss.tool.uc.editor 1 0 2023-12-12 16:05:35.878
+!MESSAGE Websocket on server side linked to /ws/ucedit/filechanges
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:35.882
+!MESSAGE Servlet registered: /rest/ucedit/metadata
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:35.883
+!MESSAGE Servlet registered: /rest/ucedit/action/opensource
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:35.885
+!MESSAGE Servlet registered: /rest/ucedit/action/cmsisedit
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:35.885
+!MESSAGE sockets ready servlet being set up
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:35.887
+!MESSAGE Servlet registered: /rest/ucedit/action/socketsready
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:35.887
+!MESSAGE sockets ready servlet is ready
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:35.889
+!MESSAGE Servlet registered: /rest/ucedit/action/configsready
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:35.894
+!MESSAGE editor file home calculation for Studio resulted in C:\Users\Workstation\Documents\GitHub\Vibration-Sensor\Code\vibration-sensor\.uceditor for vibration-sensor with component UARTDRV USART (vcom)
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:36.031
+!MESSAGE Initial cmsis parsing: {sl_uartdrv_usart_vcom_config.h=Start Parse Offset: 4401
+End Parse Offset: 4401
+Parsing Error: null
+Parsing Error offset: -1
+fContainWizard: true
+}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:36.032
+!MESSAGE PinTool annotations detected. Loading ABDevice
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:36.035
+!MESSAGE Selected peripheral modification -- listeners updating
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:36.044
+!MESSAGE CMSIS Parse success for sl_uartdrv_usart_vcom_config.h
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:36.048
+!MESSAGE Preparing Websocket Pintool Update: {"configurables":{"removed":[],"updated":[{"label":"SL_UARTDRV_USART_VCOM","id":"SL_UARTDRV_USART_VCOM_REQUIREMENT","type":"cat","conf_class":"pintool"},{"parent_category_id":"SL_UARTDRV_USART_VCOM_REQUIREMENT","conf_type":"combo","initial":"None","label":"Selected Module","id":"SL_UARTDRV_USART_VCOM","type":"conf","combo_options":[{"label":"None","value":"None"},{"label":"USART0","value":"USART0"}]}]},"clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/uartdrv_usart_vcom","wsType":"config_update","conf_class":"pintool"}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:36.050
+!MESSAGE preparing cmsis websocket update: {"configurables":{"removed":[],"updated":[{"parent_category_id":"CMSIS_$sl_uartdrv_usart_vcom_config.h$_UART settings","conf_type":"spinner","initial":"115200","header":"sl_uartdrv_usart_vcom_config.h","label":"Baud rate","id":"CMSIS_$sl_uartdrv_usart_vcom_config.h$_SL_UARTDRV_USART_VCOM_BAUDRATE","type":"conf","desc":"Default: 115200"},{"parent_category_id":"CMSIS_$sl_uartdrv_usart_vcom_config.h$_UART settings","conf_type":"combo","initial":"No Parity","header":"sl_uartdrv_usart_vcom_config.h","label":"Parity mode to use","id":"CMSIS_$sl_uartdrv_usart_vcom_config.h$_SL_UARTDRV_USART_VCOM_PARITY","type":"conf","combo_options":["No Parity","Even parity","Odd parity"],"desc":"Default: usartNoParity"},{"parent_category_id":"CMSIS_$sl_uartdrv_usart_vcom_config.h$_UART settings","conf_type":"combo","initial":"1 stop bits","header":"sl_uartdrv_usart_vcom_config.h","label":"Number of stop bits to use.","id":"CMSIS_$sl_uartdrv_usart_vcom_config.h$_SL_UARTDRV_USART_VCOM_STOP_BITS","type":"conf","combo_options":["0.5 stop bits","1 stop bits","1.5 stop bits","2 stop bits"],"desc":"Default: usartStopbits1"},{"parent_category_id":"CMSIS_$sl_uartdrv_usart_vcom_config.h$_UART settings","conf_type":"combo","initial":"UART peripheral controls nRTS/nCTS","header":"sl_uartdrv_usart_vcom_config.h","label":"Flow control method","id":"CMSIS_$sl_uartdrv_usart_vcom_config.h$_SL_UARTDRV_USART_VCOM_FLOW_CONTROL_TYPE","type":"conf","combo_options":["None","Software XON/XOFF","nRTS/nCTS hardware handshake","UART peripheral controls nRTS/nCTS"],"desc":"Default: uartdrvFlowControlHwUart"},{"parent_category_id":"CMSIS_$sl_uartdrv_usart_vcom_config.h$_UART settings","conf_type":"combo","initial":"4x oversampling","header":"sl_uartdrv_usart_vcom_config.h","label":"Oversampling selection","id":"CMSIS_$sl_uartdrv_usart_vcom_config.h$_SL_UARTDRV_USART_VCOM_OVERSAMPLING","type":"conf","combo_options":["16x oversampling","8x oversampling","6x oversampling","4x oversampling"],"desc":"Default: usartOVS16"},{"parent_category_id":"CMSIS_$sl_uartdrv_usart_vcom_config.h$_UART settings","conf_type":"combo","initial":"False","header":"sl_uartdrv_usart_vcom_config.h","label":"Majority vote disable for 16x, 8x and 6x oversampling modes","id":"CMSIS_$sl_uartdrv_usart_vcom_config.h$_SL_UARTDRV_USART_VCOM_MVDIS","type":"conf","combo_options":["True","False"]},{"parent_category_id":"CMSIS_$sl_uartdrv_usart_vcom_config.h$_UART settings","conf_type":"spinner","initial":"6","header":"sl_uartdrv_usart_vcom_config.h","label":"Size of the receive operation queue","id":"CMSIS_$sl_uartdrv_usart_vcom_config.h$_SL_UARTDRV_USART_VCOM_RX_BUFFER_SIZE","type":"conf","desc":"Default: 6"},{"parent_category_id":"CMSIS_$sl_uartdrv_usart_vcom_config.h$_UART settings","conf_type":"spinner","initial":"6","header":"sl_uartdrv_usart_vcom_config.h","label":"Size of the transmit operation queue","id":"CMSIS_$sl_uartdrv_usart_vcom_config.h$_SL_UARTDRV_USART_VCOM_TX_BUFFER_SIZE","type":"conf","desc":"Default: 6"},{"header":"sl_uartdrv_usart_vcom_config.h","label":"UART settings","id":"CMSIS_$sl_uartdrv_usart_vcom_config.h$_UART settings","type":"cat","conf_class":"cmsis"}]},"clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/uartdrv_usart_vcom","header":"sl_uartdrv_usart_vcom_config.h","wsType":"config_update","conf_class":"cmsis"}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:36.079
+!MESSAGE Component Editor Pintool Marker Added: Marker [on: /vibration-sensor/vibration-sensor.pintool, id: 380, type: com.silabs.ss.framework.hwconfig.core.abproblemmarker, attributes: [location: DefaultMode PORTIO, message: DOUT must be enabled for PTI [from sl_rail_util_pti_config.h], objectPath: /DefaultMode/PORTIO, propertyId: portio.pti.enable.dout, severity: 1, transient: true], created: 12/12/23, 4:05 PM]
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:36.375
+!MESSAGE Client mentioned sockets are all ready: counting down latch
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:36.377
+!MESSAGE latch unlocked: pintool socket response sending
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:36.387
+!MESSAGE latch unlocked: cmsis socket response sending
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:36.389
+!MESSAGE New pintool options detected -- resending existing problem markers for handling.
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:36.394
+!MESSAGE Attempting to find a linkage in pintool with marker id portio.pti.enable.dout
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:36.560
+!MESSAGE Attempting to find a linkage in pintool with marker id portio.pti.enable.dout
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:36.561
+!MESSAGE Component Editor Pintool Marker Added: Marker [on: /vibration-sensor/vibration-sensor.pintool, id: 375, type: com.silabs.ss.framework.hwconfig.core.abproblemmarker, attributes: [location: , message: Requirement SL_FEM_UTIL_SLEEP is unsatisified (needs PRS instance) [from sl_fem_util_config.h], objectPath: /, severity: 1, transient: true], created: 12/12/23, 4:05 PM]
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:36.563
+!MESSAGE Component Editor Pintool Marker Added: Marker [on: /vibration-sensor/vibration-sensor.pintool, id: 376, type: com.silabs.ss.framework.hwconfig.core.abproblemmarker, attributes: [location: , message: Requirement SL_FEM_UTIL_RX is unsatisified (needs PRS instance) [from sl_fem_util_config.h], objectPath: /, severity: 1, transient: true], created: 12/12/23, 4:05 PM]
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:36.563
+!MESSAGE Component Editor Pintool Marker Added: Marker [on: /vibration-sensor/vibration-sensor.pintool, id: 377, type: com.silabs.ss.framework.hwconfig.core.abproblemmarker, attributes: [location: , message: Requirement SL_SIMPLE_BUTTON_BTN1 is unsatisified (needs GPIO instance) [from sl_simple_button_btn1_config.h], objectPath: /, severity: 1, transient: true], created: 12/12/23, 4:05 PM]
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:36.564
+!MESSAGE Component Editor Pintool Marker Added: Marker [on: /vibration-sensor/vibration-sensor.pintool, id: 378, type: com.silabs.ss.framework.hwconfig.core.abproblemmarker, attributes: [location: , message: Requirement SL_SIMPLE_BUTTON_BTN0 is unsatisified (needs GPIO instance) [from sl_simple_button_btn0_config.h], objectPath: /, severity: 1, transient: true], created: 12/12/23, 4:05 PM]
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:36.565
+!MESSAGE Component Editor Pintool Marker Added: Marker [on: /vibration-sensor/vibration-sensor.pintool, id: 379, type: com.silabs.ss.framework.hwconfig.core.abproblemmarker, attributes: [location: , message: Requirement SL_UARTDRV_USART_VCOM is unsatisified (needs USART instance) [from sl_uartdrv_usart_vcom_config.h], objectPath: /, severity: 1, transient: true], created: 12/12/23, 4:05 PM]
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:36.598
+!MESSAGE Clear CMSIS Issues WS call: {"clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/uartdrv_usart_vcom","ids":[],"wsType":"clear_issues"}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:38.147
+!MESSAGE Selected peripheral modification -- listeners updating
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:38.148
+!MESSAGE registering configuration tool pintool editor listeners for SL_UARTDRV_USART_VCOM on module USART0
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:38.152
+!MESSAGE Preparing Websocket Pintool Update: {"configurables":{"removed":[],"updated":[{"parent_category_id":"SL_UARTDRV_USART_VCOM_REQUIREMENT","conf_type":"combo","initial":"USART0","label":"Selected Module","id":"SL_UARTDRV_USART_VCOM","type":"conf","combo_options":[{"label":"None","value":"None"},{"label":"USART0","value":"USART0"}]},{"parent_category_id":"SL_UARTDRV_USART_VCOM_REQUIREMENT","label":"USART","id":"PINTOOL_CATEGORY_USART0_USART","type":"cat"},{"parent_category_id":"SL_UARTDRV_USART_VCOM_REQUIREMENT","conf_type":"combo","visible":"portio.usart0.enable.clk","rawprop":"portio.usart0.location.clk","initial":{"label":"None","value":-1},"label":"CLK","id":"USART0.$PIN.portio.usart0.location.clk.$ROUTE.CLK","type":"conf","combo_options":[{"label":"None","value":-1},{"label":"PA00","value":0},{"label":"PA01","value":1},{"label":"PA02","value":2},{"label":"PA03","value":3},{"label":"PA04","value":4},{"label":"PA05","value":5},{"label":"PA06","value":6},{"label":"PA07","value":7},{"label":"PA08","value":8},{"label":"PB00","value":16},{"label":"PB01","value":17},{"label":"PB02","value":18},{"label":"PB03","value":19},{"label":"PB04","value":20},{"label":"PC00","value":32},{"label":"PC01","value":33},{"label":"PC02","value":34},{"label":"PC03","value":35},{"label":"PC04","value":36},{"label":"PC05","value":37},{"label":"PC06","value":38},{"label":"PC07","value":39},{"label":"PD00","value":48},{"label":"PD01","value":49},{"label":"PD02","value":50},{"label":"PD03","value":51}]},{"parent_category_id":"SL_UARTDRV_USART_VCOM_REQUIREMENT","conf_type":"combo","visible":"portio.usart0.enable.cs","rawprop":"portio.usart0.location.cs","initial":{"label":"None","value":-1},"label":"CS","id":"USART0.$PIN.portio.usart0.location.cs.$ROUTE.CS","type":"conf","combo_options":[{"label":"None","value":-1},{"label":"PA00","value":0},{"label":"PA01","value":1},{"label":"PA02","value":2},{"label":"PA03","value":3},{"label":"PA04","value":4},{"label":"PA05","value":5},{"label":"PA06","value":6},{"label":"PA07","value":7},{"label":"PA08","value":8},{"label":"PB00","value":16},{"label":"PB01","value":17},{"label":"PB02","value":18},{"label":"PB03","value":19},{"label":"PB04","value":20},{"label":"PC00","value":32},{"label":"PC01","value":33},{"label":"PC02","value":34},{"label":"PC03","value":35},{"label":"PC04","value":36},{"label":"PC05","value":37},{"label":"PC06","value":38},{"label":"PC07","value":39},{"label":"PD00","value":48},{"label":"PD01","value":49},{"label":"PD02","value":50},{"label":"PD03","value":51}]},{"parent_category_id":"SL_UARTDRV_USART_VCOM_REQUIREMENT","conf_type":"combo","visible":"portio.usart0.enable.cts","rawprop":"portio.usart0.location.cts","initial":{"label":"None","value":-1},"label":"CTS","id":"USART0.$PIN.portio.usart0.location.cts.$ROUTE.CTS","type":"conf","combo_options":[{"label":"None","value":-1},{"label":"PA00","value":0},{"label":"PA01","value":1},{"label":"PA02","value":2},{"label":"PA03","value":3},{"label":"PA04","value":4},{"label":"PA05","value":5},{"label":"PA06","value":6},{"label":"PA07","value":7},{"label":"PA08","value":8},{"label":"PB00","value":16},{"label":"PB01","value":17},{"label":"PB02","value":18},{"label":"PB03","value":19},{"label":"PB04","value":20},{"label":"PC00","value":32},{"label":"PC01","value":33},{"label":"PC02","value":34},{"label":"PC03","value":35},{"label":"PC04","value":36},{"label":"PC05","value":37},{"label":"PC06","value":38},{"label":"PC07","value":39},{"label":"PD00","value":48},{"label":"PD01","value":49},{"label":"PD02","value":50},{"label":"PD03","value":51}]},{"parent_category_id":"PINTOOL_CATEGORY_USART0_USART","conf_type":"string","readonly":false,"rawprop":"peripheral.name","initial":"","label":"Custom Peripheral Name","id":"USART0.$PROP.peripheral.name","type":"conf"},{"parent_category_id":"SL_UARTDRV_USART_VCOM_REQUIREMENT","conf_type":"combo","visible":"portio.usart0.enable.rts","rawprop":"portio.usart0.location.rts","initial":{"label":"None","value":-1},"label":"RTS","id":"USART0.$PIN.portio.usart0.location.rts.$ROUTE.RTS","type":"conf","combo_options":[{"label":"None","value":-1},{"label":"PA00","value":0},{"label":"PA01","value":1},{"label":"PA02","value":2},{"label":"PA03","value":3},{"label":"PA04","value":4},{"label":"PA05","value":5},{"label":"PA06","value":6},{"label":"PA07","value":7},{"label":"PA08","value":8},{"label":"PB00","value":16},{"label":"PB01","value":17},{"label":"PB02","value":18},{"label":"PB03","value":19},{"label":"PB04","value":20},{"label":"PC00","value":32},{"label":"PC01","value":33},{"label":"PC02","value":34},{"label":"PC03","value":35},{"label":"PC04","value":36},{"label":"PC05","value":37},{"label":"PC06","value":38},{"label":"PC07","value":39},{"label":"PD00","value":48},{"label":"PD01","value":49},{"label":"PD02","value":50},{"label":"PD03","value":51}]},{"parent_category_id":"SL_UARTDRV_USART_VCOM_REQUIREMENT","conf_type":"combo","visible":"portio.usart0.enable.rx","rawprop":"portio.usart0.location.rx","initial":{"label":"None","value":-1},"label":"RX","id":"USART0.$PIN.portio.usart0.location.rx.$ROUTE.RX","type":"conf","combo_options":[{"label":"None","value":-1},{"label":"PA00","value":0},{"label":"PA01","value":1},{"label":"PA02","value":2},{"label":"PA03","value":3},{"label":"PA04","value":4},{"label":"PA05","value":5},{"label":"PA06","value":6},{"label":"PA07","value":7},{"label":"PA08","value":8},{"label":"PB00","value":16},{"label":"PB01","value":17},{"label":"PB02","value":18},{"label":"PB03","value":19},{"label":"PB04","value":20},{"label":"PC00","value":32},{"label":"PC01","value":33},{"label":"PC02","value":34},{"label":"PC03","value":35},{"label":"PC04","value":36},{"label":"PC05","value":37},{"label":"PC06","value":38},{"label":"PC07","value":39},{"label":"PD00","value":48},{"label":"PD01","value":49},{"label":"PD02","value":50},{"label":"PD03","value":51}]},{"parent_category_id":"SL_UARTDRV_USART_VCOM_REQUIREMENT","conf_type":"combo","visible":"portio.usart0.enable.tx","rawprop":"portio.usart0.location.tx","initial":{"label":"None","value":-1},"label":"TX","id":"USART0.$PIN.portio.usart0.location.tx.$ROUTE.TX","type":"conf","combo_options":[{"label":"None","value":-1},{"label":"PA00","value":0},{"label":"PA01","value":1},{"label":"PA02","value":2},{"label":"PA03","value":3},{"label":"PA04","value":4},{"label":"PA05","value":5},{"label":"PA06","value":6},{"label":"PA07","value":7},{"label":"PA08","value":8},{"label":"PB00","value":16},{"label":"PB01","value":17},{"label":"PB02","value":18},{"label":"PB03","value":19},{"label":"PB04","value":20},{"label":"PC00","value":32},{"label":"PC01","value":33},{"label":"PC02","value":34},{"label":"PC03","value":35},{"label":"PC04","value":36},{"label":"PC05","value":37},{"label":"PC06","value":38},{"label":"PC07","value":39},{"label":"PD00","value":48},{"label":"PD01","value":49},{"label":"PD02","value":50},{"label":"PD03","value":51}]}]},"clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/uartdrv_usart_vcom","wsType":"config_update","conf_class":"pintool"}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:38.153
+!MESSAGE latch unlocked: pintool socket response sending
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:38.154
+!MESSAGE New pintool options detected -- resending existing problem markers for handling.
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:38.154
+!MESSAGE Attempting to find a linkage in pintool with marker id portio.pti.enable.dout
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:38.156
+!MESSAGE Preparing Websocket Pintool Update: {"configurables":{"removed":[],"updated":[]},"clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/uartdrv_usart_vcom","wsType":"config_update","conf_class":"pintool"}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:38.156
+!MESSAGE latch unlocked: pintool socket response sending
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:38.157
+!MESSAGE Pintool data generation requested. Starting job
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:38.249
+!MESSAGE Visible Signals Modified (event detection): CTS, RTS, RX, TX
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:38.250
+!MESSAGE registering configuration tool pintool editor listeners for SL_UARTDRV_USART_VCOM on module USART0
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:38.251
+!MESSAGE Preparing Websocket Pintool Update: {"configurables":{"removed":["USART0.$PIN.portio.usart0.location.clk.$ROUTE.CLK","USART0.$PIN.portio.usart0.location.cs.$ROUTE.CS"],"updated":[]},"clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/uartdrv_usart_vcom","wsType":"config_update","conf_class":"pintool"}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:38.252
+!MESSAGE latch unlocked: pintool socket response sending
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:38.263
+!MESSAGE Component Editor Pintool Marker Removed: Marker [on: /vibration-sensor/vibration-sensor.pintool, id: 379, type: com.silabs.ss.framework.hwconfig.core.abproblemmarker, attributes: [location: , message: Requirement SL_UARTDRV_USART_VCOM is unsatisified (needs USART instance) [from sl_uartdrv_usart_vcom_config.h], objectPath: /, severity: 1, transient: true], created: 12/12/23, 4:05 PM]
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:38.275
+!MESSAGE Component Editor Pintool Marker Added: Marker [on: /vibration-sensor/vibration-sensor.pintool, id: 381, type: com.silabs.ss.framework.hwconfig.core.abproblemmarker, attributes: [location: DefaultMode PORTIO, message: TX must be enabled for USART0 [from sl_uartdrv_usart_vcom_config.h], objectPath: /DefaultMode/PORTIO, propertyId: portio.usart0.enable.tx, severity: 1, transient: true], created: 12/12/23, 4:05 PM]
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:38.275
+!MESSAGE Attempting to find a linkage in pintool with marker id portio.usart0.enable.tx
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:38.276
+!MESSAGE New Pintool Issues WS call: {"msg":"Pintool has indicated configuration issues: address fields in error and/or check Problems View","clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/uartdrv_usart_vcom","wsType":"problems_alert","issues":[{"msg":"TX must be enabled for USART0 [from sl_uartdrv_usart_vcom_config.h]","id":"USART0.$PIN.portio.usart0.location.tx.$ROUTE.TX"}]}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:38.290
+!MESSAGE Component Editor Pintool Marker Added: Marker [on: /vibration-sensor/vibration-sensor.pintool, id: 382, type: com.silabs.ss.framework.hwconfig.core.abproblemmarker, attributes: [location: DefaultMode PORTIO, message: RX must be enabled for USART0 [from sl_uartdrv_usart_vcom_config.h], objectPath: /DefaultMode/PORTIO, propertyId: portio.usart0.enable.rx, severity: 1, transient: true], created: 12/12/23, 4:05 PM]
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:38.292
+!MESSAGE Attempting to find a linkage in pintool with marker id portio.usart0.enable.rx
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:38.292
+!MESSAGE New Pintool Issues WS call: {"msg":"Pintool has indicated configuration issues: address fields in error and/or check Problems View","clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/uartdrv_usart_vcom","wsType":"problems_alert","issues":[{"msg":"RX must be enabled for USART0 [from sl_uartdrv_usart_vcom_config.h]","id":"USART0.$PIN.portio.usart0.location.rx.$ROUTE.RX"}]}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:39.368
+!MESSAGE Resource Changed: Reparsing L/vibration-sensor/config/sl_uartdrv_usart_vcom_config.h for cmsis
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:39.379
+!MESSAGE A Cmsis Reparse was triggered for sl_uartdrv_usart_vcom_config.h
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:39.385
+!MESSAGE CMSIS Parse success for sl_uartdrv_usart_vcom_config.h
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:39.386
+!MESSAGE preparing cmsis websocket update: {"configurables":{"removed":[],"updated":[]},"clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/uartdrv_usart_vcom","header":"sl_uartdrv_usart_vcom_config.h","wsType":"config_update","conf_class":"cmsis"}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:39.387
+!MESSAGE latch unlocked: cmsis socket response sending
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:39.481
+!MESSAGE Clear CMSIS Issues WS call: {"clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/uartdrv_usart_vcom","ids":[],"wsType":"clear_issues"}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:39.523
+!MESSAGE Allowed modules (event detection): USART0
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:39.524
+!MESSAGE Preparing Websocket Pintool Update: {"configurables":{"removed":[],"updated":[{"parent_category_id":"SL_UARTDRV_USART_VCOM_REQUIREMENT","conf_type":"combo","visible":"portio.usart0.enable.clk","rawprop":"portio.usart0.location.clk","initial":{"label":"None","value":-1},"label":"CLK","id":"USART0.$PIN.portio.usart0.location.clk.$ROUTE.CLK","type":"conf","combo_options":[{"label":"None","value":-1},{"label":"PA00","value":0},{"label":"PA01","value":1},{"label":"PA02","value":2},{"label":"PA03","value":3},{"label":"PA04","value":4},{"label":"PA05","value":5},{"label":"PA06","value":6},{"label":"PA07","value":7},{"label":"PA08","value":8},{"label":"PB00","value":16},{"label":"PB01","value":17},{"label":"PB02","value":18},{"label":"PB03","value":19},{"label":"PB04","value":20},{"label":"PC00","value":32},{"label":"PC01","value":33},{"label":"PC02","value":34},{"label":"PC03","value":35},{"label":"PC04","value":36},{"label":"PC05","value":37},{"label":"PC06","value":38},{"label":"PC07","value":39},{"label":"PD00","value":48},{"label":"PD01","value":49},{"label":"PD02","value":50},{"label":"PD03","value":51}]},{"parent_category_id":"SL_UARTDRV_USART_VCOM_REQUIREMENT","conf_type":"combo","visible":"portio.usart0.enable.cs","rawprop":"portio.usart0.location.cs","initial":{"label":"None","value":-1},"label":"CS","id":"USART0.$PIN.portio.usart0.location.cs.$ROUTE.CS","type":"conf","combo_options":[{"label":"None","value":-1},{"label":"PA00","value":0},{"label":"PA01","value":1},{"label":"PA02","value":2},{"label":"PA03","value":3},{"label":"PA04","value":4},{"label":"PA05","value":5},{"label":"PA06","value":6},{"label":"PA07","value":7},{"label":"PA08","value":8},{"label":"PB00","value":16},{"label":"PB01","value":17},{"label":"PB02","value":18},{"label":"PB03","value":19},{"label":"PB04","value":20},{"label":"PC00","value":32},{"label":"PC01","value":33},{"label":"PC02","value":34},{"label":"PC03","value":35},{"label":"PC04","value":36},{"label":"PC05","value":37},{"label":"PC06","value":38},{"label":"PC07","value":39},{"label":"PD00","value":48},{"label":"PD01","value":49},{"label":"PD02","value":50},{"label":"PD03","value":51}]}]},"clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/uartdrv_usart_vcom","wsType":"config_update","conf_class":"pintool"}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:39.524
+!MESSAGE latch unlocked: pintool socket response sending
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:39.525
+!MESSAGE New pintool options detected -- resending existing problem markers for handling.
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:39.526
+!MESSAGE Attempting to find a linkage in pintool with marker id portio.pti.enable.dout
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:39.526
+!MESSAGE Attempting to find a linkage in pintool with marker id portio.usart0.enable.tx
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:39.527
+!MESSAGE New Pintool Issues WS call: {"msg":"Pintool has indicated configuration issues: address fields in error and/or check Problems View","clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/uartdrv_usart_vcom","wsType":"problems_alert","issues":[{"msg":"TX must be enabled for USART0 [from sl_uartdrv_usart_vcom_config.h]","id":"USART0.$PIN.portio.usart0.location.tx.$ROUTE.TX"}]}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:39.527
+!MESSAGE Attempting to find a linkage in pintool with marker id portio.usart0.enable.rx
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:39.528
+!MESSAGE New Pintool Issues WS call: {"msg":"Pintool has indicated configuration issues: address fields in error and/or check Problems View","clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/uartdrv_usart_vcom","wsType":"problems_alert","issues":[{"msg":"RX must be enabled for USART0 [from sl_uartdrv_usart_vcom_config.h]","id":"USART0.$PIN.portio.usart0.location.rx.$ROUTE.RX"}]}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:39.572
+!MESSAGE Visible Signals Modified (event detection): CTS, RTS, RX, TX
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:39.573
+!MESSAGE registering configuration tool pintool editor listeners for SL_UARTDRV_USART_VCOM on module USART0
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:39.574
+!MESSAGE Preparing Websocket Pintool Update: {"configurables":{"removed":["USART0.$PIN.portio.usart0.location.clk.$ROUTE.CLK","USART0.$PIN.portio.usart0.location.cs.$ROUTE.CS"],"updated":[]},"clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/uartdrv_usart_vcom","wsType":"config_update","conf_class":"pintool"}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:39.574
+!MESSAGE latch unlocked: pintool socket response sending
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:39.583
+!MESSAGE Component Editor Pintool Marker Removed: Marker [on: /vibration-sensor/vibration-sensor.pintool, id: 381, type: com.silabs.ss.framework.hwconfig.core.abproblemmarker, attributes: [location: DefaultMode PORTIO, message: TX must be enabled for USART0 [from sl_uartdrv_usart_vcom_config.h], objectPath: /DefaultMode/PORTIO, propertyId: portio.usart0.enable.tx, severity: 1, transient: true], created: 12/12/23, 4:05 PM]
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:39.584
+!MESSAGE Attempting to find a linkage in pintool with marker id portio.usart0.enable.tx
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:39.585
+!MESSAGE Clear Pintool Issues WS call: {"clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/uartdrv_usart_vcom","ids":["USART0.$PIN.portio.usart0.location.tx.$ROUTE.TX"],"wsType":"clear_issues"}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:39.586
+!MESSAGE Component Editor Pintool Marker Removed: Marker [on: /vibration-sensor/vibration-sensor.pintool, id: 382, type: com.silabs.ss.framework.hwconfig.core.abproblemmarker, attributes: [location: DefaultMode PORTIO, message: RX must be enabled for USART0 [from sl_uartdrv_usart_vcom_config.h], objectPath: /DefaultMode/PORTIO, propertyId: portio.usart0.enable.rx, severity: 1, transient: true], created: 12/12/23, 4:05 PM]
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:39.587
+!MESSAGE Attempting to find a linkage in pintool with marker id portio.usart0.enable.rx
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:39.587
+!MESSAGE Clear Pintool Issues WS call: {"clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/uartdrv_usart_vcom","ids":["USART0.$PIN.portio.usart0.location.rx.$ROUTE.RX"],"wsType":"clear_issues"}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:39.594
+!MESSAGE Component Editor Pintool Marker Added: Marker [on: /vibration-sensor/vibration-sensor.pintool, id: 383, type: com.silabs.ss.framework.hwconfig.core.abproblemmarker, attributes: [location: DefaultMode PORTIO, message: TX must be enabled for USART0 [from sl_uartdrv_usart_vcom_config.h], objectPath: /DefaultMode/PORTIO, propertyId: portio.usart0.enable.tx, severity: 1, transient: true], created: 12/12/23, 4:05 PM]
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:39.595
+!MESSAGE Attempting to find a linkage in pintool with marker id portio.usart0.enable.tx
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:39.595
+!MESSAGE New Pintool Issues WS call: {"msg":"Pintool has indicated configuration issues: address fields in error and/or check Problems View","clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/uartdrv_usart_vcom","wsType":"problems_alert","issues":[{"msg":"TX must be enabled for USART0 [from sl_uartdrv_usart_vcom_config.h]","id":"USART0.$PIN.portio.usart0.location.tx.$ROUTE.TX"}]}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:39.600
+!MESSAGE Component Editor Pintool Marker Added: Marker [on: /vibration-sensor/vibration-sensor.pintool, id: 384, type: com.silabs.ss.framework.hwconfig.core.abproblemmarker, attributes: [location: DefaultMode PORTIO, message: RX must be enabled for USART0 [from sl_uartdrv_usart_vcom_config.h], objectPath: /DefaultMode/PORTIO, propertyId: portio.usart0.enable.rx, severity: 1, transient: true], created: 12/12/23, 4:05 PM]
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:39.602
+!MESSAGE Attempting to find a linkage in pintool with marker id portio.usart0.enable.rx
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:39.603
+!MESSAGE New Pintool Issues WS call: {"msg":"Pintool has indicated configuration issues: address fields in error and/or check Problems View","clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/uartdrv_usart_vcom","wsType":"problems_alert","issues":[{"msg":"RX must be enabled for USART0 [from sl_uartdrv_usart_vcom_config.h]","id":"USART0.$PIN.portio.usart0.location.rx.$ROUTE.RX"}]}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:40.232
+!MESSAGE Preparing Websocket Pintool Update: {"configurables":{"removed":[],"updated":[]},"clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/uartdrv_usart_vcom","wsType":"config_update","conf_class":"pintool"}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:40.232
+!MESSAGE latch unlocked: pintool socket response sending
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:40.234
+!MESSAGE Preparing Websocket Pintool Update: {"configurables":{"removed":[],"updated":[{"parent_category_id":"SL_UARTDRV_USART_VCOM_REQUIREMENT","conf_type":"combo","visible":"portio.usart0.enable.rx","rawprop":"portio.usart0.location.rx","initial":{"label":"PA07","value":7},"label":"RX","id":"USART0.$PIN.portio.usart0.location.rx.$ROUTE.RX","type":"conf","combo_options":[{"label":"None","value":-1},{"label":"PA00","value":0},{"label":"PA01","value":1},{"label":"PA02","value":2},{"label":"PA03","value":3},{"label":"PA04","value":4},{"label":"PA05","value":5},{"label":"PA06","value":6},{"label":"PA07","value":7},{"label":"PA08","value":8},{"label":"PB00","value":16},{"label":"PB01","value":17},{"label":"PB02","value":18},{"label":"PB03","value":19},{"label":"PB04","value":20},{"label":"PC00","value":32},{"label":"PC01","value":33},{"label":"PC02","value":34},{"label":"PC03","value":35},{"label":"PC04","value":36},{"label":"PC05","value":37},{"label":"PC06","value":38},{"label":"PC07","value":39},{"label":"PD00","value":48},{"label":"PD01","value":49},{"label":"PD02","value":50},{"label":"PD03","value":51}]}]},"clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/uartdrv_usart_vcom","wsType":"config_update","conf_class":"pintool"}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:40.234
+!MESSAGE latch unlocked: pintool socket response sending
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:40.235
+!MESSAGE Preparing Websocket Pintool Update: {"configurables":{"removed":[],"updated":[]},"clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/uartdrv_usart_vcom","wsType":"config_update","conf_class":"pintool"}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:40.236
+!MESSAGE latch unlocked: pintool socket response sending
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:40.236
+!MESSAGE Pintool data generation requested. Starting job
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:40.373
+!MESSAGE Component Editor Pintool Marker Removed: Marker [on: /vibration-sensor/vibration-sensor.pintool, id: 375, type: com.silabs.ss.framework.hwconfig.core.abproblemmarker, attributes: [location: , message: Requirement SL_FEM_UTIL_SLEEP is unsatisified (needs PRS instance) [from sl_fem_util_config.h], objectPath: /, severity: 1, transient: true], created: 12/12/23, 4:05 PM]
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:40.374
+!MESSAGE Component Editor Pintool Marker Removed: Marker [on: /vibration-sensor/vibration-sensor.pintool, id: 376, type: com.silabs.ss.framework.hwconfig.core.abproblemmarker, attributes: [location: , message: Requirement SL_FEM_UTIL_RX is unsatisified (needs PRS instance) [from sl_fem_util_config.h], objectPath: /, severity: 1, transient: true], created: 12/12/23, 4:05 PM]
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:40.378
+!MESSAGE Component Editor Pintool Marker Removed: Marker [on: /vibration-sensor/vibration-sensor.pintool, id: 380, type: com.silabs.ss.framework.hwconfig.core.abproblemmarker, attributes: [location: DefaultMode PORTIO, message: DOUT must be enabled for PTI [from sl_rail_util_pti_config.h], objectPath: /DefaultMode/PORTIO, propertyId: portio.pti.enable.dout, severity: 1, transient: true], created: 12/12/23, 4:05 PM]
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:40.379
+!MESSAGE Attempting to find a linkage in pintool with marker id portio.pti.enable.dout
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:40.380
+!MESSAGE Component Editor Pintool Marker Removed: Marker [on: /vibration-sensor/vibration-sensor.pintool, id: 377, type: com.silabs.ss.framework.hwconfig.core.abproblemmarker, attributes: [location: , message: Requirement SL_SIMPLE_BUTTON_BTN1 is unsatisified (needs GPIO instance) [from sl_simple_button_btn1_config.h], objectPath: /, severity: 1, transient: true], created: 12/12/23, 4:05 PM]
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:40.382
+!MESSAGE Component Editor Pintool Marker Removed: Marker [on: /vibration-sensor/vibration-sensor.pintool, id: 383, type: com.silabs.ss.framework.hwconfig.core.abproblemmarker, attributes: [location: DefaultMode PORTIO, message: TX must be enabled for USART0 [from sl_uartdrv_usart_vcom_config.h], objectPath: /DefaultMode/PORTIO, propertyId: portio.usart0.enable.tx, severity: 1, transient: true], created: 12/12/23, 4:05 PM]
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:40.383
+!MESSAGE Attempting to find a linkage in pintool with marker id portio.usart0.enable.tx
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:40.383
+!MESSAGE Clear Pintool Issues WS call: {"clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/uartdrv_usart_vcom","ids":["USART0.$PIN.portio.usart0.location.tx.$ROUTE.TX"],"wsType":"clear_issues"}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:40.385
+!MESSAGE Component Editor Pintool Marker Removed: Marker [on: /vibration-sensor/vibration-sensor.pintool, id: 384, type: com.silabs.ss.framework.hwconfig.core.abproblemmarker, attributes: [location: DefaultMode PORTIO, message: RX must be enabled for USART0 [from sl_uartdrv_usart_vcom_config.h], objectPath: /DefaultMode/PORTIO, propertyId: portio.usart0.enable.rx, severity: 1, transient: true], created: 12/12/23, 4:05 PM]
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:40.385
+!MESSAGE Attempting to find a linkage in pintool with marker id portio.usart0.enable.rx
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:40.386
+!MESSAGE Clear Pintool Issues WS call: {"clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/uartdrv_usart_vcom","ids":["USART0.$PIN.portio.usart0.location.rx.$ROUTE.RX"],"wsType":"clear_issues"}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:40.387
+!MESSAGE Component Editor Pintool Marker Removed: Marker [on: /vibration-sensor/vibration-sensor.pintool, id: 378, type: com.silabs.ss.framework.hwconfig.core.abproblemmarker, attributes: [location: , message: Requirement SL_SIMPLE_BUTTON_BTN0 is unsatisified (needs GPIO instance) [from sl_simple_button_btn0_config.h], objectPath: /, severity: 1, transient: true], created: 12/12/23, 4:05 PM]
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:40.394
+!MESSAGE Component Editor Pintool Marker Added: Marker [on: /vibration-sensor/vibration-sensor.pintool, id: 385, type: com.silabs.ss.framework.hwconfig.core.abproblemmarker, attributes: [location: , message: Requirement SL_FEM_UTIL_SLEEP is unsatisified (needs PRS instance) [from sl_fem_util_config.h], objectPath: /, severity: 1, transient: true], created: 12/12/23, 4:05 PM]
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:40.399
+!MESSAGE Component Editor Pintool Marker Added: Marker [on: /vibration-sensor/vibration-sensor.pintool, id: 386, type: com.silabs.ss.framework.hwconfig.core.abproblemmarker, attributes: [location: , message: Requirement SL_FEM_UTIL_RX is unsatisified (needs PRS instance) [from sl_fem_util_config.h], objectPath: /, severity: 1, transient: true], created: 12/12/23, 4:05 PM]
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:40.405
+!MESSAGE Component Editor Pintool Marker Added: Marker [on: /vibration-sensor/vibration-sensor.pintool, id: 387, type: com.silabs.ss.framework.hwconfig.core.abproblemmarker, attributes: [location: DefaultMode PORTIO, message: DOUT must be enabled for PTI [from sl_rail_util_pti_config.h], objectPath: /DefaultMode/PORTIO, propertyId: portio.pti.enable.dout, severity: 1, transient: true], created: 12/12/23, 4:05 PM]
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:40.406
+!MESSAGE Attempting to find a linkage in pintool with marker id portio.pti.enable.dout
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:40.410
+!MESSAGE Component Editor Pintool Marker Added: Marker [on: /vibration-sensor/vibration-sensor.pintool, id: 388, type: com.silabs.ss.framework.hwconfig.core.abproblemmarker, attributes: [location: , message: Requirement SL_SIMPLE_BUTTON_BTN1 is unsatisified (needs GPIO instance) [from sl_simple_button_btn1_config.h], objectPath: /, severity: 1, transient: true], created: 12/12/23, 4:05 PM]
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:40.415
+!MESSAGE Component Editor Pintool Marker Added: Marker [on: /vibration-sensor/vibration-sensor.pintool, id: 389, type: com.silabs.ss.framework.hwconfig.core.abproblemmarker, attributes: [location: DefaultMode PORTIO, message: TX must be enabled for USART0 [from sl_uartdrv_usart_vcom_config.h], objectPath: /DefaultMode/PORTIO, propertyId: portio.usart0.enable.tx, severity: 1, transient: true], created: 12/12/23, 4:05 PM]
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:40.415
+!MESSAGE Attempting to find a linkage in pintool with marker id portio.usart0.enable.tx
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:40.417
+!MESSAGE New Pintool Issues WS call: {"msg":"Pintool has indicated configuration issues: address fields in error and/or check Problems View","clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/uartdrv_usart_vcom","wsType":"problems_alert","issues":[{"msg":"TX must be enabled for USART0 [from sl_uartdrv_usart_vcom_config.h]","id":"USART0.$PIN.portio.usart0.location.tx.$ROUTE.TX"}]}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:40.422
+!MESSAGE Component Editor Pintool Marker Added: Marker [on: /vibration-sensor/vibration-sensor.pintool, id: 390, type: com.silabs.ss.framework.hwconfig.core.abproblemmarker, attributes: [location: , message: Requirement SL_SIMPLE_BUTTON_BTN0 is unsatisified (needs GPIO instance) [from sl_simple_button_btn0_config.h], objectPath: /, severity: 1, transient: true], created: 12/12/23, 4:05 PM]
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:41.301
+!MESSAGE Resource Changed: Reparsing L/vibration-sensor/config/sl_uartdrv_usart_vcom_config.h for cmsis
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:41.318
+!MESSAGE A Cmsis Reparse was triggered for sl_uartdrv_usart_vcom_config.h
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:41.327
+!MESSAGE CMSIS Parse success for sl_uartdrv_usart_vcom_config.h
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:41.331
+!MESSAGE preparing cmsis websocket update: {"configurables":{"removed":[],"updated":[]},"clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/uartdrv_usart_vcom","header":"sl_uartdrv_usart_vcom_config.h","wsType":"config_update","conf_class":"cmsis"}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:41.331
+!MESSAGE latch unlocked: cmsis socket response sending
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:41.446
+!MESSAGE Clear CMSIS Issues WS call: {"clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/uartdrv_usart_vcom","ids":[],"wsType":"clear_issues"}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:41.547
+!MESSAGE Allowed modules (event detection): USART0
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:41.548
+!MESSAGE Preparing Websocket Pintool Update: {"configurables":{"removed":[],"updated":[{"parent_category_id":"SL_UARTDRV_USART_VCOM_REQUIREMENT","conf_type":"combo","visible":"portio.usart0.enable.clk","rawprop":"portio.usart0.location.clk","initial":{"label":"None","value":-1},"label":"CLK","id":"USART0.$PIN.portio.usart0.location.clk.$ROUTE.CLK","type":"conf","combo_options":[{"label":"None","value":-1},{"label":"PA00","value":0},{"label":"PA01","value":1},{"label":"PA02","value":2},{"label":"PA03","value":3},{"label":"PA04","value":4},{"label":"PA05","value":5},{"label":"PA06","value":6},{"label":"PA07","value":7},{"label":"PA08","value":8},{"label":"PB00","value":16},{"label":"PB01","value":17},{"label":"PB02","value":18},{"label":"PB03","value":19},{"label":"PB04","value":20},{"label":"PC00","value":32},{"label":"PC01","value":33},{"label":"PC02","value":34},{"label":"PC03","value":35},{"label":"PC04","value":36},{"label":"PC05","value":37},{"label":"PC06","value":38},{"label":"PC07","value":39},{"label":"PD00","value":48},{"label":"PD01","value":49},{"label":"PD02","value":50},{"label":"PD03","value":51}]},{"parent_category_id":"SL_UARTDRV_USART_VCOM_REQUIREMENT","conf_type":"combo","visible":"portio.usart0.enable.cs","rawprop":"portio.usart0.location.cs","initial":{"label":"None","value":-1},"label":"CS","id":"USART0.$PIN.portio.usart0.location.cs.$ROUTE.CS","type":"conf","combo_options":[{"label":"None","value":-1},{"label":"PA00","value":0},{"label":"PA01","value":1},{"label":"PA02","value":2},{"label":"PA03","value":3},{"label":"PA04","value":4},{"label":"PA05","value":5},{"label":"PA06","value":6},{"label":"PA07","value":7},{"label":"PA08","value":8},{"label":"PB00","value":16},{"label":"PB01","value":17},{"label":"PB02","value":18},{"label":"PB03","value":19},{"label":"PB04","value":20},{"label":"PC00","value":32},{"label":"PC01","value":33},{"label":"PC02","value":34},{"label":"PC03","value":35},{"label":"PC04","value":36},{"label":"PC05","value":37},{"label":"PC06","value":38},{"label":"PC07","value":39},{"label":"PD00","value":48},{"label":"PD01","value":49},{"label":"PD02","value":50},{"label":"PD03","value":51}]}]},"clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/uartdrv_usart_vcom","wsType":"config_update","conf_class":"pintool"}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:41.549
+!MESSAGE latch unlocked: pintool socket response sending
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:41.549
+!MESSAGE New pintool options detected -- resending existing problem markers for handling.
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:41.553
+!MESSAGE Attempting to find a linkage in pintool with marker id portio.pti.enable.dout
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:41.554
+!MESSAGE Attempting to find a linkage in pintool with marker id portio.usart0.enable.tx
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:41.554
+!MESSAGE New Pintool Issues WS call: {"msg":"Pintool has indicated configuration issues: address fields in error and/or check Problems View","clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/uartdrv_usart_vcom","wsType":"problems_alert","issues":[{"msg":"TX must be enabled for USART0 [from sl_uartdrv_usart_vcom_config.h]","id":"USART0.$PIN.portio.usart0.location.tx.$ROUTE.TX"}]}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:41.565
+!MESSAGE Visible Signals Modified (event detection): CTS, RTS, RX, TX
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:41.566
+!MESSAGE registering configuration tool pintool editor listeners for SL_UARTDRV_USART_VCOM on module USART0
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:41.567
+!MESSAGE Preparing Websocket Pintool Update: {"configurables":{"removed":["USART0.$PIN.portio.usart0.location.clk.$ROUTE.CLK","USART0.$PIN.portio.usart0.location.cs.$ROUTE.CS"],"updated":[]},"clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/uartdrv_usart_vcom","wsType":"config_update","conf_class":"pintool"}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:41.568
+!MESSAGE latch unlocked: pintool socket response sending
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:41.575
+!MESSAGE Component Editor Pintool Marker Removed: Marker [on: /vibration-sensor/vibration-sensor.pintool, id: 389, type: com.silabs.ss.framework.hwconfig.core.abproblemmarker, attributes: [location: DefaultMode PORTIO, message: TX must be enabled for USART0 [from sl_uartdrv_usart_vcom_config.h], objectPath: /DefaultMode/PORTIO, propertyId: portio.usart0.enable.tx, severity: 1, transient: true], created: 12/12/23, 4:05 PM]
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:41.575
+!MESSAGE Attempting to find a linkage in pintool with marker id portio.usart0.enable.tx
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:41.575
+!MESSAGE Clear Pintool Issues WS call: {"clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/uartdrv_usart_vcom","ids":["USART0.$PIN.portio.usart0.location.tx.$ROUTE.TX"],"wsType":"clear_issues"}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:41.581
+!MESSAGE Component Editor Pintool Marker Added: Marker [on: /vibration-sensor/vibration-sensor.pintool, id: 391, type: com.silabs.ss.framework.hwconfig.core.abproblemmarker, attributes: [location: DefaultMode PORTIO, message: TX must be enabled for USART0 [from sl_uartdrv_usart_vcom_config.h], objectPath: /DefaultMode/PORTIO, propertyId: portio.usart0.enable.tx, severity: 1, transient: true], created: 12/12/23, 4:05 PM]
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:41.582
+!MESSAGE Attempting to find a linkage in pintool with marker id portio.usart0.enable.tx
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:41.582
+!MESSAGE New Pintool Issues WS call: {"msg":"Pintool has indicated configuration issues: address fields in error and/or check Problems View","clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/uartdrv_usart_vcom","wsType":"problems_alert","issues":[{"msg":"TX must be enabled for USART0 [from sl_uartdrv_usart_vcom_config.h]","id":"USART0.$PIN.portio.usart0.location.tx.$ROUTE.TX"}]}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:42.552
+!MESSAGE Preparing Websocket Pintool Update: {"configurables":{"removed":[],"updated":[]},"clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/uartdrv_usart_vcom","wsType":"config_update","conf_class":"pintool"}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:42.552
+!MESSAGE latch unlocked: pintool socket response sending
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:42.553
+!MESSAGE Preparing Websocket Pintool Update: {"configurables":{"removed":[],"updated":[{"parent_category_id":"SL_UARTDRV_USART_VCOM_REQUIREMENT","conf_type":"combo","visible":"portio.usart0.enable.tx","rawprop":"portio.usart0.location.tx","initial":{"label":"PA08","value":8},"label":"TX","id":"USART0.$PIN.portio.usart0.location.tx.$ROUTE.TX","type":"conf","combo_options":[{"label":"None","value":-1},{"label":"PA00","value":0},{"label":"PA01","value":1},{"label":"PA02","value":2},{"label":"PA03","value":3},{"label":"PA04","value":4},{"label":"PA05","value":5},{"label":"PA06","value":6},{"label":"PA07","value":7},{"label":"PA08","value":8},{"label":"PB00","value":16},{"label":"PB01","value":17},{"label":"PB02","value":18},{"label":"PB03","value":19},{"label":"PB04","value":20},{"label":"PC00","value":32},{"label":"PC01","value":33},{"label":"PC02","value":34},{"label":"PC03","value":35},{"label":"PC04","value":36},{"label":"PC05","value":37},{"label":"PC06","value":38},{"label":"PC07","value":39},{"label":"PD00","value":48},{"label":"PD01","value":49},{"label":"PD02","value":50},{"label":"PD03","value":51}]}]},"clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/uartdrv_usart_vcom","wsType":"config_update","conf_class":"pintool"}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:42.554
+!MESSAGE latch unlocked: pintool socket response sending
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:42.555
+!MESSAGE Preparing Websocket Pintool Update: {"configurables":{"removed":[],"updated":[]},"clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/uartdrv_usart_vcom","wsType":"config_update","conf_class":"pintool"}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:42.555
+!MESSAGE latch unlocked: pintool socket response sending
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:42.556
+!MESSAGE Pintool data generation requested. Starting job
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:42.705
+!MESSAGE Component Editor Pintool Marker Removed: Marker [on: /vibration-sensor/vibration-sensor.pintool, id: 385, type: com.silabs.ss.framework.hwconfig.core.abproblemmarker, attributes: [location: , message: Requirement SL_FEM_UTIL_SLEEP is unsatisified (needs PRS instance) [from sl_fem_util_config.h], objectPath: /, severity: 1, transient: true], created: 12/12/23, 4:05 PM]
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:42.707
+!MESSAGE Component Editor Pintool Marker Removed: Marker [on: /vibration-sensor/vibration-sensor.pintool, id: 386, type: com.silabs.ss.framework.hwconfig.core.abproblemmarker, attributes: [location: , message: Requirement SL_FEM_UTIL_RX is unsatisified (needs PRS instance) [from sl_fem_util_config.h], objectPath: /, severity: 1, transient: true], created: 12/12/23, 4:05 PM]
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:42.708
+!MESSAGE Component Editor Pintool Marker Removed: Marker [on: /vibration-sensor/vibration-sensor.pintool, id: 387, type: com.silabs.ss.framework.hwconfig.core.abproblemmarker, attributes: [location: DefaultMode PORTIO, message: DOUT must be enabled for PTI [from sl_rail_util_pti_config.h], objectPath: /DefaultMode/PORTIO, propertyId: portio.pti.enable.dout, severity: 1, transient: true], created: 12/12/23, 4:05 PM]
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:42.708
+!MESSAGE Attempting to find a linkage in pintool with marker id portio.pti.enable.dout
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:42.709
+!MESSAGE Component Editor Pintool Marker Removed: Marker [on: /vibration-sensor/vibration-sensor.pintool, id: 388, type: com.silabs.ss.framework.hwconfig.core.abproblemmarker, attributes: [location: , message: Requirement SL_SIMPLE_BUTTON_BTN1 is unsatisified (needs GPIO instance) [from sl_simple_button_btn1_config.h], objectPath: /, severity: 1, transient: true], created: 12/12/23, 4:05 PM]
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:42.712
+!MESSAGE Component Editor Pintool Marker Removed: Marker [on: /vibration-sensor/vibration-sensor.pintool, id: 391, type: com.silabs.ss.framework.hwconfig.core.abproblemmarker, attributes: [location: DefaultMode PORTIO, message: TX must be enabled for USART0 [from sl_uartdrv_usart_vcom_config.h], objectPath: /DefaultMode/PORTIO, propertyId: portio.usart0.enable.tx, severity: 1, transient: true], created: 12/12/23, 4:05 PM]
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:42.713
+!MESSAGE Attempting to find a linkage in pintool with marker id portio.usart0.enable.tx
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:42.714
+!MESSAGE Clear Pintool Issues WS call: {"clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/uartdrv_usart_vcom","ids":["USART0.$PIN.portio.usart0.location.tx.$ROUTE.TX"],"wsType":"clear_issues"}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:42.715
+!MESSAGE Component Editor Pintool Marker Removed: Marker [on: /vibration-sensor/vibration-sensor.pintool, id: 390, type: com.silabs.ss.framework.hwconfig.core.abproblemmarker, attributes: [location: , message: Requirement SL_SIMPLE_BUTTON_BTN0 is unsatisified (needs GPIO instance) [from sl_simple_button_btn0_config.h], objectPath: /, severity: 1, transient: true], created: 12/12/23, 4:05 PM]
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:42.719
+!MESSAGE Component Editor Pintool Marker Added: Marker [on: /vibration-sensor/vibration-sensor.pintool, id: 392, type: com.silabs.ss.framework.hwconfig.core.abproblemmarker, attributes: [location: , message: Requirement SL_FEM_UTIL_SLEEP is unsatisified (needs PRS instance) [from sl_fem_util_config.h], objectPath: /, severity: 1, transient: true], created: 12/12/23, 4:05 PM]
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:42.724
+!MESSAGE Component Editor Pintool Marker Added: Marker [on: /vibration-sensor/vibration-sensor.pintool, id: 393, type: com.silabs.ss.framework.hwconfig.core.abproblemmarker, attributes: [location: , message: Requirement SL_FEM_UTIL_RX is unsatisified (needs PRS instance) [from sl_fem_util_config.h], objectPath: /, severity: 1, transient: true], created: 12/12/23, 4:05 PM]
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:42.729
+!MESSAGE Component Editor Pintool Marker Added: Marker [on: /vibration-sensor/vibration-sensor.pintool, id: 394, type: com.silabs.ss.framework.hwconfig.core.abproblemmarker, attributes: [location: DefaultMode PORTIO, message: DOUT must be enabled for PTI [from sl_rail_util_pti_config.h], objectPath: /DefaultMode/PORTIO, propertyId: portio.pti.enable.dout, severity: 1, transient: true], created: 12/12/23, 4:05 PM]
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:42.730
+!MESSAGE Attempting to find a linkage in pintool with marker id portio.pti.enable.dout
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:42.733
+!MESSAGE Component Editor Pintool Marker Added: Marker [on: /vibration-sensor/vibration-sensor.pintool, id: 395, type: com.silabs.ss.framework.hwconfig.core.abproblemmarker, attributes: [location: , message: Requirement SL_SIMPLE_BUTTON_BTN1 is unsatisified (needs GPIO instance) [from sl_simple_button_btn1_config.h], objectPath: /, severity: 1, transient: true], created: 12/12/23, 4:05 PM]
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:42.739
+!MESSAGE Component Editor Pintool Marker Added: Marker [on: /vibration-sensor/vibration-sensor.pintool, id: 396, type: com.silabs.ss.framework.hwconfig.core.abproblemmarker, attributes: [location: , message: Requirement SL_SIMPLE_BUTTON_BTN0 is unsatisified (needs GPIO instance) [from sl_simple_button_btn0_config.h], objectPath: /, severity: 1, transient: true], created: 12/12/23, 4:05 PM]
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:43.861
+!MESSAGE Allowed modules (event detection): USART0
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:43.862
+!MESSAGE Preparing Websocket Pintool Update: {"configurables":{"removed":[],"updated":[{"parent_category_id":"SL_UARTDRV_USART_VCOM_REQUIREMENT","conf_type":"combo","visible":"portio.usart0.enable.clk","rawprop":"portio.usart0.location.clk","initial":{"label":"None","value":-1},"label":"CLK","id":"USART0.$PIN.portio.usart0.location.clk.$ROUTE.CLK","type":"conf","combo_options":[{"label":"None","value":-1},{"label":"PA00","value":0},{"label":"PA01","value":1},{"label":"PA02","value":2},{"label":"PA03","value":3},{"label":"PA04","value":4},{"label":"PA05","value":5},{"label":"PA06","value":6},{"label":"PA07","value":7},{"label":"PA08","value":8},{"label":"PB00","value":16},{"label":"PB01","value":17},{"label":"PB02","value":18},{"label":"PB03","value":19},{"label":"PB04","value":20},{"label":"PC00","value":32},{"label":"PC01","value":33},{"label":"PC02","value":34},{"label":"PC03","value":35},{"label":"PC04","value":36},{"label":"PC05","value":37},{"label":"PC06","value":38},{"label":"PC07","value":39},{"label":"PD00","value":48},{"label":"PD01","value":49},{"label":"PD02","value":50},{"label":"PD03","value":51}]},{"parent_category_id":"SL_UARTDRV_USART_VCOM_REQUIREMENT","conf_type":"combo","visible":"portio.usart0.enable.cs","rawprop":"portio.usart0.location.cs","initial":{"label":"None","value":-1},"label":"CS","id":"USART0.$PIN.portio.usart0.location.cs.$ROUTE.CS","type":"conf","combo_options":[{"label":"None","value":-1},{"label":"PA00","value":0},{"label":"PA01","value":1},{"label":"PA02","value":2},{"label":"PA03","value":3},{"label":"PA04","value":4},{"label":"PA05","value":5},{"label":"PA06","value":6},{"label":"PA07","value":7},{"label":"PA08","value":8},{"label":"PB00","value":16},{"label":"PB01","value":17},{"label":"PB02","value":18},{"label":"PB03","value":19},{"label":"PB04","value":20},{"label":"PC00","value":32},{"label":"PC01","value":33},{"label":"PC02","value":34},{"label":"PC03","value":35},{"label":"PC04","value":36},{"label":"PC05","value":37},{"label":"PC06","value":38},{"label":"PC07","value":39},{"label":"PD00","value":48},{"label":"PD01","value":49},{"label":"PD02","value":50},{"label":"PD03","value":51}]}]},"clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/uartdrv_usart_vcom","wsType":"config_update","conf_class":"pintool"}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:43.862
+!MESSAGE latch unlocked: pintool socket response sending
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:43.863
+!MESSAGE New pintool options detected -- resending existing problem markers for handling.
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:43.863
+!MESSAGE Attempting to find a linkage in pintool with marker id portio.pti.enable.dout
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:43.875
+!MESSAGE Visible Signals Modified (event detection): CTS, RTS, RX, TX
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:43.876
+!MESSAGE registering configuration tool pintool editor listeners for SL_UARTDRV_USART_VCOM on module USART0
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:43.877
+!MESSAGE Preparing Websocket Pintool Update: {"configurables":{"removed":["USART0.$PIN.portio.usart0.location.clk.$ROUTE.CLK","USART0.$PIN.portio.usart0.location.cs.$ROUTE.CS"],"updated":[]},"clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/uartdrv_usart_vcom","wsType":"config_update","conf_class":"pintool"}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:43.877
+!MESSAGE latch unlocked: pintool socket response sending
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:43.922
+!MESSAGE Resource Changed: Reparsing L/vibration-sensor/config/sl_uartdrv_usart_vcom_config.h for cmsis
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:43.926
+!MESSAGE A Cmsis Reparse was triggered for sl_uartdrv_usart_vcom_config.h
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:43.929
+!MESSAGE CMSIS Parse success for sl_uartdrv_usart_vcom_config.h
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:43.930
+!MESSAGE preparing cmsis websocket update: {"configurables":{"removed":[],"updated":[]},"clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/uartdrv_usart_vcom","header":"sl_uartdrv_usart_vcom_config.h","wsType":"config_update","conf_class":"cmsis"}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:43.930
+!MESSAGE latch unlocked: cmsis socket response sending
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:05:44.018
+!MESSAGE Clear CMSIS Issues WS call: {"clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/uartdrv_usart_vcom","ids":[],"wsType":"clear_issues"}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:06:04.317
+!MESSAGE Resource Changed: Reparsing L/vibration-sensor/config/sl_uartdrv_usart_vcom_config.h for cmsis
+
+!ENTRY com.silabs.ss.tool.uc.editor 1 0 2023-12-12 16:06:36.425
+!MESSAGE UcEditorController: onWebSocketClose CALLED statusCode=1001 reason=null
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:07:11.043
+!MESSAGE editor file home calculation for Studio resulted in C:\Users\Workstation\Documents\GitHub\Vibration-Sensor\Code\vibration-sensor\.uceditor for vibration-sensor with component Simple Button (btn0)
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:07:11.052
+!MESSAGE editor file home calculation for Studio resulted in C:\Users\Workstation\Documents\GitHub\Vibration-Sensor\Code\vibration-sensor\.uceditor for vibration-sensor with component Simple Button (btn0)
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:07:11.078
+!MESSAGE Initial cmsis parsing: {sl_simple_button_btn0_config.h=Start Parse Offset: 2360
+End Parse Offset: 2360
+Parsing Error: null
+Parsing Error offset: -1
+fContainWizard: true
+}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:07:11.080
+!MESSAGE CMSIS Parse success for sl_simple_button_btn0_config.h
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:07:11.080
+!MESSAGE preparing cmsis websocket update: {"configurables":{"removed":[],"updated":[{"conf_type":"combo","initial":"Interrupt","header":"sl_simple_button_btn0_config.h","label":"SL_SIMPLE_BUTTON_BTN0_MODE","id":"CMSIS_$sl_simple_button_btn0_config.h$_SL_SIMPLE_BUTTON_BTN0_MODE","type":"conf","combo_options":["Interrupt","Poll and Debounce","Poll"],"desc":"Default: SL_SIMPLE_BUTTON_MODE_INTERRUPT"}]},"clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/simple_button_btn0","header":"sl_simple_button_btn0_config.h","wsType":"config_update","conf_class":"cmsis"}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:07:11.082
+!MESSAGE PinTool annotations detected. Loading ABDevice
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:07:11.083
+!MESSAGE Selected peripheral modification -- listeners updating
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:07:11.083
+!MESSAGE Component Editor Pintool Marker Added: Marker [on: /vibration-sensor/vibration-sensor.pintool, id: 392, type: com.silabs.ss.framework.hwconfig.core.abproblemmarker, attributes: [location: , message: Requirement SL_FEM_UTIL_SLEEP is unsatisified (needs PRS instance) [from sl_fem_util_config.h], objectPath: /, severity: 1, transient: true], created: 12/12/23, 4:05 PM]
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:07:11.084
+!MESSAGE Preparing Websocket Pintool Update: {"configurables":{"removed":[],"updated":[{"label":"SL_SIMPLE_BUTTON_BTN0","id":"SL_SIMPLE_BUTTON_BTN0_REQUIREMENT","type":"cat","conf_class":"pintool"},{"parent_category_id":"SL_SIMPLE_BUTTON_BTN0_REQUIREMENT","conf_type":"combo","initial":"None","label":"Selected Module","id":"SL_SIMPLE_BUTTON_BTN0","type":"conf","combo_options":[{"label":"None","value":"None"},{"label":"PA00","value":"PA00"},{"label":"PA01","value":"PA01"},{"label":"PA02","value":"PA02"},{"label":"PA03","value":"PA03"},{"label":"PA04","value":"PA04"},{"label":"PA05","value":"PA05"},{"label":"PA06","value":"PA06"},{"label":"PA07","value":"PA07"},{"label":"PA08","value":"PA08"},{"label":"PB00","value":"PB00"},{"label":"PB01","value":"PB01"},{"label":"PB02","value":"PB02"},{"label":"PB03","value":"PB03"},{"label":"PB04","value":"PB04"},{"label":"PC00","value":"PC00"},{"label":"PC01","value":"PC01"},{"label":"PC02","value":"PC02"},{"label":"PC03","value":"PC03"},{"label":"PC04","value":"PC04"},{"label":"PC05","value":"PC05"},{"label":"PC06","value":"PC06"},{"label":"PC07","value":"PC07"},{"label":"PD00","value":"PD00"},{"label":"PD01","value":"PD01"},{"label":"PD02","value":"PD02"},{"label":"PD03","value":"PD03"}]}]},"clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/simple_button_btn0","wsType":"config_update","conf_class":"pintool"}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:07:11.415
+!MESSAGE Client mentioned sockets are all ready: counting down latch
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:07:11.416
+!MESSAGE latch unlocked: cmsis socket response sending
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:07:11.416
+!MESSAGE latch unlocked: pintool socket response sending
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:07:11.417
+!MESSAGE New pintool options detected -- resending existing problem markers for handling.
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:07:11.417
+!MESSAGE Attempting to find a linkage in pintool with marker id portio.pti.enable.dout
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:07:11.455
+!MESSAGE Component Editor Pintool Marker Added: Marker [on: /vibration-sensor/vibration-sensor.pintool, id: 393, type: com.silabs.ss.framework.hwconfig.core.abproblemmarker, attributes: [location: , message: Requirement SL_FEM_UTIL_RX is unsatisified (needs PRS instance) [from sl_fem_util_config.h], objectPath: /, severity: 1, transient: true], created: 12/12/23, 4:05 PM]
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:07:11.456
+!MESSAGE Component Editor Pintool Marker Added: Marker [on: /vibration-sensor/vibration-sensor.pintool, id: 394, type: com.silabs.ss.framework.hwconfig.core.abproblemmarker, attributes: [location: DefaultMode PORTIO, message: DOUT must be enabled for PTI [from sl_rail_util_pti_config.h], objectPath: /DefaultMode/PORTIO, propertyId: portio.pti.enable.dout, severity: 1, transient: true], created: 12/12/23, 4:05 PM]
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:07:11.456
+!MESSAGE Attempting to find a linkage in pintool with marker id portio.pti.enable.dout
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:07:11.457
+!MESSAGE Component Editor Pintool Marker Added: Marker [on: /vibration-sensor/vibration-sensor.pintool, id: 395, type: com.silabs.ss.framework.hwconfig.core.abproblemmarker, attributes: [location: , message: Requirement SL_SIMPLE_BUTTON_BTN1 is unsatisified (needs GPIO instance) [from sl_simple_button_btn1_config.h], objectPath: /, severity: 1, transient: true], created: 12/12/23, 4:05 PM]
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:07:11.457
+!MESSAGE Component Editor Pintool Marker Added: Marker [on: /vibration-sensor/vibration-sensor.pintool, id: 396, type: com.silabs.ss.framework.hwconfig.core.abproblemmarker, attributes: [location: , message: Requirement SL_SIMPLE_BUTTON_BTN0 is unsatisified (needs GPIO instance) [from sl_simple_button_btn0_config.h], objectPath: /, severity: 1, transient: true], created: 12/12/23, 4:05 PM]
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:07:11.534
+!MESSAGE Clear CMSIS Issues WS call: {"clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/simple_button_btn0","ids":[],"wsType":"clear_issues"}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:07:13.569
+!MESSAGE Selected peripheral modification -- listeners updating
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:07:13.569
+!MESSAGE registering configuration tool pintool editor listeners for SL_SIMPLE_BUTTON_BTN0 on module PB00
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:07:13.570
+!MESSAGE Preparing Websocket Pintool Update: {"configurables":{"removed":[],"updated":[{"parent_category_id":"SL_SIMPLE_BUTTON_BTN0_REQUIREMENT","conf_type":"combo","initial":"PB00","label":"Selected Module","id":"SL_SIMPLE_BUTTON_BTN0","type":"conf","combo_options":[{"label":"None","value":"None"},{"label":"PA00","value":"PA00"},{"label":"PA01","value":"PA01"},{"label":"PA02","value":"PA02"},{"label":"PA03","value":"PA03"},{"label":"PA04","value":"PA04"},{"label":"PA05","value":"PA05"},{"label":"PA06","value":"PA06"},{"label":"PA07","value":"PA07"},{"label":"PA08","value":"PA08"},{"label":"PB00","value":"PB00"},{"label":"PB01","value":"PB01"},{"label":"PB02","value":"PB02"},{"label":"PB03","value":"PB03"},{"label":"PB04","value":"PB04"},{"label":"PC00","value":"PC00"},{"label":"PC01","value":"PC01"},{"label":"PC02","value":"PC02"},{"label":"PC03","value":"PC03"},{"label":"PC04","value":"PC04"},{"label":"PC05","value":"PC05"},{"label":"PC06","value":"PC06"},{"label":"PC07","value":"PC07"},{"label":"PD00","value":"PD00"},{"label":"PD01","value":"PD01"},{"label":"PD02","value":"PD02"},{"label":"PD03","value":"PD03"}]},{"parent_category_id":"SL_SIMPLE_BUTTON_BTN0_REQUIREMENT","label":"Port Pin","id":"PINTOOL_CATEGORY_PB00_Port Pin","type":"cat"},{"parent_category_id":"PINTOOL_CATEGORY_PB00_Port Pin","conf_type":"string","readonly":false,"rawprop":"pin.name","initial":"","label":"Custom Pin Name","id":"PB00.$PROP.pin.name","type":"conf"}]},"clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/simple_button_btn0","wsType":"config_update","conf_class":"pintool"}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:07:13.570
+!MESSAGE latch unlocked: pintool socket response sending
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:07:13.571
+!MESSAGE New pintool options detected -- resending existing problem markers for handling.
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:07:13.572
+!MESSAGE Attempting to find a linkage in pintool with marker id portio.pti.enable.dout
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:07:13.573
+!MESSAGE Preparing Websocket Pintool Update: {"configurables":{"removed":[],"updated":[]},"clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/simple_button_btn0","wsType":"config_update","conf_class":"pintool"}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:07:13.573
+!MESSAGE latch unlocked: pintool socket response sending
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:07:13.574
+!MESSAGE Pintool data generation requested. Starting job
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:07:13.684
+!MESSAGE Preparing Websocket Pintool Update: {"configurables":{"removed":[],"updated":[]},"clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/simple_button_btn0","wsType":"config_update","conf_class":"pintool"}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:07:13.685
+!MESSAGE latch unlocked: pintool socket response sending
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:07:13.714
+!MESSAGE Component Editor Pintool Marker Removed: Marker [on: /vibration-sensor/vibration-sensor.pintool, id: 396, type: com.silabs.ss.framework.hwconfig.core.abproblemmarker, attributes: [location: , message: Requirement SL_SIMPLE_BUTTON_BTN0 is unsatisified (needs GPIO instance) [from sl_simple_button_btn0_config.h], objectPath: /, severity: 1, transient: true], created: 12/12/23, 4:05 PM]
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:07:14.580
+!MESSAGE Resource Changed: Reparsing L/vibration-sensor/config/sl_simple_button_btn0_config.h for cmsis
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:07:14.582
+!MESSAGE A Cmsis Reparse was triggered for sl_simple_button_btn0_config.h
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:07:14.584
+!MESSAGE CMSIS Parse success for sl_simple_button_btn0_config.h
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:07:14.610
+!MESSAGE preparing cmsis websocket update: {"configurables":{"removed":[],"updated":[]},"clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/simple_button_btn0","header":"sl_simple_button_btn0_config.h","wsType":"config_update","conf_class":"cmsis"}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:07:14.610
+!MESSAGE latch unlocked: cmsis socket response sending
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:07:14.685
+!MESSAGE Clear CMSIS Issues WS call: {"clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/simple_button_btn0","ids":[],"wsType":"clear_issues"}
+
+!ENTRY com.silabs.ss.tool.uc.editor 1 0 2023-12-12 16:07:14.872
+!MESSAGE UcEditorController: onWebSocketClose CALLED statusCode=1001 reason=null
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:07:15.990
+!MESSAGE editor file home calculation for Studio resulted in C:\Users\Workstation\Documents\GitHub\Vibration-Sensor\Code\vibration-sensor\.uceditor for vibration-sensor with component Simple Button (btn1)
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:07:15.999
+!MESSAGE editor file home calculation for Studio resulted in C:\Users\Workstation\Documents\GitHub\Vibration-Sensor\Code\vibration-sensor\.uceditor for vibration-sensor with component Simple Button (btn1)
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:07:16.027
+!MESSAGE Initial cmsis parsing: {sl_simple_button_btn1_config.h=Start Parse Offset: 2360
+End Parse Offset: 2360
+Parsing Error: null
+Parsing Error offset: -1
+fContainWizard: true
+}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:07:16.028
+!MESSAGE PinTool annotations detected. Loading ABDevice
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:07:16.028
+!MESSAGE Selected peripheral modification -- listeners updating
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:07:16.029
+!MESSAGE Preparing Websocket Pintool Update: {"configurables":{"removed":[],"updated":[{"label":"SL_SIMPLE_BUTTON_BTN1","id":"SL_SIMPLE_BUTTON_BTN1_REQUIREMENT","type":"cat","conf_class":"pintool"},{"parent_category_id":"SL_SIMPLE_BUTTON_BTN1_REQUIREMENT","conf_type":"combo","initial":"None","label":"Selected Module","id":"SL_SIMPLE_BUTTON_BTN1","type":"conf","combo_options":[{"label":"None","value":"None"},{"label":"PA00","value":"PA00"},{"label":"PA01","value":"PA01"},{"label":"PA02","value":"PA02"},{"label":"PA03","value":"PA03"},{"label":"PA04","value":"PA04"},{"label":"PA05","value":"PA05"},{"label":"PA06","value":"PA06"},{"label":"PA07","value":"PA07"},{"label":"PA08","value":"PA08"},{"label":"PB00","value":"PB00"},{"label":"PB01","value":"PB01"},{"label":"PB02","value":"PB02"},{"label":"PB03","value":"PB03"},{"label":"PB04","value":"PB04"},{"label":"PC00","value":"PC00"},{"label":"PC01","value":"PC01"},{"label":"PC02","value":"PC02"},{"label":"PC03","value":"PC03"},{"label":"PC04","value":"PC04"},{"label":"PC05","value":"PC05"},{"label":"PC06","value":"PC06"},{"label":"PC07","value":"PC07"},{"label":"PD00","value":"PD00"},{"label":"PD01","value":"PD01"},{"label":"PD02","value":"PD02"},{"label":"PD03","value":"PD03"}]}]},"clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/simple_button_btn1","wsType":"config_update","conf_class":"pintool"}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:07:16.029
+!MESSAGE Component Editor Pintool Marker Added: Marker [on: /vibration-sensor/vibration-sensor.pintool, id: 392, type: com.silabs.ss.framework.hwconfig.core.abproblemmarker, attributes: [location: , message: Requirement SL_FEM_UTIL_SLEEP is unsatisified (needs PRS instance) [from sl_fem_util_config.h], objectPath: /, severity: 1, transient: true], created: 12/12/23, 4:05 PM]
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:07:16.029
+!MESSAGE CMSIS Parse success for sl_simple_button_btn1_config.h
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:07:16.030
+!MESSAGE preparing cmsis websocket update: {"configurables":{"removed":[],"updated":[{"conf_type":"combo","initial":"Interrupt","header":"sl_simple_button_btn1_config.h","label":"SL_SIMPLE_BUTTON_BTN1_MODE","id":"CMSIS_$sl_simple_button_btn1_config.h$_SL_SIMPLE_BUTTON_BTN1_MODE","type":"conf","combo_options":["Interrupt","Poll and Debounce","Poll"],"desc":"Default: SL_SIMPLE_BUTTON_MODE_INTERRUPT"}]},"clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/simple_button_btn1","header":"sl_simple_button_btn1_config.h","wsType":"config_update","conf_class":"cmsis"}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:07:16.486
+!MESSAGE Client mentioned sockets are all ready: counting down latch
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:07:16.486
+!MESSAGE latch unlocked: pintool socket response sending
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:07:16.486
+!MESSAGE latch unlocked: cmsis socket response sending
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:07:16.487
+!MESSAGE New pintool options detected -- resending existing problem markers for handling.
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:07:16.487
+!MESSAGE Attempting to find a linkage in pintool with marker id portio.pti.enable.dout
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:07:16.502
+!MESSAGE Component Editor Pintool Marker Added: Marker [on: /vibration-sensor/vibration-sensor.pintool, id: 393, type: com.silabs.ss.framework.hwconfig.core.abproblemmarker, attributes: [location: , message: Requirement SL_FEM_UTIL_RX is unsatisified (needs PRS instance) [from sl_fem_util_config.h], objectPath: /, severity: 1, transient: true], created: 12/12/23, 4:05 PM]
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:07:16.503
+!MESSAGE Component Editor Pintool Marker Added: Marker [on: /vibration-sensor/vibration-sensor.pintool, id: 394, type: com.silabs.ss.framework.hwconfig.core.abproblemmarker, attributes: [location: DefaultMode PORTIO, message: DOUT must be enabled for PTI [from sl_rail_util_pti_config.h], objectPath: /DefaultMode/PORTIO, propertyId: portio.pti.enable.dout, severity: 1, transient: true], created: 12/12/23, 4:05 PM]
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:07:16.503
+!MESSAGE Attempting to find a linkage in pintool with marker id portio.pti.enable.dout
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:07:16.504
+!MESSAGE Component Editor Pintool Marker Added: Marker [on: /vibration-sensor/vibration-sensor.pintool, id: 395, type: com.silabs.ss.framework.hwconfig.core.abproblemmarker, attributes: [location: , message: Requirement SL_SIMPLE_BUTTON_BTN1 is unsatisified (needs GPIO instance) [from sl_simple_button_btn1_config.h], objectPath: /, severity: 1, transient: true], created: 12/12/23, 4:05 PM]
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:07:16.597
+!MESSAGE Clear CMSIS Issues WS call: {"clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/simple_button_btn1","ids":[],"wsType":"clear_issues"}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:07:18.330
+!MESSAGE Selected peripheral modification -- listeners updating
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:07:18.330
+!MESSAGE registering configuration tool pintool editor listeners for SL_SIMPLE_BUTTON_BTN1 on module PB01
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:07:18.331
+!MESSAGE Preparing Websocket Pintool Update: {"configurables":{"removed":[],"updated":[{"parent_category_id":"SL_SIMPLE_BUTTON_BTN1_REQUIREMENT","conf_type":"combo","initial":"PB01","label":"Selected Module","id":"SL_SIMPLE_BUTTON_BTN1","type":"conf","combo_options":[{"label":"None","value":"None"},{"label":"PA00","value":"PA00"},{"label":"PA01","value":"PA01"},{"label":"PA02","value":"PA02"},{"label":"PA03","value":"PA03"},{"label":"PA04","value":"PA04"},{"label":"PA05","value":"PA05"},{"label":"PA06","value":"PA06"},{"label":"PA07","value":"PA07"},{"label":"PA08","value":"PA08"},{"label":"PB00","value":"PB00"},{"label":"PB01","value":"PB01"},{"label":"PB02","value":"PB02"},{"label":"PB03","value":"PB03"},{"label":"PB04","value":"PB04"},{"label":"PC00","value":"PC00"},{"label":"PC01","value":"PC01"},{"label":"PC02","value":"PC02"},{"label":"PC03","value":"PC03"},{"label":"PC04","value":"PC04"},{"label":"PC05","value":"PC05"},{"label":"PC06","value":"PC06"},{"label":"PC07","value":"PC07"},{"label":"PD00","value":"PD00"},{"label":"PD01","value":"PD01"},{"label":"PD02","value":"PD02"},{"label":"PD03","value":"PD03"}]},{"parent_category_id":"SL_SIMPLE_BUTTON_BTN1_REQUIREMENT","label":"Port Pin","id":"PINTOOL_CATEGORY_PB01_Port Pin","type":"cat"},{"parent_category_id":"PINTOOL_CATEGORY_PB01_Port Pin","conf_type":"string","readonly":false,"rawprop":"pin.name","initial":"","label":"Custom Pin Name","id":"PB01.$PROP.pin.name","type":"conf"}]},"clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/simple_button_btn1","wsType":"config_update","conf_class":"pintool"}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:07:18.331
+!MESSAGE latch unlocked: pintool socket response sending
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:07:18.332
+!MESSAGE New pintool options detected -- resending existing problem markers for handling.
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:07:18.333
+!MESSAGE Attempting to find a linkage in pintool with marker id portio.pti.enable.dout
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:07:18.334
+!MESSAGE Preparing Websocket Pintool Update: {"configurables":{"removed":[],"updated":[]},"clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/simple_button_btn1","wsType":"config_update","conf_class":"pintool"}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:07:18.334
+!MESSAGE latch unlocked: pintool socket response sending
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:07:18.335
+!MESSAGE Pintool data generation requested. Starting job
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:07:18.433
+!MESSAGE Preparing Websocket Pintool Update: {"configurables":{"removed":[],"updated":[]},"clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/simple_button_btn1","wsType":"config_update","conf_class":"pintool"}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:07:18.434
+!MESSAGE latch unlocked: pintool socket response sending
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:07:18.451
+!MESSAGE Component Editor Pintool Marker Removed: Marker [on: /vibration-sensor/vibration-sensor.pintool, id: 395, type: com.silabs.ss.framework.hwconfig.core.abproblemmarker, attributes: [location: , message: Requirement SL_SIMPLE_BUTTON_BTN1 is unsatisified (needs GPIO instance) [from sl_simple_button_btn1_config.h], objectPath: /, severity: 1, transient: true], created: 12/12/23, 4:05 PM]
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:07:19.572
+!MESSAGE Allowed modules (event detection): PA00, PA01, PA02, PA03, PA04, PA05, PA06, PA07, PA08, PB00, PB01, PB02, PB03, PB04, PC00, PC01, PC02, PC03, PC04, PC05, PC06, PC07, PD00, PD01, PD02, PD03
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:07:19.572
+!MESSAGE Preparing Websocket Pintool Update: {"configurables":{"removed":[],"updated":[]},"clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/simple_button_btn1","wsType":"config_update","conf_class":"pintool"}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:07:19.573
+!MESSAGE latch unlocked: pintool socket response sending
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:07:19.624
+!MESSAGE Resource Changed: Reparsing L/vibration-sensor/config/sl_simple_button_btn1_config.h for cmsis
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:07:19.626
+!MESSAGE A Cmsis Reparse was triggered for sl_simple_button_btn1_config.h
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:07:19.628
+!MESSAGE CMSIS Parse success for sl_simple_button_btn1_config.h
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:07:19.629
+!MESSAGE preparing cmsis websocket update: {"configurables":{"removed":[],"updated":[]},"clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/simple_button_btn1","header":"sl_simple_button_btn1_config.h","wsType":"config_update","conf_class":"cmsis"}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:07:19.629
+!MESSAGE latch unlocked: cmsis socket response sending
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:07:19.735
+!MESSAGE Clear CMSIS Issues WS call: {"clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/simple_button_btn1","ids":[],"wsType":"clear_issues"}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:07:36.810
+!MESSAGE Resource Changed: Reparsing L/vibration-sensor/config/sl_simple_button_btn1_config.h for cmsis
+
+!ENTRY org.eclipse.ltk.core.refactoring 4 10009 2023-12-12 16:17:57.515
+!MESSAGE Participant 'org.eclipse.cdt.ui.headerFileRenameParticipant' removed due to the following exception
+!STACK 1
+C Model Exception: C Model Status [Update conflict.]
+	at org.eclipse.cdt.internal.core.model.CModelOperation.runOperation(CModelOperation.java:637)
+	at org.eclipse.cdt.internal.core.model.WorkingCopy.commit(WorkingCopy.java:81)
+	at org.eclipse.cdt.ui.refactoring.CTextFileChange.commit(CTextFileChange.java:86)
+	at org.eclipse.ltk.core.refactoring.TextChange.perform(TextChange.java:242)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:281)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:281)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.lambda$0(PerformChangeOperation.java:258)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2315)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2340)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.executeChange(PerformChangeOperation.java:295)
+	at org.eclipse.ltk.internal.ui.refactoring.UIPerformChangeOperation.executeChange(UIPerformChangeOperation.java:94)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.run(PerformChangeOperation.java:219)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2315)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2340)
+	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:89)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+!SUBENTRY 1 org.eclipse.cdt.core 4 981 2023-12-12 16:17:57.515
+!MESSAGE Update conflict.
+
+!ENTRY org.eclipse.ltk.ui.refactoring 4 10000 2023-12-12 16:17:57.545
+!MESSAGE Internal Error
+!STACK 1
+C Model Exception: C Model Status [Update conflict.]
+	at org.eclipse.cdt.internal.core.model.CModelOperation.runOperation(CModelOperation.java:637)
+	at org.eclipse.cdt.internal.core.model.WorkingCopy.commit(WorkingCopy.java:81)
+	at org.eclipse.cdt.ui.refactoring.CTextFileChange.commit(CTextFileChange.java:86)
+	at org.eclipse.ltk.core.refactoring.TextChange.perform(TextChange.java:242)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:281)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:281)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.lambda$0(PerformChangeOperation.java:258)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2315)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2340)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.executeChange(PerformChangeOperation.java:295)
+	at org.eclipse.ltk.internal.ui.refactoring.UIPerformChangeOperation.executeChange(UIPerformChangeOperation.java:94)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.run(PerformChangeOperation.java:219)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2315)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2340)
+	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:89)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+!SUBENTRY 1 org.eclipse.cdt.core 4 981 2023-12-12 16:17:57.545
+!MESSAGE Update conflict.
+
+!ENTRY org.eclipse.cdt.core 4 981 2023-12-12 16:17:57.546
+!MESSAGE Update conflict.
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:29:09.053
+!MESSAGE editor file home calculation for Studio resulted in C:\Users\Workstation\Documents\GitHub\Vibration-Sensor\Code\vibration-sensor\.uceditor for vibration-sensor with component Stack (MTD)
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:29:09.062
+!MESSAGE editor file home calculation for Studio resulted in C:\Users\Workstation\Documents\GitHub\Vibration-Sensor\Code\vibration-sensor\.uceditor for vibration-sensor with component Stack (MTD)
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:29:09.087
+!MESSAGE Initial cmsis parsing: {sl_openthread_features_config.h=Start Parse Offset: 10991
+End Parse Offset: 10991
+Parsing Error: null
+Parsing Error offset: -1
+fContainWizard: true
+, sl_openthread_generic_config.h=Start Parse Offset: 5369
+End Parse Offset: 5369
+Parsing Error: null
+Parsing Error offset: -1
+fContainWizard: false
+}
+
+!ENTRY com.silabs.ss.tool.uc.editor 4 0 2023-12-12 16:29:09.091
+!MESSAGE Could not load pintool device data within 30 second timeframe. Marker manager not connected to component editor -- device errors will not show up.
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:29:09.130
+!MESSAGE CMSIS Parse success for sl_openthread_features_config.h
+
+!ENTRY com.silabs.ss.platform.rcp.core 2 0 2023-12-12 16:29:09.140
+!MESSAGE Could not parse sl_openthread_generic_config.h cmsis contents as there were none. 
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:29:09.142
+!MESSAGE preparing cmsis websocket update: {"configurables":{"removed":[],"updated":[{"parent_category_id":"CMSIS_$sl_openthread_features_config.h$_Thread Stack Protocol Version","conf_type":"combo","initial":"Thread 1.3","header":"sl_openthread_features_config.h","label":"OPENTHREAD_CONFIG_THREAD_VERSION","id":"CMSIS_$sl_openthread_features_config.h$_OPENTHREAD_CONFIG_THREAD_VERSION","type":"conf","combo_options":["Thread 1.1","Thread 1.2","Thread 1.3"],"desc":"Thread 1.2 and Thread 1.3 are compatible with Thread 1.1.\r\nCurrent Default: OT_THREAD_VERSION_1_3"},{"parent_category_id":"CMSIS_$sl_openthread_features_config.h$_Default OpenThread Stack Configuration","header":"sl_openthread_features_config.h","label":"Thread Stack Protocol Version","id":"CMSIS_$sl_openthread_features_config.h$_Thread Stack Protocol Version","type":"cat","conf_class":"cmsis"},{"parent_category_id":"CMSIS_$sl_openthread_features_config.h$_The following features require at least Thread Stack Protocol Version 1.2","conf_type":"check","initial":false,"header":"sl_openthread_features_config.h","label":"Backbone Router","id":"CMSIS_$sl_openthread_features_config.h$_Backbone Router","type":"conf"},{"parent_category_id":"CMSIS_$sl_openthread_features_config.h$_The following features require at least Thread Stack Protocol Version 1.2","conf_type":"check","initial":true,"header":"sl_openthread_features_config.h","label":"CSL Auto Synchronization using data polling","id":"CMSIS_$sl_openthread_features_config.h$_CSL Auto Synchronization using data polling","type":"conf"},{"parent_category_id":"CMSIS_$sl_openthread_features_config.h$_The following features require at least Thread Stack Protocol Version 1.2","conf_type":"check","initial":false,"header":"sl_openthread_features_config.h","label":"CSL (Coordinated Sampled Listening) Debug","id":"CMSIS_$sl_openthread_features_config.h$_CSL (Coordinated Sampled Listening) Debug","type":"conf"},{"parent_category_id":"CMSIS_$sl_openthread_features_config.h$_The following features require at least Thread Stack Protocol Version 1.2","conf_type":"check","initial":true,"header":"sl_openthread_features_config.h","label":"CSL (Coordinated Sampled Listening) Receiver","id":"CMSIS_$sl_openthread_features_config.h$_CSL (Coordinated Sampled Listening) Receiver","type":"conf"},{"parent_category_id":"CMSIS_$sl_openthread_features_config.h$_The following features require at least Thread Stack Protocol Version 1.2","conf_type":"check","initial":false,"header":"sl_openthread_features_config.h","label":"CSL Scheduling Uncertainty (±10 us units)","id":"CMSIS_$sl_openthread_features_config.h$_CSL Scheduling Uncertainty (±10 us units)","type":"conf"},{"parent_category_id":"CMSIS_$sl_openthread_features_config.h$_The following features require at least Thread Stack Protocol Version 1.2","conf_type":"check","initial":true,"header":"sl_openthread_features_config.h","label":"DUA (Domain Unicast Address)","id":"CMSIS_$sl_openthread_features_config.h$_DUA (Domain Unicast Address)","type":"conf"},{"parent_category_id":"CMSIS_$sl_openthread_features_config.h$_The following features require at least Thread Stack Protocol Version 1.2","conf_type":"check","initial":true,"header":"sl_openthread_features_config.h","label":"Link Metrics Initiator","id":"CMSIS_$sl_openthread_features_config.h$_Link Metrics Initiator","type":"conf"},{"parent_category_id":"CMSIS_$sl_openthread_features_config.h$_The following features require at least Thread Stack Protocol Version 1.2","conf_type":"check","initial":true,"header":"sl_openthread_features_config.h","label":"Link Metrics Subject","id":"CMSIS_$sl_openthread_features_config.h$_Link Metrics Subject","type":"conf"},{"parent_category_id":"CMSIS_$sl_openthread_features_config.h$_The following features require at least Thread Stack Protocol Version 1.2","conf_type":"check","initial":true,"header":"sl_openthread_features_config.h","label":"Multicast Listener Registration","id":"CMSIS_$sl_openthread_features_config.h$_Multicast Listener Registration","type":"conf"},{"parent_category_id":"CMSIS_$sl_openthread_features_config.h$_The following features require at least Thread Stack Protocol Version 1.2","conf_type":"check","initial":true,"header":"sl_openthread_features_config.h","label":"DNS Client (Thread 1.3)","id":"CMSIS_$sl_openthread_features_config.h$_DNS Client (Thread 1.3)","type":"conf"},{"parent_category_id":"CMSIS_$sl_openthread_features_config.h$_The following features require at least Thread Stack Protocol Version 1.2","conf_type":"check","initial":false,"header":"sl_openthread_features_config.h","label":"DNS-SD Server (Thread 1.3)","id":"CMSIS_$sl_openthread_features_config.h$_DNS-SD Server (Thread 1.3)","type":"conf"},{"parent_category_id":"CMSIS_$sl_openthread_features_config.h$_The following features require at least Thread Stack Protocol Version 1.2","conf_type":"check","initial":true,"header":"sl_openthread_features_config.h","label":"Service Registration Protocol (SRP) Client (Thread 1.3)","id":"CMSIS_$sl_openthread_features_config.h$_Service Registration Protocol (SRP) Client (Thread 1.3)","type":"conf"},{"parent_category_id":"CMSIS_$sl_openthread_features_config.h$_The following features require at least Thread Stack Protocol Version 1.2","conf_type":"check","initial":false,"header":"sl_openthread_features_config.h","label":"Service Registration Protocol (SRP) Server (Thread 1.3)","id":"CMSIS_$sl_openthread_features_config.h$_Service Registration Protocol (SRP) Server (Thread 1.3)","type":"conf"},{"parent_category_id":"CMSIS_$sl_openthread_features_config.h$_The following features require at least Thread Stack Protocol Version 1.2","conf_type":"check","initial":false,"header":"sl_openthread_features_config.h","label":"TCPlp (Low power TCP over OpenThread) (Thread 1.3)","id":"CMSIS_$sl_openthread_features_config.h$_TCPlp (Low power TCP over OpenThread) (Thread 1.3)","type":"conf"},{"parent_category_id":"CMSIS_$sl_openthread_features_config.h$_The following features require at least Thread Stack Protocol Version 1.2","conf_type":"check","initial":false,"header":"sl_openthread_features_config.h","label":"Thread over Infrastructure (Thread 1.3: NCP only)","id":"CMSIS_$sl_openthread_features_config.h$_Thread over Infrastructure (Thread 1.3: NCP only)","type":"conf"},{"parent_category_id":"CMSIS_$sl_openthread_features_config.h$_Default OpenThread Stack Configuration","header":"sl_openthread_features_config.h","label":"The following features require at least Thread Stack Protocol Version 1.2","id":"CMSIS_$sl_openthread_features_config.h$_The following features require at least Thread Stack Protocol Version 1.2","type":"cat","conf_class":"cmsis"},{"parent_category_id":"CMSIS_$sl_openthread_features_config.h$_Default OpenThread Stack Configuration","header":"sl_openthread_features_config.h","toggle":false,"label":"Border Agent","id":"CMSIS_$sl_openthread_features_config.h$_Border Agent","type":"cat","conf_class":"cmsis"},{"parent_category_id":"CMSIS_$sl_openthread_features_config.h$_Default OpenThread Stack Configuration","header":"sl_openthread_features_config.h","toggle":false,"label":"Border Router","id":"CMSIS_$sl_openthread_features_config.h$_Border Router","type":"cat","conf_class":"cmsis"},{"parent_category_id":"CMSIS_$sl_openthread_features_config.h$_Default OpenThread Stack Configuration","header":"sl_openthread_features_config.h","toggle":false,"label":"Channel Manager","id":"CMSIS_$sl_openthread_features_config.h$_Channel Manager","type":"cat","conf_class":"cmsis"},{"parent_category_id":"CMSIS_$sl_openthread_features_config.h$_Default OpenThread Stack Configuration","header":"sl_openthread_features_config.h","toggle":false,"label":"Channel Monitor","id":"CMSIS_$sl_openthread_features_config.h$_Channel Monitor","type":"cat","conf_class":"cmsis"},{"parent_category_id":"CMSIS_$sl_openthread_features_config.h$_OPENTHREAD_CONFIG_COMMISSIONER_ENABLE","conf_type":"spinner","initial":"2","header":"sl_openthread_features_config.h","label":"Max Joiner Entries","id":"CMSIS_$sl_openthread_features_config.h$_OPENTHREAD_CONFIG_COMMISSIONER_MAX_JOINER_ENTRIES","type":"conf","desc":"The maximum number of Joiner entries maintained by the Commissioner."},{"parent_category_id":"CMSIS_$sl_openthread_features_config.h$_Default OpenThread Stack Configuration","header":"sl_openthread_features_config.h","toggle":false,"label":"Commissioner","id":"CMSIS_$sl_openthread_features_config.h$_OPENTHREAD_CONFIG_COMMISSIONER_ENABLE","type":"cat","conf_class":"cmsis"},{"parent_category_id":"CMSIS_$sl_openthread_features_config.h$_Default OpenThread Stack Configuration","header":"sl_openthread_features_config.h","toggle":false,"label":"COAP API","id":"CMSIS_$sl_openthread_features_config.h$_COAP API","type":"cat","conf_class":"cmsis"},{"parent_category_id":"CMSIS_$sl_openthread_features_config.h$_Default OpenThread Stack Configuration","header":"sl_openthread_features_config.h","toggle":false,"label":"COAP Observe (RFC7641) API","id":"CMSIS_$sl_openthread_features_config.h$_COAP Observe (RFC7641) API","type":"cat","conf_class":"cmsis"},{"parent_category_id":"CMSIS_$sl_openthread_features_config.h$_Default OpenThread Stack Configuration","header":"sl_openthread_features_config.h","toggle":false,"label":"COAP Secure API","id":"CMSIS_$sl_openthread_features_config.h$_COAP Secure API","type":"cat","conf_class":"cmsis"},{"parent_category_id":"CMSIS_$sl_openthread_features_config.h$_Default OpenThread Stack Configuration","header":"sl_openthread_features_config.h","toggle":false,"label":"DHCP6 Client","id":"CMSIS_$sl_openthread_features_config.h$_DHCP6 Client","type":"cat","conf_class":"cmsis"},{"parent_category_id":"CMSIS_$sl_openthread_features_config.h$_Default OpenThread Stack Configuration","header":"sl_openthread_features_config.h","toggle":false,"label":"DHCP6 Server","id":"CMSIS_$sl_openthread_features_config.h$_DHCP6 Server","type":"cat","conf_class":"cmsis"},{"parent_category_id":"CMSIS_$sl_openthread_features_config.h$_Default OpenThread Stack Configuration","header":"sl_openthread_features_config.h","toggle":false,"label":"Diagnostic","id":"CMSIS_$sl_openthread_features_config.h$_Diagnostic","type":"cat","conf_class":"cmsis"},{"parent_category_id":"CMSIS_$sl_openthread_features_config.h$_Default OpenThread Stack Configuration","header":"sl_openthread_features_config.h","toggle":true,"label":"ECDSA (Elliptic Curve Digital Signature Algorithm) (Required for Matter support)","id":"CMSIS_$sl_openthread_features_config.h$_ECDSA (Elliptic Curve Digital Signature Algorithm) (Required for Matter support)","type":"cat","conf_class":"cmsis"},{"parent_category_id":"CMSIS_$sl_openthread_features_config.h$_Default OpenThread Stack Configuration","header":"sl_openthread_features_config.h","toggle":true,"label":"External Heap","id":"CMSIS_$sl_openthread_features_config.h$_External Heap","type":"cat","conf_class":"cmsis"},{"parent_category_id":"CMSIS_$sl_openthread_features_config.h$_Default OpenThread Stack Configuration","header":"sl_openthread_features_config.h","toggle":false,"label":"IPv6 Fragmentation","id":"CMSIS_$sl_openthread_features_config.h$_IPv6 Fragmentation","type":"cat","conf_class":"cmsis"},{"parent_category_id":"CMSIS_$sl_openthread_features_config.h$_Default OpenThread Stack Configuration","header":"sl_openthread_features_config.h","toggle":false,"label":"Maximum number of IPv6 unicast addresses allowed to be externally added","id":"CMSIS_$sl_openthread_features_config.h$_Maximum number of IPv6 unicast addresses allowed to be externally added","type":"cat","conf_class":"cmsis"},{"parent_category_id":"CMSIS_$sl_openthread_features_config.h$_Default OpenThread Stack Configuration","header":"sl_openthread_features_config.h","toggle":false,"label":"Maximum number of IPv6 multicast addresses allowed to be externally added","id":"CMSIS_$sl_openthread_features_config.h$_Maximum number of IPv6 multicast addresses allowed to be externally added","type":"cat","conf_class":"cmsis"},{"parent_category_id":"CMSIS_$sl_openthread_features_config.h$_Default OpenThread Stack Configuration","header":"sl_openthread_features_config.h","toggle":false,"label":"Jam Detection","id":"CMSIS_$sl_openthread_features_config.h$_Jam Detection","type":"cat","conf_class":"cmsis"},{"parent_category_id":"CMSIS_$sl_openthread_features_config.h$_Default OpenThread Stack Configuration","header":"sl_openthread_features_config.h","toggle":false,"label":"Joiner","id":"CMSIS_$sl_openthread_features_config.h$_Joiner","type":"cat","conf_class":"cmsis"},{"parent_category_id":"CMSIS_$sl_openthread_features_config.h$_Default OpenThread Stack Configuration","header":"sl_openthread_features_config.h","toggle":false,"label":"Link Raw Service","id":"CMSIS_$sl_openthread_features_config.h$_Link Raw Service","type":"cat","conf_class":"cmsis"},{"parent_category_id":"CMSIS_$sl_openthread_features_config.h$_Default OpenThread Stack Configuration","header":"sl_openthread_features_config.h","toggle":false,"label":"MAC Filter","id":"CMSIS_$sl_openthread_features_config.h$_MAC Filter","type":"cat","conf_class":"cmsis"},{"parent_category_id":"CMSIS_$sl_openthread_features_config.h$_Default OpenThread Stack Configuration","header":"sl_openthread_features_config.h","toggle":false,"label":"MLE Long Routes extension (experimental)","id":"CMSIS_$sl_openthread_features_config.h$_MLE Long Routes extension (experimental)","type":"cat","conf_class":"cmsis"},{"parent_category_id":"CMSIS_$sl_openthread_features_config.h$_Default OpenThread Stack Configuration","header":"sl_openthread_features_config.h","toggle":false,"label":"MultiPAN RCP","id":"CMSIS_$sl_openthread_features_config.h$_MultiPAN RCP","type":"cat","conf_class":"cmsis"},{"parent_category_id":"CMSIS_$sl_openthread_features_config.h$_Default OpenThread Stack Configuration","header":"sl_openthread_features_config.h","toggle":false,"label":"Multiple OpenThread Instances","id":"CMSIS_$sl_openthread_features_config.h$_Multiple OpenThread Instances","type":"cat","conf_class":"cmsis"},{"parent_category_id":"CMSIS_$sl_openthread_features_config.h$_Default OpenThread Stack Configuration","header":"sl_openthread_features_config.h","toggle":false,"label":"OTNS (OpenThread Network Simulator)","id":"CMSIS_$sl_openthread_features_config.h$_OTNS (OpenThread Network Simulator)","type":"cat","conf_class":"cmsis"},{"parent_category_id":"CMSIS_$sl_openthread_features_config.h$_Default OpenThread Stack Configuration","header":"sl_openthread_features_config.h","toggle":true,"label":"Ping Sender Module","id":"CMSIS_$sl_openthread_features_config.h$_Ping Sender Module","type":"cat","conf_class":"cmsis"},{"parent_category_id":"CMSIS_$sl_openthread_features_config.h$_Default OpenThread Stack Configuration","header":"sl_openthread_features_config.h","toggle":false,"label":"Platform UDP","id":"CMSIS_$sl_openthread_features_config.h$_Platform UDP","type":"cat","conf_class":"cmsis"},{"parent_category_id":"CMSIS_$sl_openthread_features_config.h$_Default OpenThread Stack Configuration","header":"sl_openthread_features_config.h","toggle":false,"label":"Reference Device for Thread Test Harness","id":"CMSIS_$sl_openthread_features_config.h$_Reference Device for Thread Test Harness","type":"cat","conf_class":"cmsis"},{"parent_category_id":"CMSIS_$sl_openthread_features_config.h$_Default OpenThread Stack Configuration","header":"sl_openthread_features_config.h","toggle":false,"label":"Service Entries in Thread Network Data","id":"CMSIS_$sl_openthread_features_config.h$_Service Entries in Thread Network Data","type":"cat","conf_class":"cmsis"},{"parent_category_id":"CMSIS_$sl_openthread_features_config.h$_Default OpenThread Stack Configuration","header":"sl_openthread_features_config.h","toggle":false,"label":"RAM (volatile-only storage)","id":"CMSIS_$sl_openthread_features_config.h$_RAM (volatile-only storage)","type":"cat","conf_class":"cmsis"},{"parent_category_id":"CMSIS_$sl_openthread_features_config.h$_Default OpenThread Stack Configuration","header":"sl_openthread_features_config.h","toggle":true,"label":"SLAAC Addresses","id":"CMSIS_$sl_openthread_features_config.h$_SLAAC Addresses","type":"cat","conf_class":"cmsis"},{"parent_category_id":"CMSIS_$sl_openthread_features_config.h$_Default OpenThread Stack Configuration","header":"sl_openthread_features_config.h","toggle":false,"label":"SNTP Client","id":"CMSIS_$sl_openthread_features_config.h$_SNTP Client","type":"cat","conf_class":"cmsis"},{"parent_category_id":"CMSIS_$sl_openthread_features_config.h$_Default OpenThread Stack Configuration","header":"sl_openthread_features_config.h","toggle":true,"label":"TMF Network Diagnostic client API","id":"CMSIS_$sl_openthread_features_config.h$_TMF Network Diagnostic client API","type":"cat","conf_class":"cmsis"},{"parent_category_id":"CMSIS_$sl_openthread_features_config.h$_Default OpenThread Stack Configuration","header":"sl_openthread_features_config.h","toggle":false,"label":"Time Synchronization Service","id":"CMSIS_$sl_openthread_features_config.h$_Time Synchronization Service","type":"cat","conf_class":"cmsis"},{"parent_category_id":"CMSIS_$sl_openthread_features_config.h$_Default OpenThread Stack Configuration","header":"sl_openthread_features_config.h","toggle":false,"label":"UDP Forward","id":"CMSIS_$sl_openthread_features_config.h$_UDP Forward","type":"cat","conf_class":"cmsis"},{"parent_category_id":"CMSIS_$sl_openthread_features_config.h$_Default OpenThread Stack Configuration","header":"sl_openthread_features_config.h","toggle":true,"label":"Enable Mac beacon payload parsing support","id":"CMSIS_$sl_openthread_features_config.h$_Enable Mac beacon payload parsing support","type":"cat","conf_class":"cmsis"},{"header":"sl_openthread_features_config.h","label":"Default OpenThread Stack Configuration","id":"CMSIS_$sl_openthread_features_config.h$_Default OpenThread Stack Configuration","type":"cat","conf_class":"cmsis"},{"parent_category_id":"CMSIS_$sl_openthread_features_config.h$_Logging","conf_type":"combo","initial":"PLATFORM_DEFINED","header":"sl_openthread_features_config.h","label":"LOG_OUTPUT","id":"CMSIS_$sl_openthread_features_config.h$_OPENTHREAD_CONFIG_LOG_OUTPUT","type":"conf","combo_options":["NONE","APP","PLATFORM_DEFINED"],"desc":"Default: OPENTHREAD_CONFIG_LOG_OUTPUT_PLATFORM_DEFINED"},{"parent_category_id":"CMSIS_$sl_openthread_features_config.h$_Logging","conf_type":"check","initial":false,"header":"sl_openthread_features_config.h","label":"DYNAMIC_LOG_LEVEL","id":"CMSIS_$sl_openthread_features_config.h$_DYNAMIC_LOG_LEVEL","type":"conf"},{"parent_category_id":"CMSIS_$sl_openthread_features_config.h$_Note: Enabling higher log levels, which include logging packet details, can cause delays which may result in join failures.","conf_type":"combo","initial":"DEBG","header":"sl_openthread_features_config.h","label":"LOG_LEVEL","id":"CMSIS_$sl_openthread_features_config.h$_OPENTHREAD_CONFIG_LOG_LEVEL","type":"conf","combo_options":["NONE","CRIT","WARN","NOTE","INFO","DEBG"],"desc":"Default: OT_LOG_LEVEL_DEBG"},{"parent_category_id":"CMSIS_$sl_openthread_features_config.h$_Note: Enabling higher log levels, which include logging packet details, can cause delays which may result in join failures.","conf_type":"check","initial":true,"header":"sl_openthread_features_config.h","label":"CLI","id":"CMSIS_$sl_openthread_features_config.h$_CLI","type":"conf"},{"parent_category_id":"CMSIS_$sl_openthread_features_config.h$_Note: Enabling higher log levels, which include logging packet details, can cause delays which may result in join failures.","conf_type":"check","initial":true,"header":"sl_openthread_features_config.h","label":"PKT_DUMP","id":"CMSIS_$sl_openthread_features_config.h$_PKT_DUMP","type":"conf"},{"parent_category_id":"CMSIS_$sl_openthread_features_config.h$_Note: Enabling higher log levels, which include logging packet details, can cause delays which may result in join failures.","conf_type":"check","initial":true,"header":"sl_openthread_features_config.h","label":"PLATFORM","id":"CMSIS_$sl_openthread_features_config.h$_PLATFORM","type":"conf"},{"parent_category_id":"CMSIS_$sl_openthread_features_config.h$_Note: Enabling higher log levels, which include logging packet details, can cause delays which may result in join failures.","conf_type":"check","initial":true,"header":"sl_openthread_features_config.h","label":"PREPEND_LEVEL","id":"CMSIS_$sl_openthread_features_config.h$_PREPEND_LEVEL","type":"conf"},{"parent_category_id":"CMSIS_$sl_openthread_features_config.h$_Enable Logging","header":"sl_openthread_features_config.h","label":"Note: Enabling higher log levels, which include logging packet details, can cause delays which may result in join failures.","id":"CMSIS_$sl_openthread_features_config.h$_Note: Enabling higher log levels, which include logging packet details, can cause delays which may result in join failures.","type":"cat","conf_class":"cmsis"},{"parent_category_id":"CMSIS_$sl_openthread_features_config.h$_Logging","header":"sl_openthread_features_config.h","toggle":false,"label":"Enable Logging","id":"CMSIS_$sl_openthread_features_config.h$_Enable Logging","type":"cat","conf_class":"cmsis"},{"header":"sl_openthread_features_config.h","label":"Logging","id":"CMSIS_$sl_openthread_features_config.h$_Logging","type":"cat","conf_class":"cmsis"}]},"clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/ot_stack_mtd","header":"sl_openthread_features_config.h","wsType":"config_update","conf_class":"cmsis"}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:29:09.404
+!MESSAGE Client mentioned sockets are all ready: counting down latch
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:29:09.406
+!MESSAGE latch unlocked: cmsis socket response sending
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:29:09.407
+!MESSAGE preparing cmsis websocket update: {"configurables":{"removed":[],"updated":[]},"clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/ot_stack_mtd","header":"sl_openthread_generic_config.h","wsType":"config_update","conf_class":"cmsis"}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:29:09.408
+!MESSAGE latch unlocked: cmsis socket response sending
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:29:09.502
+!MESSAGE Clear CMSIS Issues WS call: {"clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/ot_stack_mtd","ids":[],"wsType":"clear_issues"}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:29:09.503
+!MESSAGE Clear CMSIS Issues WS call: {"clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/simple_button_btn1","ids":[],"wsType":"clear_issues"}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:29:13.187
+!MESSAGE Saving document for L/vibration-sensor/config/sl_openthread_features_config.h
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:29:13.192
+!MESSAGE Resource Changed: Reparsing L/vibration-sensor/config/sl_openthread_features_config.h for cmsis
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:29:13.193
+!MESSAGE A Cmsis Reparse was triggered for sl_openthread_features_config.h
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:29:13.194
+!MESSAGE A Cmsis Reparse updated but did not alert client -- change came from editor and 'force' was false. Starting a parsing job that updates context model but client will not be alerted.
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:29:13.211
+!MESSAGE CMSIS Parse success for sl_openthread_features_config.h
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:29:13.281
+!MESSAGE Clear CMSIS Issues WS call: {"clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/ot_stack_mtd","ids":[],"wsType":"clear_issues"}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:29:13.281
+!MESSAGE Clear CMSIS Issues WS call: {"clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/simple_button_btn1","ids":[],"wsType":"clear_issues"}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:29:13.377
+!MESSAGE Clear CMSIS Issues WS call: {"clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/ot_stack_mtd","ids":[],"wsType":"clear_issues"}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:29:13.378
+!MESSAGE Clear CMSIS Issues WS call: {"clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/simple_button_btn1","ids":[],"wsType":"clear_issues"}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:29:13.677
+!MESSAGE Saving document for L/vibration-sensor/config/sl_openthread_features_config.h
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:29:13.680
+!MESSAGE Resource Changed: Reparsing L/vibration-sensor/config/sl_openthread_features_config.h for cmsis
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:29:13.681
+!MESSAGE A Cmsis Reparse was triggered for sl_openthread_features_config.h
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:29:13.681
+!MESSAGE A Cmsis Reparse updated but did not alert client -- change came from editor and 'force' was false. Starting a parsing job that updates context model but client will not be alerted.
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:29:13.692
+!MESSAGE CMSIS Parse success for sl_openthread_features_config.h
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:29:13.776
+!MESSAGE Clear CMSIS Issues WS call: {"clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/ot_stack_mtd","ids":[],"wsType":"clear_issues"}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:29:13.776
+!MESSAGE Clear CMSIS Issues WS call: {"clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/simple_button_btn1","ids":[],"wsType":"clear_issues"}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:29:13.863
+!MESSAGE Clear CMSIS Issues WS call: {"clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/ot_stack_mtd","ids":[],"wsType":"clear_issues"}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:29:13.863
+!MESSAGE Clear CMSIS Issues WS call: {"clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/simple_button_btn1","ids":[],"wsType":"clear_issues"}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:29:14.078
+!MESSAGE Saving document for L/vibration-sensor/config/sl_openthread_features_config.h
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:29:14.082
+!MESSAGE Resource Changed: Reparsing L/vibration-sensor/config/sl_openthread_features_config.h for cmsis
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:29:14.083
+!MESSAGE A Cmsis Reparse was triggered for sl_openthread_features_config.h
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:29:14.083
+!MESSAGE A Cmsis Reparse updated but did not alert client -- change came from editor and 'force' was false. Starting a parsing job that updates context model but client will not be alerted.
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:29:14.091
+!MESSAGE CMSIS Parse success for sl_openthread_features_config.h
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:29:14.162
+!MESSAGE Clear CMSIS Issues WS call: {"clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/ot_stack_mtd","ids":[],"wsType":"clear_issues"}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:29:14.163
+!MESSAGE Clear CMSIS Issues WS call: {"clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/simple_button_btn1","ids":[],"wsType":"clear_issues"}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:29:14.244
+!MESSAGE Clear CMSIS Issues WS call: {"clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/ot_stack_mtd","ids":[],"wsType":"clear_issues"}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:29:14.244
+!MESSAGE Clear CMSIS Issues WS call: {"clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/simple_button_btn1","ids":[],"wsType":"clear_issues"}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:29:16.078
+!MESSAGE Saving document for L/vibration-sensor/config/sl_openthread_features_config.h
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:29:16.080
+!MESSAGE Resource Changed: Reparsing L/vibration-sensor/config/sl_openthread_features_config.h for cmsis
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:29:16.081
+!MESSAGE A Cmsis Reparse was triggered for sl_openthread_features_config.h
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:29:16.081
+!MESSAGE A Cmsis Reparse updated but did not alert client -- change came from editor and 'force' was false. Starting a parsing job that updates context model but client will not be alerted.
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:29:16.089
+!MESSAGE CMSIS Parse success for sl_openthread_features_config.h
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:29:16.164
+!MESSAGE Clear CMSIS Issues WS call: {"clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/ot_stack_mtd","ids":[],"wsType":"clear_issues"}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:29:16.165
+!MESSAGE Clear CMSIS Issues WS call: {"clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/simple_button_btn1","ids":[],"wsType":"clear_issues"}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:29:16.256
+!MESSAGE Clear CMSIS Issues WS call: {"clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/ot_stack_mtd","ids":[],"wsType":"clear_issues"}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:29:16.257
+!MESSAGE Clear CMSIS Issues WS call: {"clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/simple_button_btn1","ids":[],"wsType":"clear_issues"}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:29:21.792
+!MESSAGE Saving document for L/vibration-sensor/config/sl_openthread_features_config.h
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:29:21.795
+!MESSAGE Resource Changed: Reparsing L/vibration-sensor/config/sl_openthread_features_config.h for cmsis
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:29:21.795
+!MESSAGE A Cmsis Reparse was triggered for sl_openthread_features_config.h
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:29:21.796
+!MESSAGE A Cmsis Reparse updated but did not alert client -- change came from editor and 'force' was false. Starting a parsing job that updates context model but client will not be alerted.
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:29:21.802
+!MESSAGE CMSIS Parse success for sl_openthread_features_config.h
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:29:21.878
+!MESSAGE Clear CMSIS Issues WS call: {"clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/ot_stack_mtd","ids":[],"wsType":"clear_issues"}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:29:21.879
+!MESSAGE Clear CMSIS Issues WS call: {"clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/simple_button_btn1","ids":[],"wsType":"clear_issues"}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:29:21.957
+!MESSAGE Clear CMSIS Issues WS call: {"clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/ot_stack_mtd","ids":[],"wsType":"clear_issues"}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:29:21.958
+!MESSAGE Clear CMSIS Issues WS call: {"clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/simple_button_btn1","ids":[],"wsType":"clear_issues"}
+
+!ENTRY com.silabs.ss.tool.uc.editor 1 0 2023-12-12 16:29:34.851
+!MESSAGE UcEditorController: onWebSocketClose CALLED statusCode=1001 reason=null
+
+!ENTRY com.silabs.ss.tool.hwconfig.ui.pintool 1 0 2023-12-12 16:30:40.548
+!MESSAGE componentAdded: delta=com.silabs.ss.framework.uc.core.internal.project.UcProjectDelta@72b22847, components=[IADC]
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:30:40.687
+!MESSAGE Clear CMSIS Issues WS call: {"clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/simple_button_btn1","ids":[],"wsType":"clear_issues"}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:30:46.724
+!MESSAGE editor file home calculation for Studio resulted in C:\Users\Workstation\Documents\GitHub\Vibration-Sensor\Code\vibration-sensor\.uceditor for vibration-sensor with component Stack (MTD)
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:30:46.752
+!MESSAGE editor file home calculation for Studio resulted in C:\Users\Workstation\Documents\GitHub\Vibration-Sensor\Code\vibration-sensor\.uceditor for vibration-sensor with component Stack (MTD)
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:30:46.781
+!MESSAGE Initial cmsis parsing: {sl_openthread_features_config.h=Start Parse Offset: 10991
+End Parse Offset: 10991
+Parsing Error: null
+Parsing Error offset: -1
+fContainWizard: true
+, sl_openthread_generic_config.h=Start Parse Offset: 5369
+End Parse Offset: 5369
+Parsing Error: null
+Parsing Error offset: -1
+fContainWizard: false
+}
+
+!ENTRY com.silabs.ss.tool.uc.editor 4 0 2023-12-12 16:30:46.783
+!MESSAGE Could not load pintool device data within 30 second timeframe. Marker manager not connected to component editor -- device errors will not show up.
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:30:46.789
+!MESSAGE CMSIS Parse success for sl_openthread_features_config.h
+
+!ENTRY com.silabs.ss.platform.rcp.core 2 0 2023-12-12 16:30:46.792
+!MESSAGE Could not parse sl_openthread_generic_config.h cmsis contents as there were none. 
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:30:46.793
+!MESSAGE preparing cmsis websocket update: {"configurables":{"removed":[],"updated":[{"parent_category_id":"CMSIS_$sl_openthread_features_config.h$_Thread Stack Protocol Version","conf_type":"combo","initial":"Thread 1.3","header":"sl_openthread_features_config.h","label":"OPENTHREAD_CONFIG_THREAD_VERSION","id":"CMSIS_$sl_openthread_features_config.h$_OPENTHREAD_CONFIG_THREAD_VERSION","type":"conf","combo_options":["Thread 1.1","Thread 1.2","Thread 1.3"],"desc":"Thread 1.2 and Thread 1.3 are compatible with Thread 1.1.\r\nCurrent Default: OT_THREAD_VERSION_1_3"},{"parent_category_id":"CMSIS_$sl_openthread_features_config.h$_Default OpenThread Stack Configuration","header":"sl_openthread_features_config.h","label":"Thread Stack Protocol Version","id":"CMSIS_$sl_openthread_features_config.h$_Thread Stack Protocol Version","type":"cat","conf_class":"cmsis"},{"parent_category_id":"CMSIS_$sl_openthread_features_config.h$_The following features require at least Thread Stack Protocol Version 1.2","conf_type":"check","initial":false,"header":"sl_openthread_features_config.h","label":"Backbone Router","id":"CMSIS_$sl_openthread_features_config.h$_Backbone Router","type":"conf"},{"parent_category_id":"CMSIS_$sl_openthread_features_config.h$_The following features require at least Thread Stack Protocol Version 1.2","conf_type":"check","initial":true,"header":"sl_openthread_features_config.h","label":"CSL Auto Synchronization using data polling","id":"CMSIS_$sl_openthread_features_config.h$_CSL Auto Synchronization using data polling","type":"conf"},{"parent_category_id":"CMSIS_$sl_openthread_features_config.h$_The following features require at least Thread Stack Protocol Version 1.2","conf_type":"check","initial":false,"header":"sl_openthread_features_config.h","label":"CSL (Coordinated Sampled Listening) Debug","id":"CMSIS_$sl_openthread_features_config.h$_CSL (Coordinated Sampled Listening) Debug","type":"conf"},{"parent_category_id":"CMSIS_$sl_openthread_features_config.h$_The following features require at least Thread Stack Protocol Version 1.2","conf_type":"check","initial":true,"header":"sl_openthread_features_config.h","label":"CSL (Coordinated Sampled Listening) Receiver","id":"CMSIS_$sl_openthread_features_config.h$_CSL (Coordinated Sampled Listening) Receiver","type":"conf"},{"parent_category_id":"CMSIS_$sl_openthread_features_config.h$_The following features require at least Thread Stack Protocol Version 1.2","conf_type":"check","initial":false,"header":"sl_openthread_features_config.h","label":"CSL Scheduling Uncertainty (±10 us units)","id":"CMSIS_$sl_openthread_features_config.h$_CSL Scheduling Uncertainty (±10 us units)","type":"conf"},{"parent_category_id":"CMSIS_$sl_openthread_features_config.h$_The following features require at least Thread Stack Protocol Version 1.2","conf_type":"check","initial":true,"header":"sl_openthread_features_config.h","label":"DUA (Domain Unicast Address)","id":"CMSIS_$sl_openthread_features_config.h$_DUA (Domain Unicast Address)","type":"conf"},{"parent_category_id":"CMSIS_$sl_openthread_features_config.h$_The following features require at least Thread Stack Protocol Version 1.2","conf_type":"check","initial":true,"header":"sl_openthread_features_config.h","label":"Link Metrics Initiator","id":"CMSIS_$sl_openthread_features_config.h$_Link Metrics Initiator","type":"conf"},{"parent_category_id":"CMSIS_$sl_openthread_features_config.h$_The following features require at least Thread Stack Protocol Version 1.2","conf_type":"check","initial":true,"header":"sl_openthread_features_config.h","label":"Link Metrics Subject","id":"CMSIS_$sl_openthread_features_config.h$_Link Metrics Subject","type":"conf"},{"parent_category_id":"CMSIS_$sl_openthread_features_config.h$_The following features require at least Thread Stack Protocol Version 1.2","conf_type":"check","initial":true,"header":"sl_openthread_features_config.h","label":"Multicast Listener Registration","id":"CMSIS_$sl_openthread_features_config.h$_Multicast Listener Registration","type":"conf"},{"parent_category_id":"CMSIS_$sl_openthread_features_config.h$_The following features require at least Thread Stack Protocol Version 1.2","conf_type":"check","initial":true,"header":"sl_openthread_features_config.h","label":"DNS Client (Thread 1.3)","id":"CMSIS_$sl_openthread_features_config.h$_DNS Client (Thread 1.3)","type":"conf"},{"parent_category_id":"CMSIS_$sl_openthread_features_config.h$_The following features require at least Thread Stack Protocol Version 1.2","conf_type":"check","initial":false,"header":"sl_openthread_features_config.h","label":"DNS-SD Server (Thread 1.3)","id":"CMSIS_$sl_openthread_features_config.h$_DNS-SD Server (Thread 1.3)","type":"conf"},{"parent_category_id":"CMSIS_$sl_openthread_features_config.h$_The following features require at least Thread Stack Protocol Version 1.2","conf_type":"check","initial":true,"header":"sl_openthread_features_config.h","label":"Service Registration Protocol (SRP) Client (Thread 1.3)","id":"CMSIS_$sl_openthread_features_config.h$_Service Registration Protocol (SRP) Client (Thread 1.3)","type":"conf"},{"parent_category_id":"CMSIS_$sl_openthread_features_config.h$_The following features require at least Thread Stack Protocol Version 1.2","conf_type":"check","initial":false,"header":"sl_openthread_features_config.h","label":"Service Registration Protocol (SRP) Server (Thread 1.3)","id":"CMSIS_$sl_openthread_features_config.h$_Service Registration Protocol (SRP) Server (Thread 1.3)","type":"conf"},{"parent_category_id":"CMSIS_$sl_openthread_features_config.h$_The following features require at least Thread Stack Protocol Version 1.2","conf_type":"check","initial":false,"header":"sl_openthread_features_config.h","label":"TCPlp (Low power TCP over OpenThread) (Thread 1.3)","id":"CMSIS_$sl_openthread_features_config.h$_TCPlp (Low power TCP over OpenThread) (Thread 1.3)","type":"conf"},{"parent_category_id":"CMSIS_$sl_openthread_features_config.h$_The following features require at least Thread Stack Protocol Version 1.2","conf_type":"check","initial":false,"header":"sl_openthread_features_config.h","label":"Thread over Infrastructure (Thread 1.3: NCP only)","id":"CMSIS_$sl_openthread_features_config.h$_Thread over Infrastructure (Thread 1.3: NCP only)","type":"conf"},{"parent_category_id":"CMSIS_$sl_openthread_features_config.h$_Default OpenThread Stack Configuration","header":"sl_openthread_features_config.h","label":"The following features require at least Thread Stack Protocol Version 1.2","id":"CMSIS_$sl_openthread_features_config.h$_The following features require at least Thread Stack Protocol Version 1.2","type":"cat","conf_class":"cmsis"},{"parent_category_id":"CMSIS_$sl_openthread_features_config.h$_Default OpenThread Stack Configuration","header":"sl_openthread_features_config.h","toggle":false,"label":"Border Agent","id":"CMSIS_$sl_openthread_features_config.h$_Border Agent","type":"cat","conf_class":"cmsis"},{"parent_category_id":"CMSIS_$sl_openthread_features_config.h$_Default OpenThread Stack Configuration","header":"sl_openthread_features_config.h","toggle":false,"label":"Border Router","id":"CMSIS_$sl_openthread_features_config.h$_Border Router","type":"cat","conf_class":"cmsis"},{"parent_category_id":"CMSIS_$sl_openthread_features_config.h$_Default OpenThread Stack Configuration","header":"sl_openthread_features_config.h","toggle":false,"label":"Channel Manager","id":"CMSIS_$sl_openthread_features_config.h$_Channel Manager","type":"cat","conf_class":"cmsis"},{"parent_category_id":"CMSIS_$sl_openthread_features_config.h$_Default OpenThread Stack Configuration","header":"sl_openthread_features_config.h","toggle":false,"label":"Channel Monitor","id":"CMSIS_$sl_openthread_features_config.h$_Channel Monitor","type":"cat","conf_class":"cmsis"},{"parent_category_id":"CMSIS_$sl_openthread_features_config.h$_OPENTHREAD_CONFIG_COMMISSIONER_ENABLE","conf_type":"spinner","initial":"2","header":"sl_openthread_features_config.h","label":"Max Joiner Entries","id":"CMSIS_$sl_openthread_features_config.h$_OPENTHREAD_CONFIG_COMMISSIONER_MAX_JOINER_ENTRIES","type":"conf","desc":"The maximum number of Joiner entries maintained by the Commissioner."},{"parent_category_id":"CMSIS_$sl_openthread_features_config.h$_Default OpenThread Stack Configuration","header":"sl_openthread_features_config.h","toggle":false,"label":"Commissioner","id":"CMSIS_$sl_openthread_features_config.h$_OPENTHREAD_CONFIG_COMMISSIONER_ENABLE","type":"cat","conf_class":"cmsis"},{"parent_category_id":"CMSIS_$sl_openthread_features_config.h$_Default OpenThread Stack Configuration","header":"sl_openthread_features_config.h","toggle":true,"label":"COAP API","id":"CMSIS_$sl_openthread_features_config.h$_COAP API","type":"cat","conf_class":"cmsis"},{"parent_category_id":"CMSIS_$sl_openthread_features_config.h$_Default OpenThread Stack Configuration","header":"sl_openthread_features_config.h","toggle":true,"label":"COAP Observe (RFC7641) API","id":"CMSIS_$sl_openthread_features_config.h$_COAP Observe (RFC7641) API","type":"cat","conf_class":"cmsis"},{"parent_category_id":"CMSIS_$sl_openthread_features_config.h$_Default OpenThread Stack Configuration","header":"sl_openthread_features_config.h","toggle":true,"label":"COAP Secure API","id":"CMSIS_$sl_openthread_features_config.h$_COAP Secure API","type":"cat","conf_class":"cmsis"},{"parent_category_id":"CMSIS_$sl_openthread_features_config.h$_Default OpenThread Stack Configuration","header":"sl_openthread_features_config.h","toggle":true,"label":"DHCP6 Client","id":"CMSIS_$sl_openthread_features_config.h$_DHCP6 Client","type":"cat","conf_class":"cmsis"},{"parent_category_id":"CMSIS_$sl_openthread_features_config.h$_Default OpenThread Stack Configuration","header":"sl_openthread_features_config.h","toggle":false,"label":"DHCP6 Server","id":"CMSIS_$sl_openthread_features_config.h$_DHCP6 Server","type":"cat","conf_class":"cmsis"},{"parent_category_id":"CMSIS_$sl_openthread_features_config.h$_Default OpenThread Stack Configuration","header":"sl_openthread_features_config.h","toggle":false,"label":"Diagnostic","id":"CMSIS_$sl_openthread_features_config.h$_Diagnostic","type":"cat","conf_class":"cmsis"},{"parent_category_id":"CMSIS_$sl_openthread_features_config.h$_Default OpenThread Stack Configuration","header":"sl_openthread_features_config.h","toggle":true,"label":"ECDSA (Elliptic Curve Digital Signature Algorithm) (Required for Matter support)","id":"CMSIS_$sl_openthread_features_config.h$_ECDSA (Elliptic Curve Digital Signature Algorithm) (Required for Matter support)","type":"cat","conf_class":"cmsis"},{"parent_category_id":"CMSIS_$sl_openthread_features_config.h$_Default OpenThread Stack Configuration","header":"sl_openthread_features_config.h","toggle":true,"label":"External Heap","id":"CMSIS_$sl_openthread_features_config.h$_External Heap","type":"cat","conf_class":"cmsis"},{"parent_category_id":"CMSIS_$sl_openthread_features_config.h$_Default OpenThread Stack Configuration","header":"sl_openthread_features_config.h","toggle":false,"label":"IPv6 Fragmentation","id":"CMSIS_$sl_openthread_features_config.h$_IPv6 Fragmentation","type":"cat","conf_class":"cmsis"},{"parent_category_id":"CMSIS_$sl_openthread_features_config.h$_Default OpenThread Stack Configuration","header":"sl_openthread_features_config.h","toggle":false,"label":"Maximum number of IPv6 unicast addresses allowed to be externally added","id":"CMSIS_$sl_openthread_features_config.h$_Maximum number of IPv6 unicast addresses allowed to be externally added","type":"cat","conf_class":"cmsis"},{"parent_category_id":"CMSIS_$sl_openthread_features_config.h$_Default OpenThread Stack Configuration","header":"sl_openthread_features_config.h","toggle":false,"label":"Maximum number of IPv6 multicast addresses allowed to be externally added","id":"CMSIS_$sl_openthread_features_config.h$_Maximum number of IPv6 multicast addresses allowed to be externally added","type":"cat","conf_class":"cmsis"},{"parent_category_id":"CMSIS_$sl_openthread_features_config.h$_Default OpenThread Stack Configuration","header":"sl_openthread_features_config.h","toggle":false,"label":"Jam Detection","id":"CMSIS_$sl_openthread_features_config.h$_Jam Detection","type":"cat","conf_class":"cmsis"},{"parent_category_id":"CMSIS_$sl_openthread_features_config.h$_Default OpenThread Stack Configuration","header":"sl_openthread_features_config.h","toggle":false,"label":"Joiner","id":"CMSIS_$sl_openthread_features_config.h$_Joiner","type":"cat","conf_class":"cmsis"},{"parent_category_id":"CMSIS_$sl_openthread_features_config.h$_Default OpenThread Stack Configuration","header":"sl_openthread_features_config.h","toggle":false,"label":"Link Raw Service","id":"CMSIS_$sl_openthread_features_config.h$_Link Raw Service","type":"cat","conf_class":"cmsis"},{"parent_category_id":"CMSIS_$sl_openthread_features_config.h$_Default OpenThread Stack Configuration","header":"sl_openthread_features_config.h","toggle":false,"label":"MAC Filter","id":"CMSIS_$sl_openthread_features_config.h$_MAC Filter","type":"cat","conf_class":"cmsis"},{"parent_category_id":"CMSIS_$sl_openthread_features_config.h$_Default OpenThread Stack Configuration","header":"sl_openthread_features_config.h","toggle":false,"label":"MLE Long Routes extension (experimental)","id":"CMSIS_$sl_openthread_features_config.h$_MLE Long Routes extension (experimental)","type":"cat","conf_class":"cmsis"},{"parent_category_id":"CMSIS_$sl_openthread_features_config.h$_Default OpenThread Stack Configuration","header":"sl_openthread_features_config.h","toggle":false,"label":"MultiPAN RCP","id":"CMSIS_$sl_openthread_features_config.h$_MultiPAN RCP","type":"cat","conf_class":"cmsis"},{"parent_category_id":"CMSIS_$sl_openthread_features_config.h$_Default OpenThread Stack Configuration","header":"sl_openthread_features_config.h","toggle":false,"label":"Multiple OpenThread Instances","id":"CMSIS_$sl_openthread_features_config.h$_Multiple OpenThread Instances","type":"cat","conf_class":"cmsis"},{"parent_category_id":"CMSIS_$sl_openthread_features_config.h$_Default OpenThread Stack Configuration","header":"sl_openthread_features_config.h","toggle":false,"label":"OTNS (OpenThread Network Simulator)","id":"CMSIS_$sl_openthread_features_config.h$_OTNS (OpenThread Network Simulator)","type":"cat","conf_class":"cmsis"},{"parent_category_id":"CMSIS_$sl_openthread_features_config.h$_Default OpenThread Stack Configuration","header":"sl_openthread_features_config.h","toggle":true,"label":"Ping Sender Module","id":"CMSIS_$sl_openthread_features_config.h$_Ping Sender Module","type":"cat","conf_class":"cmsis"},{"parent_category_id":"CMSIS_$sl_openthread_features_config.h$_Default OpenThread Stack Configuration","header":"sl_openthread_features_config.h","toggle":true,"label":"Platform UDP","id":"CMSIS_$sl_openthread_features_config.h$_Platform UDP","type":"cat","conf_class":"cmsis"},{"parent_category_id":"CMSIS_$sl_openthread_features_config.h$_Default OpenThread Stack Configuration","header":"sl_openthread_features_config.h","toggle":false,"label":"Reference Device for Thread Test Harness","id":"CMSIS_$sl_openthread_features_config.h$_Reference Device for Thread Test Harness","type":"cat","conf_class":"cmsis"},{"parent_category_id":"CMSIS_$sl_openthread_features_config.h$_Default OpenThread Stack Configuration","header":"sl_openthread_features_config.h","toggle":false,"label":"Service Entries in Thread Network Data","id":"CMSIS_$sl_openthread_features_config.h$_Service Entries in Thread Network Data","type":"cat","conf_class":"cmsis"},{"parent_category_id":"CMSIS_$sl_openthread_features_config.h$_Default OpenThread Stack Configuration","header":"sl_openthread_features_config.h","toggle":false,"label":"RAM (volatile-only storage)","id":"CMSIS_$sl_openthread_features_config.h$_RAM (volatile-only storage)","type":"cat","conf_class":"cmsis"},{"parent_category_id":"CMSIS_$sl_openthread_features_config.h$_Default OpenThread Stack Configuration","header":"sl_openthread_features_config.h","toggle":true,"label":"SLAAC Addresses","id":"CMSIS_$sl_openthread_features_config.h$_SLAAC Addresses","type":"cat","conf_class":"cmsis"},{"parent_category_id":"CMSIS_$sl_openthread_features_config.h$_Default OpenThread Stack Configuration","header":"sl_openthread_features_config.h","toggle":false,"label":"SNTP Client","id":"CMSIS_$sl_openthread_features_config.h$_SNTP Client","type":"cat","conf_class":"cmsis"},{"parent_category_id":"CMSIS_$sl_openthread_features_config.h$_Default OpenThread Stack Configuration","header":"sl_openthread_features_config.h","toggle":true,"label":"TMF Network Diagnostic client API","id":"CMSIS_$sl_openthread_features_config.h$_TMF Network Diagnostic client API","type":"cat","conf_class":"cmsis"},{"parent_category_id":"CMSIS_$sl_openthread_features_config.h$_Default OpenThread Stack Configuration","header":"sl_openthread_features_config.h","toggle":false,"label":"Time Synchronization Service","id":"CMSIS_$sl_openthread_features_config.h$_Time Synchronization Service","type":"cat","conf_class":"cmsis"},{"parent_category_id":"CMSIS_$sl_openthread_features_config.h$_Default OpenThread Stack Configuration","header":"sl_openthread_features_config.h","toggle":false,"label":"UDP Forward","id":"CMSIS_$sl_openthread_features_config.h$_UDP Forward","type":"cat","conf_class":"cmsis"},{"parent_category_id":"CMSIS_$sl_openthread_features_config.h$_Default OpenThread Stack Configuration","header":"sl_openthread_features_config.h","toggle":true,"label":"Enable Mac beacon payload parsing support","id":"CMSIS_$sl_openthread_features_config.h$_Enable Mac beacon payload parsing support","type":"cat","conf_class":"cmsis"},{"header":"sl_openthread_features_config.h","label":"Default OpenThread Stack Configuration","id":"CMSIS_$sl_openthread_features_config.h$_Default OpenThread Stack Configuration","type":"cat","conf_class":"cmsis"},{"parent_category_id":"CMSIS_$sl_openthread_features_config.h$_Logging","conf_type":"combo","initial":"PLATFORM_DEFINED","header":"sl_openthread_features_config.h","label":"LOG_OUTPUT","id":"CMSIS_$sl_openthread_features_config.h$_OPENTHREAD_CONFIG_LOG_OUTPUT","type":"conf","combo_options":["NONE","APP","PLATFORM_DEFINED"],"desc":"Default: OPENTHREAD_CONFIG_LOG_OUTPUT_PLATFORM_DEFINED"},{"parent_category_id":"CMSIS_$sl_openthread_features_config.h$_Logging","conf_type":"check","initial":false,"header":"sl_openthread_features_config.h","label":"DYNAMIC_LOG_LEVEL","id":"CMSIS_$sl_openthread_features_config.h$_DYNAMIC_LOG_LEVEL","type":"conf"},{"parent_category_id":"CMSIS_$sl_openthread_features_config.h$_Note: Enabling higher log levels, which include logging packet details, can cause delays which may result in join failures.","conf_type":"combo","initial":"DEBG","header":"sl_openthread_features_config.h","label":"LOG_LEVEL","id":"CMSIS_$sl_openthread_features_config.h$_OPENTHREAD_CONFIG_LOG_LEVEL","type":"conf","combo_options":["NONE","CRIT","WARN","NOTE","INFO","DEBG"],"desc":"Default: OT_LOG_LEVEL_DEBG"},{"parent_category_id":"CMSIS_$sl_openthread_features_config.h$_Note: Enabling higher log levels, which include logging packet details, can cause delays which may result in join failures.","conf_type":"check","initial":true,"header":"sl_openthread_features_config.h","label":"CLI","id":"CMSIS_$sl_openthread_features_config.h$_CLI","type":"conf"},{"parent_category_id":"CMSIS_$sl_openthread_features_config.h$_Note: Enabling higher log levels, which include logging packet details, can cause delays which may result in join failures.","conf_type":"check","initial":true,"header":"sl_openthread_features_config.h","label":"PKT_DUMP","id":"CMSIS_$sl_openthread_features_config.h$_PKT_DUMP","type":"conf"},{"parent_category_id":"CMSIS_$sl_openthread_features_config.h$_Note: Enabling higher log levels, which include logging packet details, can cause delays which may result in join failures.","conf_type":"check","initial":true,"header":"sl_openthread_features_config.h","label":"PLATFORM","id":"CMSIS_$sl_openthread_features_config.h$_PLATFORM","type":"conf"},{"parent_category_id":"CMSIS_$sl_openthread_features_config.h$_Note: Enabling higher log levels, which include logging packet details, can cause delays which may result in join failures.","conf_type":"check","initial":true,"header":"sl_openthread_features_config.h","label":"PREPEND_LEVEL","id":"CMSIS_$sl_openthread_features_config.h$_PREPEND_LEVEL","type":"conf"},{"parent_category_id":"CMSIS_$sl_openthread_features_config.h$_Enable Logging","header":"sl_openthread_features_config.h","label":"Note: Enabling higher log levels, which include logging packet details, can cause delays which may result in join failures.","id":"CMSIS_$sl_openthread_features_config.h$_Note: Enabling higher log levels, which include logging packet details, can cause delays which may result in join failures.","type":"cat","conf_class":"cmsis"},{"parent_category_id":"CMSIS_$sl_openthread_features_config.h$_Logging","header":"sl_openthread_features_config.h","toggle":false,"label":"Enable Logging","id":"CMSIS_$sl_openthread_features_config.h$_Enable Logging","type":"cat","conf_class":"cmsis"},{"header":"sl_openthread_features_config.h","label":"Logging","id":"CMSIS_$sl_openthread_features_config.h$_Logging","type":"cat","conf_class":"cmsis"}]},"clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/ot_stack_mtd","header":"sl_openthread_features_config.h","wsType":"config_update","conf_class":"cmsis"}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:30:47.143
+!MESSAGE Client mentioned sockets are all ready: counting down latch
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:30:47.144
+!MESSAGE latch unlocked: cmsis socket response sending
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:30:47.146
+!MESSAGE preparing cmsis websocket update: {"configurables":{"removed":[],"updated":[]},"clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/ot_stack_mtd","header":"sl_openthread_generic_config.h","wsType":"config_update","conf_class":"cmsis"}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:30:47.146
+!MESSAGE latch unlocked: cmsis socket response sending
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:30:47.255
+!MESSAGE Clear CMSIS Issues WS call: {"clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/simple_button_btn1","ids":[],"wsType":"clear_issues"}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:30:47.256
+!MESSAGE Clear CMSIS Issues WS call: {"clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/ot_stack_mtd","ids":[],"wsType":"clear_issues"}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:30:58.291
+!MESSAGE Saving document for L/vibration-sensor/config/sl_openthread_features_config.h
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:30:58.295
+!MESSAGE Resource Changed: Reparsing L/vibration-sensor/config/sl_openthread_features_config.h for cmsis
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:30:58.296
+!MESSAGE A Cmsis Reparse was triggered for sl_openthread_features_config.h
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:30:58.296
+!MESSAGE A Cmsis Reparse updated but did not alert client -- change came from editor and 'force' was false. Starting a parsing job that updates context model but client will not be alerted.
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:30:58.302
+!MESSAGE CMSIS Parse success for sl_openthread_features_config.h
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:30:58.377
+!MESSAGE Clear CMSIS Issues WS call: {"clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/simple_button_btn1","ids":[],"wsType":"clear_issues"}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:30:58.378
+!MESSAGE Clear CMSIS Issues WS call: {"clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/ot_stack_mtd","ids":[],"wsType":"clear_issues"}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:30:58.468
+!MESSAGE Clear CMSIS Issues WS call: {"clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/simple_button_btn1","ids":[],"wsType":"clear_issues"}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-12 16:30:58.469
+!MESSAGE Clear CMSIS Issues WS call: {"clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/ot_stack_mtd","ids":[],"wsType":"clear_issues"}
+
+!ENTRY com.silabs.ss.tool.uc.editor 1 0 2023-12-12 18:20:43.543
+!MESSAGE UcEditorController: onWebSocketClose CALLED statusCode=1001 reason=null
+
+!ENTRY com.silabs.ss.tool.uc.editor 1 0 2023-12-12 18:20:43.773
+!MESSAGE UcEditorController: onWebSocketClose CALLED statusCode=1001 reason=null
