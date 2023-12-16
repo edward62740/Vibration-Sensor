@@ -113,23 +113,26 @@ autogen/sl_event_handler.o: ../autogen/sl_event_handler.c \
  ../autogen/sl_simple_button_instances.h \
  c\:\users\workstation\simplicitystudio\sdks\gecko_sdk_8\platform\driver\button\inc\sl_simple_button.h \
  c\:\users\workstation\simplicitystudio\sdks\gecko_sdk_8\platform\driver\button\inc\sl_button.h \
- ../autogen/sl_uartdrv_instances.h \
- c\:\users\workstation\simplicitystudio\sdks\gecko_sdk_8\platform\emdrv\uartdrv\inc\uartdrv.h \
- c\:\users\workstation\simplicitystudio\sdks\gecko_sdk_8\platform\service\power_manager\inc\sl_power_manager.h \
- C\:\Users\Workstation\Documents\GitHub\Vibration-Sensor\Code\vibration-sensor\config/sl_power_manager_config.h \
- c\:\users\workstation\simplicitystudio\sdks\gecko_sdk_8\platform\common\inc\sl_slist.h \
- c\:\users\workstation\simplicitystudio\sdks\gecko_sdk_8\platform\emlib\inc\em_core_generic.h \
- c\:\users\workstation\simplicitystudio\sdks\gecko_sdk_8\platform\emlib\inc\em_usart.h \
- c\:\users\workstation\simplicitystudio\sdks\gecko_sdk_8\platform\emlib\inc\em_eusart.h \
- c\:\users\workstation\simplicitystudio\sdks\gecko_sdk_8\platform\emlib\inc\em_eusart_compat.h \
+ ../autogen/sl_spidrv_instances.h \
+ c\:\users\workstation\simplicitystudio\sdks\gecko_sdk_8\platform\emdrv\spidrv\inc\spidrv.h \
  c\:\users\workstation\simplicitystudio\sdks\gecko_sdk_8\platform\emlib\inc\em_cmu.h \
  c\:\users\workstation\simplicitystudio\sdks\gecko_sdk_8\platform\emlib\inc\em_cmu_compat.h \
  c\:\users\workstation\simplicitystudio\sdks\gecko_sdk_8\platform\emlib\inc\em_gpio.h \
  c\:\users\workstation\simplicitystudio\sdks\gecko_sdk_8\platform\emlib\inc\sli_em_cmu.h \
- C\:\Users\Workstation\Documents\GitHub\Vibration-Sensor\Code\vibration-sensor\config/uartdrv_config.h \
+ C\:\Users\Workstation\Documents\GitHub\Vibration-Sensor\Code\vibration-sensor\config/spidrv_config.h \
+ c\:\users\workstation\simplicitystudio\sdks\gecko_sdk_8\platform\common\inc\sl_slist.h \
  c\:\users\workstation\simplicitystudio\sdks\gecko_sdk_8\platform\emdrv\dmadrv\inc\dmadrv.h \
  c\:\users\workstation\simplicitystudio\sdks\gecko_sdk_8\platform\emlib\inc\em_ldma.h \
  C\:\Users\Workstation\Documents\GitHub\Vibration-Sensor\Code\vibration-sensor\config/dmadrv_config.h \
+ ../autogen/sl_uartdrv_instances.h \
+ c\:\users\workstation\simplicitystudio\sdks\gecko_sdk_8\platform\emdrv\uartdrv\inc\uartdrv.h \
+ c\:\users\workstation\simplicitystudio\sdks\gecko_sdk_8\platform\service\power_manager\inc\sl_power_manager.h \
+ C\:\Users\Workstation\Documents\GitHub\Vibration-Sensor\Code\vibration-sensor\config/sl_power_manager_config.h \
+ c\:\users\workstation\simplicitystudio\sdks\gecko_sdk_8\platform\emlib\inc\em_core_generic.h \
+ c\:\users\workstation\simplicitystudio\sdks\gecko_sdk_8\platform\emlib\inc\em_usart.h \
+ c\:\users\workstation\simplicitystudio\sdks\gecko_sdk_8\platform\emlib\inc\em_eusart.h \
+ c\:\users\workstation\simplicitystudio\sdks\gecko_sdk_8\platform\emlib\inc\em_eusart_compat.h \
+ C\:\Users\Workstation\Documents\GitHub\Vibration-Sensor\Code\vibration-sensor\config/uartdrv_config.h \
  c\:\users\workstation\simplicitystudio\sdks\gecko_sdk_8\util\third_party\mbedtls\include\psa\crypto.h \
  c\:\users\workstation\simplicitystudio\sdks\gecko_sdk_8\util\third_party\mbedtls\include\psa\crypto_platform.h \
  c\:\users\workstation\simplicitystudio\sdks\gecko_sdk_8\util\third_party\mbedtls\include\mbedtls\private_access.h \
@@ -317,23 +320,26 @@ c\:\users\workstation\simplicitystudio\sdks\gecko_sdk_8\protocol\openthread\plat
 ../autogen/sl_simple_button_instances.h:
 c\:\users\workstation\simplicitystudio\sdks\gecko_sdk_8\platform\driver\button\inc\sl_simple_button.h:
 c\:\users\workstation\simplicitystudio\sdks\gecko_sdk_8\platform\driver\button\inc\sl_button.h:
-../autogen/sl_uartdrv_instances.h:
-c\:\users\workstation\simplicitystudio\sdks\gecko_sdk_8\platform\emdrv\uartdrv\inc\uartdrv.h:
-c\:\users\workstation\simplicitystudio\sdks\gecko_sdk_8\platform\service\power_manager\inc\sl_power_manager.h:
-C\:\Users\Workstation\Documents\GitHub\Vibration-Sensor\Code\vibration-sensor\config/sl_power_manager_config.h:
-c\:\users\workstation\simplicitystudio\sdks\gecko_sdk_8\platform\common\inc\sl_slist.h:
-c\:\users\workstation\simplicitystudio\sdks\gecko_sdk_8\platform\emlib\inc\em_core_generic.h:
-c\:\users\workstation\simplicitystudio\sdks\gecko_sdk_8\platform\emlib\inc\em_usart.h:
-c\:\users\workstation\simplicitystudio\sdks\gecko_sdk_8\platform\emlib\inc\em_eusart.h:
-c\:\users\workstation\simplicitystudio\sdks\gecko_sdk_8\platform\emlib\inc\em_eusart_compat.h:
+../autogen/sl_spidrv_instances.h:
+c\:\users\workstation\simplicitystudio\sdks\gecko_sdk_8\platform\emdrv\spidrv\inc\spidrv.h:
 c\:\users\workstation\simplicitystudio\sdks\gecko_sdk_8\platform\emlib\inc\em_cmu.h:
 c\:\users\workstation\simplicitystudio\sdks\gecko_sdk_8\platform\emlib\inc\em_cmu_compat.h:
 c\:\users\workstation\simplicitystudio\sdks\gecko_sdk_8\platform\emlib\inc\em_gpio.h:
 c\:\users\workstation\simplicitystudio\sdks\gecko_sdk_8\platform\emlib\inc\sli_em_cmu.h:
-C\:\Users\Workstation\Documents\GitHub\Vibration-Sensor\Code\vibration-sensor\config/uartdrv_config.h:
+C\:\Users\Workstation\Documents\GitHub\Vibration-Sensor\Code\vibration-sensor\config/spidrv_config.h:
+c\:\users\workstation\simplicitystudio\sdks\gecko_sdk_8\platform\common\inc\sl_slist.h:
 c\:\users\workstation\simplicitystudio\sdks\gecko_sdk_8\platform\emdrv\dmadrv\inc\dmadrv.h:
 c\:\users\workstation\simplicitystudio\sdks\gecko_sdk_8\platform\emlib\inc\em_ldma.h:
 C\:\Users\Workstation\Documents\GitHub\Vibration-Sensor\Code\vibration-sensor\config/dmadrv_config.h:
+../autogen/sl_uartdrv_instances.h:
+c\:\users\workstation\simplicitystudio\sdks\gecko_sdk_8\platform\emdrv\uartdrv\inc\uartdrv.h:
+c\:\users\workstation\simplicitystudio\sdks\gecko_sdk_8\platform\service\power_manager\inc\sl_power_manager.h:
+C\:\Users\Workstation\Documents\GitHub\Vibration-Sensor\Code\vibration-sensor\config/sl_power_manager_config.h:
+c\:\users\workstation\simplicitystudio\sdks\gecko_sdk_8\platform\emlib\inc\em_core_generic.h:
+c\:\users\workstation\simplicitystudio\sdks\gecko_sdk_8\platform\emlib\inc\em_usart.h:
+c\:\users\workstation\simplicitystudio\sdks\gecko_sdk_8\platform\emlib\inc\em_eusart.h:
+c\:\users\workstation\simplicitystudio\sdks\gecko_sdk_8\platform\emlib\inc\em_eusart_compat.h:
+C\:\Users\Workstation\Documents\GitHub\Vibration-Sensor\Code\vibration-sensor\config/uartdrv_config.h:
 c\:\users\workstation\simplicitystudio\sdks\gecko_sdk_8\util\third_party\mbedtls\include\psa\crypto.h:
 c\:\users\workstation\simplicitystudio\sdks\gecko_sdk_8\util\third_party\mbedtls\include\psa\crypto_platform.h:
 c\:\users\workstation\simplicitystudio\sdks\gecko_sdk_8\util\third_party\mbedtls\include\mbedtls\private_access.h:

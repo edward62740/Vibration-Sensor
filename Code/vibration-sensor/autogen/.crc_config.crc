@@ -29,5 +29,7 @@ sl_simple_button_btn0_config.h=-1250492273
 sl_simple_button_btn1_config.h=-828353301
 sl_simple_button_config.h=749824782
 sl_sleeptimer_config.h=1360009810
+sl_spidrv_eusart_accel_config.h=1503805862
 sl_uartdrv_usart_vcom_config.h=1605176490
+spidrv_config.h=112055036
 uartdrv_config.h=1080777653

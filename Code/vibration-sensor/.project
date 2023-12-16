@@ -515,6 +515,16 @@
 			<locationURI>STUDIO_SDK_LOC/platform/emdrv/nvm3/src/nvm3_lock.c</locationURI>
 		</link>
 		<link>
+			<name>gecko_sdk_4.3.2/platform/emdrv/spidrv/inc/spidrv.h</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/platform/emdrv/spidrv/inc/spidrv.h</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_4.3.2/platform/emdrv/spidrv/src/spidrv.c</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/platform/emdrv/spidrv/src/spidrv.c</locationURI>
+		</link>
+		<link>
 			<name>gecko_sdk_4.3.2/platform/emdrv/uartdrv/inc/uartdrv.h</name>
 			<type>1</type>
 			<locationURI>STUDIO_SDK_LOC/platform/emdrv/uartdrv/inc/uartdrv.h</locationURI>

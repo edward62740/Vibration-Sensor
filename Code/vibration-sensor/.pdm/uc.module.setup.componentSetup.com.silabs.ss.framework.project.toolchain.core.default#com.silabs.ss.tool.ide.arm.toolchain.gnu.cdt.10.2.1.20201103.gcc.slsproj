@@ -246,6 +246,14 @@
             <file name="libnvm3_CM33_gcc.a" uri="studio:/sdk/platform/emdrv/nvm3/lib/libnvm3_CM33_gcc.a"/>
           </folder>
         </folder>
+        <folder name="spidrv">
+          <folder name="src">
+            <file name="spidrv.c" uri="studio:/sdk/platform/emdrv/spidrv/src/spidrv.c"/>
+          </folder>
+          <folder name="inc">
+            <file name="spidrv.h" uri="studio:/sdk/platform/emdrv/spidrv/inc/spidrv.h"/>
+          </folder>
+        </folder>
         <folder name="uartdrv">
           <folder name="src">
             <file name="uartdrv.c" uri="studio:/sdk/platform/emdrv/uartdrv/src/uartdrv.c"/>
@@ -1586,7 +1594,6 @@
       </folder>
     </folder>
   </folder>
-  <file name="main.c" linked="false" uri="studio:/project/main.c"/>
   <file name="app.h" linked="false" uri="studio:/project/app.h"/>
   <file name="README.md" linked="false" uri="studio:/project/README.md"/>
   <includePath uri="studio:/project/"/>
@@ -1651,6 +1658,7 @@
   <includePath uri="studio:/sdk/platform/service/system/inc"/>
   <includePath uri="studio:/sdk/platform/service/sleeptimer/inc"/>
   <includePath uri="studio:/sdk/platform/security/sl_component/sl_protocol_crypto/src"/>
+  <includePath uri="studio:/sdk/platform/emdrv/spidrv/inc"/>
   <includePath uri="studio:/sdk/platform/emdrv/uartdrv/inc"/>
   <macroDefinition name="MGM240PB32VNA"/>
   <macroDefinition name="SL_APP_PROPERTIES"/>

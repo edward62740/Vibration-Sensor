@@ -27,8 +27,7 @@ static otInstance *sInstance = NULL;
 
 constexpr static uint32_t VSENSE_DIV_MULTIPLIER = 2;
 extern "C" void otAppCliInit(otInstance *aInstance);
-static void appSrpInit(void);
-
+static void app_srp_init(void);
 
 eui_t eui; // device EUI64
 app_data_t app_data = { }; // application public variables
@@ -44,14 +43,18 @@ sl_sleeptimer_timer_handle_t alive_timer;
 dns d(otGetInstance, 4, 4);
 
 /* accelerometer info */
-#define FIFO_WATERMARK    256
+#define FIFO_WATERMARK    512 // max
 static iis3dwb_fifo_out_raw_t fifo_data[FIFO_WATERMARK];
 iis3dwb_fifo_status_t fifo_status;
 stmdev_ctx_t dev_ctx;
 
-/* DFT */
-const static arm_cfft_instance_f32 *S;
-
+/* FFT */
+static arm_rfft_fast_instance_f32 *S;
+const static uint16_t N = 4096U;
+static float32_t fftInBuf[N];
+static uint16_t fftInIdx = 0;
+static float32_t fftOutBuf[N];
+#define FFT_RMS
 
 /** HANDLERS/ISR **/
 void alive_cb(sl_sleeptimer_timer_handle_t *handle, void *data) {
@@ -82,7 +85,7 @@ void app_init(void) {
 	assert(otThreadSetEnabled(sInstance, true) == OT_ERROR_NONE);
 	appCoapInit();
 	eui._64b = SYSTEM_GetUnique();
-	appSrpInit();
+	app_srp_init();
 	GPIO_PinOutClear(ACT_LED_PORT, ACT_LED_PIN);
 	sl_sleeptimer_start_periodic_timer_ms(&alive_timer,
 			ALIVE_SLEEPTIMER_INTERVAL_MS, alive_cb, NULL, 0, 0);
@@ -102,12 +105,27 @@ void app_process_action(void) {
 	}
 }
 
-static void app_dft()
-{
+static void app_dft_init() {
+	arm_rfft_fast_init_f32(S, N);
 
 }
 
-static void app_proc_sensor() {
+static void app_dft_proc() {
+	arm_rfft_fast_f32(S, fftInBuf, fftOutBuf, 0);
+
+	// find std
+	// find mean
+
+	// find MAD
+
+	// find NF
+
+	// O(n) iterate over X(k)
+
+	// call parser return
+}
+
+static void app_sensor_proc() {
 
 	static int16_t *datax;
 	static int16_t *datay;
@@ -128,8 +146,7 @@ static void app_proc_sensor() {
 			iis3dwb_fifo_out_raw_t *f_data;
 
 			/* print out first two and last two FIFO entries only */
-			if (k > 1 && k < num - 2)
-				continue;
+
 
 			f_data = &fifo_data[k];
 
@@ -138,94 +155,108 @@ static void app_proc_sensor() {
 			datay = (int16_t*) &f_data->data[2];
 			dataz = (int16_t*) &f_data->data[4];
 			ts = (int32_t*) &f_data->data[0];
+
+			if(fftInIdx >= N)
+			{
+				app_dft_proc();
+				fftInIdx = 0;
+			}
+#ifdef FFT_RMS
+			else {
+				float32_t rms = (float32_t) ((*datax) * (*datax)
+						+ (*datay) * (*datay) + (*dataz) * (*dataz));
+				fftInBuf[fftInIdx++] = sqrtf(rms);
+			}
+#else
+			else fftInBuf[fftInIdx++] = (float32_t)datax;
+#endif
 		}
 	}
 }
 
-
-static void app_init_sensor() {
-dev_ctx.write_reg = NULL;
-dev_ctx.read_reg = NULL;
+static void app_sensor_init() {
+	dev_ctx.write_reg = NULL;
+	dev_ctx.read_reg = NULL;
 //dev_ctx.handle = NULL;
 
-/* Check device ID */
-uint8_t whoamI = 0;
-iis3dwb_device_id_get(&dev_ctx, &whoamI);
+	/* Check device ID */
+	uint8_t whoamI = 0;
+	iis3dwb_device_id_get(&dev_ctx, &whoamI);
 
-if (whoamI != IIS3DWB_ID)
-	while (1)
-		;
+	if (whoamI != IIS3DWB_ID)
+		while (1)
+			;
 
-/* Restore default configuration */
-iis3dwb_reset_set(&dev_ctx, PROPERTY_ENABLE);
+	/* Restore default configuration */
+	iis3dwb_reset_set(&dev_ctx, PROPERTY_ENABLE);
 
-uint8_t rst;
-do {
-	iis3dwb_reset_get(&dev_ctx, &rst);
-} while (rst);
+	uint8_t rst;
+	do {
+		iis3dwb_reset_get(&dev_ctx, &rst);
+	} while (rst);
 
-/* Enable Block Data Update */
-iis3dwb_block_data_update_set(&dev_ctx, PROPERTY_ENABLE);
-/* Set full scale */
-iis3dwb_xl_full_scale_set(&dev_ctx, IIS3DWB_8g);
+	/* Enable Block Data Update */
+	iis3dwb_block_data_update_set(&dev_ctx, PROPERTY_ENABLE);
+	/* Set full scale */
+	iis3dwb_xl_full_scale_set(&dev_ctx, IIS3DWB_8g);
 
-/*
- * Set FIFO watermark (number of unread sensor data TAG + 6 bytes
- * stored in FIFO) to FIFO_WATERMARK samples
- */
-iis3dwb_fifo_watermark_set(&dev_ctx, FIFO_WATERMARK);
-/* Set FIFO batch XL ODR to 12.5Hz */
-iis3dwb_fifo_xl_batch_set(&dev_ctx, IIS3DWB_XL_BATCHED_AT_26k7Hz);
+	/*
+	 * Set FIFO watermark (number of unread sensor data TAG + 6 bytes
+	 * stored in FIFO) to FIFO_WATERMARK samples
+	 */
+	iis3dwb_fifo_watermark_set(&dev_ctx, FIFO_WATERMARK);
+	/* Set FIFO batch XL ODR to 12.5Hz */
+	iis3dwb_fifo_xl_batch_set(&dev_ctx, IIS3DWB_XL_BATCHED_AT_26k7Hz);
 
-/* Set FIFO mode to Stream mode (aka Continuous Mode) */
-iis3dwb_fifo_mode_set(&dev_ctx, IIS3DWB_STREAM_MODE);
+	/* Set FIFO mode to Stream mode (aka Continuous Mode) */
+	iis3dwb_fifo_mode_set(&dev_ctx, IIS3DWB_STREAM_MODE);
 
-/* Set Output Data Rate */
-iis3dwb_xl_data_rate_set(&dev_ctx, IIS3DWB_XL_ODR_26k7Hz);
-iis3dwb_fifo_timestamp_batch_set(&dev_ctx, IIS3DWB_DEC_8);
-iis3dwb_timestamp_set(&dev_ctx, PROPERTY_ENABLE);
+	/* Set Output Data Rate */
+	iis3dwb_xl_data_rate_set(&dev_ctx, IIS3DWB_XL_ODR_26k7Hz);
+	iis3dwb_fifo_timestamp_batch_set(&dev_ctx, IIS3DWB_DEC_8);
+	iis3dwb_timestamp_set(&dev_ctx, PROPERTY_ENABLE);
 
 }
 
-static void appSrpInit(void) {
-if (appSrpDone)
-	return;
-appSrpDone = true;
+static void app_srp_init(void) {
+	if (appSrpDone)
+		return;
+	appSrpDone = true;
 
-otError error = OT_ERROR_NONE;
+	otError error = OT_ERROR_NONE;
 
-char *hostName;
-const char *HOST_NAME = "VIBRATION-SENSOR";
-uint16_t size;
-hostName = otSrpClientBuffersGetHostNameString(sInstance, &size);
-error = otSrpClientSetHostName(sInstance, HOST_NAME);
-memcpy(hostName, HOST_NAME, sizeof(HOST_NAME) + 1);
+	char *hostName;
+	const char *HOST_NAME = "VIBRATION-SENSOR";
+	uint16_t size;
+	hostName = otSrpClientBuffersGetHostNameString(sInstance, &size);
+	error = otSrpClientSetHostName(sInstance, HOST_NAME);
+	memcpy(hostName, HOST_NAME, sizeof(HOST_NAME) + 1);
 
-otSrpClientEnableAutoHostAddress(sInstance);
+	otSrpClientEnableAutoHostAddress(sInstance);
 
-otSrpClientBuffersServiceEntry *entry = NULL;
-char *string;
+	otSrpClientBuffersServiceEntry *entry = NULL;
+	char *string;
 
-entry = otSrpClientBuffersAllocateService(sInstance);
+	entry = otSrpClientBuffersAllocateService(sInstance);
 
-entry->mService.mPort = 33434;
-char INST_NAME[32];
-snprintf(INST_NAME, 32, "ipv6bc%d", (uint8_t) (eui._64b & 0xFF));
-const char *SERV_NAME = "_ot._udp";
-string = otSrpClientBuffersGetServiceEntryInstanceNameString(entry, &size);
-memcpy(string, INST_NAME, size);
+	entry->mService.mPort = 33434;
+	char INST_NAME[32];
+	snprintf(INST_NAME, 32, "ipv6bc%d", (uint8_t) (eui._64b & 0xFF));
+	const char *SERV_NAME = "_ot._udp";
+	string = otSrpClientBuffersGetServiceEntryInstanceNameString(entry, &size);
+	memcpy(string, INST_NAME, size);
 
-string = otSrpClientBuffersGetServiceEntryServiceNameString(entry, &size);
-memcpy(string, SERV_NAME, size);
+	string = otSrpClientBuffersGetServiceEntryServiceNameString(entry, &size);
+	memcpy(string, SERV_NAME, size);
 
-error = otSrpClientAddService(sInstance, &entry->mService);
+	error = otSrpClientAddService(sInstance, &entry->mService);
 
-assert(OT_ERROR_NONE == error);
+	assert(OT_ERROR_NONE == error);
 
-entry = NULL;
+	entry = NULL;
 
-otSrpClientEnableAutoStartMode(sInstance, /* aCallback */NULL, /* aContext */
-NULL);
+	otSrpClientEnableAutoStartMode(sInstance, /* aCallback */NULL, /* aContext */
+	NULL);
 }
 
 /*
@@ -260,9 +291,9 @@ void sl_ot_create_instance(void) {
     // Initialize OpenThread with the buffer
     sInstance = otInstanceInit(otInstanceBuffer, &otInstanceBufferLength);
 #else
-sInstance = otInstanceInitSingle();
+	sInstance = otInstanceInitSingle();
 #endif
-assert(sInstance);
+	assert(sInstance);
 }
 
 void sl_ot_cli_init(void) {
@@ -270,12 +301,12 @@ void sl_ot_cli_init(void) {
 }
 
 otInstance* otGetInstance(void) {
-return sInstance;
+	return sInstance;
 }
 
 /**************************************************************************//**
  * Application Exit.`
  *****************************************************************************/
 void app_exit(void) {
-otInstanceFinalize(sInstance);
+	otInstanceFinalize(sInstance);
 }

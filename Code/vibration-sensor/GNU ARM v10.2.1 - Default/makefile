@@ -57,6 +57,7 @@ RM := rm -rf
 -include gecko_sdk_4.3.2/platform/peripheral/src/subdir.mk
 -include gecko_sdk_4.3.2/platform/emlib/src/subdir.mk
 -include gecko_sdk_4.3.2/platform/emdrv/uartdrv/src/subdir.mk
+-include gecko_sdk_4.3.2/platform/emdrv/spidrv/src/subdir.mk
 -include gecko_sdk_4.3.2/platform/emdrv/nvm3/src/subdir.mk
 -include gecko_sdk_4.3.2/platform/emdrv/gpiointerrupt/src/subdir.mk
 -include gecko_sdk_4.3.2/platform/emdrv/dmadrv/src/subdir.mk

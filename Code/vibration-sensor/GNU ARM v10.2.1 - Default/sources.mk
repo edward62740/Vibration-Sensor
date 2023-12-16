@@ -39,6 +39,7 @@ gecko_sdk_4.3.2/platform/driver/button/src \
 gecko_sdk_4.3.2/platform/emdrv/dmadrv/src \
 gecko_sdk_4.3.2/platform/emdrv/gpiointerrupt/src \
 gecko_sdk_4.3.2/platform/emdrv/nvm3/src \
+gecko_sdk_4.3.2/platform/emdrv/spidrv/src \
 gecko_sdk_4.3.2/platform/emdrv/uartdrv/src \
 gecko_sdk_4.3.2/platform/emlib/src \
 gecko_sdk_4.3.2/platform/peripheral/src \

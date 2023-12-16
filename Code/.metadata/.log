@@ -1575,3 +1575,743 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64
 
 !ENTRY com.silabs.ss.platform.content.core 4 0 2023-12-15 10:31:20.500
 !MESSAGE Local timestamp file does not exist: C:\SiliconLabs\SimplicityStudio\v5\offline\common\Simplicity_Studio_Terms_of_Use_and_Privacy_Statement.timestamp
+!SESSION 2023-12-16 08:43:50.298 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=17.0.3
+java.vendor=Amazon.com Inc.
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.silabs.ss.platform.jetty.server 1 0 2023-12-16 08:43:53.119
+!MESSAGE Jetty listening on: http://127.0.0.1:50994/
+
+!ENTRY com.silabs.ss.platform.jetty.server 1 0 2023-12-16 08:43:53.687
+!MESSAGE ContentServer started at: 127.0.0.1, 50994
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 08:43:53.743
+!MESSAGE com.silabs.ss.tool.launcher.product found! Writing main studio shared file
+
+!ENTRY com.silabs.ss.tool.installer.core 1 0 2023-12-16 08:44:05.413
+!MESSAGE isInternalNetwork: false
+
+!ENTRY com.silabs.ss.platform.content.core 4 0 2023-12-16 08:44:07.345
+!MESSAGE Local timestamp file does not exist: C:\SiliconLabs\SimplicityStudio\v5\offline\common\Simplicity_Studio_Terms_of_Use_and_Privacy_Statement.timestamp
+
+!ENTRY com.silabs.ss.platform.apack.core 1 0 2023-12-16 08:44:07.441
+!MESSAGE AdapterPack Device inspector for Exx32 and EFM8 hardware has setupcheck function type 
+
+!ENTRY com.silabs.ss.platform.apack.core 1 0 2023-12-16 08:44:07.796
+!MESSAGE AdapterPack USB adapter pack has setupcheck function type 
+
+!ENTRY com.silabs.ss.tool.installer.core 2 0 2023-12-16 08:44:31.922
+!MESSAGE Problem getting package resources: changelog
+
+!ENTRY com.silabs.ss.platform.content.core 4 0 2023-12-16 08:44:37.255
+!MESSAGE Local timestamp file does not exist: C:\SiliconLabs\SimplicityStudio\v5\offline\common\Simplicity_Studio_Terms_of_Use_and_Privacy_Statement.timestamp
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:05:18.823
+!MESSAGE editor file home calculation for Studio resulted in C:\Users\Workstation\Documents\GitHub\Vibration-Sensor\Code\vibration-sensor\.uceditor for vibration-sensor with component SPIDRV EUSART (accel)
+
+!ENTRY com.silabs.ss.tool.uc.editor 1 0 2023-12-16 17:05:18.861
+!MESSAGE Inside PrimaryWebsocketCommunicator constructor
+
+!ENTRY com.silabs.ss.tool.uc.editor 1 0 2023-12-16 17:05:18.862
+!MESSAGE Websocket on server side linked to /ws/ucedit/filechanges
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:05:18.864
+!MESSAGE Servlet registered: /rest/ucedit/metadata
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:05:18.866
+!MESSAGE Servlet registered: /rest/ucedit/action/opensource
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:05:18.868
+!MESSAGE Servlet registered: /rest/ucedit/action/cmsisedit
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:05:18.869
+!MESSAGE sockets ready servlet being set up
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:05:18.870
+!MESSAGE Servlet registered: /rest/ucedit/action/socketsready
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:05:18.871
+!MESSAGE sockets ready servlet is ready
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:05:18.872
+!MESSAGE Servlet registered: /rest/ucedit/action/configsready
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:05:18.877
+!MESSAGE editor file home calculation for Studio resulted in C:\Users\Workstation\Documents\GitHub\Vibration-Sensor\Code\vibration-sensor\.uceditor for vibration-sensor with component SPIDRV EUSART (accel)
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:05:18.920
+!MESSAGE Initial cmsis parsing: {sl_spidrv_eusart_accel_config.h=Start Parse Offset: 4239
+End Parse Offset: 4239
+Parsing Error: null
+Parsing Error offset: -1
+fContainWizard: true
+}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:05:18.923
+!MESSAGE PinTool annotations detected. Loading ABDevice
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:05:18.932
+!MESSAGE CMSIS Parse success for sl_spidrv_eusart_accel_config.h
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:05:18.945
+!MESSAGE preparing cmsis websocket update: {"configurables":{"removed":[],"updated":[{"parent_category_id":"CMSIS_$sl_spidrv_eusart_accel_config.h$_SPIDRV settings","conf_type":"spinner","initial":"1000000","header":"sl_spidrv_eusart_accel_config.h","label":"SPI bitrate","id":"CMSIS_$sl_spidrv_eusart_accel_config.h$_SL_SPIDRV_EUSART_ACCEL_BITRATE","type":"conf","desc":"Default: 1000000"},{"parent_category_id":"CMSIS_$sl_spidrv_eusart_accel_config.h$_SPIDRV settings","conf_type":"spinner","min":7,"max":16,"initial":"8","header":"sl_spidrv_eusart_accel_config.h","label":"SPI frame length","id":"CMSIS_$sl_spidrv_eusart_accel_config.h$_SL_SPIDRV_EUSART_ACCEL_FRAME_LENGTH","type":"conf","desc":"Default: 8"},{"parent_category_id":"CMSIS_$sl_spidrv_eusart_accel_config.h$_SPIDRV settings","conf_type":"combo","initial":"Master","header":"sl_spidrv_eusart_accel_config.h","label":"SPI mode","id":"CMSIS_$sl_spidrv_eusart_accel_config.h$_SL_SPIDRV_EUSART_ACCEL_TYPE","type":"conf","combo_options":["Master","Slave"]},{"parent_category_id":"CMSIS_$sl_spidrv_eusart_accel_config.h$_SPIDRV settings","conf_type":"combo","initial":"MSB transmitted first","header":"sl_spidrv_eusart_accel_config.h","label":"Bit order on the SPI bus","id":"CMSIS_$sl_spidrv_eusart_accel_config.h$_SL_SPIDRV_EUSART_ACCEL_BIT_ORDER","type":"conf","combo_options":["LSB transmitted first","MSB transmitted first"]},{"parent_category_id":"CMSIS_$sl_spidrv_eusart_accel_config.h$_SPIDRV settings","conf_type":"combo","initial":"SPI mode 0: CLKPOL=0, CLKPHA=0","header":"sl_spidrv_eusart_accel_config.h","label":"SPI clock mode","id":"CMSIS_$sl_spidrv_eusart_accel_config.h$_SL_SPIDRV_EUSART_ACCEL_CLOCK_MODE","type":"conf","combo_options":["SPI mode 0: CLKPOL=0, CLKPHA=0","SPI mode 1: CLKPOL=0, CLKPHA=1","SPI mode 2: CLKPOL=1, CLKPHA=0","SPI mode 3: CLKPOL=1, CLKPHA=1"]},{"parent_category_id":"CMSIS_$sl_spidrv_eusart_accel_config.h$_SPIDRV settings","conf_type":"combo","initial":"CS controlled by the SPI driver","header":"sl_spidrv_eusart_accel_config.h","label":"SPI master chip select (CS) control scheme.","id":"CMSIS_$sl_spidrv_eusart_accel_config.h$_SL_SPIDRV_EUSART_ACCEL_CS_CONTROL","type":"conf","combo_options":["CS controlled by the SPI driver","CS controlled by the application"]},{"parent_category_id":"CMSIS_$sl_spidrv_eusart_accel_config.h$_SPIDRV settings","conf_type":"combo","initial":"Transfer starts immediately","header":"sl_spidrv_eusart_accel_config.h","label":"SPI slave transfer start scheme","id":"CMSIS_$sl_spidrv_eusart_accel_config.h$_SL_SPIDRV_EUSART_ACCEL_SLAVE_START_MODE","type":"conf","combo_options":["Transfer starts immediately","Transfer starts when the bus is idle (CS deasserted)"],"desc":"Only applies if instance type is spidrvSlave"},{"header":"sl_spidrv_eusart_accel_config.h","label":"SPIDRV settings","id":"CMSIS_$sl_spidrv_eusart_accel_config.h$_SPIDRV settings","type":"cat","conf_class":"cmsis"}]},"clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/spidrv_eusart_accel","header":"sl_spidrv_eusart_accel_config.h","wsType":"config_update","conf_class":"cmsis"}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:05:19.310
+!MESSAGE Client mentioned sockets are all ready: counting down latch
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:05:19.313
+!MESSAGE latch unlocked: cmsis socket response sending
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:05:19.530
+!MESSAGE Clear CMSIS Issues WS call: {"clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/spidrv_eusart_accel","ids":[],"wsType":"clear_issues"}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:05:20.928
+!MESSAGE Selected peripheral modification -- listeners updating
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:05:20.931
+!MESSAGE Preparing Websocket Pintool Update: {"configurables":{"removed":[],"updated":[{"label":"SL_SPIDRV_EUSART_ACCEL","id":"SL_SPIDRV_EUSART_ACCEL_REQUIREMENT","type":"cat","conf_class":"pintool"},{"parent_category_id":"SL_SPIDRV_EUSART_ACCEL_REQUIREMENT","conf_type":"combo","initial":"None","label":"Selected Module","id":"SL_SPIDRV_EUSART_ACCEL","type":"conf","combo_options":[{"label":"None","value":"None"}]}]},"clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/spidrv_eusart_accel","wsType":"config_update","conf_class":"pintool"}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:05:20.932
+!MESSAGE latch unlocked: pintool socket response sending
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:05:20.932
+!MESSAGE New pintool options detected -- resending existing problem markers for handling.
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:05:21.100
+!MESSAGE Allowed modules (event detection): EUSART1, EUSART0
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:05:21.100
+!MESSAGE Preparing Websocket Pintool Update: {"configurables":{"removed":[],"updated":[{"parent_category_id":"SL_SPIDRV_EUSART_ACCEL_REQUIREMENT","conf_type":"combo","initial":"None","label":"Selected Module","id":"SL_SPIDRV_EUSART_ACCEL","type":"conf","combo_options":[{"label":"None","value":"None"},{"label":"EUSART1","value":"EUSART1"},{"label":"EUSART0","value":"EUSART0"}]}]},"clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/spidrv_eusart_accel","wsType":"config_update","conf_class":"pintool"}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:05:21.101
+!MESSAGE latch unlocked: pintool socket response sending
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:05:21.120
+!MESSAGE Component Editor Pintool Marker Added: Marker [on: /vibration-sensor/vibration-sensor.pintool, id: 3560, type: com.silabs.ss.framework.hwconfig.core.abproblemmarker, attributes: [location: , message: Requirement SL_FEM_UTIL_SLEEP is unsatisified (needs PRS instance) [from sl_fem_util_config.h], objectPath: /, severity: 1, transient: true], created: 12/16/23, 5:05 PM]
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:05:21.126
+!MESSAGE Component Editor Pintool Marker Added: Marker [on: /vibration-sensor/vibration-sensor.pintool, id: 3561, type: com.silabs.ss.framework.hwconfig.core.abproblemmarker, attributes: [location: , message: Requirement SL_FEM_UTIL_RX is unsatisified (needs PRS instance) [from sl_fem_util_config.h], objectPath: /, severity: 1, transient: true], created: 12/16/23, 5:05 PM]
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:05:21.129
+!MESSAGE Component Editor Pintool Marker Added: Marker [on: /vibration-sensor/vibration-sensor.pintool, id: 3562, type: com.silabs.ss.framework.hwconfig.core.abproblemmarker, attributes: [location: , message: Requirement SL_SPIDRV_EUSART_ACCEL is unsatisified (needs EUSART instance) [from sl_spidrv_eusart_accel_config.h], objectPath: /, severity: 1, transient: true], created: 12/16/23, 5:05 PM]
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:05:21.133
+!MESSAGE Component Editor Pintool Marker Added: Marker [on: /vibration-sensor/vibration-sensor.pintool, id: 3563, type: com.silabs.ss.framework.hwconfig.core.abproblemmarker, attributes: [location: DefaultMode PORTIO, message: DOUT must be enabled for PTI [from sl_rail_util_pti_config.h], objectPath: /DefaultMode/PORTIO, propertyId: portio.pti.enable.dout, severity: 1, transient: true], created: 12/16/23, 5:05 PM]
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:05:21.135
+!MESSAGE Attempting to find a linkage in pintool with marker id portio.pti.enable.dout
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:05:24.712
+!MESSAGE Selected peripheral modification -- listeners updating
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:05:24.712
+!MESSAGE registering configuration tool pintool editor listeners for SL_SPIDRV_EUSART_ACCEL on module EUSART1
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:05:24.716
+!MESSAGE Preparing Websocket Pintool Update: {"configurables":{"removed":[],"updated":[{"parent_category_id":"SL_SPIDRV_EUSART_ACCEL_REQUIREMENT","conf_type":"combo","initial":"EUSART1","label":"Selected Module","id":"SL_SPIDRV_EUSART_ACCEL","type":"conf","combo_options":[{"label":"None","value":"None"},{"label":"EUSART1","value":"EUSART1"},{"label":"EUSART0","value":"EUSART0"}]},{"parent_category_id":"SL_SPIDRV_EUSART_ACCEL_REQUIREMENT","label":"EUSART","id":"PINTOOL_CATEGORY_EUSART1_EUSART","type":"cat"},{"parent_category_id":"SL_SPIDRV_EUSART_ACCEL_REQUIREMENT","conf_type":"combo","visible":"portio.eusart1.enable.cs","rawprop":"portio.eusart1.location.cs","initial":{"label":"None","value":-1},"label":"CS","id":"EUSART1.$PIN.portio.eusart1.location.cs.$ROUTE.CS","type":"conf","combo_options":[{"label":"None","value":-1},{"label":"PA00","value":0},{"label":"PA01","value":1},{"label":"PA02","value":2},{"label":"PA03","value":3},{"label":"PA04","value":4},{"label":"PA05","value":5},{"label":"PA06","value":6},{"label":"PA07","value":7},{"label":"PA08","value":8},{"label":"PB00","value":16},{"label":"PB01","value":17},{"label":"PB02","value":18},{"label":"PB03","value":19},{"label":"PB04","value":20},{"label":"PC00","value":32},{"label":"PC01","value":33},{"label":"PC02","value":34},{"label":"PC03","value":35},{"label":"PC04","value":36},{"label":"PC05","value":37},{"label":"PC06","value":38},{"label":"PC07","value":39},{"label":"PD00","value":48},{"label":"PD01","value":49},{"label":"PD02","value":50},{"label":"PD03","value":51}]},{"parent_category_id":"SL_SPIDRV_EUSART_ACCEL_REQUIREMENT","conf_type":"combo","visible":"portio.eusart1.enable.cts","rawprop":"portio.eusart1.location.cts","initial":{"label":"None","value":-1},"label":"CTS","id":"EUSART1.$PIN.portio.eusart1.location.cts.$ROUTE.CTS","type":"conf","combo_options":[{"label":"None","value":-1},{"label":"PA00","value":0},{"label":"PA01","value":1},{"label":"PA02","value":2},{"label":"PA03","value":3},{"label":"PA04","value":4},{"label":"PA05","value":5},{"label":"PA06","value":6},{"label":"PA07","value":7},{"label":"PA08","value":8},{"label":"PB00","value":16},{"label":"PB01","value":17},{"label":"PB02","value":18},{"label":"PB03","value":19},{"label":"PB04","value":20},{"label":"PC00","value":32},{"label":"PC01","value":33},{"label":"PC02","value":34},{"label":"PC03","value":35},{"label":"PC04","value":36},{"label":"PC05","value":37},{"label":"PC06","value":38},{"label":"PC07","value":39},{"label":"PD00","value":48},{"label":"PD01","value":49},{"label":"PD02","value":50},{"label":"PD03","value":51}]},{"parent_category_id":"PINTOOL_CATEGORY_EUSART1_EUSART","conf_type":"string","readonly":false,"rawprop":"peripheral.name","initial":"","label":"Custom Peripheral Name","id":"EUSART1.$PROP.peripheral.name","type":"conf"},{"parent_category_id":"SL_SPIDRV_EUSART_ACCEL_REQUIREMENT","conf_type":"combo","visible":"portio.eusart1.enable.rts","rawprop":"portio.eusart1.location.rts","initial":{"label":"None","value":-1},"label":"RTS","id":"EUSART1.$PIN.portio.eusart1.location.rts.$ROUTE.RTS","type":"conf","combo_options":[{"label":"None","value":-1},{"label":"PA00","value":0},{"label":"PA01","value":1},{"label":"PA02","value":2},{"label":"PA03","value":3},{"label":"PA04","value":4},{"label":"PA05","value":5},{"label":"PA06","value":6},{"label":"PA07","value":7},{"label":"PA08","value":8},{"label":"PB00","value":16},{"label":"PB01","value":17},{"label":"PB02","value":18},{"label":"PB03","value":19},{"label":"PB04","value":20},{"label":"PC00","value":32},{"label":"PC01","value":33},{"label":"PC02","value":34},{"label":"PC03","value":35},{"label":"PC04","value":36},{"label":"PC05","value":37},{"label":"PC06","value":38},{"label":"PC07","value":39},{"label":"PD00","value":48},{"label":"PD01","value":49},{"label":"PD02","value":50},{"label":"PD03","value":51}]},{"parent_category_id":"SL_SPIDRV_EUSART_ACCEL_REQUIREMENT","conf_type":"combo","visible":"portio.eusart1.enable.rx","rawprop":"portio.eusart1.location.rx","initial":{"label":"None","value":-1},"label":"RX","id":"EUSART1.$PIN.portio.eusart1.location.rx.$ROUTE.RX","type":"conf","combo_options":[{"label":"None","value":-1},{"label":"PA00","value":0},{"label":"PA01","value":1},{"label":"PA02","value":2},{"label":"PA03","value":3},{"label":"PA04","value":4},{"label":"PA05","value":5},{"label":"PA06","value":6},{"label":"PA07","value":7},{"label":"PA08","value":8},{"label":"PB00","value":16},{"label":"PB01","value":17},{"label":"PB02","value":18},{"label":"PB03","value":19},{"label":"PB04","value":20},{"label":"PC00","value":32},{"label":"PC01","value":33},{"label":"PC02","value":34},{"label":"PC03","value":35},{"label":"PC04","value":36},{"label":"PC05","value":37},{"label":"PC06","value":38},{"label":"PC07","value":39},{"label":"PD00","value":48},{"label":"PD01","value":49},{"label":"PD02","value":50},{"label":"PD03","value":51}]},{"parent_category_id":"SL_SPIDRV_EUSART_ACCEL_REQUIREMENT","conf_type":"combo","visible":"portio.eusart1.enable.sclk","rawprop":"portio.eusart1.location.sclk","initial":{"label":"None","value":-1},"label":"SCLK","id":"EUSART1.$PIN.portio.eusart1.location.sclk.$ROUTE.SCLK","type":"conf","combo_options":[{"label":"None","value":-1},{"label":"PA00","value":0},{"label":"PA01","value":1},{"label":"PA02","value":2},{"label":"PA03","value":3},{"label":"PA04","value":4},{"label":"PA05","value":5},{"label":"PA06","value":6},{"label":"PA07","value":7},{"label":"PA08","value":8},{"label":"PB00","value":16},{"label":"PB01","value":17},{"label":"PB02","value":18},{"label":"PB03","value":19},{"label":"PB04","value":20},{"label":"PC00","value":32},{"label":"PC01","value":33},{"label":"PC02","value":34},{"label":"PC03","value":35},{"label":"PC04","value":36},{"label":"PC05","value":37},{"label":"PC06","value":38},{"label":"PC07","value":39},{"label":"PD00","value":48},{"label":"PD01","value":49},{"label":"PD02","value":50},{"label":"PD03","value":51}]},{"parent_category_id":"SL_SPIDRV_EUSART_ACCEL_REQUIREMENT","conf_type":"combo","visible":"portio.eusart1.enable.tx","rawprop":"portio.eusart1.location.tx","initial":{"label":"None","value":-1},"label":"TX","id":"EUSART1.$PIN.portio.eusart1.location.tx.$ROUTE.TX","type":"conf","combo_options":[{"label":"None","value":-1},{"label":"PA00","value":0},{"label":"PA01","value":1},{"label":"PA02","value":2},{"label":"PA03","value":3},{"label":"PA04","value":4},{"label":"PA05","value":5},{"label":"PA06","value":6},{"label":"PA07","value":7},{"label":"PA08","value":8},{"label":"PB00","value":16},{"label":"PB01","value":17},{"label":"PB02","value":18},{"label":"PB03","value":19},{"label":"PB04","value":20},{"label":"PC00","value":32},{"label":"PC01","value":33},{"label":"PC02","value":34},{"label":"PC03","value":35},{"label":"PC04","value":36},{"label":"PC05","value":37},{"label":"PC06","value":38},{"label":"PC07","value":39},{"label":"PD00","value":48},{"label":"PD01","value":49},{"label":"PD02","value":50},{"label":"PD03","value":51}]}]},"clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/spidrv_eusart_accel","wsType":"config_update","conf_class":"pintool"}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:05:24.717
+!MESSAGE latch unlocked: pintool socket response sending
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:05:24.717
+!MESSAGE New pintool options detected -- resending existing problem markers for handling.
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:05:24.718
+!MESSAGE Attempting to find a linkage in pintool with marker id portio.pti.enable.dout
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:05:24.719
+!MESSAGE Preparing Websocket Pintool Update: {"configurables":{"removed":[],"updated":[]},"clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/spidrv_eusart_accel","wsType":"config_update","conf_class":"pintool"}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:05:24.719
+!MESSAGE latch unlocked: pintool socket response sending
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:05:24.722
+!MESSAGE Pintool data generation requested. Starting job
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:05:24.814
+!MESSAGE Visible Signals Modified (event detection): CS, RX, SCLK, TX
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:05:24.814
+!MESSAGE registering configuration tool pintool editor listeners for SL_SPIDRV_EUSART_ACCEL on module EUSART1
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:05:24.815
+!MESSAGE Preparing Websocket Pintool Update: {"configurables":{"removed":["EUSART1.$PIN.portio.eusart1.location.rts.$ROUTE.RTS","EUSART1.$PIN.portio.eusart1.location.cts.$ROUTE.CTS"],"updated":[]},"clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/spidrv_eusart_accel","wsType":"config_update","conf_class":"pintool"}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:05:24.815
+!MESSAGE latch unlocked: pintool socket response sending
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:05:24.819
+!MESSAGE Component Editor Pintool Marker Removed: Marker [on: /vibration-sensor/vibration-sensor.pintool, id: 3562, type: com.silabs.ss.framework.hwconfig.core.abproblemmarker, attributes: [location: , message: Requirement SL_SPIDRV_EUSART_ACCEL is unsatisified (needs EUSART instance) [from sl_spidrv_eusart_accel_config.h], objectPath: /, severity: 1, transient: true], created: 12/16/23, 5:05 PM]
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:05:24.824
+!MESSAGE Component Editor Pintool Marker Added: Marker [on: /vibration-sensor/vibration-sensor.pintool, id: 3577, type: com.silabs.ss.framework.hwconfig.core.abproblemmarker, attributes: [location: DefaultMode PORTIO, message: SCLK must be enabled for EUSART1 [from sl_spidrv_eusart_accel_config.h], objectPath: /DefaultMode/PORTIO, propertyId: portio.eusart1.enable.sclk, severity: 1, transient: true], created: 12/16/23, 5:05 PM]
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:05:24.825
+!MESSAGE Attempting to find a linkage in pintool with marker id portio.eusart1.enable.sclk
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:05:24.825
+!MESSAGE New Pintool Issues WS call: {"msg":"Pintool has indicated configuration issues: address fields in error and/or check Problems View","clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/spidrv_eusart_accel","wsType":"problems_alert","issues":[{"msg":"SCLK must be enabled for EUSART1 [from sl_spidrv_eusart_accel_config.h]","id":"EUSART1.$PIN.portio.eusart1.location.sclk.$ROUTE.SCLK"}]}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:05:24.829
+!MESSAGE Component Editor Pintool Marker Added: Marker [on: /vibration-sensor/vibration-sensor.pintool, id: 3578, type: com.silabs.ss.framework.hwconfig.core.abproblemmarker, attributes: [location: DefaultMode PORTIO, message: RX must be enabled for EUSART1 [from sl_spidrv_eusart_accel_config.h], objectPath: /DefaultMode/PORTIO, propertyId: portio.eusart1.enable.rx, severity: 1, transient: true], created: 12/16/23, 5:05 PM]
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:05:24.830
+!MESSAGE Attempting to find a linkage in pintool with marker id portio.eusart1.enable.rx
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:05:24.830
+!MESSAGE New Pintool Issues WS call: {"msg":"Pintool has indicated configuration issues: address fields in error and/or check Problems View","clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/spidrv_eusart_accel","wsType":"problems_alert","issues":[{"msg":"RX must be enabled for EUSART1 [from sl_spidrv_eusart_accel_config.h]","id":"EUSART1.$PIN.portio.eusart1.location.rx.$ROUTE.RX"}]}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:05:24.834
+!MESSAGE Component Editor Pintool Marker Added: Marker [on: /vibration-sensor/vibration-sensor.pintool, id: 3579, type: com.silabs.ss.framework.hwconfig.core.abproblemmarker, attributes: [location: DefaultMode PORTIO, message: TX must be enabled for EUSART1 [from sl_spidrv_eusart_accel_config.h], objectPath: /DefaultMode/PORTIO, propertyId: portio.eusart1.enable.tx, severity: 1, transient: true], created: 12/16/23, 5:05 PM]
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:05:24.835
+!MESSAGE Attempting to find a linkage in pintool with marker id portio.eusart1.enable.tx
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:05:24.835
+!MESSAGE New Pintool Issues WS call: {"msg":"Pintool has indicated configuration issues: address fields in error and/or check Problems View","clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/spidrv_eusart_accel","wsType":"problems_alert","issues":[{"msg":"TX must be enabled for EUSART1 [from sl_spidrv_eusart_accel_config.h]","id":"EUSART1.$PIN.portio.eusart1.location.tx.$ROUTE.TX"}]}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:05:25.909
+!MESSAGE Resource Changed: Reparsing L/vibration-sensor/config/sl_spidrv_eusart_accel_config.h for cmsis
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:05:25.912
+!MESSAGE A Cmsis Reparse was triggered for sl_spidrv_eusart_accel_config.h
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:05:25.917
+!MESSAGE CMSIS Parse success for sl_spidrv_eusart_accel_config.h
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:05:25.919
+!MESSAGE preparing cmsis websocket update: {"configurables":{"removed":[],"updated":[]},"clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/spidrv_eusart_accel","header":"sl_spidrv_eusart_accel_config.h","wsType":"config_update","conf_class":"cmsis"}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:05:25.924
+!MESSAGE latch unlocked: cmsis socket response sending
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:05:26.007
+!MESSAGE Clear CMSIS Issues WS call: {"clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/spidrv_eusart_accel","ids":[],"wsType":"clear_issues"}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:05:26.010
+!MESSAGE Allowed modules (event detection): EUSART1, EUSART0
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:05:26.011
+!MESSAGE Preparing Websocket Pintool Update: {"configurables":{"removed":[],"updated":[{"parent_category_id":"SL_SPIDRV_EUSART_ACCEL_REQUIREMENT","conf_type":"combo","visible":"portio.eusart1.enable.cts","rawprop":"portio.eusart1.location.cts","initial":{"label":"None","value":-1},"label":"CTS","id":"EUSART1.$PIN.portio.eusart1.location.cts.$ROUTE.CTS","type":"conf","combo_options":[{"label":"None","value":-1},{"label":"PA00","value":0},{"label":"PA01","value":1},{"label":"PA02","value":2},{"label":"PA03","value":3},{"label":"PA04","value":4},{"label":"PA05","value":5},{"label":"PA06","value":6},{"label":"PA07","value":7},{"label":"PA08","value":8},{"label":"PB00","value":16},{"label":"PB01","value":17},{"label":"PB02","value":18},{"label":"PB03","value":19},{"label":"PB04","value":20},{"label":"PC00","value":32},{"label":"PC01","value":33},{"label":"PC02","value":34},{"label":"PC03","value":35},{"label":"PC04","value":36},{"label":"PC05","value":37},{"label":"PC06","value":38},{"label":"PC07","value":39},{"label":"PD00","value":48},{"label":"PD01","value":49},{"label":"PD02","value":50},{"label":"PD03","value":51}]},{"parent_category_id":"SL_SPIDRV_EUSART_ACCEL_REQUIREMENT","conf_type":"combo","visible":"portio.eusart1.enable.rts","rawprop":"portio.eusart1.location.rts","initial":{"label":"None","value":-1},"label":"RTS","id":"EUSART1.$PIN.portio.eusart1.location.rts.$ROUTE.RTS","type":"conf","combo_options":[{"label":"None","value":-1},{"label":"PA00","value":0},{"label":"PA01","value":1},{"label":"PA02","value":2},{"label":"PA03","value":3},{"label":"PA04","value":4},{"label":"PA05","value":5},{"label":"PA06","value":6},{"label":"PA07","value":7},{"label":"PA08","value":8},{"label":"PB00","value":16},{"label":"PB01","value":17},{"label":"PB02","value":18},{"label":"PB03","value":19},{"label":"PB04","value":20},{"label":"PC00","value":32},{"label":"PC01","value":33},{"label":"PC02","value":34},{"label":"PC03","value":35},{"label":"PC04","value":36},{"label":"PC05","value":37},{"label":"PC06","value":38},{"label":"PC07","value":39},{"label":"PD00","value":48},{"label":"PD01","value":49},{"label":"PD02","value":50},{"label":"PD03","value":51}]}]},"clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/spidrv_eusart_accel","wsType":"config_update","conf_class":"pintool"}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:05:26.011
+!MESSAGE latch unlocked: pintool socket response sending
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:05:26.012
+!MESSAGE New pintool options detected -- resending existing problem markers for handling.
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:05:26.012
+!MESSAGE Attempting to find a linkage in pintool with marker id portio.pti.enable.dout
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:05:26.013
+!MESSAGE Attempting to find a linkage in pintool with marker id portio.eusart1.enable.sclk
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:05:26.013
+!MESSAGE New Pintool Issues WS call: {"msg":"Pintool has indicated configuration issues: address fields in error and/or check Problems View","clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/spidrv_eusart_accel","wsType":"problems_alert","issues":[{"msg":"SCLK must be enabled for EUSART1 [from sl_spidrv_eusart_accel_config.h]","id":"EUSART1.$PIN.portio.eusart1.location.sclk.$ROUTE.SCLK"}]}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:05:26.015
+!MESSAGE Attempting to find a linkage in pintool with marker id portio.eusart1.enable.rx
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:05:26.017
+!MESSAGE New Pintool Issues WS call: {"msg":"Pintool has indicated configuration issues: address fields in error and/or check Problems View","clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/spidrv_eusart_accel","wsType":"problems_alert","issues":[{"msg":"RX must be enabled for EUSART1 [from sl_spidrv_eusart_accel_config.h]","id":"EUSART1.$PIN.portio.eusart1.location.rx.$ROUTE.RX"}]}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:05:26.022
+!MESSAGE Attempting to find a linkage in pintool with marker id portio.eusart1.enable.tx
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:05:26.026
+!MESSAGE New Pintool Issues WS call: {"msg":"Pintool has indicated configuration issues: address fields in error and/or check Problems View","clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/spidrv_eusart_accel","wsType":"problems_alert","issues":[{"msg":"TX must be enabled for EUSART1 [from sl_spidrv_eusart_accel_config.h]","id":"EUSART1.$PIN.portio.eusart1.location.tx.$ROUTE.TX"}]}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:05:26.036
+!MESSAGE Visible Signals Modified (event detection): CS, RX, SCLK, TX
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:05:26.037
+!MESSAGE registering configuration tool pintool editor listeners for SL_SPIDRV_EUSART_ACCEL on module EUSART1
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:05:26.038
+!MESSAGE Preparing Websocket Pintool Update: {"configurables":{"removed":["EUSART1.$PIN.portio.eusart1.location.rts.$ROUTE.RTS","EUSART1.$PIN.portio.eusart1.location.cts.$ROUTE.CTS"],"updated":[]},"clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/spidrv_eusart_accel","wsType":"config_update","conf_class":"pintool"}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:05:26.038
+!MESSAGE latch unlocked: pintool socket response sending
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:05:26.041
+!MESSAGE Component Editor Pintool Marker Removed: Marker [on: /vibration-sensor/vibration-sensor.pintool, id: 3577, type: com.silabs.ss.framework.hwconfig.core.abproblemmarker, attributes: [location: DefaultMode PORTIO, message: SCLK must be enabled for EUSART1 [from sl_spidrv_eusart_accel_config.h], objectPath: /DefaultMode/PORTIO, propertyId: portio.eusart1.enable.sclk, severity: 1, transient: true], created: 12/16/23, 5:05 PM]
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:05:26.042
+!MESSAGE Attempting to find a linkage in pintool with marker id portio.eusart1.enable.sclk
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:05:26.042
+!MESSAGE Clear Pintool Issues WS call: {"clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/spidrv_eusart_accel","ids":["EUSART1.$PIN.portio.eusart1.location.sclk.$ROUTE.SCLK"],"wsType":"clear_issues"}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:05:26.044
+!MESSAGE Component Editor Pintool Marker Removed: Marker [on: /vibration-sensor/vibration-sensor.pintool, id: 3578, type: com.silabs.ss.framework.hwconfig.core.abproblemmarker, attributes: [location: DefaultMode PORTIO, message: RX must be enabled for EUSART1 [from sl_spidrv_eusart_accel_config.h], objectPath: /DefaultMode/PORTIO, propertyId: portio.eusart1.enable.rx, severity: 1, transient: true], created: 12/16/23, 5:05 PM]
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:05:26.045
+!MESSAGE Attempting to find a linkage in pintool with marker id portio.eusart1.enable.rx
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:05:26.045
+!MESSAGE Clear Pintool Issues WS call: {"clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/spidrv_eusart_accel","ids":["EUSART1.$PIN.portio.eusart1.location.rx.$ROUTE.RX"],"wsType":"clear_issues"}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:05:26.047
+!MESSAGE Component Editor Pintool Marker Removed: Marker [on: /vibration-sensor/vibration-sensor.pintool, id: 3579, type: com.silabs.ss.framework.hwconfig.core.abproblemmarker, attributes: [location: DefaultMode PORTIO, message: TX must be enabled for EUSART1 [from sl_spidrv_eusart_accel_config.h], objectPath: /DefaultMode/PORTIO, propertyId: portio.eusart1.enable.tx, severity: 1, transient: true], created: 12/16/23, 5:05 PM]
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:05:26.047
+!MESSAGE Attempting to find a linkage in pintool with marker id portio.eusart1.enable.tx
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:05:26.048
+!MESSAGE Clear Pintool Issues WS call: {"clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/spidrv_eusart_accel","ids":["EUSART1.$PIN.portio.eusart1.location.tx.$ROUTE.TX"],"wsType":"clear_issues"}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:05:26.053
+!MESSAGE Component Editor Pintool Marker Added: Marker [on: /vibration-sensor/vibration-sensor.pintool, id: 3583, type: com.silabs.ss.framework.hwconfig.core.abproblemmarker, attributes: [location: DefaultMode PORTIO, message: SCLK must be enabled for EUSART1 [from sl_spidrv_eusart_accel_config.h], objectPath: /DefaultMode/PORTIO, propertyId: portio.eusart1.enable.sclk, severity: 1, transient: true], created: 12/16/23, 5:05 PM]
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:05:26.054
+!MESSAGE Attempting to find a linkage in pintool with marker id portio.eusart1.enable.sclk
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:05:26.054
+!MESSAGE New Pintool Issues WS call: {"msg":"Pintool has indicated configuration issues: address fields in error and/or check Problems View","clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/spidrv_eusart_accel","wsType":"problems_alert","issues":[{"msg":"SCLK must be enabled for EUSART1 [from sl_spidrv_eusart_accel_config.h]","id":"EUSART1.$PIN.portio.eusart1.location.sclk.$ROUTE.SCLK"}]}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:05:26.061
+!MESSAGE Component Editor Pintool Marker Added: Marker [on: /vibration-sensor/vibration-sensor.pintool, id: 3584, type: com.silabs.ss.framework.hwconfig.core.abproblemmarker, attributes: [location: DefaultMode PORTIO, message: TX must be enabled for EUSART1 [from sl_spidrv_eusart_accel_config.h], objectPath: /DefaultMode/PORTIO, propertyId: portio.eusart1.enable.tx, severity: 1, transient: true], created: 12/16/23, 5:05 PM]
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:05:26.062
+!MESSAGE Attempting to find a linkage in pintool with marker id portio.eusart1.enable.tx
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:05:26.063
+!MESSAGE New Pintool Issues WS call: {"msg":"Pintool has indicated configuration issues: address fields in error and/or check Problems View","clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/spidrv_eusart_accel","wsType":"problems_alert","issues":[{"msg":"TX must be enabled for EUSART1 [from sl_spidrv_eusart_accel_config.h]","id":"EUSART1.$PIN.portio.eusart1.location.tx.$ROUTE.TX"}]}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:05:26.068
+!MESSAGE Component Editor Pintool Marker Added: Marker [on: /vibration-sensor/vibration-sensor.pintool, id: 3585, type: com.silabs.ss.framework.hwconfig.core.abproblemmarker, attributes: [location: DefaultMode PORTIO, message: RX must be enabled for EUSART1 [from sl_spidrv_eusart_accel_config.h], objectPath: /DefaultMode/PORTIO, propertyId: portio.eusart1.enable.rx, severity: 1, transient: true], created: 12/16/23, 5:05 PM]
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:05:26.070
+!MESSAGE Attempting to find a linkage in pintool with marker id portio.eusart1.enable.rx
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:05:26.071
+!MESSAGE New Pintool Issues WS call: {"msg":"Pintool has indicated configuration issues: address fields in error and/or check Problems View","clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/spidrv_eusart_accel","wsType":"problems_alert","issues":[{"msg":"RX must be enabled for EUSART1 [from sl_spidrv_eusart_accel_config.h]","id":"EUSART1.$PIN.portio.eusart1.location.rx.$ROUTE.RX"}]}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:48:46.889
+!MESSAGE Preparing Websocket Pintool Update: {"configurables":{"removed":[],"updated":[]},"clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/spidrv_eusart_accel","wsType":"config_update","conf_class":"pintool"}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:48:46.889
+!MESSAGE latch unlocked: pintool socket response sending
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:48:46.890
+!MESSAGE Preparing Websocket Pintool Update: {"configurables":{"removed":[],"updated":[{"parent_category_id":"SL_SPIDRV_EUSART_ACCEL_REQUIREMENT","conf_type":"combo","visible":"portio.eusart1.enable.rx","rawprop":"portio.eusart1.location.rx","initial":{"label":"PB03","value":19},"label":"RX","id":"EUSART1.$PIN.portio.eusart1.location.rx.$ROUTE.RX","type":"conf","combo_options":[{"label":"None","value":-1},{"label":"PA00","value":0},{"label":"PA01","value":1},{"label":"PA02","value":2},{"label":"PA03","value":3},{"label":"PA04","value":4},{"label":"PA05","value":5},{"label":"PA06","value":6},{"label":"PA07","value":7},{"label":"PA08","value":8},{"label":"PB00","value":16},{"label":"PB01","value":17},{"label":"PB02","value":18},{"label":"PB03","value":19},{"label":"PB04","value":20},{"label":"PC00","value":32},{"label":"PC01","value":33},{"label":"PC02","value":34},{"label":"PC03","value":35},{"label":"PC04","value":36},{"label":"PC05","value":37},{"label":"PC06","value":38},{"label":"PC07","value":39},{"label":"PD00","value":48},{"label":"PD01","value":49},{"label":"PD02","value":50},{"label":"PD03","value":51}]}]},"clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/spidrv_eusart_accel","wsType":"config_update","conf_class":"pintool"}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:48:46.890
+!MESSAGE latch unlocked: pintool socket response sending
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:48:46.891
+!MESSAGE Preparing Websocket Pintool Update: {"configurables":{"removed":[],"updated":[]},"clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/spidrv_eusart_accel","wsType":"config_update","conf_class":"pintool"}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:48:46.892
+!MESSAGE latch unlocked: pintool socket response sending
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:48:46.892
+!MESSAGE Pintool data generation requested. Starting job
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:48:47.016
+!MESSAGE Component Editor Pintool Marker Removed: Marker [on: /vibration-sensor/vibration-sensor.pintool, id: 3560, type: com.silabs.ss.framework.hwconfig.core.abproblemmarker, attributes: [location: , message: Requirement SL_FEM_UTIL_SLEEP is unsatisified (needs PRS instance) [from sl_fem_util_config.h], objectPath: /, severity: 1, transient: true], created: 12/16/23, 5:05 PM]
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:48:47.017
+!MESSAGE Component Editor Pintool Marker Removed: Marker [on: /vibration-sensor/vibration-sensor.pintool, id: 3561, type: com.silabs.ss.framework.hwconfig.core.abproblemmarker, attributes: [location: , message: Requirement SL_FEM_UTIL_RX is unsatisified (needs PRS instance) [from sl_fem_util_config.h], objectPath: /, severity: 1, transient: true], created: 12/16/23, 5:05 PM]
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:48:47.018
+!MESSAGE Component Editor Pintool Marker Removed: Marker [on: /vibration-sensor/vibration-sensor.pintool, id: 3583, type: com.silabs.ss.framework.hwconfig.core.abproblemmarker, attributes: [location: DefaultMode PORTIO, message: SCLK must be enabled for EUSART1 [from sl_spidrv_eusart_accel_config.h], objectPath: /DefaultMode/PORTIO, propertyId: portio.eusart1.enable.sclk, severity: 1, transient: true], created: 12/16/23, 5:05 PM]
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:48:47.018
+!MESSAGE Attempting to find a linkage in pintool with marker id portio.eusart1.enable.sclk
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:48:47.019
+!MESSAGE Clear Pintool Issues WS call: {"clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/spidrv_eusart_accel","ids":["EUSART1.$PIN.portio.eusart1.location.sclk.$ROUTE.SCLK"],"wsType":"clear_issues"}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:48:47.020
+!MESSAGE Component Editor Pintool Marker Removed: Marker [on: /vibration-sensor/vibration-sensor.pintool, id: 3584, type: com.silabs.ss.framework.hwconfig.core.abproblemmarker, attributes: [location: DefaultMode PORTIO, message: TX must be enabled for EUSART1 [from sl_spidrv_eusart_accel_config.h], objectPath: /DefaultMode/PORTIO, propertyId: portio.eusart1.enable.tx, severity: 1, transient: true], created: 12/16/23, 5:05 PM]
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:48:47.021
+!MESSAGE Attempting to find a linkage in pintool with marker id portio.eusart1.enable.tx
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:48:47.021
+!MESSAGE Clear Pintool Issues WS call: {"clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/spidrv_eusart_accel","ids":["EUSART1.$PIN.portio.eusart1.location.tx.$ROUTE.TX"],"wsType":"clear_issues"}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:48:47.022
+!MESSAGE Component Editor Pintool Marker Removed: Marker [on: /vibration-sensor/vibration-sensor.pintool, id: 3585, type: com.silabs.ss.framework.hwconfig.core.abproblemmarker, attributes: [location: DefaultMode PORTIO, message: RX must be enabled for EUSART1 [from sl_spidrv_eusart_accel_config.h], objectPath: /DefaultMode/PORTIO, propertyId: portio.eusart1.enable.rx, severity: 1, transient: true], created: 12/16/23, 5:05 PM]
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:48:47.023
+!MESSAGE Attempting to find a linkage in pintool with marker id portio.eusart1.enable.rx
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:48:47.023
+!MESSAGE Clear Pintool Issues WS call: {"clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/spidrv_eusart_accel","ids":["EUSART1.$PIN.portio.eusart1.location.rx.$ROUTE.RX"],"wsType":"clear_issues"}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:48:47.024
+!MESSAGE Component Editor Pintool Marker Removed: Marker [on: /vibration-sensor/vibration-sensor.pintool, id: 3563, type: com.silabs.ss.framework.hwconfig.core.abproblemmarker, attributes: [location: DefaultMode PORTIO, message: DOUT must be enabled for PTI [from sl_rail_util_pti_config.h], objectPath: /DefaultMode/PORTIO, propertyId: portio.pti.enable.dout, severity: 1, transient: true], created: 12/16/23, 5:05 PM]
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:48:47.025
+!MESSAGE Attempting to find a linkage in pintool with marker id portio.pti.enable.dout
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:48:47.027
+!MESSAGE Component Editor Pintool Marker Added: Marker [on: /vibration-sensor/vibration-sensor.pintool, id: 3821, type: com.silabs.ss.framework.hwconfig.core.abproblemmarker, attributes: [location: , message: Requirement SL_FEM_UTIL_SLEEP is unsatisified (needs PRS instance) [from sl_fem_util_config.h], objectPath: /, severity: 1, transient: true], created: 12/16/23, 5:48 PM]
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:48:47.029
+!MESSAGE Component Editor Pintool Marker Added: Marker [on: /vibration-sensor/vibration-sensor.pintool, id: 3822, type: com.silabs.ss.framework.hwconfig.core.abproblemmarker, attributes: [location: , message: Requirement SL_FEM_UTIL_RX is unsatisified (needs PRS instance) [from sl_fem_util_config.h], objectPath: /, severity: 1, transient: true], created: 12/16/23, 5:48 PM]
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:48:47.032
+!MESSAGE Component Editor Pintool Marker Added: Marker [on: /vibration-sensor/vibration-sensor.pintool, id: 3823, type: com.silabs.ss.framework.hwconfig.core.abproblemmarker, attributes: [location: DefaultMode PORTIO, message: SCLK must be enabled for EUSART1 [from sl_spidrv_eusart_accel_config.h], objectPath: /DefaultMode/PORTIO, propertyId: portio.eusart1.enable.sclk, severity: 1, transient: true], created: 12/16/23, 5:48 PM]
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:48:47.033
+!MESSAGE Attempting to find a linkage in pintool with marker id portio.eusart1.enable.sclk
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:48:47.033
+!MESSAGE New Pintool Issues WS call: {"msg":"Pintool has indicated configuration issues: address fields in error and/or check Problems View","clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/spidrv_eusart_accel","wsType":"problems_alert","issues":[{"msg":"SCLK must be enabled for EUSART1 [from sl_spidrv_eusart_accel_config.h]","id":"EUSART1.$PIN.portio.eusart1.location.sclk.$ROUTE.SCLK"}]}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:48:47.036
+!MESSAGE Component Editor Pintool Marker Added: Marker [on: /vibration-sensor/vibration-sensor.pintool, id: 3824, type: com.silabs.ss.framework.hwconfig.core.abproblemmarker, attributes: [location: DefaultMode PORTIO, message: TX must be enabled for EUSART1 [from sl_spidrv_eusart_accel_config.h], objectPath: /DefaultMode/PORTIO, propertyId: portio.eusart1.enable.tx, severity: 1, transient: true], created: 12/16/23, 5:48 PM]
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:48:47.037
+!MESSAGE Attempting to find a linkage in pintool with marker id portio.eusart1.enable.tx
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:48:47.037
+!MESSAGE New Pintool Issues WS call: {"msg":"Pintool has indicated configuration issues: address fields in error and/or check Problems View","clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/spidrv_eusart_accel","wsType":"problems_alert","issues":[{"msg":"TX must be enabled for EUSART1 [from sl_spidrv_eusart_accel_config.h]","id":"EUSART1.$PIN.portio.eusart1.location.tx.$ROUTE.TX"}]}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:48:47.041
+!MESSAGE Component Editor Pintool Marker Added: Marker [on: /vibration-sensor/vibration-sensor.pintool, id: 3825, type: com.silabs.ss.framework.hwconfig.core.abproblemmarker, attributes: [location: DefaultMode PORTIO, message: DOUT must be enabled for PTI [from sl_rail_util_pti_config.h], objectPath: /DefaultMode/PORTIO, propertyId: portio.pti.enable.dout, severity: 1, transient: true], created: 12/16/23, 5:48 PM]
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:48:47.041
+!MESSAGE Attempting to find a linkage in pintool with marker id portio.pti.enable.dout
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:48:47.694
+!MESSAGE Resource Changed: Reparsing L/vibration-sensor/config/sl_spidrv_eusart_accel_config.h for cmsis
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:48:47.697
+!MESSAGE A Cmsis Reparse was triggered for sl_spidrv_eusart_accel_config.h
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:48:47.709
+!MESSAGE CMSIS Parse success for sl_spidrv_eusart_accel_config.h
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:48:47.710
+!MESSAGE preparing cmsis websocket update: {"configurables":{"removed":[],"updated":[]},"clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/spidrv_eusart_accel","header":"sl_spidrv_eusart_accel_config.h","wsType":"config_update","conf_class":"cmsis"}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:48:47.710
+!MESSAGE latch unlocked: cmsis socket response sending
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:48:47.773
+!MESSAGE Clear CMSIS Issues WS call: {"clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/spidrv_eusart_accel","ids":[],"wsType":"clear_issues"}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:48:47.906
+!MESSAGE Allowed modules (event detection): EUSART1, EUSART0
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:48:47.906
+!MESSAGE Preparing Websocket Pintool Update: {"configurables":{"removed":[],"updated":[{"parent_category_id":"SL_SPIDRV_EUSART_ACCEL_REQUIREMENT","conf_type":"combo","visible":"portio.eusart1.enable.cts","rawprop":"portio.eusart1.location.cts","initial":{"label":"None","value":-1},"label":"CTS","id":"EUSART1.$PIN.portio.eusart1.location.cts.$ROUTE.CTS","type":"conf","combo_options":[{"label":"None","value":-1},{"label":"PA00","value":0},{"label":"PA01","value":1},{"label":"PA02","value":2},{"label":"PA03","value":3},{"label":"PA04","value":4},{"label":"PA05","value":5},{"label":"PA06","value":6},{"label":"PA07","value":7},{"label":"PA08","value":8},{"label":"PB00","value":16},{"label":"PB01","value":17},{"label":"PB02","value":18},{"label":"PB03","value":19},{"label":"PB04","value":20},{"label":"PC00","value":32},{"label":"PC01","value":33},{"label":"PC02","value":34},{"label":"PC03","value":35},{"label":"PC04","value":36},{"label":"PC05","value":37},{"label":"PC06","value":38},{"label":"PC07","value":39},{"label":"PD00","value":48},{"label":"PD01","value":49},{"label":"PD02","value":50},{"label":"PD03","value":51}]},{"parent_category_id":"SL_SPIDRV_EUSART_ACCEL_REQUIREMENT","conf_type":"combo","visible":"portio.eusart1.enable.rts","rawprop":"portio.eusart1.location.rts","initial":{"label":"None","value":-1},"label":"RTS","id":"EUSART1.$PIN.portio.eusart1.location.rts.$ROUTE.RTS","type":"conf","combo_options":[{"label":"None","value":-1},{"label":"PA00","value":0},{"label":"PA01","value":1},{"label":"PA02","value":2},{"label":"PA03","value":3},{"label":"PA04","value":4},{"label":"PA05","value":5},{"label":"PA06","value":6},{"label":"PA07","value":7},{"label":"PA08","value":8},{"label":"PB00","value":16},{"label":"PB01","value":17},{"label":"PB02","value":18},{"label":"PB03","value":19},{"label":"PB04","value":20},{"label":"PC00","value":32},{"label":"PC01","value":33},{"label":"PC02","value":34},{"label":"PC03","value":35},{"label":"PC04","value":36},{"label":"PC05","value":37},{"label":"PC06","value":38},{"label":"PC07","value":39},{"label":"PD00","value":48},{"label":"PD01","value":49},{"label":"PD02","value":50},{"label":"PD03","value":51}]}]},"clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/spidrv_eusart_accel","wsType":"config_update","conf_class":"pintool"}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:48:47.907
+!MESSAGE latch unlocked: pintool socket response sending
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:48:47.907
+!MESSAGE New pintool options detected -- resending existing problem markers for handling.
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:48:47.907
+!MESSAGE Attempting to find a linkage in pintool with marker id portio.eusart1.enable.sclk
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:48:47.908
+!MESSAGE New Pintool Issues WS call: {"msg":"Pintool has indicated configuration issues: address fields in error and/or check Problems View","clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/spidrv_eusart_accel","wsType":"problems_alert","issues":[{"msg":"SCLK must be enabled for EUSART1 [from sl_spidrv_eusart_accel_config.h]","id":"EUSART1.$PIN.portio.eusart1.location.sclk.$ROUTE.SCLK"}]}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:48:47.908
+!MESSAGE Attempting to find a linkage in pintool with marker id portio.eusart1.enable.tx
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:48:47.908
+!MESSAGE New Pintool Issues WS call: {"msg":"Pintool has indicated configuration issues: address fields in error and/or check Problems View","clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/spidrv_eusart_accel","wsType":"problems_alert","issues":[{"msg":"TX must be enabled for EUSART1 [from sl_spidrv_eusart_accel_config.h]","id":"EUSART1.$PIN.portio.eusart1.location.tx.$ROUTE.TX"}]}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:48:47.909
+!MESSAGE Attempting to find a linkage in pintool with marker id portio.pti.enable.dout
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:48:47.918
+!MESSAGE Visible Signals Modified (event detection): CS, RX, SCLK, TX
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:48:47.919
+!MESSAGE registering configuration tool pintool editor listeners for SL_SPIDRV_EUSART_ACCEL on module EUSART1
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:48:47.919
+!MESSAGE Preparing Websocket Pintool Update: {"configurables":{"removed":["EUSART1.$PIN.portio.eusart1.location.rts.$ROUTE.RTS","EUSART1.$PIN.portio.eusart1.location.cts.$ROUTE.CTS"],"updated":[]},"clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/spidrv_eusart_accel","wsType":"config_update","conf_class":"pintool"}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:48:47.919
+!MESSAGE latch unlocked: pintool socket response sending
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:48:47.921
+!MESSAGE Component Editor Pintool Marker Removed: Marker [on: /vibration-sensor/vibration-sensor.pintool, id: 3823, type: com.silabs.ss.framework.hwconfig.core.abproblemmarker, attributes: [location: DefaultMode PORTIO, message: SCLK must be enabled for EUSART1 [from sl_spidrv_eusart_accel_config.h], objectPath: /DefaultMode/PORTIO, propertyId: portio.eusart1.enable.sclk, severity: 1, transient: true], created: 12/16/23, 5:48 PM]
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:48:47.922
+!MESSAGE Attempting to find a linkage in pintool with marker id portio.eusart1.enable.sclk
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:48:47.922
+!MESSAGE Clear Pintool Issues WS call: {"clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/spidrv_eusart_accel","ids":["EUSART1.$PIN.portio.eusart1.location.sclk.$ROUTE.SCLK"],"wsType":"clear_issues"}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:48:47.923
+!MESSAGE Component Editor Pintool Marker Removed: Marker [on: /vibration-sensor/vibration-sensor.pintool, id: 3824, type: com.silabs.ss.framework.hwconfig.core.abproblemmarker, attributes: [location: DefaultMode PORTIO, message: TX must be enabled for EUSART1 [from sl_spidrv_eusart_accel_config.h], objectPath: /DefaultMode/PORTIO, propertyId: portio.eusart1.enable.tx, severity: 1, transient: true], created: 12/16/23, 5:48 PM]
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:48:47.924
+!MESSAGE Attempting to find a linkage in pintool with marker id portio.eusart1.enable.tx
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:48:47.924
+!MESSAGE Clear Pintool Issues WS call: {"clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/spidrv_eusart_accel","ids":["EUSART1.$PIN.portio.eusart1.location.tx.$ROUTE.TX"],"wsType":"clear_issues"}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:48:47.927
+!MESSAGE Component Editor Pintool Marker Added: Marker [on: /vibration-sensor/vibration-sensor.pintool, id: 3827, type: com.silabs.ss.framework.hwconfig.core.abproblemmarker, attributes: [location: DefaultMode PORTIO, message: SCLK must be enabled for EUSART1 [from sl_spidrv_eusart_accel_config.h], objectPath: /DefaultMode/PORTIO, propertyId: portio.eusart1.enable.sclk, severity: 1, transient: true], created: 12/16/23, 5:48 PM]
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:48:47.928
+!MESSAGE Attempting to find a linkage in pintool with marker id portio.eusart1.enable.sclk
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:48:47.928
+!MESSAGE New Pintool Issues WS call: {"msg":"Pintool has indicated configuration issues: address fields in error and/or check Problems View","clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/spidrv_eusart_accel","wsType":"problems_alert","issues":[{"msg":"SCLK must be enabled for EUSART1 [from sl_spidrv_eusart_accel_config.h]","id":"EUSART1.$PIN.portio.eusart1.location.sclk.$ROUTE.SCLK"}]}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:48:47.931
+!MESSAGE Component Editor Pintool Marker Added: Marker [on: /vibration-sensor/vibration-sensor.pintool, id: 3828, type: com.silabs.ss.framework.hwconfig.core.abproblemmarker, attributes: [location: DefaultMode PORTIO, message: TX must be enabled for EUSART1 [from sl_spidrv_eusart_accel_config.h], objectPath: /DefaultMode/PORTIO, propertyId: portio.eusart1.enable.tx, severity: 1, transient: true], created: 12/16/23, 5:48 PM]
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:48:47.931
+!MESSAGE Attempting to find a linkage in pintool with marker id portio.eusart1.enable.tx
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:48:47.931
+!MESSAGE New Pintool Issues WS call: {"msg":"Pintool has indicated configuration issues: address fields in error and/or check Problems View","clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/spidrv_eusart_accel","wsType":"problems_alert","issues":[{"msg":"TX must be enabled for EUSART1 [from sl_spidrv_eusart_accel_config.h]","id":"EUSART1.$PIN.portio.eusart1.location.tx.$ROUTE.TX"}]}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:48:48.440
+!MESSAGE Preparing Websocket Pintool Update: {"configurables":{"removed":[],"updated":[]},"clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/spidrv_eusart_accel","wsType":"config_update","conf_class":"pintool"}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:48:48.440
+!MESSAGE latch unlocked: pintool socket response sending
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:48:48.442
+!MESSAGE Preparing Websocket Pintool Update: {"configurables":{"removed":[],"updated":[{"parent_category_id":"SL_SPIDRV_EUSART_ACCEL_REQUIREMENT","conf_type":"combo","visible":"portio.eusart1.enable.sclk","rawprop":"portio.eusart1.location.sclk","initial":{"label":"PB04","value":20},"label":"SCLK","id":"EUSART1.$PIN.portio.eusart1.location.sclk.$ROUTE.SCLK","type":"conf","combo_options":[{"label":"None","value":-1},{"label":"PA00","value":0},{"label":"PA01","value":1},{"label":"PA02","value":2},{"label":"PA03","value":3},{"label":"PA04","value":4},{"label":"PA05","value":5},{"label":"PA06","value":6},{"label":"PA07","value":7},{"label":"PA08","value":8},{"label":"PB00","value":16},{"label":"PB01","value":17},{"label":"PB02","value":18},{"label":"PB03","value":19},{"label":"PB04","value":20},{"label":"PC00","value":32},{"label":"PC01","value":33},{"label":"PC02","value":34},{"label":"PC03","value":35},{"label":"PC04","value":36},{"label":"PC05","value":37},{"label":"PC06","value":38},{"label":"PC07","value":39},{"label":"PD00","value":48},{"label":"PD01","value":49},{"label":"PD02","value":50},{"label":"PD03","value":51}]}]},"clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/spidrv_eusart_accel","wsType":"config_update","conf_class":"pintool"}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:48:48.442
+!MESSAGE latch unlocked: pintool socket response sending
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:48:48.444
+!MESSAGE Preparing Websocket Pintool Update: {"configurables":{"removed":[],"updated":[]},"clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/spidrv_eusart_accel","wsType":"config_update","conf_class":"pintool"}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:48:48.444
+!MESSAGE latch unlocked: pintool socket response sending
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:48:48.445
+!MESSAGE Pintool data generation requested. Starting job
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:48:48.569
+!MESSAGE Component Editor Pintool Marker Removed: Marker [on: /vibration-sensor/vibration-sensor.pintool, id: 3821, type: com.silabs.ss.framework.hwconfig.core.abproblemmarker, attributes: [location: , message: Requirement SL_FEM_UTIL_SLEEP is unsatisified (needs PRS instance) [from sl_fem_util_config.h], objectPath: /, severity: 1, transient: true], created: 12/16/23, 5:48 PM]
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:48:48.570
+!MESSAGE Component Editor Pintool Marker Removed: Marker [on: /vibration-sensor/vibration-sensor.pintool, id: 3822, type: com.silabs.ss.framework.hwconfig.core.abproblemmarker, attributes: [location: , message: Requirement SL_FEM_UTIL_RX is unsatisified (needs PRS instance) [from sl_fem_util_config.h], objectPath: /, severity: 1, transient: true], created: 12/16/23, 5:48 PM]
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:48:48.571
+!MESSAGE Component Editor Pintool Marker Removed: Marker [on: /vibration-sensor/vibration-sensor.pintool, id: 3827, type: com.silabs.ss.framework.hwconfig.core.abproblemmarker, attributes: [location: DefaultMode PORTIO, message: SCLK must be enabled for EUSART1 [from sl_spidrv_eusart_accel_config.h], objectPath: /DefaultMode/PORTIO, propertyId: portio.eusart1.enable.sclk, severity: 1, transient: true], created: 12/16/23, 5:48 PM]
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:48:48.571
+!MESSAGE Attempting to find a linkage in pintool with marker id portio.eusart1.enable.sclk
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:48:48.572
+!MESSAGE Clear Pintool Issues WS call: {"clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/spidrv_eusart_accel","ids":["EUSART1.$PIN.portio.eusart1.location.sclk.$ROUTE.SCLK"],"wsType":"clear_issues"}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:48:48.573
+!MESSAGE Component Editor Pintool Marker Removed: Marker [on: /vibration-sensor/vibration-sensor.pintool, id: 3828, type: com.silabs.ss.framework.hwconfig.core.abproblemmarker, attributes: [location: DefaultMode PORTIO, message: TX must be enabled for EUSART1 [from sl_spidrv_eusart_accel_config.h], objectPath: /DefaultMode/PORTIO, propertyId: portio.eusart1.enable.tx, severity: 1, transient: true], created: 12/16/23, 5:48 PM]
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:48:48.573
+!MESSAGE Attempting to find a linkage in pintool with marker id portio.eusart1.enable.tx
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:48:48.573
+!MESSAGE Clear Pintool Issues WS call: {"clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/spidrv_eusart_accel","ids":["EUSART1.$PIN.portio.eusart1.location.tx.$ROUTE.TX"],"wsType":"clear_issues"}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:48:48.574
+!MESSAGE Component Editor Pintool Marker Removed: Marker [on: /vibration-sensor/vibration-sensor.pintool, id: 3825, type: com.silabs.ss.framework.hwconfig.core.abproblemmarker, attributes: [location: DefaultMode PORTIO, message: DOUT must be enabled for PTI [from sl_rail_util_pti_config.h], objectPath: /DefaultMode/PORTIO, propertyId: portio.pti.enable.dout, severity: 1, transient: true], created: 12/16/23, 5:48 PM]
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:48:48.575
+!MESSAGE Attempting to find a linkage in pintool with marker id portio.pti.enable.dout
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:48:48.578
+!MESSAGE Component Editor Pintool Marker Added: Marker [on: /vibration-sensor/vibration-sensor.pintool, id: 3829, type: com.silabs.ss.framework.hwconfig.core.abproblemmarker, attributes: [location: , message: Requirement SL_FEM_UTIL_SLEEP is unsatisified (needs PRS instance) [from sl_fem_util_config.h], objectPath: /, severity: 1, transient: true], created: 12/16/23, 5:48 PM]
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:48:48.581
+!MESSAGE Component Editor Pintool Marker Added: Marker [on: /vibration-sensor/vibration-sensor.pintool, id: 3830, type: com.silabs.ss.framework.hwconfig.core.abproblemmarker, attributes: [location: , message: Requirement SL_FEM_UTIL_RX is unsatisified (needs PRS instance) [from sl_fem_util_config.h], objectPath: /, severity: 1, transient: true], created: 12/16/23, 5:48 PM]
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:48:48.584
+!MESSAGE Component Editor Pintool Marker Added: Marker [on: /vibration-sensor/vibration-sensor.pintool, id: 3831, type: com.silabs.ss.framework.hwconfig.core.abproblemmarker, attributes: [location: DefaultMode PORTIO, message: TX must be enabled for EUSART1 [from sl_spidrv_eusart_accel_config.h], objectPath: /DefaultMode/PORTIO, propertyId: portio.eusart1.enable.tx, severity: 1, transient: true], created: 12/16/23, 5:48 PM]
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:48:48.585
+!MESSAGE Attempting to find a linkage in pintool with marker id portio.eusart1.enable.tx
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:48:48.585
+!MESSAGE New Pintool Issues WS call: {"msg":"Pintool has indicated configuration issues: address fields in error and/or check Problems View","clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/spidrv_eusart_accel","wsType":"problems_alert","issues":[{"msg":"TX must be enabled for EUSART1 [from sl_spidrv_eusart_accel_config.h]","id":"EUSART1.$PIN.portio.eusart1.location.tx.$ROUTE.TX"}]}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:48:48.588
+!MESSAGE Component Editor Pintool Marker Added: Marker [on: /vibration-sensor/vibration-sensor.pintool, id: 3832, type: com.silabs.ss.framework.hwconfig.core.abproblemmarker, attributes: [location: DefaultMode PORTIO, message: DOUT must be enabled for PTI [from sl_rail_util_pti_config.h], objectPath: /DefaultMode/PORTIO, propertyId: portio.pti.enable.dout, severity: 1, transient: true], created: 12/16/23, 5:48 PM]
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:48:48.589
+!MESSAGE Attempting to find a linkage in pintool with marker id portio.pti.enable.dout
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:48:49.445
+!MESSAGE Resource Changed: Reparsing L/vibration-sensor/config/sl_spidrv_eusart_accel_config.h for cmsis
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:48:49.447
+!MESSAGE A Cmsis Reparse was triggered for sl_spidrv_eusart_accel_config.h
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:48:49.465
+!MESSAGE CMSIS Parse success for sl_spidrv_eusart_accel_config.h
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:48:49.466
+!MESSAGE preparing cmsis websocket update: {"configurables":{"removed":[],"updated":[]},"clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/spidrv_eusart_accel","header":"sl_spidrv_eusart_accel_config.h","wsType":"config_update","conf_class":"cmsis"}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:48:49.467
+!MESSAGE latch unlocked: cmsis socket response sending
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:48:49.543
+!MESSAGE Clear CMSIS Issues WS call: {"clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/spidrv_eusart_accel","ids":[],"wsType":"clear_issues"}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:48:49.686
+!MESSAGE Allowed modules (event detection): EUSART1, EUSART0
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:48:49.687
+!MESSAGE Preparing Websocket Pintool Update: {"configurables":{"removed":[],"updated":[{"parent_category_id":"SL_SPIDRV_EUSART_ACCEL_REQUIREMENT","conf_type":"combo","visible":"portio.eusart1.enable.cts","rawprop":"portio.eusart1.location.cts","initial":{"label":"None","value":-1},"label":"CTS","id":"EUSART1.$PIN.portio.eusart1.location.cts.$ROUTE.CTS","type":"conf","combo_options":[{"label":"None","value":-1},{"label":"PA00","value":0},{"label":"PA01","value":1},{"label":"PA02","value":2},{"label":"PA03","value":3},{"label":"PA04","value":4},{"label":"PA05","value":5},{"label":"PA06","value":6},{"label":"PA07","value":7},{"label":"PA08","value":8},{"label":"PB00","value":16},{"label":"PB01","value":17},{"label":"PB02","value":18},{"label":"PB03","value":19},{"label":"PB04","value":20},{"label":"PC00","value":32},{"label":"PC01","value":33},{"label":"PC02","value":34},{"label":"PC03","value":35},{"label":"PC04","value":36},{"label":"PC05","value":37},{"label":"PC06","value":38},{"label":"PC07","value":39},{"label":"PD00","value":48},{"label":"PD01","value":49},{"label":"PD02","value":50},{"label":"PD03","value":51}]},{"parent_category_id":"SL_SPIDRV_EUSART_ACCEL_REQUIREMENT","conf_type":"combo","visible":"portio.eusart1.enable.rts","rawprop":"portio.eusart1.location.rts","initial":{"label":"None","value":-1},"label":"RTS","id":"EUSART1.$PIN.portio.eusart1.location.rts.$ROUTE.RTS","type":"conf","combo_options":[{"label":"None","value":-1},{"label":"PA00","value":0},{"label":"PA01","value":1},{"label":"PA02","value":2},{"label":"PA03","value":3},{"label":"PA04","value":4},{"label":"PA05","value":5},{"label":"PA06","value":6},{"label":"PA07","value":7},{"label":"PA08","value":8},{"label":"PB00","value":16},{"label":"PB01","value":17},{"label":"PB02","value":18},{"label":"PB03","value":19},{"label":"PB04","value":20},{"label":"PC00","value":32},{"label":"PC01","value":33},{"label":"PC02","value":34},{"label":"PC03","value":35},{"label":"PC04","value":36},{"label":"PC05","value":37},{"label":"PC06","value":38},{"label":"PC07","value":39},{"label":"PD00","value":48},{"label":"PD01","value":49},{"label":"PD02","value":50},{"label":"PD03","value":51}]}]},"clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/spidrv_eusart_accel","wsType":"config_update","conf_class":"pintool"}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:48:49.688
+!MESSAGE latch unlocked: pintool socket response sending
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:48:49.688
+!MESSAGE New pintool options detected -- resending existing problem markers for handling.
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:48:49.689
+!MESSAGE Attempting to find a linkage in pintool with marker id portio.eusart1.enable.tx
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:48:49.689
+!MESSAGE New Pintool Issues WS call: {"msg":"Pintool has indicated configuration issues: address fields in error and/or check Problems View","clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/spidrv_eusart_accel","wsType":"problems_alert","issues":[{"msg":"TX must be enabled for EUSART1 [from sl_spidrv_eusart_accel_config.h]","id":"EUSART1.$PIN.portio.eusart1.location.tx.$ROUTE.TX"}]}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:48:49.690
+!MESSAGE Attempting to find a linkage in pintool with marker id portio.pti.enable.dout
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:48:49.697
+!MESSAGE Visible Signals Modified (event detection): CS, RX, SCLK, TX
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:48:49.698
+!MESSAGE registering configuration tool pintool editor listeners for SL_SPIDRV_EUSART_ACCEL on module EUSART1
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:48:49.698
+!MESSAGE Preparing Websocket Pintool Update: {"configurables":{"removed":["EUSART1.$PIN.portio.eusart1.location.rts.$ROUTE.RTS","EUSART1.$PIN.portio.eusart1.location.cts.$ROUTE.CTS"],"updated":[]},"clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/spidrv_eusart_accel","wsType":"config_update","conf_class":"pintool"}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:48:49.699
+!MESSAGE latch unlocked: pintool socket response sending
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:48:49.702
+!MESSAGE Component Editor Pintool Marker Removed: Marker [on: /vibration-sensor/vibration-sensor.pintool, id: 3831, type: com.silabs.ss.framework.hwconfig.core.abproblemmarker, attributes: [location: DefaultMode PORTIO, message: TX must be enabled for EUSART1 [from sl_spidrv_eusart_accel_config.h], objectPath: /DefaultMode/PORTIO, propertyId: portio.eusart1.enable.tx, severity: 1, transient: true], created: 12/16/23, 5:48 PM]
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:48:49.703
+!MESSAGE Attempting to find a linkage in pintool with marker id portio.eusart1.enable.tx
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:48:49.703
+!MESSAGE Clear Pintool Issues WS call: {"clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/spidrv_eusart_accel","ids":["EUSART1.$PIN.portio.eusart1.location.tx.$ROUTE.TX"],"wsType":"clear_issues"}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:48:49.707
+!MESSAGE Component Editor Pintool Marker Added: Marker [on: /vibration-sensor/vibration-sensor.pintool, id: 3834, type: com.silabs.ss.framework.hwconfig.core.abproblemmarker, attributes: [location: DefaultMode PORTIO, message: TX must be enabled for EUSART1 [from sl_spidrv_eusart_accel_config.h], objectPath: /DefaultMode/PORTIO, propertyId: portio.eusart1.enable.tx, severity: 1, transient: true], created: 12/16/23, 5:48 PM]
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:48:49.707
+!MESSAGE Attempting to find a linkage in pintool with marker id portio.eusart1.enable.tx
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:48:49.708
+!MESSAGE New Pintool Issues WS call: {"msg":"Pintool has indicated configuration issues: address fields in error and/or check Problems View","clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/spidrv_eusart_accel","wsType":"problems_alert","issues":[{"msg":"TX must be enabled for EUSART1 [from sl_spidrv_eusart_accel_config.h]","id":"EUSART1.$PIN.portio.eusart1.location.tx.$ROUTE.TX"}]}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:48:51.037
+!MESSAGE Preparing Websocket Pintool Update: {"configurables":{"removed":[],"updated":[]},"clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/spidrv_eusart_accel","wsType":"config_update","conf_class":"pintool"}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:48:51.038
+!MESSAGE latch unlocked: pintool socket response sending
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:48:51.039
+!MESSAGE Preparing Websocket Pintool Update: {"configurables":{"removed":[],"updated":[{"parent_category_id":"SL_SPIDRV_EUSART_ACCEL_REQUIREMENT","conf_type":"combo","visible":"portio.eusart1.enable.tx","rawprop":"portio.eusart1.location.tx","initial":{"label":"PC00","value":32},"label":"TX","id":"EUSART1.$PIN.portio.eusart1.location.tx.$ROUTE.TX","type":"conf","combo_options":[{"label":"None","value":-1},{"label":"PA00","value":0},{"label":"PA01","value":1},{"label":"PA02","value":2},{"label":"PA03","value":3},{"label":"PA04","value":4},{"label":"PA05","value":5},{"label":"PA06","value":6},{"label":"PA07","value":7},{"label":"PA08","value":8},{"label":"PB00","value":16},{"label":"PB01","value":17},{"label":"PB02","value":18},{"label":"PB03","value":19},{"label":"PB04","value":20},{"label":"PC00","value":32},{"label":"PC01","value":33},{"label":"PC02","value":34},{"label":"PC03","value":35},{"label":"PC04","value":36},{"label":"PC05","value":37},{"label":"PC06","value":38},{"label":"PC07","value":39},{"label":"PD00","value":48},{"label":"PD01","value":49},{"label":"PD02","value":50},{"label":"PD03","value":51}]}]},"clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/spidrv_eusart_accel","wsType":"config_update","conf_class":"pintool"}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:48:51.039
+!MESSAGE latch unlocked: pintool socket response sending
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:48:51.041
+!MESSAGE Preparing Websocket Pintool Update: {"configurables":{"removed":[],"updated":[]},"clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/spidrv_eusart_accel","wsType":"config_update","conf_class":"pintool"}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:48:51.041
+!MESSAGE latch unlocked: pintool socket response sending
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:48:51.042
+!MESSAGE Pintool data generation requested. Starting job
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:48:51.160
+!MESSAGE Component Editor Pintool Marker Removed: Marker [on: /vibration-sensor/vibration-sensor.pintool, id: 3829, type: com.silabs.ss.framework.hwconfig.core.abproblemmarker, attributes: [location: , message: Requirement SL_FEM_UTIL_SLEEP is unsatisified (needs PRS instance) [from sl_fem_util_config.h], objectPath: /, severity: 1, transient: true], created: 12/16/23, 5:48 PM]
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:48:51.161
+!MESSAGE Component Editor Pintool Marker Removed: Marker [on: /vibration-sensor/vibration-sensor.pintool, id: 3830, type: com.silabs.ss.framework.hwconfig.core.abproblemmarker, attributes: [location: , message: Requirement SL_FEM_UTIL_RX is unsatisified (needs PRS instance) [from sl_fem_util_config.h], objectPath: /, severity: 1, transient: true], created: 12/16/23, 5:48 PM]
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:48:51.162
+!MESSAGE Component Editor Pintool Marker Removed: Marker [on: /vibration-sensor/vibration-sensor.pintool, id: 3834, type: com.silabs.ss.framework.hwconfig.core.abproblemmarker, attributes: [location: DefaultMode PORTIO, message: TX must be enabled for EUSART1 [from sl_spidrv_eusart_accel_config.h], objectPath: /DefaultMode/PORTIO, propertyId: portio.eusart1.enable.tx, severity: 1, transient: true], created: 12/16/23, 5:48 PM]
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:48:51.162
+!MESSAGE Attempting to find a linkage in pintool with marker id portio.eusart1.enable.tx
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:48:51.163
+!MESSAGE Clear Pintool Issues WS call: {"clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/spidrv_eusart_accel","ids":["EUSART1.$PIN.portio.eusart1.location.tx.$ROUTE.TX"],"wsType":"clear_issues"}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:48:51.164
+!MESSAGE Component Editor Pintool Marker Removed: Marker [on: /vibration-sensor/vibration-sensor.pintool, id: 3832, type: com.silabs.ss.framework.hwconfig.core.abproblemmarker, attributes: [location: DefaultMode PORTIO, message: DOUT must be enabled for PTI [from sl_rail_util_pti_config.h], objectPath: /DefaultMode/PORTIO, propertyId: portio.pti.enable.dout, severity: 1, transient: true], created: 12/16/23, 5:48 PM]
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:48:51.164
+!MESSAGE Attempting to find a linkage in pintool with marker id portio.pti.enable.dout
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:48:51.166
+!MESSAGE Component Editor Pintool Marker Added: Marker [on: /vibration-sensor/vibration-sensor.pintool, id: 3835, type: com.silabs.ss.framework.hwconfig.core.abproblemmarker, attributes: [location: , message: Requirement SL_FEM_UTIL_SLEEP is unsatisified (needs PRS instance) [from sl_fem_util_config.h], objectPath: /, severity: 1, transient: true], created: 12/16/23, 5:48 PM]
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:48:51.168
+!MESSAGE Component Editor Pintool Marker Added: Marker [on: /vibration-sensor/vibration-sensor.pintool, id: 3836, type: com.silabs.ss.framework.hwconfig.core.abproblemmarker, attributes: [location: , message: Requirement SL_FEM_UTIL_RX is unsatisified (needs PRS instance) [from sl_fem_util_config.h], objectPath: /, severity: 1, transient: true], created: 12/16/23, 5:48 PM]
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:48:51.170
+!MESSAGE Component Editor Pintool Marker Added: Marker [on: /vibration-sensor/vibration-sensor.pintool, id: 3837, type: com.silabs.ss.framework.hwconfig.core.abproblemmarker, attributes: [location: DefaultMode PORTIO, message: DOUT must be enabled for PTI [from sl_rail_util_pti_config.h], objectPath: /DefaultMode/PORTIO, propertyId: portio.pti.enable.dout, severity: 1, transient: true], created: 12/16/23, 5:48 PM]
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:48:51.171
+!MESSAGE Attempting to find a linkage in pintool with marker id portio.pti.enable.dout
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:48:51.897
+!MESSAGE Resource Changed: Reparsing L/vibration-sensor/config/sl_spidrv_eusart_accel_config.h for cmsis
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:48:51.898
+!MESSAGE A Cmsis Reparse was triggered for sl_spidrv_eusart_accel_config.h
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:48:51.902
+!MESSAGE CMSIS Parse success for sl_spidrv_eusart_accel_config.h
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:48:51.903
+!MESSAGE preparing cmsis websocket update: {"configurables":{"removed":[],"updated":[]},"clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/spidrv_eusart_accel","header":"sl_spidrv_eusart_accel_config.h","wsType":"config_update","conf_class":"cmsis"}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:48:51.903
+!MESSAGE latch unlocked: cmsis socket response sending
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:48:51.956
+!MESSAGE Allowed modules (event detection): EUSART1, EUSART0
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:48:51.957
+!MESSAGE Preparing Websocket Pintool Update: {"configurables":{"removed":[],"updated":[{"parent_category_id":"SL_SPIDRV_EUSART_ACCEL_REQUIREMENT","conf_type":"combo","visible":"portio.eusart1.enable.cts","rawprop":"portio.eusart1.location.cts","initial":{"label":"None","value":-1},"label":"CTS","id":"EUSART1.$PIN.portio.eusart1.location.cts.$ROUTE.CTS","type":"conf","combo_options":[{"label":"None","value":-1},{"label":"PA00","value":0},{"label":"PA01","value":1},{"label":"PA02","value":2},{"label":"PA03","value":3},{"label":"PA04","value":4},{"label":"PA05","value":5},{"label":"PA06","value":6},{"label":"PA07","value":7},{"label":"PA08","value":8},{"label":"PB00","value":16},{"label":"PB01","value":17},{"label":"PB02","value":18},{"label":"PB03","value":19},{"label":"PB04","value":20},{"label":"PC00","value":32},{"label":"PC01","value":33},{"label":"PC02","value":34},{"label":"PC03","value":35},{"label":"PC04","value":36},{"label":"PC05","value":37},{"label":"PC06","value":38},{"label":"PC07","value":39},{"label":"PD00","value":48},{"label":"PD01","value":49},{"label":"PD02","value":50},{"label":"PD03","value":51}]},{"parent_category_id":"SL_SPIDRV_EUSART_ACCEL_REQUIREMENT","conf_type":"combo","visible":"portio.eusart1.enable.rts","rawprop":"portio.eusart1.location.rts","initial":{"label":"None","value":-1},"label":"RTS","id":"EUSART1.$PIN.portio.eusart1.location.rts.$ROUTE.RTS","type":"conf","combo_options":[{"label":"None","value":-1},{"label":"PA00","value":0},{"label":"PA01","value":1},{"label":"PA02","value":2},{"label":"PA03","value":3},{"label":"PA04","value":4},{"label":"PA05","value":5},{"label":"PA06","value":6},{"label":"PA07","value":7},{"label":"PA08","value":8},{"label":"PB00","value":16},{"label":"PB01","value":17},{"label":"PB02","value":18},{"label":"PB03","value":19},{"label":"PB04","value":20},{"label":"PC00","value":32},{"label":"PC01","value":33},{"label":"PC02","value":34},{"label":"PC03","value":35},{"label":"PC04","value":36},{"label":"PC05","value":37},{"label":"PC06","value":38},{"label":"PC07","value":39},{"label":"PD00","value":48},{"label":"PD01","value":49},{"label":"PD02","value":50},{"label":"PD03","value":51}]}]},"clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/spidrv_eusart_accel","wsType":"config_update","conf_class":"pintool"}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:48:51.958
+!MESSAGE latch unlocked: pintool socket response sending
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:48:51.958
+!MESSAGE New pintool options detected -- resending existing problem markers for handling.
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:48:51.959
+!MESSAGE Attempting to find a linkage in pintool with marker id portio.pti.enable.dout
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:48:51.968
+!MESSAGE Visible Signals Modified (event detection): CS, RX, SCLK, TX
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:48:51.968
+!MESSAGE registering configuration tool pintool editor listeners for SL_SPIDRV_EUSART_ACCEL on module EUSART1
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:48:51.969
+!MESSAGE Preparing Websocket Pintool Update: {"configurables":{"removed":["EUSART1.$PIN.portio.eusart1.location.rts.$ROUTE.RTS","EUSART1.$PIN.portio.eusart1.location.cts.$ROUTE.CTS"],"updated":[]},"clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/spidrv_eusart_accel","wsType":"config_update","conf_class":"pintool"}
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:48:51.969
+!MESSAGE latch unlocked: pintool socket response sending
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-16 17:48:51.978
+!MESSAGE Clear CMSIS Issues WS call: {"clientId":"project/file_3A_2FC_3A_2FUsers_2FWorkstation_2FDocuments_2FGitHub_2FVibration-Sensor_2FCode_2Fvibration-sensor_2Fvibration-sensor.slcp/component/spidrv_eusart_accel","ids":[],"wsType":"clear_issues"}
+
+!ENTRY com.silabs.ss.tool.uc.editor 1 0 2023-12-16 17:49:59.226
+!MESSAGE UcEditorController: onWebSocketClose CALLED statusCode=1001 reason=null

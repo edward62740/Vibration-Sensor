@@ -80,9 +80,8 @@ otInstance *otGetInstance(void);
 #define LOAD_SENSE_PIN   7
 
 
-void setNetworkConfiguration(void);
-void initUdp(void);
-void applicationTick(void);
+
+
 void sl_ot_create_instance(void);
 void sl_ot_cli_init(void);
 

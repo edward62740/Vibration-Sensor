@@ -24,6 +24,7 @@
 #include "stdio.h"
 #include "string.h"
 #include "app_main.h"
+#include "app_thread.h"
 
 char resource_name[32];
 char payload_buf[255];

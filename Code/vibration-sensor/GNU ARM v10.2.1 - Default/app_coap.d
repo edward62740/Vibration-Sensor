@@ -151,7 +151,7 @@ app_coap.o: ../app_coap.cpp \
  c\:\users\workstation\simplicitystudio\sdks\gecko_sdk_8\util\third_party\openthread\examples\platforms\openthread-system.h \
  c\:\users\workstation\simplicitystudio\sdks\gecko_sdk_8\util\third_party\openthread\include\openthread\coap.h \
  c\:\users\workstation\simplicitystudio\sdks\gecko_sdk_8\util\third_party\openthread\examples\platforms\utils\code_utils.h \
- ../app_main.h
+ ../app_main.h ../app_thread.h
 C\:\Users\Workstation\Documents\GitHub\Vibration-Sensor\Code\vibration-sensor\config/sl_openthread_rtos_config.h:
 c\:\users\workstation\simplicitystudio\sdks\gecko_sdk_8\platform\common\toolchain\inc\sl_gcc_preinclude.h:
 C\:\Users\Workstation\Documents\GitHub\Vibration-Sensor\Code\vibration-sensor/app_coap.h:
@@ -305,3 +305,4 @@ c\:\users\workstation\simplicitystudio\sdks\gecko_sdk_8\util\third_party\openthr
 c\:\users\workstation\simplicitystudio\sdks\gecko_sdk_8\util\third_party\openthread\include\openthread\coap.h:
 c\:\users\workstation\simplicitystudio\sdks\gecko_sdk_8\util\third_party\openthread\examples\platforms\utils\code_utils.h:
 ../app_main.h:
+../app_thread.h:

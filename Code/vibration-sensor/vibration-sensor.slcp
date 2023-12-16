@@ -30,6 +30,8 @@ component:
 - {id: power_manager}
 - instance: [btn0, btn1]
   id: simple_button
+- instance: [accel]
+  id: spidrv_eusart
 - {id: MGM240PB32VNA}
 - {id: freertos}
 - {id: ot_stack_mtd}
