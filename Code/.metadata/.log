@@ -1536,3 +1536,42 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64
 
 !ENTRY com.silabs.ss.platform.content.core 4 0 2023-12-14 16:51:54.597
 !MESSAGE Local timestamp file does not exist: C:\SiliconLabs\SimplicityStudio\v5\offline\common\Simplicity_Studio_Terms_of_Use_and_Privacy_Statement.timestamp
+!SESSION 2023-12-15 10:30:23.797 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=17.0.3
+java.vendor=Amazon.com Inc.
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.silabs.ss.platform.jetty.server 1 0 2023-12-15 10:30:27.039
+!MESSAGE Jetty listening on: http://127.0.0.1:52175/
+
+!ENTRY com.silabs.ss.platform.jetty.server 1 0 2023-12-15 10:30:27.665
+!MESSAGE ContentServer started at: 127.0.0.1, 52175
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-15 10:30:27.727
+!MESSAGE com.silabs.ss.tool.launcher.product found! Writing main studio shared file
+
+!ENTRY com.silabs.ss.tool.installer.core 1 0 2023-12-15 10:30:40.720
+!MESSAGE isInternalNetwork: false
+
+!ENTRY com.silabs.ss.platform.content.core 4 0 2023-12-15 10:30:43.115
+!MESSAGE Local timestamp file does not exist: C:\SiliconLabs\SimplicityStudio\v5\offline\common\Simplicity_Studio_Terms_of_Use_and_Privacy_Statement.timestamp
+
+!ENTRY com.silabs.ss.platform.apack.core 1 0 2023-12-15 10:30:43.191
+!MESSAGE AdapterPack Device inspector for Exx32 and EFM8 hardware has setupcheck function type 
+
+!ENTRY com.silabs.ss.platform.apack.core 1 0 2023-12-15 10:30:43.554
+!MESSAGE AdapterPack USB adapter pack has setupcheck function type 
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2023-12-15 10:31:11.160
+!MESSAGE No digest algorithm is available to verify download of org.eclipse.update.feature,com.silabs.ss.tool.matter.configurator.feature.metadata.resource,1.0.0.202312080846-74.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2023-12-15 10:31:11.362
+!MESSAGE No digest algorithm is available to verify download of org.eclipse.update.feature,com.silabs.ss.toolchain.gnu.arm.12.2.rel1.2023.7.feature.metadata.resource,12.2.2023.202312122323-258.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2023-12-15 10:31:11.423
+!MESSAGE No digest algorithm is available to verify download of org.eclipse.update.feature,com.silabs.external.pymath.feature.metadata.resource,1.0.1.202311101454-6.
+
+!ENTRY com.silabs.ss.platform.content.core 4 0 2023-12-15 10:31:20.500
+!MESSAGE Local timestamp file does not exist: C:\SiliconLabs\SimplicityStudio\v5\offline\common\Simplicity_Studio_Terms_of_Use_and_Privacy_Statement.timestamp
