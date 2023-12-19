@@ -29,18 +29,9 @@ constexpr static uint32_t VSENSE_DIV_MULTIPLIER = 2;
 extern "C" void otAppCliInit(otInstance *aInstance);
 static void app_srp_init(void);
 
-eui_t eui; // device EUI64
-app_data_t app_data = { }; // application public variables
 
-constexpr static uint32_t SLEEPY_POLL_PERIOD_MS = 5 * 1000;
-constexpr static uint32_t ALIVE_SLEEPTIMER_INTERVAL_MS = 60 * 1000;
-constexpr static uint32_t MEASUREMENT_INTERVAL_MS = 1800 * 1000;
 
-static bool appSrpDone = false;
-static bool appCoapSendAlive = false;
-sl_sleeptimer_timer_handle_t alive_timer;
 
-dns d(otGetInstance, 4, 4);
 
 /* accelerometer info */
 #define FIFO_WATERMARK    512 // max
@@ -54,7 +45,26 @@ const static uint16_t N = 4096U;
 static float32_t fftInBuf[N];
 static uint16_t fftInIdx = 0;
 static float32_t fftOutBuf[N];
+static float32_t fftMagBuf[N/2];
+static float32_t fftPhaseBuf[N/2];
 #define FFT_RMS
+
+
+
+eui_t eui; // device EUI64
+app_data_t app_data = { }; // application public variables
+
+constexpr static uint32_t SLEEPY_POLL_PERIOD_MS = 5 * 1000;
+constexpr static uint32_t ALIVE_SLEEPTIMER_INTERVAL_MS = 60 * 1000;
+constexpr static uint32_t MEASUREMENT_INTERVAL_MS = 1800 * 1000;
+
+static bool appSrpDone = false;
+static bool appCoapSendAlive = false;
+sl_sleeptimer_timer_handle_t alive_timer;
+
+dns d(otGetInstance, 4, 4);
+
+
 
 /** HANDLERS/ISR **/
 void alive_cb(sl_sleeptimer_timer_handle_t *handle, void *data) {
@@ -64,7 +74,7 @@ void alive_cb(sl_sleeptimer_timer_handle_t *handle, void *data) {
 void IADC_IRQHandler(void) {
 	IADC_Result_t sample;
 	sample = IADC_pullSingleFifoResult(IADC0);
-	app_data.vdd = ((sample.data * 1200) / 1000) * VSENSE_DIV_MULTIPLIER;
+	//app_data.vdd = ((sample.data * 1200) / 1000) * VSENSE_DIV_MULTIPLIER;
 	IADC_clearInt(IADC0, IADC_IF_SINGLEDONE);
 }
 
@@ -97,12 +107,7 @@ void app_process_action(void) {
 	otTaskletsProcess(sInstance);
 	otSysProcessDrivers(sInstance);
 	// algo here
-	if (app_data.isPend)
-		app_data.isPend = !appCoapCts(&app_data, MSG_DATA);
-	else if (appCoapSendAlive) {
-		appCoapCts(&app_data, MSG_ALIVE);
-		appCoapSendAlive = false;
-	}
+
 }
 
 static void app_dft_init() {
@@ -113,10 +118,21 @@ static void app_dft_init() {
 static void app_dft_proc() {
 	arm_rfft_fast_f32(S, fftInBuf, fftOutBuf, 0);
 
+	// find mag
+	arm_cmplx_mag_f32(fftOutBuf, fftOutBuf, N/2);
 	// find std
 	// find mean
+	float32_t mean;
+	arm_mean_f32(fftMagBuf, N/2, &mean);
+
 
 	// find MAD
+	float32_t mad = 0;
+	for(int16_t i=0; i<(N/2); i++)
+	{
+		mad += fabsf(fftMagBuf[i] - mean);
+	}
+	mad /= (N/2);
 
 	// find NF
 

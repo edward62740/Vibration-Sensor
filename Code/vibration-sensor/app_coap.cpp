@@ -181,7 +181,7 @@ bool appCoapCts(app_data_t *data, app_msg_t type)
 {
     if (!appCoapConnectionEstablished)
     {
-        data->isPend = false;
+
         return false;
     }
     memset(payload_buf, 0, sizeof(char));
@@ -209,10 +209,10 @@ bool appCoapCts(app_data_t *data, app_msg_t type)
          * rssi (int8_t): last rssi from parent
          * appCoapSendTxCtr (uint32_t): total CoAP transmissions
          */
-        sz = snprintf(payload_buf, 254, fmtPayloadData, device_type, eui._32b.h,
+        /*sz = snprintf(payload_buf, 254, fmtPayloadData, device_type, eui._32b.h,
                       eui._32b.l, (uint8_t)data->error, data->co2, data->temp,
                       data->hum, data->offset, data->age, data->num, 0, rssi,
-                      ++appCoapSendTxCtr);
+                      ++appCoapSendTxCtr);*/
         break;
     }
     case MSG_ALIVE:
@@ -233,10 +233,9 @@ bool appCoapCts(app_data_t *data, app_msg_t type)
     }
     if (sz >= 254)
         return false;
-    bool ret = appCoapSend(payload_buf, data->isPend);
-    if (!ret)
-        return false;
-    data->isPend = false;
+
+
+
     return true;
 }
 

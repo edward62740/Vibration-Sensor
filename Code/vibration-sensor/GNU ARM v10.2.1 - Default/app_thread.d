@@ -12,6 +12,35 @@ app_thread.o: ../app_thread.cpp \
  c\:\users\workstation\simplicitystudio\sdks\gecko_sdk_8\platform\common\inc\sl_assert.h \
  c\:\users\workstation\simplicitystudio\sdks\gecko_sdk_8\platform\cmsis\core\include\cmsis_compiler.h \
  c\:\users\workstation\simplicitystudio\sdks\gecko_sdk_8\platform\cmsis\core\include\cmsis_gcc.h \
+ c\:\users\workstation\simplicitystudio\sdks\gecko_sdk_8\util\third_party\cmsis_dsp\dsp\include\arm_math.h \
+ c\:\users\workstation\simplicitystudio\sdks\gecko_sdk_8\util\third_party\cmsis_dsp\dsp\include\arm_math_types.h \
+ c\:\users\workstation\simplicitystudio\sdks\gecko_sdk_8\util\third_party\cmsis_dsp\dsp\include\arm_math_memory.h \
+ c\:\users\workstation\simplicitystudio\sdks\gecko_sdk_8\util\third_party\cmsis_dsp\dsp\include\dsp/none.h \
+ c\:\users\workstation\simplicitystudio\sdks\gecko_sdk_8\util\third_party\cmsis_dsp\dsp\include\arm_math_types.h \
+ c\:\users\workstation\simplicitystudio\sdks\gecko_sdk_8\util\third_party\cmsis_dsp\dsp\include\dsp/utils.h \
+ c\:\users\workstation\simplicitystudio\sdks\gecko_sdk_8\util\third_party\cmsis_dsp\dsp\include\dsp/basic_math_functions.h \
+ c\:\users\workstation\simplicitystudio\sdks\gecko_sdk_8\util\third_party\cmsis_dsp\dsp\include\arm_math_memory.h \
+ c\:\users\workstation\simplicitystudio\sdks\gecko_sdk_8\util\third_party\cmsis_dsp\dsp\include\dsp\none.h \
+ c\:\users\workstation\simplicitystudio\sdks\gecko_sdk_8\util\third_party\cmsis_dsp\dsp\include\dsp\utils.h \
+ c\:\users\workstation\simplicitystudio\sdks\gecko_sdk_8\util\third_party\cmsis_dsp\dsp\include\dsp/interpolation_functions.h \
+ c\:\users\workstation\simplicitystudio\sdks\gecko_sdk_8\util\third_party\cmsis_dsp\dsp\include\dsp/bayes_functions.h \
+ c\:\users\workstation\simplicitystudio\sdks\gecko_sdk_8\util\third_party\cmsis_dsp\dsp\include\dsp\statistics_functions.h \
+ c\:\users\workstation\simplicitystudio\sdks\gecko_sdk_8\util\third_party\cmsis_dsp\dsp\include\dsp\basic_math_functions.h \
+ c\:\users\workstation\simplicitystudio\sdks\gecko_sdk_8\util\third_party\cmsis_dsp\dsp\include\dsp\fast_math_functions.h \
+ c\:\users\workstation\simplicitystudio\sdks\gecko_sdk_8\util\third_party\cmsis_dsp\dsp\include\dsp/matrix_functions.h \
+ c\:\users\workstation\simplicitystudio\sdks\gecko_sdk_8\util\third_party\cmsis_dsp\dsp\include\dsp/complex_math_functions.h \
+ c\:\users\workstation\simplicitystudio\sdks\gecko_sdk_8\util\third_party\cmsis_dsp\dsp\include\dsp/statistics_functions.h \
+ c\:\users\workstation\simplicitystudio\sdks\gecko_sdk_8\util\third_party\cmsis_dsp\dsp\include\dsp/controller_functions.h \
+ c\:\users\workstation\simplicitystudio\sdks\gecko_sdk_8\util\third_party\cmsis_dsp\dsp\include\dsp/support_functions.h \
+ c\:\users\workstation\simplicitystudio\sdks\gecko_sdk_8\util\third_party\cmsis_dsp\dsp\include\dsp/distance_functions.h \
+ c\:\users\workstation\simplicitystudio\sdks\gecko_sdk_8\util\third_party\cmsis_dsp\dsp\include\dsp/svm_functions.h \
+ c\:\users\workstation\simplicitystudio\sdks\gecko_sdk_8\util\third_party\cmsis_dsp\dsp\include\dsp\svm_defines.h \
+ c\:\users\workstation\simplicitystudio\sdks\gecko_sdk_8\util\third_party\cmsis_dsp\dsp\include\dsp/fast_math_functions.h \
+ c\:\users\workstation\simplicitystudio\sdks\gecko_sdk_8\util\third_party\cmsis_dsp\dsp\include\dsp/transform_functions.h \
+ c\:\users\workstation\simplicitystudio\sdks\gecko_sdk_8\util\third_party\cmsis_dsp\dsp\include\dsp\complex_math_functions.h \
+ c\:\users\workstation\simplicitystudio\sdks\gecko_sdk_8\util\third_party\cmsis_dsp\dsp\include\dsp/filtering_functions.h \
+ c\:\users\workstation\simplicitystudio\sdks\gecko_sdk_8\util\third_party\cmsis_dsp\dsp\include\dsp\support_functions.h \
+ c\:\users\workstation\simplicitystudio\sdks\gecko_sdk_8\util\third_party\cmsis_dsp\dsp\include\dsp/quaternion_math_functions.h \
  c\:\users\workstation\simplicitystudio\sdks\gecko_sdk_8\util\third_party\openthread\include\openthread\cli.h \
  c\:\users\workstation\simplicitystudio\sdks\gecko_sdk_8\util\third_party\openthread\include\openthread\dataset_ftd.h \
  c\:\users\workstation\simplicitystudio\sdks\gecko_sdk_8\util\third_party\openthread\include\openthread\dataset.h \
@@ -170,6 +199,35 @@ c\:\users\workstation\simplicitystudio\sdks\gecko_sdk_8\platform\common\inc\sl_c
 c\:\users\workstation\simplicitystudio\sdks\gecko_sdk_8\platform\common\inc\sl_assert.h:
 c\:\users\workstation\simplicitystudio\sdks\gecko_sdk_8\platform\cmsis\core\include\cmsis_compiler.h:
 c\:\users\workstation\simplicitystudio\sdks\gecko_sdk_8\platform\cmsis\core\include\cmsis_gcc.h:
+c\:\users\workstation\simplicitystudio\sdks\gecko_sdk_8\util\third_party\cmsis_dsp\dsp\include\arm_math.h:
+c\:\users\workstation\simplicitystudio\sdks\gecko_sdk_8\util\third_party\cmsis_dsp\dsp\include\arm_math_types.h:
+c\:\users\workstation\simplicitystudio\sdks\gecko_sdk_8\util\third_party\cmsis_dsp\dsp\include\arm_math_memory.h:
+c\:\users\workstation\simplicitystudio\sdks\gecko_sdk_8\util\third_party\cmsis_dsp\dsp\include\dsp/none.h:
+c\:\users\workstation\simplicitystudio\sdks\gecko_sdk_8\util\third_party\cmsis_dsp\dsp\include\arm_math_types.h:
+c\:\users\workstation\simplicitystudio\sdks\gecko_sdk_8\util\third_party\cmsis_dsp\dsp\include\dsp/utils.h:
+c\:\users\workstation\simplicitystudio\sdks\gecko_sdk_8\util\third_party\cmsis_dsp\dsp\include\dsp/basic_math_functions.h:
+c\:\users\workstation\simplicitystudio\sdks\gecko_sdk_8\util\third_party\cmsis_dsp\dsp\include\arm_math_memory.h:
+c\:\users\workstation\simplicitystudio\sdks\gecko_sdk_8\util\third_party\cmsis_dsp\dsp\include\dsp\none.h:
+c\:\users\workstation\simplicitystudio\sdks\gecko_sdk_8\util\third_party\cmsis_dsp\dsp\include\dsp\utils.h:
+c\:\users\workstation\simplicitystudio\sdks\gecko_sdk_8\util\third_party\cmsis_dsp\dsp\include\dsp/interpolation_functions.h:
+c\:\users\workstation\simplicitystudio\sdks\gecko_sdk_8\util\third_party\cmsis_dsp\dsp\include\dsp/bayes_functions.h:
+c\:\users\workstation\simplicitystudio\sdks\gecko_sdk_8\util\third_party\cmsis_dsp\dsp\include\dsp\statistics_functions.h:
+c\:\users\workstation\simplicitystudio\sdks\gecko_sdk_8\util\third_party\cmsis_dsp\dsp\include\dsp\basic_math_functions.h:
+c\:\users\workstation\simplicitystudio\sdks\gecko_sdk_8\util\third_party\cmsis_dsp\dsp\include\dsp\fast_math_functions.h:
+c\:\users\workstation\simplicitystudio\sdks\gecko_sdk_8\util\third_party\cmsis_dsp\dsp\include\dsp/matrix_functions.h:
+c\:\users\workstation\simplicitystudio\sdks\gecko_sdk_8\util\third_party\cmsis_dsp\dsp\include\dsp/complex_math_functions.h:
+c\:\users\workstation\simplicitystudio\sdks\gecko_sdk_8\util\third_party\cmsis_dsp\dsp\include\dsp/statistics_functions.h:
+c\:\users\workstation\simplicitystudio\sdks\gecko_sdk_8\util\third_party\cmsis_dsp\dsp\include\dsp/controller_functions.h:
+c\:\users\workstation\simplicitystudio\sdks\gecko_sdk_8\util\third_party\cmsis_dsp\dsp\include\dsp/support_functions.h:
+c\:\users\workstation\simplicitystudio\sdks\gecko_sdk_8\util\third_party\cmsis_dsp\dsp\include\dsp/distance_functions.h:
+c\:\users\workstation\simplicitystudio\sdks\gecko_sdk_8\util\third_party\cmsis_dsp\dsp\include\dsp/svm_functions.h:
+c\:\users\workstation\simplicitystudio\sdks\gecko_sdk_8\util\third_party\cmsis_dsp\dsp\include\dsp\svm_defines.h:
+c\:\users\workstation\simplicitystudio\sdks\gecko_sdk_8\util\third_party\cmsis_dsp\dsp\include\dsp/fast_math_functions.h:
+c\:\users\workstation\simplicitystudio\sdks\gecko_sdk_8\util\third_party\cmsis_dsp\dsp\include\dsp/transform_functions.h:
+c\:\users\workstation\simplicitystudio\sdks\gecko_sdk_8\util\third_party\cmsis_dsp\dsp\include\dsp\complex_math_functions.h:
+c\:\users\workstation\simplicitystudio\sdks\gecko_sdk_8\util\third_party\cmsis_dsp\dsp\include\dsp/filtering_functions.h:
+c\:\users\workstation\simplicitystudio\sdks\gecko_sdk_8\util\third_party\cmsis_dsp\dsp\include\dsp\support_functions.h:
+c\:\users\workstation\simplicitystudio\sdks\gecko_sdk_8\util\third_party\cmsis_dsp\dsp\include\dsp/quaternion_math_functions.h:
 c\:\users\workstation\simplicitystudio\sdks\gecko_sdk_8\util\third_party\openthread\include\openthread\cli.h:
 c\:\users\workstation\simplicitystudio\sdks\gecko_sdk_8\util\third_party\openthread\include\openthread\dataset_ftd.h:
 c\:\users\workstation\simplicitystudio\sdks\gecko_sdk_8\util\third_party\openthread\include\openthread\dataset.h:

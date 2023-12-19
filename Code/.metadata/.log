@@ -2315,3 +2315,69 @@ fContainWizard: true
 
 !ENTRY com.silabs.ss.tool.uc.editor 1 0 2023-12-16 17:49:59.226
 !MESSAGE UcEditorController: onWebSocketClose CALLED statusCode=1001 reason=null
+!SESSION 2023-12-17 13:19:51.775 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=17.0.3
+java.vendor=Amazon.com Inc.
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.silabs.ss.platform.jetty.server 1 0 2023-12-17 13:19:55.540
+!MESSAGE Jetty listening on: http://127.0.0.1:52074/
+
+!ENTRY com.silabs.ss.platform.jetty.server 1 0 2023-12-17 13:19:56.207
+!MESSAGE ContentServer started at: 127.0.0.1, 52074
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-17 13:19:56.281
+!MESSAGE com.silabs.ss.tool.launcher.product found! Writing main studio shared file
+
+!ENTRY com.silabs.ss.tool.installer.core 1 0 2023-12-17 13:20:11.327
+!MESSAGE isInternalNetwork: false
+
+!ENTRY com.silabs.ss.platform.content.core 4 0 2023-12-17 13:20:13.723
+!MESSAGE Local timestamp file does not exist: C:\SiliconLabs\SimplicityStudio\v5\offline\common\Simplicity_Studio_Terms_of_Use_and_Privacy_Statement.timestamp
+
+!ENTRY com.silabs.ss.platform.apack.core 1 0 2023-12-17 13:20:13.803
+!MESSAGE AdapterPack Device inspector for Exx32 and EFM8 hardware has setupcheck function type 
+
+!ENTRY com.silabs.ss.platform.apack.core 1 0 2023-12-17 13:20:14.156
+!MESSAGE AdapterPack USB adapter pack has setupcheck function type 
+
+!ENTRY com.silabs.ss.tool.installer.core 2 0 2023-12-17 13:20:36.687
+!MESSAGE Problem getting package resources: changelog
+
+!ENTRY com.silabs.ss.platform.content.core 4 0 2023-12-17 13:20:42.674
+!MESSAGE Local timestamp file does not exist: C:\SiliconLabs\SimplicityStudio\v5\offline\common\Simplicity_Studio_Terms_of_Use_and_Privacy_Statement.timestamp
+!SESSION 2023-12-19 15:49:53.887 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=17.0.3
+java.vendor=Amazon.com Inc.
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.silabs.ss.platform.jetty.server 1 0 2023-12-19 15:49:56.880
+!MESSAGE Jetty listening on: http://127.0.0.1:54927/
+
+!ENTRY com.silabs.ss.platform.jetty.server 1 0 2023-12-19 15:49:57.594
+!MESSAGE ContentServer started at: 127.0.0.1, 54927
+
+!ENTRY com.silabs.ss.platform.rcp.core 1 0 2023-12-19 15:49:57.649
+!MESSAGE com.silabs.ss.tool.launcher.product found! Writing main studio shared file
+
+!ENTRY com.silabs.ss.tool.installer.core 1 0 2023-12-19 15:50:10.380
+!MESSAGE isInternalNetwork: false
+
+!ENTRY com.silabs.ss.platform.content.core 4 0 2023-12-19 15:50:12.788
+!MESSAGE Local timestamp file does not exist: C:\SiliconLabs\SimplicityStudio\v5\offline\common\Simplicity_Studio_Terms_of_Use_and_Privacy_Statement.timestamp
+
+!ENTRY com.silabs.ss.platform.apack.core 1 0 2023-12-19 15:50:12.835
+!MESSAGE AdapterPack Device inspector for Exx32 and EFM8 hardware has setupcheck function type 
+
+!ENTRY com.silabs.ss.platform.apack.core 1 0 2023-12-19 15:50:13.199
+!MESSAGE AdapterPack USB adapter pack has setupcheck function type 
+
+!ENTRY com.silabs.ss.tool.installer.core 2 0 2023-12-19 15:50:35.992
+!MESSAGE Problem getting package resources: changelog
+
+!ENTRY com.silabs.ss.platform.content.core 4 0 2023-12-19 15:50:41.327
+!MESSAGE Local timestamp file does not exist: C:\SiliconLabs\SimplicityStudio\v5\offline\common\Simplicity_Studio_Terms_of_Use_and_Privacy_Statement.timestamp

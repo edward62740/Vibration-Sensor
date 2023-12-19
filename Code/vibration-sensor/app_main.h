@@ -4,6 +4,7 @@
 
 #include <openthread/instance.h>
 #include "sl_sleeptimer.h"
+#include "arm_math.h"
 
 #ifdef __cplusplus
 extern "C" {
@@ -22,16 +23,9 @@ typedef union {
 
 typedef struct
 {
-	bool isPend;
-	bool error;
-	uint16_t co2;
-	int32_t hum, temp;
-
-	int32_t offset;
-	uint32_t age, num;
-
-	volatile uint32_t vdd;
-	uint8_t pwr_state;
+	uint16_t k;
+	float32_t *val;
+	float32_t *idx;
 } app_data_t;
 
 
