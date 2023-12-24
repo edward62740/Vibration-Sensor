@@ -5,7 +5,8 @@
  *      Author: edward62740
  */
 
-#include <app_main.h>
+#include "app_main.h"
+
 #include "sl_component_catalog.h"
 #include "sl_system_init.h"
 #include "em_i2c.h"
@@ -29,9 +30,21 @@
 #include <openthread/cli.h>
 #include <openthread/platform/logging.h>
 #include "IIS3DWB/iis3dwb_reg.h"
+#include "cmsis_os2.h"
 
 
+const osThreadAttr_t usrMainTaskAttr = {
+	.name  = "usrMainTaskAttr",
+	.attr_bits = 0u,
+	.cb_mem = NULL,
+	.cb_size = 0u,
+	.stack_mem = NULL,
+	.stack_size = 4096u,
+	.priority = (osPriority_t) osPriorityHigh1,
+	.tz_module = 0,
+	.reserved = 0,
 
+};
 
 void initGPIO(void) {
   CMU_ClockEnable(cmuClock_GPIO, true);
@@ -126,10 +139,9 @@ int main(void) {
   GPIO_PinOutToggle(ACT_LED_PORT, ACT_LED_PIN);
 
 
-
-  app_init();
   GPIO_PinOutClear(ERR_LED_PORT, ERR_LED_PIN);
 
+  osThreadNew(appMain, NULL, &usrMainTaskAttr);
 
 #if defined(SL_CATALOG_KERNEL_PRESENT)
   // Start the kernel. Task(s) created in app_init() will start running.

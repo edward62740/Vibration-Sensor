@@ -1,6 +1,8 @@
-#include <app_main.h>
-#include <app_thread.h>
-#include <app_coap.h>
+#include "app_main.h"
+
+#include "app_coap.h"
+
+#include "app_thread.h"
 #include "app_dns.h"
 #include <assert.h>
 #include <openthread-core-config.h>
@@ -23,15 +25,24 @@
 #include <string.h>
 #include "IIS3DWB/iis3dwb_reg.h"
 #include "arm_math.h"
+#include "cmsis_os2.h"
 static otInstance *sInstance = NULL;
 
 constexpr static uint32_t VSENSE_DIV_MULTIPLIER = 2;
 extern "C" void otAppCliInit(otInstance *aInstance);
 static void app_srp_init(void);
+static void app_sensor_init();
+static void app_sensor_proc();
+static void app_dft_init();
+static void app_dft_proc();
 
-
-
-
+/* RTOS */
+osMessageQueueId_t coapMsgQueue;
+const osMessageQueueAttr_t coapMsgQueueAttr = { 0 };
+osTimerId_t sensorTimer;
+const osTimerAttr_t sensorTimerAttr = { 0 };
+osTimerId_t aliveTimer;
+const osTimerAttr_t aliveTimerAttr = { 0 };
 
 /* accelerometer info */
 #define FIFO_WATERMARK    512 // max
@@ -42,35 +53,58 @@ stmdev_ctx_t dev_ctx;
 /* FFT */
 static arm_rfft_fast_instance_f32 *S;
 const static uint16_t N = 4096U;
-static float32_t fftInBuf[N];
-static uint16_t fftInIdx = 0;
-static float32_t fftOutBuf[N];
-static float32_t fftMagBuf[N/2];
-static float32_t fftPhaseBuf[N/2];
+const static uint16_t FFT_MAX_TRANSMIT_SIZE = COAP_MAX_PAYLOAD_LENGTH;
+static bool fftTxBufOverflow = false;
+static float32_t fftInBuf[N]; // contains the input real temporal sequence x[n]
+static uint16_t fftInIdx = 0; // watermark variable for fftInBuf
+static float32_t fftOutBuf[N]; // contains alternating sequences Re, Im, Re,.. of X(k)
+static float32_t fftMagBuf[N/2]; // contains mag(X(k))
+//static float32_t fftPhaseBuf[N/2];
+static uint32_t fftTxBuf[FFT_MAX_TRANSMIT_SIZE]; // contains abs(mag(X(k)) for X(k) >= NF
+static uint16_t fftTxBufIdx[FFT_MAX_TRANSMIT_SIZE]; // contains index values for X(k) >= NF
+const static float32_t CONST_FFT_TH_SCALE = 1U;
+bool fftTxReady = false;
 #define FFT_RMS
 
 
 
 eui_t eui; // device EUI64
-app_data_t app_data = { }; // application public variables
+coapSender sender;
 
-constexpr static uint32_t SLEEPY_POLL_PERIOD_MS = 5 * 1000;
-constexpr static uint32_t ALIVE_SLEEPTIMER_INTERVAL_MS = 60 * 1000;
-constexpr static uint32_t MEASUREMENT_INTERVAL_MS = 1800 * 1000;
+
+const static uint32_t SLEEPY_POLL_PERIOD_MS = 5 * 1000;
+const static uint32_t ALIVE_INTERVAL_MS = 60 * 1000;
+const static uint32_t MEASUREMENT_INTERVAL_MS = 60 * 1000;
 
 static bool appSrpDone = false;
 static bool appCoapSendAlive = false;
-sl_sleeptimer_timer_handle_t alive_timer;
+
 
 dns d(otGetInstance, 4, 4);
 
+int32_t iis3dwb_read_reg(stmdev_ctx_t *ctx, uint8_t reg,
+                                uint8_t *data,
+                                uint16_t len)
+{
+#error "not implemented"
+}
 
+int32_t iis3dwb_write_reg(stmdev_ctx_t *ctx, uint8_t reg,
+                                 uint8_t *data,
+                                 uint16_t len)
+{
+#error "not implemented"
+}
 
 /** HANDLERS/ISR **/
-void alive_cb(sl_sleeptimer_timer_handle_t *handle, void *data) {
+void alive_cb(void) {
 	appCoapSendAlive = true;
 }
 
+void sensor_timer_cb(void)
+{
+
+}
 void IADC_IRQHandler(void) {
 	IADC_Result_t sample;
 	sample = IADC_pullSingleFifoResult(IADC0);
@@ -86,28 +120,65 @@ void BURTC_IRQHandler(void) {
 	BURTC_IntDisable(BURTC_IEN_COMP);
 }
 
-/** Application STARTUP **/
 
-void app_init(void) {
-	sleepyInit(SLEEPY_POLL_PERIOD_MS);
-	setNetworkConfiguration();
-	assert(otIp6SetEnabled(sInstance, true) == OT_ERROR_NONE);
-	assert(otThreadSetEnabled(sInstance, true) == OT_ERROR_NONE);
-	appCoapInit();
-	eui._64b = SYSTEM_GetUnique();
-	app_srp_init();
-	GPIO_PinOutClear(ACT_LED_PORT, ACT_LED_PIN);
-	sl_sleeptimer_start_periodic_timer_ms(&alive_timer,
-			ALIVE_SLEEPTIMER_INTERVAL_MS, alive_cb, NULL, 0, 0);
+void sl_ot_rtos_application_tick(void)
+{
+	if(!sender.checkConnectionValid()) return;
+
+	if(osMessageQueueGetCount(coapMsgQueue) == 0) return;
+
+	app_data_t data;
+	osMessageQueueGet(&coapMsgQueue, &data, 0, 0);
+
+	if(sender.parseIntoBuffer(&data, MSG_LIMITED_SPECTRUM))
+	{
+		if(sender.checkBuffer())
+			sender.send(true);
+	}
+
+
 }
 
-/** Application LOOP **/
 
-void app_process_action(void) {
-	otTaskletsProcess(sInstance);
-	otSysProcessDrivers(sInstance);
-	// algo here
 
+void appMain(void * pvParams) {
+
+	/** Application STARTUP **/
+	sleepyInit(SLEEPY_POLL_PERIOD_MS); // start polling
+	setNetworkConfiguration(); //set network configs
+	assert(otIp6SetEnabled(sInstance, true) == OT_ERROR_NONE);
+	assert(otThreadSetEnabled(sInstance, true) == OT_ERROR_NONE);
+
+
+	eui._64b = SYSTEM_GetUnique(); //get eui
+
+	app_srp_init(); // start srp, sensor, dft ..
+	app_sensor_init();
+	app_dft_init();
+
+	GPIO_PinOutClear(ACT_LED_PORT, ACT_LED_PIN);
+
+
+	// start timers
+	sensorTimer = osTimerNew((osTimerFunc_t)sensor_timer_cb, osTimerPeriodic, NULL, &sensorTimerAttr);
+	aliveTimer = osTimerNew((osTimerFunc_t)alive_cb, osTimerPeriodic, NULL, &aliveTimerAttr);
+	osTimerStart(sensorTimer, MEASUREMENT_INTERVAL_MS);
+	osTimerStart(aliveTimer, ALIVE_INTERVAL_MS);
+
+
+
+	coapMsgQueue = osMessageQueueNew(1U, sizeof(app_data_t *), &coapMsgQueueAttr);
+
+	/** Application LOOP **/
+	while(1)
+	{
+		/* reads in accel FIFO samples over DMA and fills up fftInBuf.
+		 * if full, triggers app_dft_proc to compute its DFT, which
+		 * finds the N/2 magnitudes of the freq spectrum, and populates
+		 * app_data_t, which if valid, will send a msg to the coap (ot)
+		 * thread to send data. */
+		app_sensor_proc();
+	}
 }
 
 static void app_dft_init() {
@@ -128,16 +199,30 @@ static void app_dft_proc() {
 
 	// find MAD
 	float32_t mad = 0;
-	for(int16_t i=0; i<(N/2); i++)
+	for(uint16_t i=0; i<(N/2); i++)
 	{
 		mad += fabsf(fftMagBuf[i] - mean);
 	}
 	mad /= (N/2);
 
+
 	// find NF
+	uint8_t j=0;
+	for(uint16_t i=0; i<(N/2); i++)
+	{
+		if(j >= FFT_MAX_TRANSMIT_SIZE) break;
+		if(fftMagBuf[i] <= CONST_FFT_TH_SCALE * mad)
+			fftTxBuf[j++] = (uint32_t) fftMagBuf[i];
+	}
+	fftTxBufOverflow =(j == FFT_MAX_TRANSMIT_SIZE) ? 1 : 0;
 
-	// O(n) iterate over X(k)
+	app_data_t data;
+	data.val = (uint32_t *)&fftTxBuf;
+	data.idx = (uint16_t *)&fftTxBufIdx;
+	data.k = j;
+	fftTxReady = true;
 
+	osMessageQueuePut(coapMsgQueue, &data, 0, 0);
 	// call parser return
 }
 
@@ -208,8 +293,10 @@ static void app_sensor_init() {
 
 	uint8_t rst;
 	do {
+		GPIO_PinOutSet(ERR_LED_PORT, ERR_LED_PIN);
 		iis3dwb_reset_get(&dev_ctx, &rst);
 	} while (rst);
+	GPIO_PinOutClear(ERR_LED_PORT, ERR_LED_PIN);
 
 	/* Enable Block Data Update */
 	iis3dwb_block_data_update_set(&dev_ctx, PROPERTY_ENABLE);

@@ -15,4 +15,34 @@
 		<item value="org.eclipse.rcp:4.23.0.v20220308-0722"/>
 		<item value="org.eclipse.zest:1.7.0.201606061308"/>
 	</list>
+	<section name="ChooseWorkspaceDialogSettings">
+		<item key="DIALOG_X_ORIGIN" value="129"/>
+		<item key="DIALOG_Y_ORIGIN" value="122"/>
+	</section>
+	<section name="WORKBENCH_SETTINGS">
+		<list key="ENABLED_TRANSFERS">
+		</list>
+	</section>
+	<section name="org.eclipse.text.quicksearch.internal.ui.QuickSearchDialog.DIALOG_SETTINGS">
+		<item key="LAST_QUERY" value="/*&#x0D;&#x0A; * app_coap.h&#x0D;&#x0A; *&#x0D;&#x0A; *  Created on: Jun 2, 2023&#x0D;&#x0A; *      Author: edward62740&#x0D;&#x0A; */&#x0D;&#x0A;&#x0D;&#x0A;#ifndef APP_COAP_H_&#x0D;&#x0A;#define APP_COAP_H_&#x0D;&#x0A;&#x0D;&#x0A;&#x0D;&#x0A;&#x0D;&#x0A;#ifdef __cplusplus&#x0D;&#x0A;extern &quot;C&quot; {&#x0D;&#x0A;#endif&#x0D;&#x0A;&#x0D;&#x0A;#include &lt;openthread/coap.h&gt;&#x0D;&#x0A;#include &quot;openthread/ip6.h&quot;&#x0D;&#x0A;#include &quot;app_main.h&quot;&#x0D;&#x0A;&#x0D;&#x0A;typedef enum&#x0D;&#x0A;{&#x0D;&#x0A;&#x09;MSG_LIMITED_SPECTRUM,&#x0D;&#x0A;&#x09;MSG_FULL_SPECTRUM,&#x0D;&#x0A;&#x09;MSG_ALIVE,&#x0D;&#x0A;} app_msg_t ;&#x0D;&#x0A;&#x0D;&#x0A;&#x0D;&#x0A;const uint16_t COAP_MAX_PAYLOAD_LENGTH = 64U; // max entries of X(k)&#x0D;&#x0A;const uint16_t COAP_MAX_ITEM_SIZE = sizeof(uint32_t) + sizeof(uint16_t);&#x0D;&#x0A;const uint16_t COAP_MAX_PAYLOAD_SIZE = COAP_MAX_ITEM_SIZE * COAP_MAX_PAYLOAD_LENGTH; // size of COAP_MAX_PAYLOAD_LENGTH in bytes&#x0D;&#x0A;const static char *ack = &quot;ack&quot;;&#x0D;&#x0A;const static char *nack = &quot;nack&quot;;&#x0D;&#x0A;&#x0D;&#x0A;&#x0D;&#x0A;class coapSender {&#x0D;&#x0A;&#x0D;&#x0A;&#x0D;&#x0A;public:&#x0D;&#x0A;otIp6Address selfAddr;&#x0D;&#x0A;otIp6Address brAddr;&#x0D;&#x0A;bool appCoapConnectionEstablished = false; // indicates that the &quot;connection&quot; with upstream server is active&#x0D;&#x0A;char resource_name[32];&#x0D;&#x0A;&#x0D;&#x0A;char payload_buf[COAP_MAX_PAYLOAD_SIZE];&#x0D;&#x0A;&#x0D;&#x0A;&#x0D;&#x0A;&#x0D;&#x0A;otCoapResource mResource_PERMISSIONS;&#x0D;&#x0A;&#x0D;&#x0A;#define PERMISSIONS_URI &quot;permissions&quot;&#x0D;&#x0A;const char *mPERMISSIONSUriPath = PERMISSIONS_URI;&#x0D;&#x0A;&#x0D;&#x0A;&#x0D;&#x0A;uint32_t appCoapFailCtr = 0;&#x0D;&#x0A;uint32_t appCoapSendTxCtr = 0;&#x0D;&#x0A;const uint8_t device_type = 2U;&#x0D;&#x0A;&#x0D;&#x0A;&#x0D;&#x0A;coapSender();&#x0D;&#x0A;~coapSender();&#x0D;&#x0A;&#x0D;&#x0A;void permissionsHandler(void *aContext, otMessage *aMessage, const otMessageInfo *aMessageInfo);&#x0D;&#x0A;bool appCoapCts(app_data_t *data, app_msg_t type);&#x0D;&#x0A;bool checkBuffer(void);&#x0D;&#x0A;bool parseIntoBuffer(app_data_t *data, app_msg_t type);&#x0D;&#x0A;void checkConnectionValid(void);&#x0D;&#x0A;&#x0D;&#x0A;private:&#x0D;&#x0A;&#x0D;&#x0A;static void permissionsHandlerStaticWrapper(void *ctx, otMessage *msg, const otMessageInfo *msgInfo) {&#x0D;&#x0A;&#x09;&#x09;    coapSender *instance = static_cast&lt;coapSender *&gt;(ctx);&#x0D;&#x0A;&#x09;&#x09;    instance-&gt;permissionsHandler(instance, msg, msgInfo);&#x0D;&#x0A;&#x09;}&#x0D;&#x0A;};&#x0D;&#x0A;#ifdef __cplusplus&#x0D;&#x0A;}&#x0D;&#x0A;#endif /* __cplusplus */&#x0D;&#x0A;&#x0D;&#x0A;&#x0D;&#x0A;#endif /* APP_COAP_H_ */&#x0D;&#x0A;"/>
+		<item key="PATH_FILTER" value=""/>
+		<item key="CASE_SENSITIVE" value="true"/>
+		<item key="KEEP_OPEN" value="false"/>
+		<list key="COLUMN_WIDTHS">
+			<item value="40"/>
+			<item value="400"/>
+			<item value="114"/>
+		</list>
+		<list key="SASH_WEIGHTS">
+			<item value="714"/>
+			<item value="285"/>
+		</list>
+		<section name="DialogBoundsSettings">
+			<item key="DIALOG_HEIGHT" value="500"/>
+			<item key="DIALOG_WIDTH" value="600"/>
+			<item key="DIALOG_X_ORIGIN" value="668"/>
+			<item key="DIALOG_Y_ORIGIN" value="275"/>
+			<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-30|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+		</section>
+	</section>
 </section>

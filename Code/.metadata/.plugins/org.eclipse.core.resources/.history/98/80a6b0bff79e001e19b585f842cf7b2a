@@ -1,0 +1,48 @@
+/*
+ * app_coap.h
+ *
+ *  Created on: Jun 2, 2023
+ *      Author: edward62740
+ */
+
+#ifndef APP_COAP_H_
+#define APP_COAP_H_
+
+
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+
+#include "openthread/ip6.h"
+#include "app_main.h"
+
+typedef enum
+{
+	MSG_LIMITED_SPECTRUM,
+	MSG_FULL_SPECTRUM,
+	MSG_ALIVE,
+} app_msg_t ;
+
+const uint16_t COAP_MAX_PAYLOAD_LENGTH = 64U;
+const uint16_t COAP_MAX_PAYLOAD_SIZE = (sizeof(uint32_t) * COAP_MAX_PAYLOAD_LENGTH) +
+		(sizeof(uint16_t) * COAP_MAX_PAYLOAD_LENGTH);
+
+extern otIp6Address selfAddr;
+extern otIp6Address brAddr;
+extern bool appCoapConnectionEstablished;
+
+void appCoapInit(void);
+void appCoapPermissionsHandler(void *aContext, otMessage *aMessage, const otMessageInfo *aMessageInfo);
+bool appCoapCts(app_data_t *data, app_msg_t type);
+void appCoapCheckConnection(void);
+
+
+
+#ifdef __cplusplus
+}
+#endif /* __cplusplus */
+
+
+#endif /* APP_COAP_H_ */

@@ -24,22 +24,22 @@ typedef union {
 typedef struct
 {
 	uint16_t k;
-	float32_t *val;
-	float32_t *idx;
+	uint32_t *val;
+	uint16_t *idx;
 } app_data_t;
 
 
 extern eui_t eui;
 extern app_data_t app_data;
 
-extern sl_sleeptimer_timer_handle_t alive_timer;
-void alive_cb(sl_sleeptimer_timer_handle_t *handle, void *data);
+
+
 
 void app_init(void);
 
 void app_exit(void);
 
-void app_process_action(void);
+void appMain(void * pvParams);
 
 otInstance *otGetInstance(void);
 

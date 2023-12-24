@@ -1,7 +1,7 @@
-defaultSelection=com.silabs.sdk.stack.super\:4.3.2._1231347516\u0000
+defaultSelection=\u0000
 disabledIDs=\u0000
 eclipse.preferences.version=1
-enabledIDs=com.silabs.sdk.stack.super\:4.1.3._1231347513\u0000com.silabs.sdk.stack.super\:4.2.0._1231347510\u0000com.silabs.sdk.stack.super\:4.2.3._1231347515\u0000com.silabs.sdk.stack.super\:4.3.0._1231347514\u0000com.silabs.sdk.stack.super\:3.2.2._640221276\u0000com.silabs.sdk.stack.super\:4.3.1._1231347517\u0000com.silabs.stack.external.stackless\:1.0.0._1234321\u0000com.silabs.sdk.none\:0.0.0\u0000com.silabs.sdk.stack.super\:4.2.2._1231347512\u0000com.silabs.sdk.stack.super\:4.3.2._1231347516\u0000com.silabs.sdk.stack.super\:4.1.3._1224998501\u0000
+enabledIDs=com.silabs.sdk.stack.super\:4.1.3._1231347513\u0000com.silabs.sdk.stack.super\:3.2.2._640221276\u0000com.silabs.sdk.stack.super\:4.3.1._1231347517\u0000com.silabs.stack.external.stackless\:1.0.0._1234321\u0000com.silabs.sdk.none\:0.0.0\u0000com.silabs.sdk.stack.super\:4.2.2._1231347512\u0000com.silabs.sdk.stack.super\:4.3.2._1231347516\u0000com.silabs.sdk.stack.super\:4.1.3._1224998501\u0000com.silabs.sdk.stack.super\:4.3.2._-446163134\u0000com.silabs.sdk.stack.super\:4.2.0._1231347510\u0000com.silabs.sdk.stack.super\:4.3.0._-446163133\u0000com.silabs.sdk.stack.super\:4.2.3._1231347515\u0000com.silabs.sdk.stack.super\:4.3.0._1231347514\u0000
 knownPackageIds=
 lastRefreshDate=1702366641555
 manualDescriptors=<?xml version\="1.0" encoding\="ASCII"?>\r\n<model\:MDescriptors xmlns\:model\="http\://www.silabs.com/ss/Studio.ecore"/>\r\n

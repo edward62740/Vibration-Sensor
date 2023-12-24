@@ -1703,80 +1703,77 @@
   <libraryFile name="c"/>
   <libraryFile name="m"/>
   <libraryFile name="nosys"/>
-  <toolOption toolId="toolOption.uc.toolchain" optionId="toolOption.uc.toolchain.cpu" value="cortex-m33"/>
-  <toolOption toolId="toolOption.uc.toolchain" optionId="toolOption.uc.toolchain.fpu" value="fpv5-sp"/>
-  <toolOption toolId="toolOption.uc.toolchain" optionId="toolOption.uc.toolchain.float_abi" value="hard"/>
-  <toolOption toolId="toolOption.uc.compiler" optionId="toolOption.uc.compiler.preinclude">
+  <toolOption toolId="toolOption.generic.toolchain" optionId="toolOption.generic.toolchain.cpu" value="cortex-m33"/>
+  <toolOption toolId="toolOption.generic.toolchain" optionId="toolOption.generic.toolchain.thumbMode" value="true"/>
+  <toolOption toolId="toolOption.generic.toolchain" optionId="toolOption.generic.toolchain.fpu" value="fpv5-sp"/>
+  <toolOption toolId="toolOption.generic.toolchain" optionId="toolOption.generic.toolchain.float_abi" value="hard"/>
+  <toolOption toolId="toolOption.generic.toolchain" optionId="toolOption.generic.toolchain.enable_fpu" value="true"/>
+  <toolOption toolId="toolOption.generic.assembler" optionId="toolOption.generic.assembler.float_abi" value="hard"/>
+  <toolOption toolId="toolOption.generic.assembler" optionId="toolOption.generic.assembler.enable_fpu" value="true"/>
+  <toolOption toolId="toolOption.generic.compiler.c" optionId="toolOption.generic.compiler.c.float_abi" value="hard"/>
+  <toolOption toolId="toolOption.generic.compiler.c" optionId="toolOption.generic.compiler.c.enable_fpu" value="true"/>
+  <toolOption toolId="toolOption.generic.compiler.cpp" optionId="toolOption.generic.compiler.cpp.float_abi" value="hard"/>
+  <toolOption toolId="toolOption.generic.compiler.cpp" optionId="toolOption.generic.compiler.cpp.enable_fpu" value="true"/>
+  <toolOption toolId="toolOption.generic.linker.c" optionId="toolOption.generic.linker.c.float_abi" value="hard"/>
+  <toolOption toolId="toolOption.generic.linker.c" optionId="toolOption.generic.linker.c.enable_fpu" value="true"/>
+  <toolOption toolId="toolOption.generic.linker.cpp" optionId="toolOption.generic.linker.cpp.float_abi" value="hard"/>
+  <toolOption toolId="toolOption.generic.linker.cpp" optionId="toolOption.generic.linker.cpp.enable_fpu" value="true"/>
+  <toolOption toolId="toolOption.generic.compiler.c" optionId="toolOption.generic.compiler.c.preinclude">
     <toolListOption value="sl_openthread_rtos_config.h"/>
     <toolListOption value="sl_gcc_preinclude.h"/>
   </toolOption>
-  <toolOption toolId="toolOption.uc.assembler" optionId="toolOption.uc.assembler.preinclude">
+  <toolOption toolId="toolOption.generic.compiler.cpp" optionId="toolOption.generic.compiler.cpp.preinclude">
     <toolListOption value="sl_openthread_rtos_config.h"/>
     <toolListOption value="sl_gcc_preinclude.h"/>
   </toolOption>
-  <toolOption toolId="toolOption.uc.linker" optionId="toolOption.uc.linker.linkerScript" value="$project/autogen/linkerfile.ld"/>
-  <toolOption toolId="toolOption.uc.compiler" optionId="toolOption.uc.compiler.function_sections" value="true"/>
-  <toolOption toolId="toolOption.uc.compiler" optionId="toolOption.uc.compiler.data_sections" value="true"/>
-  <toolOption toolId="toolOption.uc.linker" optionId="toolOption.uc.linker.nano_c_libs" value="true"/>
-  <toolOption toolId="toolOption.uc.compiler" optionId="toolOption.uc.compiler.omit_frame_pointer" value="true"/>
-  <toolOption toolId="toolOption.uc.compiler" optionId="toolOption.uc.compiler.no_exceptions" value="true"/>
-  <toolOption toolId="toolOption.uc.compiler" optionId="toolOption.uc.compiler.no_rtti" value="true"/>
-  <toolOption toolId="toolOption.uc.linker" optionId="toolOption.uc.linker.generateMapFile" value="true"/>
-  <toolOption toolId="toolOption.uc.compiler" optionId="toolOption.uc.compiler.c_standard" value="c99"/>
-  <toolOption toolId="toolOption.uc.compiler" optionId="toolOption.uc.compiler.cxx_standard" value="c++11"/>
-  <toolOption toolId="toolOption.uc.compiler" optionId="toolOption.uc.compiler.warnings.all" value="true"/>
-  <toolOption toolId="toolOption.uc.compiler" optionId="toolOption.uc.compiler.warnings.extra" value="true"/>
-  <toolOption toolId="toolOption.uc.compiler" optionId="toolOption.uc.compiler.warnings.pedantic" value="false"/>
-  <toolOption toolId="toolOption.uc.compiler" optionId="toolOption.uc.compiler.warnings.are_errors" value="false"/>
-  <toolOption toolId="toolOption.uc.compiler" optionId="toolOption.uc.compiler.optimization" value="size"/>
-  <toolOption toolId="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.assembler.base" optionId="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.assembler.floatingpoint.type" value="floatingpoint.type.hard"/>
-  <toolOption toolId="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.assembler.base" optionId="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.assembler.floatingpoint.enable" value="true"/>
-  <toolOption toolId="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.c.compiler.base" optionId="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.c.compiler.floatingpoint.type" value="floatingpoint.type.hard"/>
-  <toolOption toolId="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.cpp.compiler.base" optionId="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.cpp.compiler.floatingpoint.type" value="floatingpoint.type.hard"/>
-  <toolOption toolId="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.c.compiler.base" optionId="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.c.compiler.floatingpoint.enable" value="true"/>
-  <toolOption toolId="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.cpp.compiler.base" optionId="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.cpp.compiler.floatingpoint.enable" value="true"/>
-  <toolOption toolId="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.c.linker.base" optionId="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.c.linker.floatingpoint.type" value="floatingpoint.type.hard"/>
-  <toolOption toolId="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.cpp.linker.base" optionId="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.cpp.linker.floatingpoint.type" value="floatingpoint.type.hard"/>
-  <toolOption toolId="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.c.linker.base" optionId="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.c.linker.floatingpoint.enable" value="true"/>
-  <toolOption toolId="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.cpp.linker.base" optionId="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.cpp.linker.floatingpoint.enable" value="true"/>
-  <toolOption toolId="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.assembler.base" optionId="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.assembler.preinclude">
+  <toolOption toolId="toolOption.generic.assembler" optionId="toolOption.generic.assembler.preinclude">
     <toolListOption value="sl_openthread_rtos_config.h"/>
     <toolListOption value="sl_gcc_preinclude.h"/>
   </toolOption>
-  <toolOption toolId="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.c.compiler.base" optionId="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.c.compiler.preinclude">
-    <toolListOption value="sl_openthread_rtos_config.h"/>
-    <toolListOption value="sl_gcc_preinclude.h"/>
-  </toolOption>
-  <toolOption toolId="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.cpp.compiler.base" optionId="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.cpp.compiler.preinclude">
-    <toolListOption value="sl_openthread_rtos_config.h"/>
-    <toolListOption value="sl_gcc_preinclude.h"/>
-  </toolOption>
-  <toolOption toolId="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.c.compiler.base" optionId="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.c.compiler.misc.dialect" value="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.c.compiler.misc.dialect.c99"/>
-  <toolOption toolId="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.cpp.compiler.base" optionId="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.cpp.compiler.misc.dialect" value="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.cpp.compiler.misc.dialect.cpp0x"/>
-  <toolOption toolId="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.cpp.compiler.base" optionId="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.cpp.compiler.no_rtti" value="true"/>
-  <toolOption toolId="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.cpp.compiler.base" optionId="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.cpp.compiler.no_exceptions" value="true"/>
-  <toolOption toolId="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.c.compiler.base" optionId="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.c.compiler.optimization.level" value="gnu.c.optimization.level.size"/>
-  <toolOption toolId="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.cpp.compiler.base" optionId="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.cpp.compiler.optimization.level" value="gnu.cpp.compiler.optimization.level.size"/>
-  <toolOption toolId="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.c.compiler.base" optionId="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.c.compiler.optimization.datasect" value="true"/>
-  <toolOption toolId="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.cpp.compiler.base" optionId="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.cpp.compiler.optimization.datasect" value="true"/>
-  <toolOption toolId="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.c.compiler.base" optionId="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.c.compiler.optimization.functionsects" value="true"/>
-  <toolOption toolId="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.cpp.compiler.base" optionId="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.cpp.compiler.optimization.functionsects" value="true"/>
-  <toolOption toolId="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.c.compiler.base" optionId="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.c.compiler.optimization.omitframepointer" value="true"/>
-  <toolOption toolId="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.cpp.compiler.base" optionId="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.cpp.compiler.optimization.omitframepointer" value="true"/>
-  <toolOption toolId="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.c.compiler.base" optionId="gnu.c.compiler.option.warnings.allwarn" value="true"/>
-  <toolOption toolId="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.cpp.compiler.base" optionId="gnu.cpp.compiler.option.warnings.allwarn" value="true"/>
-  <toolOption toolId="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.c.compiler.base" optionId="gnu.c.compiler.option.warnings.extrawarn" value="true"/>
-  <toolOption toolId="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.cpp.compiler.base" optionId="gnu.cpp.compiler.option.warnings.extrawarn" value="true"/>
-  <toolOption toolId="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.c.compiler.base" optionId="gnu.c.compiler.option.warnings.toerrors" value="false"/>
-  <toolOption toolId="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.cpp.compiler.base" optionId="gnu.cpp.compiler.option.warnings.toerrors" value="false"/>
-  <toolOption toolId="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.c.compiler.base" optionId="gnu.c.compiler.option.warnings.pedantic" value="false"/>
-  <toolOption toolId="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.cpp.compiler.base" optionId="gnu.cpp.compiler.option.warnings.pedantic" value="false"/>
-  <toolOption toolId="com.silabs.ide.si32.gcc.cdt.managedbuild.toolchain.exe" optionId="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.c.linker.script" value="${workspace_loc:/${ProjName}/autogen/linkerfile.ld}"/>
-  <toolOption toolId="com.silabs.ide.si32.gcc.cdt.managedbuild.toolchain.exe" optionId="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.c.linker.usescript" value="true"/>
-  <toolOption toolId="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.c.linker.base" optionId="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.c.linker.clibs" value="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.c.linker.nanospec"/>
-  <toolOption toolId="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.cpp.linker.base" optionId="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.cpp.linker.clibs" value="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.c.linker.nanospec"/>
-  <toolOption toolId="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.c.linker.base" optionId="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.c.linker.map" value="true"/>
-  <toolOption toolId="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.cpp.linker.base" optionId="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.cpp.linker.map" value="true"/>
+  <toolOption toolId="toolOption.generic.linker.c" optionId="toolOption.generic.linker.c.linkerScript" value="$project/autogen/linkerfile.ld"/>
+  <toolOption toolId="toolOption.generic.linker.c" optionId="toolOption.generic.linker.c.useLinkerScript" value="true"/>
+  <toolOption toolId="toolOption.generic.compiler.c" optionId="toolOption.generic.compiler.c.function_sections" value="true"/>
+  <toolOption toolId="toolOption.generic.compiler.cpp" optionId="toolOption.generic.compiler.cpp.function_sections" value="true"/>
+  <toolOption toolId="toolOption.generic.compiler.c" optionId="toolOption.generic.compiler.c.data_sections" value="true"/>
+  <toolOption toolId="toolOption.generic.compiler.cpp" optionId="toolOption.generic.compiler.cpp.data_sections" value="true"/>
+  <toolOption toolId="toolOption.generic.linker.c" optionId="toolOption.generic.linker.c.nano_c_libs" value="true"/>
+  <toolOption toolId="toolOption.generic.linker.cpp" optionId="toolOption.generic.linker.cpp.nano_c_libs" value="true"/>
+  <toolOption toolId="toolOption.generic.compiler.c" optionId="toolOption.generic.compiler.c.omit_frame_pointer" value="true"/>
+  <toolOption toolId="toolOption.generic.compiler.cpp" optionId="toolOption.generic.compiler.cpp.omit_frame_pointer" value="true"/>
+  <toolOption toolId="toolOption.generic.compiler.cpp" optionId="toolOption.generic.compiler.cpp.exceptions" value="false"/>
+  <toolOption toolId="toolOption.generic.compiler.cpp" optionId="toolOption.generic.compiler.cpp.rtti" value="false"/>
+  <toolOption toolId="toolOption.generic.linker.c" optionId="toolOption.generic.linker.c.generateLinkMap" value="true"/>
+  <toolOption toolId="toolOption.generic.linker.cpp" optionId="toolOption.generic.linker.cpp.generateLinkMap" value="true"/>
+  <toolOption toolId="toolOption.generic.compiler.c" optionId="toolOption.generic.compiler.c.c_standard" value="c99"/>
+  <toolOption toolId="toolOption.generic.compiler.cpp" optionId="toolOption.generic.compiler.cpp.cxx_standard" value="c++11"/>
+  <toolOption toolId="toolOption.generic.compiler.c" optionId="toolOption.generic.compiler.c.incorrectCode" value="true"/>
+  <toolOption toolId="toolOption.generic.compiler.cpp" optionId="toolOption.generic.compiler.cpp.incorrectCode" value="true"/>
+  <toolOption toolId="toolOption.generic.compiler.c" optionId="toolOption.generic.compiler.c.extra" value="true"/>
+  <toolOption toolId="toolOption.generic.compiler.cpp" optionId="toolOption.generic.compiler.cpp.extra" value="true"/>
+  <toolOption toolId="toolOption.generic.compiler.c" optionId="toolOption.generic.compiler.c.nonStandard" value="false"/>
+  <toolOption toolId="toolOption.generic.compiler.cpp" optionId="toolOption.generic.compiler.cpp.nonStandard" value="false"/>
+  <toolOption toolId="toolOption.generic.compiler.c" optionId="toolOption.generic.compiler.c.warningsAreErrors" value="false"/>
+  <toolOption toolId="toolOption.generic.compiler.cpp" optionId="toolOption.generic.compiler.cpp.warningsAreErrors" value="false"/>
+  <toolOption toolId="toolOption.generic.compiler.c" optionId="toolOption.generic.compiler.c.optimization" value="size"/>
+  <toolOption toolId="toolOption.generic.compiler.cpp" optionId="toolOption.generic.compiler.cpp.optimization" value="size"/>
+  <toolOption toolId="toolOption.generic.compiler.c" optionId="toolOption.generic.compiler.c.optimizeForSize" value="true"/>
+  <toolOption toolId="toolOption.generic.compiler.cpp" optionId="toolOption.generic.compiler.cpp.optimizeForSize" value="true"/>
+  <toolOption toolId="toolOption.generic.compiler.c" optionId="toolOption.generic.compiler.c.globalCSE" value="true"/>
+  <toolOption toolId="toolOption.generic.compiler.cpp" optionId="toolOption.generic.compiler.cpp.globalCSE" value="true"/>
+  <toolOption toolId="toolOption.generic.compiler.c" optionId="toolOption.generic.compiler.c.loopOptimizing" value="true"/>
+  <toolOption toolId="toolOption.generic.compiler.cpp" optionId="toolOption.generic.compiler.cpp.loopOptimizing" value="true"/>
+  <toolOption toolId="toolOption.generic.compiler.c" optionId="toolOption.generic.compiler.c.inlining" value="true"/>
+  <toolOption toolId="toolOption.generic.compiler.cpp" optionId="toolOption.generic.compiler.cpp.inlining" value="true"/>
+  <toolOption toolId="toolOption.generic.compiler.c" optionId="toolOption.generic.compiler.c.loopInvariants" value="true"/>
+  <toolOption toolId="toolOption.generic.compiler.cpp" optionId="toolOption.generic.compiler.cpp.loopInvariants" value="true"/>
+  <toolOption toolId="toolOption.generic.compiler.c" optionId="toolOption.generic.compiler.c.dataOverlaying" value="true"/>
+  <toolOption toolId="toolOption.generic.compiler.cpp" optionId="toolOption.generic.compiler.cpp.dataOverlaying" value="true"/>
+  <toolOption toolId="toolOption.generic.compiler.c" optionId="toolOption.generic.compiler.c.static_cluserting" value="true"/>
+  <toolOption toolId="toolOption.generic.compiler.cpp" optionId="toolOption.generic.compiler.cpp.static_cluserting" value="true"/>
+  <toolOption toolId="toolOption.generic.compiler.c" optionId="toolOption.generic.compiler.c.scheduling" value="true"/>
+  <toolOption toolId="toolOption.generic.compiler.cpp" optionId="toolOption.generic.compiler.cpp.scheduling" value="true"/>
+  <toolOption toolId="toolOption.generic.compiler.c" optionId="toolOption.generic.compiler.c.use_vectorization" value="false"/>
+  <toolOption toolId="toolOption.generic.compiler.cpp" optionId="toolOption.generic.compiler.cpp.use_vectorization" value="false"/>
   <toolOption toolId="studio.ide.project" optionId="device_opn" value="mgm240pb32vna"/>
   <toolOption toolId="makefile.arm.gcc.compiler" optionId="misc">
     <toolListOption value="-mcmse"/>
