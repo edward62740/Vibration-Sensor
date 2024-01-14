@@ -31,11 +31,8 @@ IIS3DWB \
 autogen \
 gecko_sdk_4.3.2/platform/CMSIS/RTOS2/Source \
 gecko_sdk_4.3.2/platform/Device/SiliconLabs/MGM24/Source \
-gecko_sdk_4.3.2/platform/bootloader/api \
-gecko_sdk_4.3.2/platform/bootloader/app_properties \
 gecko_sdk_4.3.2/platform/common/src \
 gecko_sdk_4.3.2/platform/common/toolchain/src \
-gecko_sdk_4.3.2/platform/driver/button/src \
 gecko_sdk_4.3.2/platform/emdrv/dmadrv/src \
 gecko_sdk_4.3.2/platform/emdrv/gpiointerrupt/src \
 gecko_sdk_4.3.2/platform/emdrv/nvm3/src \

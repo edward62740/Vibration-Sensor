@@ -1,0 +1,6 @@
+09:27:26 **** Incremental Build of configuration GNU ARM v10.2.1 - Default for project ot-cli-ftd ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+
+09:27:28 Build Finished. 0 errors, 0 warnings. (took 1s.961ms)
+

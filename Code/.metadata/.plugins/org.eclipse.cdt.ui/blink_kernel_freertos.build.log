@@ -1,0 +1,53 @@
+16:23:06 **** Incremental Build of configuration GNU ARM v10.2.1 - Default for project blink_kernel_freertos ****
+make -j8 all 
+Building file: ../blink.c
+Invoking: GNU ARM C Compiler
+arm-none-eabi-gcc -g -gdwarf-2 -mcpu=cortex-m33 -mthumb -std=c99 '-DDEBUG_EFM=1' '-DMGM240PB32VNA=1' '-DSL_COMPONENT_CATALOG_PRESENT=1' -I"C:\Users\Workstation\Documents\GitHub\Vibration-Sensor\Code\blink_kernel_freertos\config" -I"C:\Users\Workstation\Documents\GitHub\Vibration-Sensor\Code\blink_kernel_freertos\autogen" -I"C:\Users\Workstation\Documents\GitHub\Vibration-Sensor\Code\blink_kernel_freertos" -I"C:/Users/Workstation/SimplicityStudio/SDKs/gecko_sdk_8//platform/Device/SiliconLabs/MGM24/Include" -I"C:/Users/Workstation/SimplicityStudio/SDKs/gecko_sdk_8//platform/common/inc" -I"C:/Users/Workstation/SimplicityStudio/SDKs/gecko_sdk_8//platform/CMSIS/Core/Include" -I"C:/Users/Workstation/SimplicityStudio/SDKs/gecko_sdk_8//platform/CMSIS/RTOS2/Include" -I"C:/Users/Workstation/SimplicityStudio/SDKs/gecko_sdk_8//platform/service/device_init/inc" -I"C:/Users/Workstation/SimplicityStudio/SDKs/gecko_sdk_8//platform/emlib/inc" -I"C:/Users/Workstation/SimplicityStudio/SDKs/gecko_sdk_8//util/third_party/freertos/cmsis/Include" -I"C:/Users/Workstation/SimplicityStudio/SDKs/gecko_sdk_8//util/third_party/freertos/kernel/include" -I"C:/Users/Workstation/SimplicityStudio/SDKs/gecko_sdk_8//util/third_party/freertos/kernel/portable/GCC/ARM_CM33_NTZ/non_secure" -I"C:/Users/Workstation/SimplicityStudio/SDKs/gecko_sdk_8//platform/driver/leddrv/inc" -I"C:/Users/Workstation/SimplicityStudio/SDKs/gecko_sdk_8//platform/peripheral/inc" -I"C:/Users/Workstation/SimplicityStudio/SDKs/gecko_sdk_8//platform/common/toolchain/inc" -I"C:/Users/Workstation/SimplicityStudio/SDKs/gecko_sdk_8//platform/service/system/inc" -I"C:/Users/Workstation/SimplicityStudio/SDKs/gecko_sdk_8//platform/service/sleeptimer/inc" -Os -Wall -Wextra -ffunction-sections -fdata-sections -imacrossl_gcc_preinclude.h -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mcmse --specs=nano.specs -c -fmessage-length=0 -MMD -MP -MF"blink.d" -MT"blink.o" -o "blink.o" "../blink.c"
+Finished building: ../blink.c
+ 
+Building target: blink_kernel_freertos.axf
+Invoking: GNU ARM C Linker
+arm-none-eabi-gcc -g -gdwarf-2 -mcpu=cortex-m33 -mthumb -T "C:\Users\Workstation\Documents\GitHub\Vibration-Sensor\Code\blink_kernel_freertos\autogen\linkerfile.ld" -Xlinker --gc-sections -Xlinker -Map="blink_kernel_freertos.map" -mfpu=fpv5-sp-d16 -mfloat-abi=hard --specs=nano.specs -o blink_kernel_freertos.axf -Wl,--start-group "./app.o" "./blink.o" "./main.o" "./autogen/sl_device_init_clocks.o" "./autogen/sl_event_handler.o" "./autogen/sl_simple_led_instances.o" "./gecko_sdk_4.3.2/platform/CMSIS/RTOS2/Source/os_systick.o" "./gecko_sdk_4.3.2/platform/Device/SiliconLabs/MGM24/Source/startup_mgm24.o" "./gecko_sdk_4.3.2/platform/Device/SiliconLabs/MGM24/Source/system_mgm24.o" "./gecko_sdk_4.3.2/platform/common/src/sl_assert.o" "./gecko_sdk_4.3.2/platform/common/toolchain/src/sl_memory.o" "./gecko_sdk_4.3.2/platform/driver/leddrv/src/sl_led.o" "./gecko_sdk_4.3.2/platform/driver/leddrv/src/sl_simple_led.o" "./gecko_sdk_4.3.2/platform/emlib/src/em_burtc.o" "./gecko_sdk_4.3.2/platform/emlib/src/em_cmu.o" "./gecko_sdk_4.3.2/platform/emlib/src/em_core.o" "./gecko_sdk_4.3.2/platform/emlib/src/em_emu.o" "./gecko_sdk_4.3.2/platform/emlib/src/em_gpio.o" "./gecko_sdk_4.3.2/platform/emlib/src/em_msc.o" "./gecko_sdk_4.3.2/platform/emlib/src/em_prs.o" "./gecko_sdk_4.3.2/platform/emlib/src/em_system.o" "./gecko_sdk_4.3.2/platform/emlib/src/em_timer.o" "./gecko_sdk_4.3.2/platform/peripheral/src/peripheral_sysrtc.o" "./gecko_sdk_4.3.2/platform/service/device_init/src/sl_device_init_dcdc_s2.o" "./gecko_sdk_4.3.2/platform/service/device_init/src/sl_device_init_emu_s2.o" "./gecko_sdk_4.3.2/platform/service/device_init/src/sl_device_init_hfxo_mgm24.o" "./gecko_sdk_4.3.2/platform/service/device_init/src/sl_device_init_nvic.o" "./gecko_sdk_4.3.2/platform/service/sleeptimer/src/sl_sleeptimer.o" "./gecko_sdk_4.3.2/platform/service/sleeptimer/src/sl_sleeptimer_hal_burtc.o" "./gecko_sdk_4.3.2/platform/service/sleeptimer/src/sl_sleeptimer_hal_sysrtc.o" "./gecko_sdk_4.3.2/platform/service/sleeptimer/src/sl_sleeptimer_hal_timer.o" "./gecko_sdk_4.3.2/platform/service/system/src/sl_system_init.o" "./gecko_sdk_4.3.2/platform/service/system/src/sl_system_kernel.o" "./gecko_sdk_4.3.2/util/third_party/freertos/cmsis/Source/cmsis_os2.o" "./gecko_sdk_4.3.2/util/third_party/freertos/kernel/croutine.o" "./gecko_sdk_4.3.2/util/third_party/freertos/kernel/event_groups.o" "./gecko_sdk_4.3.2/util/third_party/freertos/kernel/list.o" "./gecko_sdk_4.3.2/util/third_party/freertos/kernel/queue.o" "./gecko_sdk_4.3.2/util/third_party/freertos/kernel/stream_buffer.o" "./gecko_sdk_4.3.2/util/third_party/freertos/kernel/tasks.o" "./gecko_sdk_4.3.2/util/third_party/freertos/kernel/timers.o" "./gecko_sdk_4.3.2/util/third_party/freertos/kernel/portable/GCC/ARM_CM33_NTZ/non_secure/port.o" "./gecko_sdk_4.3.2/util/third_party/freertos/kernel/portable/GCC/ARM_CM33_NTZ/non_secure/portasm.o" "./gecko_sdk_4.3.2/util/third_party/freertos/kernel/portable/MemMang/heap_4.o" -lgcc -lc -lm -lnosys -Wl,--end-group -Wl,--start-group -lgcc -lc -lnosys -Wl,--end-group
+Finished building target: blink_kernel_freertos.axf
+ 
+Building out file: blink_kernel_freertos.out
+arm-none-eabi-objcopy "blink_kernel_freertos.axf" "blink_kernel_freertos.out"
+ 
+Building hex file: blink_kernel_freertos.hex
+arm-none-eabi-objcopy -O ihex "blink_kernel_freertos.axf" "blink_kernel_freertos.hex"
+ 
+Building bin file: blink_kernel_freertos.bin
+arm-none-eabi-objcopy -O binary "blink_kernel_freertos.axf" "blink_kernel_freertos.bin"
+ 
+Building s37 file: blink_kernel_freertos.s37
+arm-none-eabi-objcopy -O srec "blink_kernel_freertos.axf" "blink_kernel_freertos.s37"
+ 
+Running size tool
+arm-none-eabi-size "blink_kernel_freertos.axf" -A
+blink_kernel_freertos.axf  :
+section             size        addr
+.text              16700   134217728
+.ARM.exidx             8   134234428
+.copy.table           12   134234436
+.zero.table            0   134234448
+.stack              4096   536870912
+.data                136   536875008
+.bss                3920   536875144
+.heap               2048   536879064
+.ARM.attributes       54           0
+.comment              77           0
+.debug_info       197476           0
+.debug_abbrev      19276           0
+.debug_aranges      4600           0
+.debug_ranges       7728           0
+.debug_line        79413           0
+.debug_str         59746           0
+.debug_frame       13068           0
+.debug_loc         86819           0
+Total             495177
+
+
+ 
+
+16:23:07 Build Finished. 0 errors, 0 warnings. (took 886ms)
+

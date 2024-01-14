@@ -19,8 +19,10 @@
 #include "em_burtc.h"
 #include "em_iadc.h"
 #include "em_gpio.h"
+#include "em_eusart.h"
 #include "sl_sleeptimer.h"
 #include "sl_system_process_action.h"
+#include "sl_spidrv_instances.h"
 #include <stdio.h>
 #include <string.h>
 #include "IIS3DWB/iis3dwb_reg.h"
@@ -31,10 +33,13 @@ static otInstance *sInstance = NULL;
 constexpr static uint32_t VSENSE_DIV_MULTIPLIER = 2;
 extern "C" void otAppCliInit(otInstance *aInstance);
 static void app_srp_init(void);
-static void app_sensor_init();
+void app_sensor_init();
 static void app_sensor_proc();
 static void app_dft_init();
 static void app_dft_proc();
+
+static int32_t iis3dwb_read_reg(void *ctx, uint8_t reg, uint8_t *data, uint16_t len);
+static int32_t iis3dwb_write_reg(void *ctx, uint8_t reg, const uint8_t *data, uint16_t len);
 
 /* RTOS */
 osMessageQueueId_t coapMsgQueue;
@@ -69,12 +74,13 @@ bool fftTxReady = false;
 
 
 eui_t eui; // device EUI64
-coapSender sender;
+coapSender *sender = NULL;
 
 
 const static uint32_t SLEEPY_POLL_PERIOD_MS = 5 * 1000;
 const static uint32_t ALIVE_INTERVAL_MS = 60 * 1000;
 const static uint32_t MEASUREMENT_INTERVAL_MS = 60 * 1000;
+
 
 static bool appSrpDone = false;
 static bool appCoapSendAlive = false;
@@ -82,18 +88,29 @@ static bool appCoapSendAlive = false;
 
 dns d(otGetInstance, 4, 4);
 
-int32_t iis3dwb_read_reg(stmdev_ctx_t *ctx, uint8_t reg,
+
+
+int32_t iis3dwb_read_reg(void *ctx, uint8_t reg,
                                 uint8_t *data,
                                 uint16_t len)
 {
-#error "not implemented"
+	reg |= 0x80;
+	GPIO_PinOutClear(ACC_CS_PORT, ACC_CS_PIN);
+	SPIDRV_MTransmitB(sl_spidrv_eusart_accel_handle, (void *)&reg, 1);
+	SPIDRV_MReceiveB(sl_spidrv_eusart_accel_handle, (void *)data, len);
+	GPIO_PinOutSet(ACC_CS_PORT, ACC_CS_PIN);
+	return 0;
 }
 
-int32_t iis3dwb_write_reg(stmdev_ctx_t *ctx, uint8_t reg,
-                                 uint8_t *data,
+int32_t iis3dwb_write_reg(void *ctx, uint8_t reg,
+                                 const uint8_t *data,
                                  uint16_t len)
 {
-#error "not implemented"
+	GPIO_PinOutClear(ACC_CS_PORT, ACC_CS_PIN);
+	SPIDRV_MTransmitB(sl_spidrv_eusart_accel_handle, (void *)&reg, 1);
+	SPIDRV_MTransmitB(sl_spidrv_eusart_accel_handle, (void *)data, len);
+	GPIO_PinOutSet(ACC_CS_PORT, ACC_CS_PIN);
+	return 0;
 }
 
 /** HANDLERS/ISR **/
@@ -123,17 +140,18 @@ void BURTC_IRQHandler(void) {
 
 void sl_ot_rtos_application_tick(void)
 {
-	if(!sender.checkConnectionValid()) return;
+	if(sender == NULL) return;
+	if(!sender->checkConnectionValid()) return;
 
 	if(osMessageQueueGetCount(coapMsgQueue) == 0) return;
 
 	app_data_t data;
 	osMessageQueueGet(&coapMsgQueue, &data, 0, 0);
 
-	if(sender.parseIntoBuffer(&data, MSG_LIMITED_SPECTRUM))
+	if(sender->parseIntoBuffer(&data, MSG_LIMITED_SPECTRUM))
 	{
-		if(sender.checkBuffer())
-			sender.send(true);
+		if(sender->checkBuffer())
+			sender->send(true);
 	}
 
 
@@ -142,6 +160,11 @@ void sl_ot_rtos_application_tick(void)
 
 
 void appMain(void * pvParams) {
+
+	sl_sleeptimer_delay_millisecond(10);
+	GPIO_PinModeSet(ACC_CS_PORT, ACC_CS_PIN, gpioModePushPull, 1);
+	app_sensor_init();
+
 
 	/** Application STARTUP **/
 	sleepyInit(SLEEPY_POLL_PERIOD_MS); // start polling
@@ -153,7 +176,9 @@ void appMain(void * pvParams) {
 	eui._64b = SYSTEM_GetUnique(); //get eui
 
 	app_srp_init(); // start srp, sensor, dft ..
-	app_sensor_init();
+
+
+
 	app_dft_init();
 
 	GPIO_PinOutClear(ACT_LED_PORT, ACT_LED_PIN);
@@ -168,6 +193,8 @@ void appMain(void * pvParams) {
 
 
 	coapMsgQueue = osMessageQueueNew(1U, sizeof(app_data_t *), &coapMsgQueueAttr);
+
+	sender = new coapSender();
 
 	/** Application LOOP **/
 	while(1)
@@ -275,19 +302,20 @@ static void app_sensor_proc() {
 	}
 }
 
-static void app_sensor_init() {
-	dev_ctx.write_reg = NULL;
-	dev_ctx.read_reg = NULL;
-//dev_ctx.handle = NULL;
+void app_sensor_init() {
+	dev_ctx.write_reg = iis3dwb_write_reg;
+	dev_ctx.read_reg = iis3dwb_read_reg;
+    dev_ctx.handle = sl_spidrv_eusart_accel_handle;
+
+
 
 	/* Check device ID */
 	uint8_t whoamI = 0;
 	iis3dwb_device_id_get(&dev_ctx, &whoamI);
-
+	GPIO_PinOutSet(ERR_LED_PORT, ERR_LED_PIN);
 	if (whoamI != IIS3DWB_ID)
-		while (1)
-			;
-
+		while(1);
+	GPIO_PinOutClear(ERR_LED_PORT, ERR_LED_PIN);
 	/* Restore default configuration */
 	iis3dwb_reset_set(&dev_ctx, PROPERTY_ENABLE);
 

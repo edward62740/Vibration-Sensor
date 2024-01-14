@@ -1,0 +1,11 @@
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
+configDescList=org.eclipse.launchbar.core.descriptorType.default\:blink_kernel_freertos GNU ARM v10.2.1 - Default GDB,org.eclipse.launchbar.core.descriptorType.default\:ot-ble-dmp-no-buttons GNU ARM v10.2.1 - Default GDB,org.eclipse.launchbar.core.descriptorType.default\:ot-cli-ftd GNU ARM v10.2.1 - Default GDB,org.eclipse.launchbar.core.descriptorType.default\:vibration-sensor GNU ARM v10.2.1 - Default GDB
+eclipse.preferences.version=1
+org.eclipse.launchbar.core.descriptorType.default\:blink_kernel_freertos\ GNU\ ARM\ v10.2.1\ -\ Default\ GDB/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:blink_kernel_freertos\ GNU\ ARM\ v10.2.1\ -\ Default\ GDB/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
+org.eclipse.launchbar.core.descriptorType.default\:ot-ble-dmp-no-buttons\ GNU\ ARM\ v10.2.1\ -\ Default\ GDB/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:ot-cli-ftd\ GNU\ ARM\ v10.2.1\ -\ Default\ GDB/activeLaunchMode=debug
+org.eclipse.launchbar.core.descriptorType.default\:vibration-sensor\ GNU\ ARM\ v10.2.1\ -\ Default\ GDB/activeLaunchMode=debug
+org.eclipse.launchbar.core.descriptorType.default\:vibration-sensor\ GNU\ ARM\ v10.2.1\ -\ Default\ GDB/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local

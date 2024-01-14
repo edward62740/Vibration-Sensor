@@ -1,7 +1,0 @@
-autogen/sl_ot_init.o: ../autogen/sl_ot_init.c \
- C:\Users\Edward\Documents\GitHub\Vibration-Sensor\Code\vibration-sensor\config/sl_openthread_rtos_config.h \
- c:\users\edward\simplicitystudio\sdks\gecko_sdk_3\platform\common\toolchain\inc\sl_gcc_preinclude.h \
- ../autogen/sl_ot_init.h
-C:\Users\Edward\Documents\GitHub\Vibration-Sensor\Code\vibration-sensor\config/sl_openthread_rtos_config.h:
-c:\users\edward\simplicitystudio\sdks\gecko_sdk_3\platform\common\toolchain\inc\sl_gcc_preinclude.h:
-../autogen/sl_ot_init.h:

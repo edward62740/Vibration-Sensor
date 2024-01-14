@@ -1,0 +1,6 @@
+17:32:09 **** Incremental Build of configuration GNU ARM v10.2.1 - Default for project ot-ble-dmp-no-buttons ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+
+17:32:10 Build Finished. 0 errors, 0 warnings. (took 1s.207ms)
+

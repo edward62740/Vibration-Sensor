@@ -1,4 +1,11 @@
 protectFromDetectionUpdates=false
 label=J-Link CE (69660295)
+targetPartOverride=mcu.arm.efr32.mg24.mgm240pb32vna
 boardOverrides {
+  com.silabs.board.none:0.0.0
+}
+EXTENSION:com.silabs.ss.support.mcu.internal.api.part.core.MCUDeviceSettingExtension {
+  tifId:swd
+}
+EXTENSION:com.silabs.ss.support.jlink.internal.api.core.JLinkDeviceSettingsExtension {
 }

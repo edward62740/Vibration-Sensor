@@ -48,17 +48,8 @@ const osThreadAttr_t usrMainTaskAttr = {
 
 void initGPIO(void) {
   CMU_ClockEnable(cmuClock_GPIO, true);
-  GPIO_PinModeSet(PWR_ST_0_PORT, PWR_ST_0_PIN, gpioModeInput, 1); // Asserted when the LDOs can be enabled (i.e. Vbatt > Vchrdy)
-  GPIO_PinModeSet(PWR_ST_1_PORT, PWR_ST_1_PIN, gpioModeInput, 1); // Asserted if the battery voltage falls below Vovdis or if the AEM is taking energy from the primary battery
-  GPIO_PinModeSet(PWR_ST_2_PORT, PWR_ST_2_PIN, gpioModeInput, 1); // Asserted when the AEM performs a MPP evaluation
 
-  GPIO_PinModeSet(PWR_EN_ST_PORT, PWR_EN_ST_PIN, gpioModeInput, 1); // Enable status pins
-  GPIO_PinModeSet(PWR_EN_SCD_PORT, PWR_EN_SCD_PIN, gpioModeInput, 1); // Enable SCD power
 
-  GPIO_PinModeSet(PWR_PG_MCU_PORT, PWR_PG_MCU_PIN, gpioModeInput, 1); // MCU power good
-  GPIO_PinModeSet(PWR_PG_SCD_PORT, PWR_PG_SCD_PIN, gpioModeInput, 1); // SCD power good
-
-  GPIO_PinModeSet(LOAD_SENSE_PORT, LOAD_SENSE_PIN, gpioModeInputPull, 0); // TBD single ended analog signal
 
   /*GPIO_ExtIntConfig(A111_INT_PORT,
    A111_INT_PIN,
@@ -67,7 +58,7 @@ void initGPIO(void) {
    false,
    true);*/
 
-  GPIO_PinModeSet(INT_OPT_PORT, INT_OPT_PIN, gpioModeInputPullFilter, 0); // OPT interrupt
+
   GPIO_PinModeSet(ACT_LED_PORT, ACT_LED_PIN, gpioModePushPull, 0);
   GPIO_PinModeSet(ERR_LED_PORT, ERR_LED_PIN, gpioModePushPull, 0);
 
@@ -127,13 +118,13 @@ void initVddMonitor(void) {
 int main(void) {
   sl_system_init();
   initGPIO();
-  initBURTC();
-  initVddMonitor();
+  //initBURTC();
+  //initVddMonitor();
   initSensors();
+
+
   GPIO_PinOutSet(ERR_LED_PORT, ERR_LED_PIN);
   GPIO_PinOutSet(ACT_LED_PORT, ACT_LED_PIN);
-  GPIO_PinOutSet(PWR_EN_ST_PORT, PWR_EN_ST_PIN);
-
 
 
   GPIO_PinOutToggle(ACT_LED_PORT, ACT_LED_PIN);

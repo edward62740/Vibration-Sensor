@@ -3,10 +3,11 @@
 	<section name="com.silabs.ss.framework.ide.project.core.cdtMbsProjectType">
 		<item key="importOption" value="LINK"/>
 		<list key="fileLocationHistory">
+			<item value="C:\Users\Workstation\Documents\GitHub\ot-IPR\IPR\mg24_code\ipr"/>
 			<item value="C:\Users\Edward\Documents\GitHub\Vibration-Sensor\Code\vibration-sensor"/>
 		</list>
 		<list key="fileLocations">
-			<item value="C:\Users\Edward\Documents\GitHub\Vibration-Sensor\Code\vibration-sensor"/>
+			<item value="C:\Users\Workstation\Documents\GitHub\ot-IPR\IPR\mg24_code\ipr"/>
 		</list>
 	</section>
 </section>

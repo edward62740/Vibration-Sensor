@@ -56,52 +56,7 @@ inline bool efr32AllowSleepCallback(void)
  */
 void setNetworkConfiguration(void)
 {
-    static char          aNetworkName[] = "OpenThread X-1";
-    otError              error;
-    otOperationalDataset aDataset;
 
-    memset(&aDataset, 0, sizeof(otOperationalDataset));
-
-    /*
-     * Fields that can be configured in otOperationDataset to override defaults:
-     *     Network Name, Mesh Local Prefix, Extended PAN ID, PAN ID, Delay Timer,
-     *     Channel, Channel Mask Page 0, Network Key, PSKc, Security Policy
-     */
-    //aDataset.mActiveTimestamp.mSeconds             = 1;
-    aDataset.mComponents.mIsActiveTimestampPresent = true;
-
-    /* Set Channel to 15 */
-    aDataset.mChannel                      = 15;
-    aDataset.mComponents.mIsChannelPresent = true;
-
-    /* Set Pan ID to 2222 */
-    aDataset.mPanId                      = (otPanId)0xDEAD;
-    aDataset.mComponents.mIsPanIdPresent = true;
-
-    /* Set Extended Pan ID to C0DE1AB5C0DE1AB5 */
-    uint8_t extPanId[OT_EXT_PAN_ID_SIZE] = { 0x72, 0x53, 0xc0, 0xf9, 0x58, 0xe3, 0x3f, 0x94};
-    memcpy(aDataset.mExtendedPanId.m8, extPanId, sizeof(aDataset.mExtendedPanId));
-    aDataset.mComponents.mIsExtendedPanIdPresent = true;
-
-    /* Set network key to 1234C0DE1AB51234C0DE1AB51234C0DE */
-    uint8_t key[OT_NETWORK_KEY_SIZE] = {0xb3, 0x08, 0x8e, 0x0c, 0x4c, 0x97, 0x70, 0xa9, 0xca, 0x86, 0x85, 0xab,
-			0x99, 0xda, 0xc9, 0x51 };
-    memcpy(aDataset.mNetworkKey.m8, key, sizeof(aDataset.mNetworkKey));
-    aDataset.mComponents.mIsNetworkKeyPresent = true;
-
-    /* Set Network Name to SleepyEFR32 */
-    size_t length = strlen(aNetworkName);
-    assert(length <= OT_NETWORK_NAME_MAX_SIZE);
-    memcpy(aDataset.mNetworkName.m8, aNetworkName, length);
-    aDataset.mComponents.mIsNetworkNamePresent = true;
-
-    /* Set the Active Operational Dataset to this dataset */
-    error = otDatasetSetActive(otGetInstance(), &aDataset);
-    if (error != OT_ERROR_NONE)
-    {
-        otCliOutputFormat("otDatasetSetActive failed with: %d, %s\r\n", error, otThreadErrorToString(error));
-        return;
-    }
 }
 
 

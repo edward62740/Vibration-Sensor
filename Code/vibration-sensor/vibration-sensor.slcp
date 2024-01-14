@@ -28,8 +28,6 @@ sdk: {id: gecko_sdk, version: 4.3.2}
 toolchain_settings: []
 component:
 - {id: power_manager}
-- instance: [btn0, btn1]
-  id: simple_button
 - instance: [accel]
   id: spidrv_eusart
 - {id: MGM240PB32VNA}
@@ -41,7 +39,6 @@ component:
 - instance: [vcom]
   id: uartdrv_usart
 - {id: cmsis_dsp}
-- {id: bootloader_interface}
 configuration:
 - {name: SL_BOARD_ENABLE_VCOM, value: '1'}
 - {name: SL_POWER_MANAGER_DEBUG, value: '1'}
