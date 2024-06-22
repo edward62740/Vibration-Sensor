@@ -1,4 +1,4 @@
-# Vibration Sensor [in progress]
+# Vibration Sensor
 
 The goal of this project is to develop a battery powered sensor that can be used to perform predictive maintenance of mechanical equipment through frequency-domain analysis.
 In general, such analysis is performed using traditional algorithms or ML (on the edge or remotely). This project provides basic on-device neural network using the built-in MVP accelerator, as well as transmitting the processed data to a server for analysis.
